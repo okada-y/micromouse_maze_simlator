@@ -1,5 +1,13 @@
 clearvars
 close all
+clc
+%% パス定義
+currentdir = cd;
+addpath(strcat(currentdir,'/src'),'-end')
+
+%% デバッグモード定義
+    global maze_data_get_debug;
+    maze_data_get_debug = 0;
 
 %% mode定義
     r_mode.search = uint8(0);
