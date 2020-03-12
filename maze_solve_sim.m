@@ -23,10 +23,17 @@ addpath(strcat(currentdir,'/src'),'-end')
 map_fig = figure;
 maze_data_plot(maze_row_size,maze_col_size,maze_row_data,maze_col_data);
 %% 迷路パラメータ設定
-%[x,y]とする
 maze_goal = uint8(zeros(9,2));
-maze_goal(1:4,:) = uint8([7,10; 7,11; 8,10; 8,11]);
-goal_size = uint8(4);
+goal_size = uint8(4);%ゴールサイズを入力する
+goal_x = 7;%ゴール左下のx座標
+goal_y = 10;%ゴール左下のy座標
+goal_size_d = double(goal_size);
+for i = 1:sqrt(goal_size_d)
+    for l = 1:sqrt(goal_size_d)
+        maze_goal((l-1)*sqrt(goal_size_d)+i,:) = [goal_x+(i-1),goal_y+(l-1)];
+    end
+end
+
 %% 壁センサ値初期値入力(Cコード生成用)
 %壁センサAD値格納変数
 global wall_sensor_front;

@@ -541,8 +541,8 @@ end
 
     %現在地の壁情報を確認
 
-    i = current_y;
-    n = current_x;
+    i = uint16(current_y);
+    n = uint16(current_x);
 
         %北壁情報プロット
            if bitand(maze_wall(i,n),bitshift(1,g_direction.North)) 
@@ -589,12 +589,12 @@ end
 
     %探索開始位置プロット
     hold on
-    plot(current_x * 9 -4.5,current_y * 9 -4.5,'ob','MarkerFaceColor','r','Parent',h);
+    plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'ob','MarkerFaceColor','r','Parent',h);
     hold off
 
     %足跡プロット
     hold on
-    plot(current_x * 9 -4.5,current_y * 9 -4.5,'.r');
+    plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
     hold off
     drawnow limitrate nocallbacks
 
@@ -679,11 +679,11 @@ end
         if coder.target('MATLAB')
         %for MATLAB    
         %マウス描画位置更新
-            m = makehgtform('translate',(current_x-search_start_x)*9,(current_y-search_start_y)*9,0);
+            m = makehgtform('translate',double(current_x-search_start_x)*9,double(current_y-search_start_y)*9,0);
             h.Matrix = m;
             %足跡プロット
             hold on
-            plot(current_x * 9 -4.5,current_y * 9 -4.5,'.r');
+            plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
             hold off
             %pause(0.2)
             drawnow limitrate nocallbacks
