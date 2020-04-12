@@ -3,6 +3,12 @@ function[maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maz
 %入力 迷路壁情報,迷路探索情報,迷路縦サイズ,迷路横サイズ,ゴール座標,
 %出力 壁情報,探索情報
 
+% グローバル変数宣言
+global maze_fig;
+global maze_fig_ax;
+global g_direction;
+
+
 %ローカル変数宣言
 new_goal = uint8(zeros(9,2));
 new_goal_size = uint8(1); 
@@ -29,9 +35,24 @@ if run_mode == r_mode.search
     current_x = uint8(1);
     current_y = uint8(1);
     current_dir = g_direction.North;
-      
+         
+    if coder.target('MATLAB')
+        %for MATLAB
+        %迷路探索状況を表す表面を作成
+        [search_surf] = maze_search_plot(maze_wall_search,maze_row_size,maze_col_size,9);
+        %マウス位置表示用オブジェクト初期化
+        [h] = hgtransform_init;
+        %探索開始位置プロット
+        figure(maze_fig);
+        hold on
+        plot(current_x * 9 -4.5,current_y * 9 -4.5,'ob','MarkerFaceColor','b','Parent',h);
+        hold off
+    else
+       %for C gen
+    end
+    
     %一マス前進
-     [current_x,current_y] = move_step(current_x,current_y,current_dir);
+     [current_x,current_y] = move_step(current_x,current_y,current_dir);  
 
     %足立法による探索
     [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
@@ -77,6 +98,15 @@ if run_mode == r_mode.fust_run
     %探索情報をもとに等高線MAPを生成
     [contour_map,max_length] = make_map_fustrun(maze_row_size,maze_col_size,maze_goal,maze_wall,maze_wall_search);
     
+    %コンターマップの描画
+    if coder.target('MATLAB')
+        for l = 1:32
+            for j = 1:32
+                text((j-1)*9+4.5,(l-1)*9+4.5,string(contour_map(l,j)),'HorizontalAlignment','center');
+            end
+        end
+    end
+    
     %最短距離走行
     fust_run(maze_wall,contour_map,maze_goal,max_length)
 
@@ -91,23 +121,10 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
 
     %local変数宣言
     goal_flag = uint8(0);
-    search_start_x = current_x; %探索開始時x
-    search_start_y = current_y; %探索開始時y
-    
-    if coder.target('MATLAB')
-        %for MATLAB
-        %迷路探索状況を表す表面を作成
-        [search_surf] = maze_search_plot(maze_wall_search,maze_row_size,maze_col_size,9);
-        %マウス位置表示用オブジェクト初期化
-        [h] = hgtransform_init;
-        %探索開始位置プロット
-        hold on
-        plot(current_x * 9 -4.5,current_y * 9 -4.5,'ob','MarkerFaceColor','b','Parent',h);
-        hold off
-    else
-       %for C gen
-    end
-    
+%     search_start_x = current_x %探索開始時x
+%     search_start_y = current_y %探索開始時y
+      search_start_x = uint8(1);
+      search_start_y = uint8(1);
         while 1
             %壁情報取得
             [maze_wall,maze_wall_search] = wall_set(maze_row_size,maze_col_size,current_x,current_y,current_dir,maze_wall,maze_wall_search);
@@ -172,22 +189,22 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
             end
         end
 
-        
-    if coder.target('MATLAB')
-        %for MATLAB    
-        %探索終了時,マーカーをどこか遠くに
-        %m = makehgtform('translate',50*9,50*9,0);
-        %h.Matrix = m;
-        %別の種類のマーカーを仮置き
-        hold on
-        plot(current_x * 9 -4.5,current_y * 9 -4.5,'-ob');
-        hold off
-        %探索状況プロットを透明化
-        serface_transparency(search_surf);
-        drawnow
-    else
-        %for code generation
-    end
+%         
+%     if coder.target('MATLAB')
+%         %for MATLAB    
+%         %探索終了時,マーカーをどこか遠くに
+%         %m = makehgtform('translate',50*9,50*9,0);
+%         %h.Matrix = m;
+%         %別の種類のマーカーを仮置き
+%         hold on
+%         plot(current_x * 9 -4.5,current_y * 9 -4.5,'-ob');
+%         hold off
+%         %探索状況プロットを透明化
+%         serface_transparency(search_surf);
+%         drawnow
+%     else
+%         %for code generation
+%     end
 
 
 end
@@ -394,12 +411,12 @@ end
 
 
     % 迷路パラメータ設定
-    max_length = uint8((maze_col_size-1)*(maze_row_size-1));
+    max_length = uint16((maze_col_size-1)*(maze_row_size-1));
 
     %MAPの初期化(すべての要素にmax_lengthを入力)
     %32マス分mapを保持
     %16bitにすべき
-    contour_map = ones(32,32,'uint8');
+    contour_map = ones(32,32,'uint16');
     contour_map = contour_map * max_length;
 
     %ゴール座標に0を入力
@@ -529,42 +546,6 @@ end
 
 
     end
-
-
-%% 探索した壁情報(シリアル)をプロットする関数
-    function [] = maze_wall_plot(maze_wall,current_x,current_y)
-    %入力 探索壁情報,現在値x,y
-    %出力 
-    
-    maze_step =  9;
-    hold on
-
-    %現在地の壁情報を確認
-
-    i = uint16(current_y);
-    n = uint16(current_x);
-
-        %北壁情報プロット
-           if bitand(maze_wall(i,n),bitshift(1,g_direction.North)) 
-               plot([n-1,n].*maze_step,[i,i].*maze_step,'r','LineWidth',2)
-           end
-           %東壁情報プロット
-           if bitand(maze_wall(i,n),bitshift(1,g_direction.East)) 
-               plot([n,n].*maze_step,[i-1,i].*maze_step,'r','LineWidth',2)
-           end
-           %南壁情報プロット
-           if bitand(maze_wall(i,n),bitshift(1,g_direction.South)) 
-               plot([n-1,n].*maze_step,[i-1,i-1].*maze_step,'r','LineWidth',2)
-           end
-           %西壁情報プロット
-           if bitand(maze_wall(i,n),bitshift(1,g_direction.West)) 
-               plot([n-1,n-1].*maze_step,[i-1,i].*maze_step,'r','LineWidth',2)
-           end
-
-    hold off
-
-    end
-
 %% fust_run 最短経路導出
     function [] = fust_run(maze_wall,contour_map,maze_goal,max_length)
     %入力　壁情報,壁探索情報,等高線MAP,ゴール座標,最大経路長
@@ -582,6 +563,11 @@ end
     %マウスの初期位置設定
     current_x = uint8(1);
     current_y = uint8(1);
+    
+    previous_x = current_x;
+    previous_y = current_y;
+    
+        
     current_dir = g_direction.North;
     next_dir = g_direction.North;
     search_start_x = current_x; %探索開始時x
@@ -589,14 +575,14 @@ end
 
     %探索開始位置プロット
     hold on
-    plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'ob','MarkerFaceColor','r','Parent',h);
+    plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'ob','MarkerSize',10,'MarkerFaceColor','r','Parent',h);
     hold off
 
-    %足跡プロット
-    hold on
-    plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
-    hold off
-    drawnow limitrate nocallbacks
+%     %足跡プロット
+%     hold on
+%     plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
+%     hold off
+%     drawnow limitrate nocallbacks
 
     while 1
 
@@ -681,15 +667,20 @@ end
         %マウス描画位置更新
             m = makehgtform('translate',double(current_x-search_start_x)*9,double(current_y-search_start_y)*9,0);
             h.Matrix = m;
-            %足跡プロット
+            %軌跡プロット
             hold on
-            plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
+            plot([double(previous_x)*9-4.5,double(current_x)*9-4.5],[double(previous_y)*9-4.5,double(current_y)*9-4.5]...
+                ,'Color','#D95319','LineWidth',3)
+%             plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
             hold off
             %pause(0.2)
             drawnow limitrate nocallbacks
         else
         %for code generation
         end
+        
+        previous_x = current_x;
+        previous_y = current_y;
     end
 end
 
@@ -704,12 +695,12 @@ tempn=uint8(0);
 tempi=uint8(0);
 
     % 迷路パラメータ設定
-    max_length = uint8((maze_col_size-1)*(maze_row_size-1));
+    max_length = uint16((maze_col_size-1)*(maze_row_size-1));
 
     %MAPの初期化(すべての要素にmax_lengthを入力)
     %MAPの初期化(すべての要素にmax_lengthを入力)
     %32マス分mapを保持
-    contour_map = ones(32,32,'uint8');
+    contour_map = ones(32,32,'uint16');
     contour_map = contour_map * max_length;
     
     %ゴール座標に0を入力

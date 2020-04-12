@@ -4,6 +4,9 @@
     %入力 迷路探索状況,迷路行方向サイズ,迷路列方向サイズ,迷路一マスのサイズ
     %出力 探索状況をZ軸にもつsurface
 
+    global maze_fig;
+    
+    figure(maze_fig);
     hold on
     [x,y] = meshgrid(0:1:maze_col_size-1,0:1:maze_row_size-1);
 

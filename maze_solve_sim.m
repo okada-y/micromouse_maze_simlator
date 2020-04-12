@@ -20,14 +20,25 @@ addpath(strcat(currentdir,'/src'),'-end')
 
  maze_data_to_serial(maze_row_size,maze_col_size,maze_row_data,maze_col_data);
 %% 迷路をプロット
-map_fig = figure;
+
+%プロットするfigure,axisを定義
+global maze_fig;
+global maze_fig_ax;
+maze_fig_ax = gca;
+maze_fig = gcf;
+
+maze_fig.Position = [2108,301,670,548];
+
+%%
 maze_data_plot(maze_row_size,maze_col_size,maze_row_data,maze_col_data);
 %% 迷路パラメータ設定
 maze_goal = uint8(zeros(9,2));
 goal_size = uint8(4);%ゴールサイズを入力する
-goal_x = 7;%ゴール左下のx座標
+goal_x = 10;%ゴール左下のx座標
 goal_y = 10;%ゴール左下のy座標
 goal_size_d = double(goal_size);
+
+%ゴール座標入力
 for i = 1:sqrt(goal_size_d)
     for l = 1:sqrt(goal_size_d)
         maze_goal((l-1)*sqrt(goal_size_d)+i,:) = [goal_x+(i-1),goal_y+(l-1)];
@@ -53,15 +64,19 @@ wall_sensor_left_th = int16(0);
 
 %% 足立法で探索
 
-%迷路情報初期化
+%% 迷路情報初期化
 [maze_wall,maze_wall_search] = maze_init(maze_row_size,maze_col_size);
 maze_wall_plotall(maze_row_size,maze_col_size,maze_wall);
 
-%モード定義
+%% モード定義
 run_mode = r_mode.search;
 [maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,maze_goal,goal_size,run_mode);
 
+
+%% 
+
 %% 探索情報をもとに最短走行
+
 %モード定義
 run_mode = r_mode.fust_run;
 maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,maze_goal,goal_size,run_mode);
