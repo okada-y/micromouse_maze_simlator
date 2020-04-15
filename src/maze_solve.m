@@ -56,7 +56,7 @@ if run_mode == r_mode.search
      [current_x,current_y] = move_step(current_x,current_y,current_dir);  
 
     %足立法による探索
-    [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
+    [current_x,current_y,current_dir,maze_wall,maze_wall_search,co]...
         = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,maze_goal,goal_size);
 
     %ゴールをすべて探索
@@ -118,7 +118,7 @@ if run_mode == r_mode.fust_run
 end
 
 %% search_adachi 足立法での探索
-function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
+function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
             = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,exploration_goal,l_goal_size) %#codegen
     %入力　現在位置x,y,現在方向,迷路行方向サイズ,迷路列方向サイズ,迷路壁情報,迷路壁の探索情報,ゴール座標
     %出力  現在位置x,y,現在方向,壁情報,探索情報
@@ -151,10 +151,10 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
 
             % 等高線MAP生成
             % [contour_map,max_length] = make_map2(maze_row_size,maze_col_size,maze_goal,maze_wall);
-              [cmap,max_l] = make_map_find(maze_row_size,maze_col_size,exploration_goal,l_goal_size,maze_wall);
+              [contour_map,max_l] = make_map_find(maze_row_size,maze_col_size,exploration_goal,l_goal_size,maze_wall);
            % 進行方向選定
             %優先順位　北⇒東⇒南⇒西
-             [next_dir] = get_nextdir2(current_x,current_y,maze_wall,cmap,max_l);
+             [next_dir] = get_nextdir2(current_x,current_y,maze_wall,contour_map,max_l);
 
            % 現在方向と進行方向に応じた処理
             switch rem((4 + next_dir - current_dir),4)
