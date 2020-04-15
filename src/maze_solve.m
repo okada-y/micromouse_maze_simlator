@@ -1,4 +1,4 @@
-function[maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,maze_goal,goal_size,run_mode)%#codegen
+function[maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode)%#codegen
 %maze_solve 実機での迷路探索関数
 %入力 迷路壁情報,迷路探索情報,迷路縦サイズ,迷路横サイズ,ゴール座標,
 %出力 壁情報,探索情報
@@ -7,6 +7,7 @@ function[maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maz
 global maze_fig;
 global maze_fig_ax;
 global g_direction;
+global maze_goal;
 
 
 %ローカル変数宣言
@@ -78,6 +79,9 @@ if run_mode == r_mode.search
 
     end
     
+    %未探索マスがなくなるまで。
+    % 現地点から一番近い未探索マスを探索
+    
     %スタートを目的地として足立法で再探索
     new_goal(1,:) = uint8([1,1]);
      [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
@@ -115,7 +119,7 @@ end
 
 %% search_adachi 足立法での探索
 function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
-            = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,maze_goal,l_goal_size) %#codegen
+            = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,exploration_goal,l_goal_size) %#codegen
     %入力　現在位置x,y,現在方向,迷路行方向サイズ,迷路列方向サイズ,迷路壁情報,迷路壁の探索情報,ゴール座標
     %出力  現在位置x,y,現在方向,壁情報,探索情報
 
@@ -130,13 +134,12 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
             [maze_wall,maze_wall_search] = wall_set(maze_row_size,maze_col_size,current_x,current_y,current_dir,maze_wall,maze_wall_search);
             
             if coder.target('MATLAB')
-            maze_wall_plot(maze_wall,current_x,current_y);
-            drawnow limitrate nocallbacks
+            maze_wall_plot(maze_wall,current_x,current_y,maze_row_size,maze_col_size);
             end
             
             %現在位置がゴールか判定
             for i = 1:1:l_goal_size
-                if (current_x == maze_goal(i,1)) && (current_y == maze_goal(i,2))
+                if (current_x == exploration_goal(i,1)) && (current_y == exploration_goal(i,2))
                     goal_flag = uint8(1);
                  end
             end
@@ -148,7 +151,7 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
 
             % 等高線MAP生成
             % [contour_map,max_length] = make_map2(maze_row_size,maze_col_size,maze_goal,maze_wall);
-              [cmap,max_l] = make_map_find(maze_row_size,maze_col_size,maze_goal,l_goal_size,maze_wall);
+              [cmap,max_l] = make_map_find(maze_row_size,maze_col_size,exploration_goal,l_goal_size,maze_wall);
            % 進行方向選定
             %優先順位　北⇒東⇒南⇒西
              [next_dir] = get_nextdir2(current_x,current_y,maze_wall,cmap,max_l);
@@ -183,7 +186,7 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
                 hgtransform_update(h,current_x,current_y,search_start_x,search_start_y,9);
                 %探索状況の更新
                 maze_search_plot_update(search_surf,maze_wall_search,maze_col_size,maze_row_size);
-                drawnow
+                drawnow limitrate nocallbacks
             else
                 %for code generation
             end
@@ -268,7 +271,7 @@ end
     end 
 
 %%  wall_set 壁情報取得
-    function [maze_wall,maze_wall_search] = wall_set(maze_row_size,maze_col_size,current_x,current_y,current_dir,maze_wall,maze_wall_search)
+function [maze_wall,maze_wall_search] = wall_set(maze_row_size,maze_col_size,current_x,current_y,current_dir,maze_wall,maze_wall_search)
     %matlab上では画像から取得した壁情報を参照する。
     %入力:画像から得た迷路情報,迷路行方向壁枚数,迷路列方向壁枚数, 
     %     現在地座標x,y,現在進行方向,迷路壁情報,迷路壁探索情報            
@@ -361,7 +364,6 @@ end
 
 %ここまで
 
-
     %壁情報,探索情報を入力
     %北側
     maze_wall(current_y,current_x) = bitor(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.North) * wall_write(1,g_direction.North+1));
@@ -402,8 +404,118 @@ end
         maze_wall_search(current_y,current_x-1) = bitor(maze_wall_search(current_y,current_x-1),bitshift(uint8(1),g_direction.East) * serch_write(1,g_direction.West+1));
     end
 
+    %現在地がゴールでない場合
+    tempx  = logical(maze_goal(1:end,1) == current_x);
+    tempy  = logical(maze_goal(1:end,2) == current_y);
+    temp = ~max(tempx .* tempy);
+    if(temp)
 
+    %柱に対し、3方向探索済みかつ、すべて壁がない場合、もう一方向の壁を確定させる。
+        %北,東に壁がない場合
+        if (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.North)) ~= bitshift(uint8(1),g_direction.North))...
+                && (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.East)) ~= bitshift(uint8(1),g_direction.East))
+
+            %北のマスの東が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y+1,current_x),bitshift(uint8(1),g_direction.East))...
+                    && (bitand(maze_wall(current_y+1,current_x),bitshift(uint8(1),g_direction.East)) ~= bitshift(uint8(1),g_direction.East))
+                %東のマスの北の壁が確定、探索済みとする。
+                    maze_wall(current_y,current_x+1) = bitor(maze_wall(current_y,current_x+1),bitshift(uint8(1),g_direction.North));
+                    maze_wall_search(current_y,current_x+1) = bitor(maze_wall_search(current_y,current_x+1),bitshift(uint8(1),g_direction.North));
+                %隣り合うマス（東北マス）の南の壁も確定
+                    maze_wall(current_y+1,current_x+1) = bitor(maze_wall(current_y+1,current_x+1),bitshift(uint8(1),g_direction.South));
+                    maze_wall_search(current_y+1,current_x+1) = bitor(maze_wall_search(current_y+1,current_x+1),bitshift(uint8(1),g_direction.South));
+            end
+            %東のマスの北が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y,current_x+1),bitshift(uint8(1),g_direction.North))...
+                    && (bitand(maze_wall(current_y,current_x+1),bitshift(uint8(1),g_direction.North)) ~= bitshift(uint8(1),g_direction.North))
+              %北のマスの東の壁が確定、探索済みとする。
+                    maze_wall(current_y+1,current_x) = bitor(maze_wall(current_y+1,current_x),bitshift(uint8(1),g_direction.East));
+                    maze_wall_search(current_y+1,current_x) = bitor(maze_wall_search(current_y+1,current_x),bitshift(uint8(1),g_direction.East));
+                %隣り合うマス（東北マス）の西の壁も確定
+                    maze_wall(current_y+1,current_x+1) = bitor(maze_wall(current_y+1,current_x+1),bitshift(uint8(1),g_direction.West));
+                    maze_wall_search(current_y+1,current_x+1) = bitor(maze_wall_search(current_y+1,current_x+1),bitshift(uint8(1),g_direction.West));
+            end
+
+
+        end
+
+        %北,西に壁がない場合
+         if (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.North)) ~= bitshift(uint8(1),g_direction.North))...
+                && (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.West)) ~= bitshift(uint8(1),g_direction.West))
+            %北のマスの西が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y+1,current_x),bitshift(uint8(1),g_direction.West))...
+                && (bitand(maze_wall(current_y+1,current_x),bitshift(uint8(1),g_direction.West)) ~= bitshift(uint8(1),g_direction.West))
+                %西のマスの北の壁が確定、探索済みとする。
+                maze_wall(current_y,current_x-1) = bitor(maze_wall(current_y,current_x-1),bitshift(uint8(1),g_direction.North));
+                maze_wall_search(current_y,current_x-1) = bitor(maze_wall_search(current_y,current_x-1),bitshift(uint8(1),g_direction.North));
+                %隣り合うマス（北西マス）の南の壁も確定
+                maze_wall(current_y+1,current_x-1) = bitor(maze_wall(current_y+1,current_x-1),bitshift(uint8(1),g_direction.South));
+                maze_wall_search(current_y+1,current_x-1) = bitor(maze_wall_search(current_y+1,current_x-1),bitshift(uint8(1),g_direction.South));
+            end
+
+            %西のマスの北が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y,current_x-1),bitshift(uint8(1),g_direction.North))...
+                && (bitand(maze_wall(current_y,current_x-1),bitshift(uint8(1),g_direction.North)) ~= bitshift(uint8(1),g_direction.North)) 
+                %北のマスの西の壁が確定、探索済みとする。
+                maze_wall(current_y+1,current_x) = bitor(maze_wall(current_y+1,current_x),bitshift(uint8(1),g_direction.West));
+                maze_wall_search(current_y+1,current_x) = bitor(maze_wall_search(current_y+1,current_x),bitshift(uint8(1),g_direction.West));
+                %隣り合うマス（北西マス）の東の壁も確定
+                maze_wall(current_y+1,current_x-1) = bitor(maze_wall(current_y+1,current_x-1),bitshift(uint8(1),g_direction.East));
+                maze_wall_search(current_y+1,current_x-1) = bitor(maze_wall_search(current_y+1,current_x-1),bitshift(uint8(1),g_direction.East));
+             end
+         end
+
+        %南,東に壁がない場合
+         if (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.East)) ~= bitshift(uint8(1),g_direction.East))...
+            && (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.South)) ~= bitshift(uint8(1),g_direction.South))
+            %南のマスの東が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y-1,current_x),bitshift(uint8(1),g_direction.East))...
+                && (bitand(maze_wall(current_y-1,current_x),bitshift(uint8(1),g_direction.East)) ~= bitshift(uint8(1),g_direction.East)) 
+                %東のマスの南の壁が確定、探索済みとする。
+                maze_wall(current_y,current_x+1) = bitor(maze_wall(current_y,current_x+1),bitshift(uint8(1),g_direction.South));
+                maze_wall_search(current_y,current_x+1) = bitor(maze_wall_search(current_y,current_x+1),bitshift(uint8(1),g_direction.South));
+                %隣り合うマス（南東マス）の北の壁も確定
+                maze_wall(current_y-1,current_x+1) = bitor(maze_wall(current_y-1,current_x+1),bitshift(uint8(1),g_direction.North));
+                maze_wall_search(current_y-1,current_x+1) = bitor(maze_wall_search(current_y-1,current_x+1),bitshift(uint8(1),g_direction.North));
+            end
+            %東のマスの南が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y,current_x+1),bitshift(uint8(1),g_direction.South))...
+                && (bitand(maze_wall(current_y,current_x+1),bitshift(uint8(1),g_direction.South)) ~= bitshift(uint8(1),g_direction.South)) 
+                %南のマスの東の壁が確定、探索済みとする。
+                maze_wall(current_y-1,current_x) = bitor(maze_wall(current_y-1,current_x),bitshift(uint8(1),g_direction.East));
+                maze_wall_search(current_y-1,current_x) = bitor(maze_wall_search(current_y-1,current_x),bitshift(uint8(1),g_direction.East));
+                %隣り合うマス（南東マス）の西の壁が確定。探索済みとする
+                maze_wall(current_y-1,current_x+1) = bitor(maze_wall(current_y-1,current_x+1),bitshift(uint8(1),g_direction.West));
+                maze_wall_search(current_y-1,current_x+1) = bitor(maze_wall_search(current_y-1,current_x+1),bitshift(uint8(1),g_direction.West));
+             end
+         end
+
+        %南,西に壁がない場合
+        if (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.West)) ~= bitshift(uint8(1),g_direction.West))...
+            && (bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.South)) ~= bitshift(uint8(1),g_direction.South))
+            %南のマスの西が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y-1,current_x),bitshift(uint8(1),g_direction.West))...
+                && (bitand(maze_wall(current_y-1,current_x),bitshift(uint8(1),g_direction.West)) ~= bitshift(uint8(1),g_direction.West)) 
+                %西のマスの南の壁が確定、探索済みとする。
+                maze_wall(current_y,current_x-1) = bitor(maze_wall(current_y,current_x-1),bitshift(uint8(1),g_direction.South));
+                maze_wall_search(current_y,current_x-1) = bitor(maze_wall_search(current_y,current_x-1),bitshift(uint8(1),g_direction.South));
+                %隣り合うマス（南西マス）の北の壁が確定。探索済みとする
+                maze_wall(current_y-1,current_x-1) = bitor(maze_wall(current_y-1,current_x-1),bitshift(uint8(1),g_direction.North));
+                maze_wall_search(current_y-1,current_x-1) = bitor(maze_wall_search(current_y-1,current_x-1),bitshift(uint8(1),g_direction.North));
+            end
+            %西のマスの南が探索済み　かつ　壁がないとき
+            if bitand(maze_wall_search(current_y,current_x-1),bitshift(uint8(1),g_direction.South))...
+                && (bitand(maze_wall(current_y,current_x-1),bitshift(uint8(1),g_direction.South)) ~= bitshift(uint8(1),g_direction.South)) 
+                %南のマスの西の壁が確定、探索済みとする。
+                maze_wall(current_y-1,current_x) = bitor(maze_wall(current_y-1,current_x),bitshift(uint8(1),g_direction.West));
+                maze_wall_search(current_y-1,current_x) = bitor(maze_wall_search(current_y-1,current_x),bitshift(uint8(1),g_direction.West));
+                %隣り合うマス（南西マス）の東の壁が確定。探索済みとする
+                maze_wall(current_y-1,current_x-1) = bitor(maze_wall(current_y-1,current_x-1),bitshift(uint8(1),g_direction.East));
+                maze_wall_search(current_y-1,current_x-1) = bitor(maze_wall_search(current_y-1,current_x-1),bitshift(uint8(1),g_direction.East));
+            end
+        end
     end
+end
 %%  make_map_find 壁情報から等高線MAPを生成
     function [contour_map,max_length] = make_map_find(maze_row_size,maze_col_size,maze_goal,l_goal_size,maze_wall)
     %入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数)
@@ -694,29 +806,43 @@ function [contour_map,max_length] = make_map_fustrun(maze_row_size,maze_col_size
 tempn=uint8(0);
 tempi=uint8(0);
 
-    % 迷路パラメータ設定
-    max_length = uint16((maze_col_size-1)*(maze_row_size-1));
+%パラメータ設定
+straight_weight = uint16(5);
 
-    %MAPの初期化(すべての要素にmax_lengthを入力)
+    % 迷路パラメータ設定
+    max_length = uint16(65535);
+
     %MAPの初期化(すべての要素にmax_lengthを入力)
     %32マス分mapを保持
     contour_map = ones(32,32,'uint16');
     contour_map = contour_map * max_length;
+       
+    %進行方向補完用変数定義
+    move_dir_map = zeros(32,32,'uint8'); 
     
-    %ゴール座標に0を入力
+    %ゴール座標に
+    % 歩数マップ：0を入力
+    % 進行方向 : 1+2+4+8(東西南北すべて)=15
+    % を入力
     for tempn = 1:1:goal_size
         contour_map(maze_goal(tempn,2),maze_goal(tempn,1)) = 0;
+        move_dir_map(maze_goal(tempn,2),maze_goal(tempn,1)) = bitshift(uint8(1),g_direction.North)...
+                                                               +bitshift(uint8(1),g_direction.East)...
+                                                               +bitshift(uint8(1),g_direction.South)...
+                                                               +bitshift(uint8(1),g_direction.West);
     end
-
+    
+   %更新判定用変数(重みづけなしの歩数マップ)
+   contour_refine_map = contour_map;
 
     while 1
         change_flag = uint8(0); %map更新確認用フラグ
 
-        for tempi = 0:1:max_length-1 %歩数カウントは0~max_length
+        for tempi = 0:1:max_length-1 %更新確認用の歩数カウントは0~max_length
                
                 %歩数が確定している座標を検索
                 %最初は0,更新され、増加したマスを次々検索していく
-                num_temp = uint16(find(contour_map == tempi));
+                num_temp = uint16(find(contour_refine_map == tempi));
                  %32行なので、行番号:32で割ったあまり
                 row = uint8(rem(num_temp-1,32)+1);
                  %列番号:32で割ったときの商
@@ -726,46 +852,182 @@ tempi=uint8(0);
 
                 %検索した座標に対し、歩数mapを更新
                 for tempn = 1:1:row_size
+                    
                     %北側
+                    
                     %壁が無い & 探索済みであるとき
                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.North))) == wall.nowall...
                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.North))) == search.known
-                        %北側のMAPが更新されているか判断、されていなければ書き込み
-                        if contour_map(row(tempn)+1,col(tempn)) == max_length 
-                        contour_map(row(tempn)+1,col(tempn)) = tempi+1;
-                        change_flag = uint8(1);
+                        
+                        %かつ進行方向が北向きである時
+                        if logical(bitand(move_dir_map(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.North)))
+                            %かつ北のマスが更新予定値よりも大きな値の場合
+                            if contour_map(row(tempn)+1,col(tempn)) > contour_map(row(tempn),col(tempn))+1
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn)+1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新
+                                contour_map(row(tempn)+1,col(tempn)) = contour_map(row(tempn),col(tempn))+1;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn)+1,col(tempn)) = bitshift(uint8(1),g_direction.North);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
+                            
+                        %かつ進行方向が北向きでないとき    
+                        else
+                            %かつ北のマスの歩数MAP値が、更新予定値より大きい場合
+                            if contour_map(row(tempn)+1,col(tempn)) > contour_map(row(tempn),col(tempn))+straight_weight     
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn)+1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新(重みづけあり)
+                                contour_map(row(tempn)+1,col(tempn)) = contour_map(row(tempn),col(tempn))+straight_weight;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn)+1,col(tempn)) = bitshift(uint8(1),g_direction.North);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
                         end
                     end
-
+                    
+                    
                     %東側
+                    
+                    %壁が無い & 探索済みであるとき
                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East))) == wall.nowall...
                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East))) == search.known
-                        %東側のMAPが更新されているか判断、されていなければ書き込み
-                        if contour_map(row(tempn),col(tempn)+1) == max_length 
-                        contour_map(row(tempn),col(tempn)+1) = tempi+1;
-                        change_flag = uint8(1);
+                        
+                        %かつ進行方向が東向きである時
+                        if logical(bitand(move_dir_map(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East)))
+                            %かつ東のマスが更新予定値よりも大きな値の場合
+                            if contour_map(row(tempn),col(tempn)+1) > contour_map(row(tempn),col(tempn))+1
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新
+                                contour_map(row(tempn),col(tempn)+1) = contour_map(row(tempn),col(tempn))+1;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn),col(tempn)+1) = bitshift(uint8(1),g_direction.East);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
+                            
+                        %かつ進行方向が東向きでないとき    
+                        else
+                            %かつ東のマスの歩数MAP値が、更新予定値より大きい場合
+                            if contour_map(row(tempn),col(tempn)+1) > contour_map(row(tempn),col(tempn))+straight_weight     
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新(重みづけあり)
+                                contour_map(row(tempn),col(tempn)+1) = contour_map(row(tempn),col(tempn))+straight_weight;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn),col(tempn)+1) = bitshift(uint8(1),g_direction.East);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
                         end
                     end
-
+                    
                     %南側
+                    
+                    %壁が無い & 探索済みであるとき
                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South))) == wall.nowall...
                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South))) == search.known
-                        %南側のMAPが更新されているか判断、されていなければ書き込み
-                        if contour_map(row(tempn)-1,col(tempn)) == max_length 
-                        contour_map(row(tempn)-1,col(tempn)) = tempi+1;
-                        change_flag = uint8(1);
+                        
+                        %かつ進行方向が南向きである時
+                        if logical(bitand(move_dir_map(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South)))
+                            %かつ南のマスが更新予定値よりも大きな値の場合
+                            if contour_map(row(tempn)-1,col(tempn)) > contour_map(row(tempn),col(tempn))+1
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新
+                                contour_map(row(tempn)-1,col(tempn)) = contour_map(row(tempn),col(tempn))+1;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn)-1,col(tempn)) = bitshift(uint8(1),g_direction.South);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
+                            
+                        %かつ進行方向が南向きでないとき    
+                        else
+                            %かつ南のマスの歩数MAP値が、更新予定値より大きい場合
+                            if contour_map(row(tempn)-1,col(tempn)) > contour_map(row(tempn),col(tempn))+straight_weight     
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新(重みづけあり)
+                                contour_map(row(tempn)-1,col(tempn)) = contour_map(row(tempn),col(tempn))+straight_weight;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn)-1,col(tempn)) = bitshift(uint8(1),g_direction.South);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
+                        end
+                    end
+                                        
+                    %西側
+                    
+                    %壁が無い & 探索済みであるとき
+                    if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == wall.nowall...
+                            && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == search.known
+                        
+                        %かつ進行方向が西向きである時
+                        if logical(bitand(move_dir_map(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West)))
+                            %かつ北のマスが更新予定値よりも大きな値の場合
+                            if contour_map(row(tempn),col(tempn)-1) > contour_map(row(tempn),col(tempn))+1
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn),col(tempn)-1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新
+                                contour_map(row(tempn),col(tempn)-1) = contour_map(row(tempn),col(tempn))+1;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn),col(tempn)-1) = bitshift(uint8(1),g_direction.West);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
+                            
+                        %かつ進行方向が西向きでないとき    
+                        else
+                            %かつ北のマスの歩数MAP値が、更新予定値より大きい場合
+                            if contour_map(row(tempn),col(tempn)-1) > contour_map(row(tempn),col(tempn))+straight_weight     
+                                %更新確認用のMAP更新
+                                contour_refine_map(row(tempn),col(tempn)-1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                %歩数MAP更新(重みづけあり)
+                                contour_map(row(tempn),col(tempn)-1) = contour_map(row(tempn),col(tempn))+straight_weight;
+                                %移動方向MAP更新
+                                move_dir_map(row(tempn),col(tempn)-1) = bitshift(uint8(1),g_direction.West);
+                                %更新フラグを立てる
+                                change_flag = uint8(1);
+                            end
                         end
                     end
 
-                    %西側
-                    if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == wall.nowall...
-                            && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == search.known
-                        %西側のMAPが更新されているか判断、されていなければ書き込み
-                        if contour_map(row(tempn),col(tempn)-1) == max_length 
-                        contour_map(row(tempn),col(tempn)-1) = tempi+1;
-                        change_flag = uint8(1);
-                        end
-                    end
+                    
+%                     %東側
+%                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East))) == wall.nowall...
+%                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East))) == search.known
+%                         %東側のMAPが更新されているか判断、されていなければ書き込み
+%                         if contour_refine_map(row(tempn),col(tempn)+1) == max_length 
+%                         contour_refine_map(row(tempn),col(tempn)+1) = tempi+1;
+%                         change_flag = uint8(1);
+%                         end
+%                     end
+% 
+%                     %南側
+%                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South))) == wall.nowall...
+%                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South))) == search.known
+%                         %南側のMAPが更新されているか判断、されていなければ書き込み
+%                         if contour_refine_map(row(tempn)-1,col(tempn)) == max_length 
+%                         contour_refine_map(row(tempn)-1,col(tempn)) = tempi+1;
+%                         change_flag = uint8(1);
+%                         end
+%                     end
+% 
+%                     %西側
+%                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == wall.nowall...
+%                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == search.known
+%                         %西側のMAPが更新されているか判断、されていなければ書き込み
+%                         if contour_refine_map(row(tempn),col(tempn)-1) == max_length 
+%                         contour_refine_map(row(tempn),col(tempn)-1) = tempi+1;
+%                         change_flag = uint8(1);
+%                         end
+%                     end
                 end    
         end
     %更新がなければ終了    

@@ -32,9 +32,10 @@ maze_fig.Position = [2108,301,670,548];
 %%
 maze_data_plot(maze_row_size,maze_col_size,maze_row_data,maze_col_data);
 %% 迷路パラメータ設定
+global maze_goal
 maze_goal = uint8(zeros(9,2));
 goal_size = uint8(4);%ゴールサイズを入力する
-goal_x = 10;%ゴール左下のx座標
+goal_x = 7;%ゴール左下のx座標
 goal_y = 10;%ゴール左下のy座標
 goal_size_d = double(goal_size);
 
@@ -70,7 +71,7 @@ maze_wall_plotall(maze_row_size,maze_col_size,maze_wall);
 
 %% モード定義
 run_mode = r_mode.search;
-[maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,maze_goal,goal_size,run_mode);
+[maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode);
 
 
 %% 
@@ -79,22 +80,9 @@ run_mode = r_mode.search;
 
 %モード定義
 run_mode = r_mode.fust_run;
-maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,maze_goal,goal_size,run_mode);
+maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode);
 
 %% 全壁を既知とした最短走行
-
-% %% 等高線MAPを作成
-% [contour_map,max_length] = make_map(maze_row_size,maze_col_size,maze_goal,maze_sirial);
-% %% 等高線マップをプロット 
-% contor_fig = figure;
-% [x,y]=meshgrid(0.5:1:15.5,0.5:1:15.5);
-% surf(x,y,contour_map,'Marker','.','MarkerSize',10,'FaceColor','none','EdgeColor','interp')
-% colorbar
-% view(2)
-% %% 最短経路算出
-% figure(map_fig);
-% fust_run(maze_sirial,contour_map,maze_goal,max_length);
-
 
 
 
