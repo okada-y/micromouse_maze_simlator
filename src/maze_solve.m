@@ -1,24 +1,45 @@
-function[maze_wall,maze_wall_search] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode)%#codegen
+function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode)%#codegen
 %maze_solve 実機での迷路探索関数
 %入力 迷路壁情報,迷路探索情報,迷路縦サイズ,迷路横サイズ,ゴール座標,
 %出力 壁情報,探索情報
 
 % グローバル変数宣言
 global maze_fig;
-global maze_fig_ax;
 global g_direction;
 global maze_goal;
-
+global matrix_dir;
+global g_d_direction;
+global l_direction;
+global move_dir_property;
+global turn_pattern;
 
 %ローカル変数宣言
 new_goal = uint8(zeros(9,2));
 new_goal_size = uint8(1); 
+contour_map = zeros(32,32);
+row_num_node = ones(33,32,'uint16')*uint16(65535);
+col_num_node = ones(32,33,'uint16')*uint16(65535);
+goal_section = [0,0];
+
+%ノードの属性定義
+%0:行方向, 1:列方向,　2:セクション（マス）
+matrix_dir = struct('Row',uint8(0),'Col',uint8(1),'section',uint8(2));
 
 %絶対方角定義
 g_direction = struct('North',uint8(0),'East',uint8(1),'South',uint8(2),'West',uint8(3));
+%斜め込みの絶対方角定義
+g_d_direction = struct('North',uint8(0),'North_East',uint8(1),'East',uint8(2),'South_East',uint8(3),...
+                        'South',uint8(4),'South_West',uint8(5),'West',uint8(6),'North_West',uint8(7));
 
 %マウス方向定義
 l_direction = struct('front',uint8(0),'right',uint8(1),'back',uint8(2),'left',uint8(3));
+
+%移動方向属性定義
+%直進or斜め
+move_dir_property = struct('straight',uint8(0),'diagonal',uint8(1));
+
+%パターン番号定義
+turn_pattern = struct('default',uint8(0),'r_45',uint8(1),'l_45',uint8(2),'r_90',uint8(3),'l_90',uint8(4),'r_135',uint8(5),'l_135',uint8(6),'r_180',uint8(7),'l_180',uint8(8));
 
 %壁情報定義
 wall = struct('nowall',uint8(0),'wall',uint8(1));
@@ -27,9 +48,9 @@ wall = struct('nowall',uint8(0),'wall',uint8(1));
 search = struct('unknown',uint8(0),'known',uint8(1));
 
 %走行モード定義
-r_mode = struct('search',uint8(0),'fust_run',uint8(1));
+r_mode = struct('search',uint8(0),'fust_run',uint8(1),'fust_run_diagonal',uint8(2));
 
-%探索時
+%% 探索
 if run_mode == r_mode.search
 
     %マウスの初期位置設定
@@ -54,9 +75,12 @@ if run_mode == r_mode.search
     
     %一マス前進
      [current_x,current_y] = move_step(current_x,current_y,current_dir);  
+     
+    %ゴールをプロット
+    goal_plot(goal_size,maze_goal);
 
     %足立法による探索
-    [current_x,current_y,current_dir,maze_wall,maze_wall_search,co]...
+    [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
         = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,maze_goal,goal_size);
 
     %ゴールをすべて探索
@@ -71,7 +95,7 @@ if run_mode == r_mode.search
              end        
         end
         if search_flag == 1
-        [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
+        [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
             = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size));
         else
             break
@@ -81,10 +105,41 @@ if run_mode == r_mode.search
     
     %未探索マスがなくなるまで。
     % 現地点から一番近い未探索マスを探索
+
+    while 1
+
+        %未探索のマスを抽出
+        maze_wall_search_temp = ~logical(maze_wall_search == 15);
+        %未探索マスの現在地（ゴール）からの距離を抽出
+        contour_map_temp = uint16(maze_wall_search_temp) .* contour_map;
+        %探索完了部をuint16の上限に(新しいゴールをminで決定したいので。)
+        contour_map_temp(contour_map_temp == 0) =  65535;
+              
+        %未探索マスのうち、現在地から一番近いマスの要素番号を抽出
+        num_temp = uint16(find(contour_map_temp == min(contour_map_temp,[],'all'),1));
+        %行番号を抽出(32行なので、行番号:32で割ったあまり)
+        row_temp = uint8(rem(num_temp-1,32)+1);
+        %列番号を抽出(32で割ったときの商)
+        col_temp = uint8(idivide(num_temp-1,32)+1);
+        
+        if(contour_map_temp(row_temp,col_temp) == 65535)
+           break
+        else 
+            new_goal(1,:) = [col_temp,row_temp];
+            new_goal_size = uint8(1);
+            %ゴールをプロット             
+            goal_plot(new_goal_size,new_goal);
+            
+            [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
+                = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size));
+        end
+     end       
+        
+    
     
     %スタートを目的地として足立法で再探索
     new_goal(1,:) = uint8([1,1]);
-     [current_x,current_y,current_dir,maze_wall,maze_wall_search]...
+     [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
          = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,coder.ignoreConst(new_goal),coder.ignoreConst(new_goal_size));
     
         if coder.target('MATLAB')
@@ -98,6 +153,7 @@ if run_mode == r_mode.search
 
 end
 
+%% 最短走行
 if run_mode == r_mode.fust_run
     %探索情報をもとに等高線MAPを生成
     [contour_map,max_length] = make_map_fustrun(maze_row_size,maze_col_size,maze_goal,maze_wall,maze_wall_search);
@@ -113,9 +169,59 @@ if run_mode == r_mode.fust_run
     
     %最短距離走行
     fust_run(maze_wall,contour_map,maze_goal,max_length)
-
-
 end
+
+%% 斜めでの最短走行
+
+if run_mode == r_mode.fust_run_diagonal
+   %最短経路生成
+   %ゴールマスのノードをすべてゴールノードとし、マップ生成
+   [row_num_node,col_num_node,goal_num,start_num] = make_map_fustrun_diagonal(maze_goal,goal_size,maze_wall,maze_wall_search);
+
+%ゴール付近のルート最適化のため、マップ再生成
+       %スタートからゴールノードまで、ルート生成し、ゴールノード、方向を確定
+       [goal_node,goal_matrix_dir,goal_dir]=decide_goal_node_dir(maze_goal,goal_size,row_num_node,col_num_node);
+       %確定されたゴールノード、方向からゴールマス、ノードを再定義
+       [goal_section,goal_node2,goal_matrix_dir2]=decide_goal_section(maze_goal,goal_node,goal_matrix_dir,goal_dir);
+       %確定されたゴールマスから、再度マップを生成
+       goal_section = [goal_section(2),goal_section(1)];%x,yに変換
+       [row_num_node,col_num_node,goal_num,start_num] = make_map_fustrun_diagonal(goal_section,1,maze_wall,maze_wall_search);
+        
+       
+       
+%     if coder.target('MATLAB')   
+%         %歩数マッププロット(壁の部分はなし)
+%         hold on
+%         %セクション中央(ゴール、スタートのみ)
+%         text((goal_section(1)-1)*9+4.5,(goal_section(2)-1)*9+4.5,string(goal_num),'HorizontalAlignment','center');
+%         text(4.5,4.5,string(start_num),'HorizontalAlignment','center');
+%         %エッジ部分
+%         %row_node
+%         for l = 1:33
+%             for j = 1:32
+%                 if row_num_node(l,j) ~= 65535
+%                     text((j-1)*9+4.5,(l-1)*9,string(row_num_node(l,j)),'HorizontalAlignment','center');
+%                 end
+%             end
+%         end 
+% 
+%         %col_node
+%         for l = 1:32
+%             for j = 1:33
+%                 if col_num_node(l,j) ~= 65535
+%                     text((j-1)*9,(l-1)*9+4.5,string(col_num_node(l,j)),'HorizontalAlignment','center');
+%                 end
+%             end
+%         end    
+%         hold off
+%     end
+    
+    %生成されたMAPをもとに最短走行
+    make_route_diagonal(row_num_node,col_num_node,goal_section,goal_node2,goal_matrix_dir2);
+   
+    
+end
+
 
 %% search_adachi 足立法での探索
 function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
@@ -132,11 +238,14 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map
         while 1
             %壁情報取得
             [maze_wall,maze_wall_search] = wall_set(maze_row_size,maze_col_size,current_x,current_y,current_dir,maze_wall,maze_wall_search);
-            
             if coder.target('MATLAB')
             maze_wall_plot(maze_wall,current_x,current_y,maze_row_size,maze_col_size);
             end
             
+            % 等高線MAP生成
+            % [contour_map,max_length] = make_map2(maze_row_size,maze_col_size,maze_goal,maze_wall);
+              [contour_map,max_l] = make_map_find(maze_row_size,maze_col_size,exploration_goal,l_goal_size,maze_wall);
+              
             %現在位置がゴールか判定
             for i = 1:1:l_goal_size
                 if (current_x == exploration_goal(i,1)) && (current_y == exploration_goal(i,2))
@@ -148,10 +257,7 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map
             if goal_flag == 1
                 break        
             end
-
-            % 等高線MAP生成
-            % [contour_map,max_length] = make_map2(maze_row_size,maze_col_size,maze_goal,maze_wall);
-              [contour_map,max_l] = make_map_find(maze_row_size,maze_col_size,exploration_goal,l_goal_size,maze_wall);
+              
            % 進行方向選定
             %優先順位　北⇒東⇒南⇒西
              [next_dir] = get_nextdir2(current_x,current_y,maze_wall,contour_map,max_l);
@@ -187,6 +293,7 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map
                 %探索状況の更新
                 maze_search_plot_update(search_surf,maze_wall_search,maze_col_size,maze_row_size);
                 drawnow limitrate nocallbacks
+                pause(0.01)
             else
                 %for code generation
             end
@@ -523,7 +630,7 @@ end
 
 
     % 迷路パラメータ設定
-    max_length = uint16((maze_col_size-1)*(maze_row_size-1));
+    max_length = uint16(65535);
 
     %MAPの初期化(すべての要素にmax_lengthを入力)
     %32マス分mapを保持
@@ -731,7 +838,6 @@ end
                 end
             end
 
-
             %南側
             if bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.South)) == wall.nowall 
                 if contour_map(current_y-1,current_x) < little
@@ -785,7 +891,7 @@ end
                 ,'Color','#D95319','LineWidth',3)
 %             plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
             hold off
-            %pause(0.2)
+            pause(0.01)
             drawnow limitrate nocallbacks
         else
         %for code generation
@@ -997,37 +1103,6 @@ straight_weight = uint16(5);
                             end
                         end
                     end
-
-                    
-%                     %東側
-%                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East))) == wall.nowall...
-%                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East))) == search.known
-%                         %東側のMAPが更新されているか判断、されていなければ書き込み
-%                         if contour_refine_map(row(tempn),col(tempn)+1) == max_length 
-%                         contour_refine_map(row(tempn),col(tempn)+1) = tempi+1;
-%                         change_flag = uint8(1);
-%                         end
-%                     end
-% 
-%                     %南側
-%                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South))) == wall.nowall...
-%                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South))) == search.known
-%                         %南側のMAPが更新されているか判断、されていなければ書き込み
-%                         if contour_refine_map(row(tempn)-1,col(tempn)) == max_length 
-%                         contour_refine_map(row(tempn)-1,col(tempn)) = tempi+1;
-%                         change_flag = uint8(1);
-%                         end
-%                     end
-% 
-%                     %西側
-%                     if logical(bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == wall.nowall...
-%                             && logical(bitand(maze_wall_search(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West))) == search.known
-%                         %西側のMAPが更新されているか判断、されていなければ書き込み
-%                         if contour_refine_map(row(tempn),col(tempn)-1) == max_length 
-%                         contour_refine_map(row(tempn),col(tempn)-1) = tempi+1;
-%                         change_flag = uint8(1);
-%                         end
-%                     end
                 end    
         end
     %更新がなければ終了    
@@ -1040,8 +1115,2217 @@ straight_weight = uint16(5);
 
 end
 
+%% make_map_fustrun_diagonal 最短走行用等高線MAPを生成
+function [row_num_node,col_num_node,goal_num,start_num] = make_map_fustrun_diagonal(maze_goal,goal_size,maze_wall,maze_wall_search)
+%未知壁の領域は仮想壁をおいて侵入しない。
+%入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数),迷路探索情報(16進数)
+%出力 等高線map,最大経路長
 
+%ローカル変数設定
+
+%パラメータ設定
+
+    % 迷路パラメータ設定
+    max_length = 32*32;
+
+    % ルートの重み設定
+    weight_straight = uint16(6);
+    weight_straight_harf = uint16(3);
+    weight_diagonal = uint16(4);
+    weight_turn = uint16(18);
+    
+    %MAPの初期化(すべてのノードにmax_lengthを入力)
+    %歩数MAP
+    row_num_node = ones(33,32,'uint16')*uint16(65535);
+    col_num_node = ones(32,33,'uint16')*uint16(65535);
+    %更新用MAP
+    row_num_node_temp = ones(33,32,'uint16')*uint16(65535);
+    col_num_node_temp = ones(32,33,'uint16')*uint16(65535);
+    %進行方向保持用ノード作成
+    row_dir_node = zeros(33,32,'uint8');
+    col_dir_node = zeros(32,33,'uint8');
+    
+    %ゴールセクションが確定している場合
+    goal_num = uint16(0);
+    start_num = uint16(65535);
+    if goal_size == 1
+        goal_section_l = maze_goal(1,:);
+        
+        %ゴールマスから、東西南北にマップを展開
+        %北壁
+        if ~bitand(maze_wall(goal_section_l(2),goal_section_l(1)),bitshift(uint8(1),g_direction.North))
+            %歩数更新
+            row_num_node(goal_section_l(2)+1,goal_section_l(1)) = weight_straight_harf;
+            %方向追加
+            row_dir_node(goal_section_l(2)+1,goal_section_l(1)) ...
+                = bitor(row_dir_node(goal_section_l(2)+1,goal_section_l(1)),bitshift(uint8(1),g_d_direction.North));
+            %更新用MAP更新
+            row_num_node_temp(goal_section_l(2)+1,goal_section_l(1)) = 0;
+        end
+        
+        %東壁
+        if ~bitand(maze_wall(goal_section_l(2),goal_section_l(1)),bitshift(uint8(1),g_direction.East))
+            %歩数更新
+            col_num_node(goal_section_l(2),goal_section_l(1)+1) = weight_straight_harf;
+            %方向追加
+            col_dir_node(goal_section_l(2),goal_section_l(1)+1) ...
+                = bitor(col_dir_node(goal_section_l(2),goal_section_l(1)+1),bitshift(uint8(1),g_d_direction.East));
+            %更新用MAP更新
+            col_num_node_temp(goal_section_l(2),goal_section_l(1)+1) = 0;
+        end
+        
+        %南壁
+        if ~bitand(maze_wall(goal_section_l(2),goal_section_l(1)),bitshift(uint8(1),g_direction.South))
+            %歩数更新
+            row_num_node(goal_section_l(2),goal_section_l(1)) = weight_straight_harf;
+            %方向追加
+            row_dir_node(goal_section_l(2),goal_section_l(1)) ...
+                = bitor(row_dir_node(goal_section_l(2),goal_section_l(1)),bitshift(uint8(1),g_d_direction.South));
+            %更新用MAP更新
+            row_num_node_temp(goal_section_l(2),goal_section_l(1)) = 0;
+        end
+        
+        %西壁
+        if ~bitand(maze_wall(goal_section_l(2),goal_section_l(1)),bitshift(uint8(1),g_direction.West))
+            %歩数更新
+            col_num_node(goal_section_l(2),goal_section_l(1)) = weight_straight_harf;
+            %方向追加
+            col_dir_node(goal_section_l(2),goal_section_l(1)) ...
+                = bitor(col_dir_node(goal_section_l(2),goal_section_l(1)),bitshift(uint8(1),g_d_direction.West));
+            %更新用MAP更新
+            col_num_node_temp(goal_section_l(2),goal_section_l(1)) = 0;
+        end
+        
+    %ゴールセクションが確定していない場合    
+    else    
+        %ゴールノードに
+        % 歩数：0を入力
+        % 進行方向 : 壁がなければ全方向=0b11111111=255
+        % を入力
+        for n=1:1:goal_size
+
+            %北壁
+            if ~bitand(maze_wall(maze_goal(n,2),maze_goal(n,1)),bitshift(uint8(1),g_direction.North))
+                %歩数更新
+                row_num_node(maze_goal(n,2)+1,maze_goal(n,1)) = 0;
+                %方向更新
+                row_dir_node(maze_goal(n,2)+1,maze_goal(n,1)) = 255;
+            end
+
+            %東壁
+            if ~bitand(maze_wall(maze_goal(n,2),maze_goal(n,1)),bitshift(uint8(1),g_direction.East))
+                %歩数更新
+                col_num_node(maze_goal(n,2),maze_goal(n,1)+1) = 0;
+                %方向更新
+                col_dir_node(maze_goal(n,2),maze_goal(n,1)+1) = 255;
+            end 
+
+            %南壁
+            if ~bitand(maze_wall(maze_goal(n,2),maze_goal(n,1)),bitshift(uint8(1),g_direction.South))
+                %歩数更新
+                row_num_node(maze_goal(n,2),maze_goal(n,1)) = 0;
+                %方向更新
+                row_dir_node(maze_goal(n,2),maze_goal(n,1)) = 255;
+            end 
+
+            %西壁
+            if ~bitand(maze_wall(maze_goal(n,2),maze_goal(n,1)),bitshift(uint8(1),g_direction.West))
+                %歩数更新
+                col_num_node(maze_goal(n,2),maze_goal(n,1)) = 0;
+                %方向更新
+                col_dir_node(maze_goal(n,2),maze_goal(n,1)) = 255;
+            end
+
+        end
+        %更新判定用変数(重みづけなしの歩数マップ)
+        row_num_node_temp = row_num_node;
+        col_num_node_temp = col_num_node; 
+    end
+
+    while 1
+        change_flag = uint8(0); %map更新確認用フラグ
+        for i = 0:1:max_length-1 %更新確認用の歩数カウントは0~max_length
+              
+            %Row_Edgeの処理[33行,32列]
+            %歩数が確定している座標を検索
+            %最初は0,更新され、増加したマスを次々検索していく
+            num_temp = uint16(find(row_num_node_temp == i));
+            %33行なので、行番号:33で割ったあまり
+            row = uint16(rem(num_temp-1,33)+1);
+            %列番号:33で割ったときの商
+            col = uint16(idivide(num_temp-1,33)+1);
+            %見つかったマスの数
+            row_size = uint16(numel(row));
+
+            %検索した座標に対し、歩数mapを更新
+            for n = 1:1:row_size
+
+                %北側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)),bitshift(uint8(1),g_direction.North))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)),bitshift(uint8(1),g_direction.North))) == search.known
+                    %かつ進行方向が北向きである時
+                    if logical(bitand(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.North)))
+                        %かつ北のノードが更新予定値よりも大きな値の場合
+                        if row_num_node(row(n)+1,col(n)) > row_num_node(row(n),col(n))+weight_straight
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)+1,col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            row_num_node(row(n)+1,col(n)) = row_num_node(row(n),col(n))+weight_straight;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)+1,col(n)) = bitshift(uint8(1),g_d_direction.North);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)+1,col(n)) == row_num_node(row(n),col(n))+weight_straight
+                            %移動方向を追加
+                            row_dir_node(row(n)+1,col(n)) = bitor(row_dir_node(row(n)+1,col(n)),bitshift(uint8(1),g_d_direction.North));
+                        end
+                        
+                    %かつ進行方向が北向きでないとき    
+                    else
+                        %かつ北のノードの歩数MAP値が、更新予定値より大きい場合
+                        if row_num_node(row(n)+1,col(n)) > row_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)+1,col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            row_num_node(row(n)+1,col(n)) = row_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)+1,col(n)) = bitshift(uint8(1),g_d_direction.North);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)+1,col(n)) == row_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            row_dir_node(row(n)+1,col(n)) = bitor(row_dir_node(row(n)+1,col(n)),bitshift(uint8(1),g_d_direction.North));
+                        end
+                    end
+                end
+
+                %北東側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)),bitshift(uint8(1),g_direction.East))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)),bitshift(uint8(1),g_direction.East))) == search.known
+                    %かつ進行方向が北東向きである時
+                    if logical(bitand(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.North_East)))
+                        %かつ北東のノードが更新予定値よりも大きな値の場合
+                        if col_num_node(row(n),col(n)+1) > row_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)+1) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            col_num_node(row(n),col(n)+1) = row_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)+1) = bitshift(uint8(1),g_d_direction.North_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北東のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)+1) == row_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)+1) = bitor(col_dir_node(row(n),col(n)+1),bitshift(uint8(1),g_d_direction.North_East));
+                        end
+
+                    %かつ進行方向が北東向きでないとき    
+                    else
+                        %かつ北東のノードの歩数MAP値が、更新予定値より大きい場合
+                        if col_num_node(row(n),col(n)+1) > row_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)+1) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            col_num_node(row(n),col(n)+1) = row_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)+1) = bitshift(uint8(1),g_d_direction.North_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北東のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)+1) == row_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)+1) = bitor(col_dir_node(row(n),col(n)+1),bitshift(uint8(1),g_d_direction.North_East));
+                        end
+                    end
+                end
+
+                %東側は柱
+
+                %南東側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n)-1,col(n)),bitshift(uint8(1),g_direction.East))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n)-1,col(n)),bitshift(uint8(1),g_direction.East))) == search.known
+                    %かつ進行方向が南東向きである時
+                    if logical(bitand(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.South_East)))
+                        %かつ南東のノードが更新予定値よりも大きな値の場合
+                        if col_num_node(row(n)-1,col(n)+1) > row_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n)-1,col(n)+1) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            col_num_node(row(n)-1,col(n)+1) = row_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            col_dir_node(row(n)-1,col(n)+1) = bitshift(uint8(1),g_d_direction.South_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南東のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n)-1,col(n)+1) == row_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            col_dir_node(row(n)-1,col(n)+1) = bitor(col_dir_node(row(n)-1,col(n)+1),bitshift(uint8(1),g_d_direction.South_East));
+                        end
+
+
+                    %かつ進行方向が南東向きでないとき    
+                    else
+                        %かつ南東のノードの歩数MAP値が、更新予定値より大きい場合
+                        if col_num_node(row(n)-1,col(n)+1) > row_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n)-1,col(n)+1) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            col_num_node(row(n)-1,col(n)+1) = row_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            col_dir_node(row(n)-1,col(n)+1) = bitshift(uint8(1),g_d_direction.South_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南東のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n)-1,col(n)+1) == row_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            col_dir_node(row(n)-1,col(n)+1) = bitor(col_dir_node(row(n)-1,col(n)+1),bitshift(uint8(1),g_d_direction.South_East));
+                        end
+                    end
+                end
+
+                %南側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n)-1,col(n)),bitshift(uint8(1),g_direction.South))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n)-1,col(n)),bitshift(uint8(1),g_direction.South))) == search.known
+                    %かつ進行方向が南向きである時
+                    if logical(bitand(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.South)))
+                        %かつ南のノードが更新予定値よりも大きな値の場合
+                        if row_num_node(row(n)-1,col(n)) > row_num_node(row(n),col(n))+weight_straight
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)-1,col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            row_num_node(row(n)-1,col(n)) = row_num_node(row(n),col(n))+weight_straight;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)-1,col(n)) = bitshift(uint8(1),g_d_direction.South);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)-1,col(n)) == row_num_node(row(n),col(n))+weight_straight
+                            %移動方向を追加
+                            row_dir_node(row(n)-1,col(n)) = bitor(row_dir_node(row(n)-1,col(n)),bitshift(uint8(1),g_d_direction.South));
+                        end
+
+                    %かつ進行方向が南向きでないとき    
+                    else
+                        %かつ南のノードの歩数MAP値が、更新予定値より大きい場合
+                        if row_num_node(row(n)-1,col(n)) > row_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)-1,col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            row_num_node(row(n)-1,col(n)) = row_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)-1,col(n)) = bitshift(uint8(1),g_d_direction.South);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)-1,col(n)) == row_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            row_dir_node(row(n)-1,col(n)) = bitor(row_dir_node(row(n)-1,col(n)),bitshift(uint8(1),g_d_direction.South));
+                        end
+                    end
+                end
+
+                %南西側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n)-1,col(n)),bitshift(uint8(1),g_direction.West))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n)-1,col(n)),bitshift(uint8(1),g_direction.West))) == search.known
+                    %かつ進行方向が南西向きである時
+                    if logical(bitand(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.South_West)))
+                        %かつ南西のノードが更新予定値よりも大きな値の場合
+                        if col_num_node(row(n)-1,col(n)) > row_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n)-1,col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            col_num_node(row(n)-1,col(n)) = row_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            col_dir_node(row(n)-1,col(n)) = bitshift(uint8(1),g_d_direction.South_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南西のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n)-1,col(n)) == row_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            col_dir_node(row(n)-1,col(n)) = bitor(col_dir_node(row(n)-1,col(n)),bitshift(uint8(1),g_d_direction.South_West));
+                        end
+
+                    %かつ進行方向が南西向きでないとき    
+                    else
+                        %かつ南西のノードの歩数MAP値が、更新予定値より大きい場合
+                        if col_num_node(row(n)-1,col(n)) > row_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n)-1,col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            col_num_node(row(n)-1,col(n)) = row_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            col_dir_node(row(n)-1,col(n)) = bitshift(uint8(1),g_d_direction.South_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南西のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n)-1,col(n)) == row_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            col_dir_node(row(n)-1,col(n)) = bitor(col_dir_node(row(n)-1,col(n)),bitshift(uint8(1),g_d_direction.South_West));
+                        end
+                    end
+                end
+
+                %北西側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)),bitshift(uint8(1),g_direction.West))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)),bitshift(uint8(1),g_direction.West))) == search.known
+                    %かつ進行方向が北西向きである時
+                    if logical(bitand(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.North_West)))
+                        %かつ北西のノードが更新予定値よりも大きな値の場合
+                        if col_num_node(row(n),col(n)) > row_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            col_num_node(row(n),col(n)) = row_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)) = bitshift(uint8(1),g_d_direction.North_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北西のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)) == row_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)) = bitor(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.North_West));
+                        end
+
+                    %かつ進行方向が北西向きでないとき    
+                    else
+                        %かつ北東のノードの歩数MAP値が、更新予定値より大きい場合
+                        if col_num_node(row(n),col(n)) > row_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)) = row_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            col_num_node(row(n),col(n)) = row_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)) = bitshift(uint8(1),g_d_direction.North_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北西のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)) == row_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)) = bitor(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.North_West));
+                        end
+                    end
+                end
+            end  
+            
+            %Col_Edgeの処理[32行,33列]
+            %歩数が確定している座標を検索
+            %最初は0,更新され、増加したマスを次々検索していく
+            num_temp = uint16(find(col_num_node_temp == i));
+            %32行なので、行番号:32で割ったあまり
+            row = uint16(rem(num_temp-1,32)+1);
+            %列番号:32で割ったときの商
+            col = uint16(idivide(num_temp-1,32)+1);
+            %見つかったマスの数
+            row_size = uint16(numel(row));
+            
+            %検索した座標に対し、歩数mapを更新
+            for n = 1:1:row_size
+
+                %北側は壁
+                
+                %北東側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)),bitshift(uint8(1),g_direction.North))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)),bitshift(uint8(1),g_direction.North))) == search.known
+                    %かつ進行方向が北東向きである時
+                    if logical(bitand(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.North_East)))
+                        %かつ北東のノードが更新予定値よりも大きな値の場合
+                        if row_num_node(row(n)+1,col(n)) > col_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)+1,col(n)) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            row_num_node(row(n)+1,col(n)) = col_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)+1,col(n)) = bitshift(uint8(1),g_d_direction.North_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北東のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)+1,col(n)) == col_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            row_dir_node(row(n)+1,col(n)) = bitor(row_dir_node(row(n)+1,col(n)),bitshift(uint8(1),g_d_direction.North_East));
+                        end
+
+                    %かつ進行方向が北東向きでないとき    
+                    else
+                        %かつ北東のノードの歩数MAP値が、更新予定値より大きい場合
+                        if row_num_node(row(n)+1,col(n)) > col_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)+1,col(n)) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            row_num_node(row(n)+1,col(n)) = col_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)+1,col(n)) = bitshift(uint8(1),g_d_direction.North_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北東のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)+1,col(n)) == col_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            row_dir_node(row(n)+1,col(n)) = bitor(row_dir_node(row(n)+1,col(n)),bitshift(uint8(1),g_d_direction.North_East));
+                        end
+                    end
+                end
+
+                %東側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)),bitshift(uint8(1),g_direction.East))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)),bitshift(uint8(1),g_direction.East))) == search.known
+                    %かつ進行方向が東向きである時
+                    if logical(bitand(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.East)))
+                        %かつ東のノードが更新予定値よりも大きな値の場合
+                        if col_num_node(row(n),col(n)+1) > col_num_node(row(n),col(n))+weight_straight
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)+1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            col_num_node(row(n),col(n)+1) = col_num_node(row(n),col(n))+weight_straight;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)+1) = bitshift(uint8(1),g_d_direction.East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ東のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)+1) == col_num_node(row(n),col(n))+weight_straight
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)+1) = bitor(col_dir_node(row(n),col(n)+1),bitshift(uint8(1),g_d_direction.East));
+                        end
+
+                    %かつ進行方向が東向きでないとき    
+                    else
+                        %かつ東のノードの歩数MAP値が、更新予定値より大きい場合
+                        if col_num_node(row(n),col(n)+1) > col_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)+1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            col_num_node(row(n),col(n)+1) = col_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)+1) = bitshift(uint8(1),g_d_direction.East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ東のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)+1) == col_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)+1) = bitor(col_dir_node(row(n),col(n)+1),bitshift(uint8(1),g_d_direction.East));
+                        end
+
+                    end
+                end
+
+                %南東側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)),bitshift(uint8(1),g_direction.South))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)),bitshift(uint8(1),g_direction.South))) == search.known
+                    %かつ進行方向が南東向きである時
+                    if logical(bitand(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.South_East)))
+                        %かつ南東のノードが更新予定値よりも大きな値の場合
+                        if row_num_node(row(n),col(n)) > col_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n),col(n)) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            row_num_node(row(n),col(n)) = col_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            row_dir_node(row(n),col(n)) = bitshift(uint8(1),g_d_direction.South_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南東のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n),col(n)) == col_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            row_dir_node(row(n),col(n)) = bitor(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.South_East));
+                        end
+
+
+                    %かつ進行方向が南東向きでないとき    
+                    else
+                        %かつ南東のノードの歩数MAP値が、更新予定値より大きい場合
+                        if row_num_node(row(n),col(n)) > col_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n),col(n)) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            row_num_node(row(n),col(n)) = col_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            row_dir_node(row(n),col(n)) = bitshift(uint8(1),g_d_direction.South_East);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南東のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n),col(n)) == col_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            row_dir_node(row(n),col(n)) = bitor(row_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.South_East));
+                        end
+                    end
+                end
+                
+                %南側は柱
+                
+                %南西側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)-1),bitshift(uint8(1),g_direction.South))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)-1),bitshift(uint8(1),g_direction.South))) == search.known
+                    %かつ進行方向が南西向きである時
+                    if logical(bitand(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.South_West)))
+                        %かつ南西のノードが更新予定値よりも大きな値の場合
+                        if row_num_node(row(n),col(n)-1) > col_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n),col(n)-1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            row_num_node(row(n),col(n)-1) = col_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            row_dir_node(row(n),col(n)-1) = bitshift(uint8(1),g_d_direction.South_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南西のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n),col(n)-1) == col_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            row_dir_node(row(n),col(n)-1) = bitor(row_dir_node(row(n),col(n)-1),bitshift(uint8(1),g_d_direction.South_West));
+                        end
+
+                    %かつ進行方向が南西向きでないとき    
+                    else
+                        %かつ南西のノードの歩数MAP値が、更新予定値より大きい場合
+                        if row_num_node(row(n),col(n)-1) > col_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n),col(n)-1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            row_num_node(row(n),col(n)-1) = col_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            row_dir_node(row(n),col(n)-1) = bitshift(uint8(1),g_d_direction.South_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ南西のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n),col(n)-1) == col_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            row_dir_node(row(n),col(n)-1) = bitor(row_dir_node(row(n),col(n)-1),bitshift(uint8(1),g_d_direction.South_West));
+                        end
+                    end
+                end
+                
+                %西側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)-1),bitshift(uint8(1),g_direction.West))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)-1),bitshift(uint8(1),g_direction.West))) == search.known
+                    %かつ進行方向が西向きである時
+                    if logical(bitand(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.West)))
+                        %かつ西のノードが更新予定値よりも大きな値の場合
+                        if col_num_node(row(n),col(n)-1) > col_num_node(row(n),col(n))+weight_straight
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)-1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            col_num_node(row(n),col(n)-1) = col_num_node(row(n),col(n))+weight_straight;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)-1) = bitshift(uint8(1),g_d_direction.West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ西のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)-1) == col_num_node(row(n),col(n))+weight_straight
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)-1) = bitor(col_dir_node(row(n),col(n)-1),bitshift(uint8(1),g_d_direction.West));
+                        end
+
+                    %かつ進行方向が西向きでないとき    
+                    else
+                        %かつ西のノードの歩数MAP値が、更新予定値より大きい場合
+                        if col_num_node(row(n),col(n)-1) > col_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            col_num_node_temp(row(n),col(n)-1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            col_num_node(row(n),col(n)-1) = col_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            col_dir_node(row(n),col(n)-1) = bitshift(uint8(1),g_d_direction.West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ西のノードが更新予定値と同じ場合
+                        elseif col_num_node(row(n),col(n)-1) == col_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            col_dir_node(row(n),col(n)-1) = bitor(col_dir_node(row(n),col(n)-1),bitshift(uint8(1),g_d_direction.West));
+                        end
+                    end
+                end
+
+                %北西側
+                %壁が無い & 探索済みであるとき
+                if logical(bitand(maze_wall(row(n),col(n)-1),bitshift(uint8(1),g_direction.North))) == wall.nowall...
+                        && logical(bitand(maze_wall_search(row(n),col(n)-1),bitshift(uint8(1),g_direction.North))) == search.known
+                    %かつ進行方向が北西向きである時
+                    if logical(bitand(col_dir_node(row(n),col(n)),bitshift(uint8(1),g_d_direction.North_West)))
+                        %かつ北西のノードが更新予定値よりも大きな値の場合
+                        if row_num_node(row(n)+1,col(n)-1) > col_num_node(row(n),col(n))+weight_diagonal
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)+1,col(n)-1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新
+                            row_num_node(row(n)+1,col(n)-1) = col_num_node(row(n),col(n))+weight_diagonal;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)+1,col(n)-1) = bitshift(uint8(1),g_d_direction.North_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北西のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)+1,col(n)-1) == col_num_node(row(n),col(n))+weight_diagonal
+                            %移動方向を追加
+                            row_dir_node(row(n)+1,col(n)-1) = bitor(row_dir_node(row(n)+1,col(n)-1),bitshift(uint8(1),g_d_direction.North_West));
+                        end
+
+                    %かつ進行方向が北西向きでないとき    
+                    else
+                        %かつ北西のノードの歩数MAP値が、更新予定値より大きい場合
+                        if row_num_node(row(n)+1,col(n)-1) > col_num_node(row(n),col(n))+weight_turn   
+                            %更新確認用のMAP更新
+                            row_num_node_temp(row(n)+1,col(n)-1) = col_num_node_temp(row(n),col(n))+1;
+                            %歩数MAP更新(重みづけあり)
+                            row_num_node(row(n)+1,col(n)-1) = col_num_node(row(n),col(n))+weight_turn;
+                            %移動方向MAP更新
+                            row_dir_node(row(n)+1,col(n)-1) = bitshift(uint8(1),g_d_direction.North_West);
+                            %更新フラグを立てる
+                            change_flag = uint8(1);
+                        %かつ北西のノードが更新予定値と同じ場合
+                        elseif row_num_node(row(n)+1,col(n)-1) == col_num_node(row(n),col(n))+weight_turn
+                            %移動方向を追加
+                            row_dir_node(row(n)+1,col(n)-1) = bitor(row_dir_node(row(n)+1,col(n)-1),bitshift(uint8(1),g_d_direction.North_West));
+                        end
+                    end
+                end
+            end
+        end
+        %更新がなければ終了(スタート地点の歩数マップを更新)    
+        if change_flag == 0
+            start_num = row_num_node(2,1) + weight_straight_harf;
+            break;
+        end    
+    end   
 end
 
+%% decide_goal_node_dir ゴールノード、および方向の確定
+% 斜めのコンターマップから、ゴールとなるノードと、ゴール時の進入角度を確定する。
+    function  [goal_node,goal_matrix_dir,goal_dir] = decide_goal_node_dir(maze_goal,goal_size,row_num_node,col_num_node) 
+        
+        %スタートノード,方向を設定
+        current_matrix_dir = matrix_dir.Row; %スタートノードは行方向
+        current_node = [2,1];%スタートマスの北のノード
+        next_matrix_dir = matrix_dir.Row; %進行方向先のノード方向（仮）
+        next_node = [2,1];%進行方向先のノード座標
+        current_dir_dgnd = g_d_direction.North;%進行方向（最初の仮の値は北向き）
+        map_min = uint16(65535);
+        while 1
+
+            goal_flag = uint8(0);
+            for i = 1:1:goal_size
+                %現在のノードが行方向の時
+                if current_matrix_dir == matrix_dir.Row  
+                    if (maze_goal(i,1) == current_node(2)) && ... %x座標の一致
+                            (maze_goal(i,2) == current_node(1) || maze_goal(i,2)+1 == current_node(1))%y座標の一致
+                        %進行方向先に壁があれば(マップ値が65535であれば)、進行方向を変更する（斜め侵入時）
+                        %北東
+                        if current_dir_dgnd == g_d_direction.North_East...
+                                && col_num_node(current_node(1),current_node(2)+1) == 65535
+                            current_dir_dgnd = g_d_direction.North;
+                        %南東
+                        elseif current_dir_dgnd == g_d_direction.South_East...
+                                && col_num_node(current_node(1)-1,current_node(2)+1) == 65535
+                            current_dir_dgnd = g_d_direction.South;
+                        %南西
+                        elseif current_dir_dgnd == g_d_direction.South_West...
+                                && col_num_node(current_node(1)-1,current_node(2)) == 65535
+                            current_dir_dgnd = g_d_direction.South;
+                        %北西
+                        elseif current_dir_dgnd == g_d_direction.North_West...
+                                && col_num_node(current_node(1),current_node(2)) == 65535
+                            current_dir_dgnd = g_d_direction.North;                            
+                        end
+                        
+                        %フラグ
+                        goal_flag = uint8(1);
+                    end
+                %現在のノードが列方向の時
+                else
+                    if (maze_goal(i,1) == current_node(2) || maze_goal(i,1)+1 == current_node(2)) && ... %x座標の一致
+                            (maze_goal(i,2) == current_node(1))%y座標の一致
+                        %進行方向先に壁があれば(マップ値が65535であれば)、進行方向を変更する（斜め侵入時）
+                        %北東
+                        if current_dir_dgnd == g_d_direction.North_East...
+                                && row_num_node(current_node(1)+1,current_node(2)) == 65535
+                            current_dir_dgnd = g_d_direction.East;
+                        %南東
+                        elseif current_dir_dgnd == g_d_direction.South_East...
+                                && row_num_node(current_node(1),current_node(2)) == 65535
+                            current_dir_dgnd = g_d_direction.East;
+                        %南西
+                        elseif current_dir_dgnd == g_d_direction.South_West...
+                                && row_num_node(current_node(1),current_node(2)-1) == 65535
+                            current_dir_dgnd = g_d_direction.West;
+                        %北西
+                        elseif current_dir_dgnd == g_d_direction.North_West...
+                                && row_num_node(current_node(1)+1,current_node(2)-1) == 65535
+                            current_dir_dgnd = g_d_direction.West;                            
+                        end
+                        %フラグ
+                        goal_flag = uint8(1);
+                    end
+                end
+            end
+            
+%             disp("current_node")
+%             disp(current_node)
+%             disp("current_matrix_dir")
+%             disp(current_matrix_dir)
+%             disp("current_dir_dgnd")
+%             disp(current_dir_dgnd)
+            %ゴールノード判定の時
+            %現在のノードをゴールノードとし、
+            %現在の方向をゴール時の方向とする。
+            if goal_flag == 1
+                goal_node = current_node
+                goal_matrix_dir = current_matrix_dir
+                goal_dir = current_dir_dgnd
+                
+                %
+                
+                break
+
+            %ゴールノードでない時    
+            else
+
+            %現在のノードの方向から優先的に進行方向を確定
+                for k = 0:7
+                    temp = rem(current_dir_dgnd + k,8);
+                    %現在のノードが行方向の時
+                    if current_matrix_dir == matrix_dir.Row
+                            if temp == g_d_direction.North
+                                if row_num_node(current_node(1)+1,current_node(2)) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1)+1,current_node(2));
+                                    %現在ノードの進行方向を北向きに
+                                    current_dir_dgnd = g_d_direction.North;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Row;
+                                    next_node = [current_node(1)+1,current_node(2)];
+                                end
+                            elseif temp == g_d_direction.North_East
+                                if col_num_node(current_node(1),current_node(2)+1) < map_min
+                                    %最小値を更新
+                                    map_min = col_num_node(current_node(1),current_node(2)+1);
+                                    %現在ノードの進行方向を北向きに
+                                    current_dir_dgnd = g_d_direction.North_East;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Col;
+                                    next_node = [current_node(1),current_node(2)+1];
+                                end
+                            elseif temp == g_d_direction.East
+                                %柱
+                            elseif temp == g_d_direction.South_East
+                                if col_num_node(current_node(1)-1,current_node(2)+1) < map_min
+                                    %最小値を更新
+                                    map_min = col_num_node(current_node(1)-1,current_node(2)+1);
+                                    %現在ノードの進行方向を北向きに
+                                    current_dir_dgnd = g_d_direction.South_East;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Col;
+                                    next_node = [current_node(1)-1,current_node(2)+1];
+                                end
+                            elseif temp == g_d_direction.South
+                                if row_num_node(current_node(1)-1,current_node(2)) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1)-1,current_node(2));
+                                    %現在ノードの進行方向を北向きに
+                                    current_dir_dgnd = g_d_direction.South;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Row;
+                                    next_node = [current_node(1)-1,current_node(2)];
+                                end
+                            elseif temp == g_d_direction.South_West
+                                if col_num_node(current_node(1)-1,current_node(2)) < map_min
+                                    %最小値を更新
+                                    map_min = col_num_node(current_node(1)-1,current_node(2));
+                                    %現在ノードの進行方向を北向きに
+                                    current_dir_dgnd = g_d_direction.South_West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Col;
+                                    next_node = [current_node(1)-1,current_node(2)];
+                                end
+                            elseif temp == g_d_direction.West
+                                %柱
+                            elseif temp == g_d_direction.North_West        
+                                if col_num_node(current_node(1),current_node(2)) < map_min
+                                    %最小値を更新
+                                    map_min = col_num_node(current_node(1),current_node(2));
+                                    %現在ノードの進行方向を北向きに
+                                    current_dir_dgnd = g_d_direction.North_West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Col;
+                                    next_node = [current_node(1),current_node(2)];
+                                end                        
+                            end
+                    %現在のノードが列方向の時        
+                    else
+                            if temp == g_d_direction.North
+                            %柱
+                            elseif temp == g_d_direction.North_East
+                                if row_num_node(current_node(1)+1,current_node(2)) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1)+1,current_node(2));
+                                    %現在ノードの進行方向を北東向きに
+                                    current_dir_dgnd = g_d_direction.North_East;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Row;
+                                    next_node = [current_node(1)+1,current_node(2)];
+                                end
+                            elseif temp == g_d_direction.East
+                                if col_num_node(current_node(1),current_node(2)+1) < map_min
+                                    %最小値を更新
+                                    map_min = col_num_node(current_node(1),current_node(2)+1);
+                                    %現在ノードの進行方向を東向きに
+                                    current_dir_dgnd = g_d_direction.East;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Col;
+                                    next_node = [current_node(1),current_node(2)+1];
+                                end
+                            elseif temp == g_d_direction.South_East
+                                if row_num_node(current_node(1),current_node(2)) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1),current_node(2));
+                                    %現在ノードの進行方向を南東向きに
+                                    current_dir_dgnd = g_d_direction.South_East;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Row;
+                                    next_node = [current_node(1),current_node(2)];
+                                end
+                            elseif temp == g_d_direction.South
+                                %柱
+                            elseif temp == g_d_direction.South_West
+                                if row_num_node(current_node(1),current_node(2)-1) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1),current_node(2)-1);
+                                    %現在ノードの進行方向を南西向きに
+                                    current_dir_dgnd = g_d_direction.South_West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Row;
+                                    next_node = [current_node(1),current_node(2)-1];
+                                end
+                            elseif temp == g_d_direction.West
+                                if col_num_node(current_node(1),current_node(2)-1) < map_min
+                                    %最小値を更新
+                                    map_min = col_num_node(current_node(1),current_node(2)-1);
+                                    %現在ノードの進行方向を西向きに
+                                    current_dir_dgnd = g_d_direction.West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Col;
+                                    next_node = [current_node(1),current_node(2)-1];
+                                end
+                            elseif temp == g_d_direction.North_West
+                                if row_num_node(current_node(1)+1,current_node(2)-1) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1)+1,current_node(2)-1);
+                                    %現在ノードの進行方向を北西向きに
+                                    current_dir_dgnd = g_d_direction.North_West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_matrix_dir = matrix_dir.Row;
+                                    next_node = [current_node(1)+1,current_node(2)-1];
+                                end
+                            end
+
+                    end
+
+                end
+
+            current_node = next_node;
+            current_matrix_dir = next_matrix_dir;
+
+            end
+        end
+    end
+%% decide_goal_section ゴールマスの確定
+% 確定されたゴールのノードと、ゴール時の進入角度から、
+% ゴールマスを確定する。
+    function[goal_section,goal_node2,goal_matrix_dir2]=decide_goal_section(maze_goal,goal_node,goal_matrix_dir,goal_dir)
+        if goal_dir == g_d_direction.North
+            if goal_matrix_dir == matrix_dir.Row
+                if goal_judge(maze_goal,goal_node(2),goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                else
+                    goal_section = [goal_node(1),goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                end
+            end
+            %列方向は柱なのでなし
+        elseif goal_dir == g_d_direction.North_East
+            if goal_matrix_dir == matrix_dir.Row
+                if goal_judge(maze_goal,goal_node(2)+1,goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Row;                    
+                elseif goal_judge(maze_goal,goal_node(2)+1,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Col;  
+                elseif goal_judge(maze_goal,goal_node(2),goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;    
+                else
+                    goal_section = [goal_node(1),goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;  
+                end
+            else
+                if goal_judge(maze_goal,goal_node(2)+1,goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Col;      
+                elseif goal_judge(maze_goal,goal_node(2),goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;   
+                elseif goal_judge(maze_goal,goal_node(2)+1,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Col;   
+                else
+                    goal_section = [goal_node(1),goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;   
+                end
+            end
+        elseif goal_dir == g_d_direction.East
+            %行方向は柱なのでなし
+            if goal_matrix_dir == matrix_dir.Col
+                if goal_judge(maze_goal,goal_node(2)+1,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                else
+                    goal_section = [goal_node(1),goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                end
+            end
+        elseif goal_dir == g_d_direction.South_East
+            if goal_matrix_dir == matrix_dir.Row
+                if goal_judge(maze_goal,goal_node(2)+1,goal_node(1)-2)
+                    goal_section = [goal_node(1)-2,goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                elseif goal_judge(maze_goal,goal_node(2)+1,goal_node(1)-1)
+                    goal_section = [goal_node(1)-1,goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                elseif goal_judge(maze_goal,goal_node(2),goal_node(1)-2)
+                    goal_section = [goal_node(1)-1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                else
+                    goal_section = [goal_node(1)-1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                end
+            else
+                if goal_judge(maze_goal,goal_node(2)+1,goal_node(1)-1)
+                    goal_section = [goal_node(1)-1,goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Col;                    
+                elseif goal_judge(maze_goal,goal_node(2),goal_node(1)-1)
+                    goal_section = [goal_node(1)-1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;                        
+                elseif goal_judge(maze_goal,goal_node(2)+1,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)+1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)+1];
+                    goal_matrix_dir2 = matrix_dir.Col;                        
+                else
+                    goal_section = [goal_node(1),goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                end
+            end
+        elseif goal_dir == g_d_direction.South
+            if goal_matrix_dir == matrix_dir.Row
+                if goal_judge(maze_goal,goal_node(2),goal_node(1)-2)
+                    goal_section = [goal_node(1)-2,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                else
+                    goal_section = [goal_node(1)-1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                end
+            end
+        elseif goal_dir == g_d_direction.South_West
+            if goal_matrix_dir == matrix_dir.Row
+                if goal_judge(maze_goal,goal_node(2)-1,goal_node(1)-2)
+                    goal_section = [goal_node(1)-2,goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Row;                    
+                elseif goal_judge(maze_goal,goal_node(2)-1,goal_node(1)-1)
+                    goal_section = [goal_node(1)-1,goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;    
+                elseif goal_judge(maze_goal,goal_node(2),goal_node(1)-2)
+                    goal_section = [goal_node(1)-2,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;                      
+                else
+                    goal_section = [goal_node(1)-1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;  
+                end
+            else
+                if goal_judge(maze_goal,goal_node(2)-1,goal_node(1)-2)
+                    goal_section = [goal_node(1)-2,goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1)-1,goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                elseif goal_judge(maze_goal,goal_node(2)-1,goal_node(1)-1)
+                    goal_section = [goal_node(1)-1,goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Row; 
+                elseif goal_judge(maze_goal,goal_node(2)-2,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)-2];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Col;                    
+                else
+                    goal_section = [goal_node(1),goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;                     
+                end
+            end
+        elseif goal_dir == g_d_direction.West
+            %行方向は柱なのでなし
+            if goal_matrix_dir == matrix_dir.Col
+                if goal_judge(maze_goal,goal_node(2)-2,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)-2];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                else
+                    goal_section = [goal_node(1),goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                end
+            end  
+        elseif goal_dir == g_d_direction.North_West
+            if goal_matrix_dir == matrix_dir.Row
+                if goal_judge(maze_goal,goal_node(2)-1,goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                elseif goal_judge(maze_goal,goal_node(2)-1,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                elseif goal_judge(maze_goal,goal_node(2),goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                else
+                    goal_section = [goal_node(1),goal_node(2)];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Row;                    
+                end
+            else
+                if goal_judge(maze_goal,goal_node(2)-2,goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)-2];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                elseif goal_judge(maze_goal,goal_node(2)-1,goal_node(1)+1)
+                    goal_section = [goal_node(1)+1,goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1)+1,goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Row;
+                elseif goal_judge(maze_goal,goal_node(2)-2,goal_node(1))
+                    goal_section = [goal_node(1),goal_node(2)-2];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)-1];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                else
+                    goal_section = [goal_node(1),goal_node(2)-1];%(y,x)
+                    goal_node2 = [goal_node(1),goal_node(2)];
+                    goal_matrix_dir2 = matrix_dir.Col;
+                end
+                
+            end
+        end
+        
+        
+        %ゴール判定関数
+        function[result] = goal_judge(maze_goal,x,y)
+            %入力座標の配列を作成
+            temp = [ones(9,1)*x,ones(9,1)*y];
+            %ゴール座標と比較
+            temp1 = logical(maze_goal == temp);
+            %x,yともに一致するか確認、一致なら1を返す
+            result = max(temp1(:,1).*temp1(:,2));
+            
+        end
+    end
+
+%% make_route_diagonal 斜め有での最短ルート生成、走行
+    function[] = make_route_diagonal(row_num_node,col_num_node,goal_section,goal_node2,goal_node_property)
+       
+    %スタートノードの初期化
+    current_node = [uint8(1),uint8(1)];%初期マスの南のノード
+    current_node_property = matrix_dir.Row; %南のノードの属性は行方向
+    current_move_dir = g_d_direction.North; %初期の進行方向は北
+    current_move_mode = move_dir_property.straight; %初期の進行方向属性は直進（斜めでない）
+    straight_count = uint8(0);%直進用のカウンタ
+    
+    %初回のみ次のノードを固定
+    next_node = [uint8(2),uint8(1)];%初期マスの北のノード
+    next_node_property = matrix_dir.Row; %北のノードの属性は行方向
+    
+    %基準ノード座標を次のノードに
+    %基準ノードの移動方向、モードを現在のノードに設定
+    ref_node = next_node;
+    ref_node_property = next_node_property;
+    ref_move_dir = current_move_dir;
+    ref_move_mode = current_move_mode;
+    
+    %ゴールフラグがたつまでループ
+    goal_flag = 0;
+    
+    %斜め込みの進行方法選択
+    [next_move_dir,next_node,next_node_property]...
+       =get_next_dir_diagonal(row_num_node,col_num_node,ref_move_dir,ref_node,ref_node_property,goal_node2,goal_node_property,goal_section);
+
+    
+    while(1)
+       
+%         disp(["next_move_dir=",num2str(next_move_dir)])
+%         disp(["ref_move_dir=",num2str(ref_move_dir)])
+        
+        %基準ノードから見て、進行方向が同一のとき
+        if ref_move_dir == next_move_dir
+%             disp("直進")
+            straight_count = straight_count+uint8(1);%直進カウンタをインクリメント
+            %基準ノードを移動する。
+            ref_node = next_node;
+            ref_node_property = next_node_property;
+            ref_move_dir = next_move_dir;
+            %基準ノードがゴールであるか判定
+            if (isequal(ref_node,goal_node2) && (ref_node_property == goal_node_property))...
+                    || (ref_node_property == matrix_dir.section && goal_section(2)==ref_node(1) && goal_section(1)==ref_node(2))
+                %現在位置がノードである時、ゴール進入時のパターンを決定する。
+                if (isequal(ref_node,goal_node2) && (ref_node_property == goal_node_property))
+                    %ゴールの場合、ゴール進入時のパターンを決定する。
+                    [next_move_dir,next_node,next_node_property]...
+                          =get_next_dir_diagonal(row_num_node,col_num_node,ref_move_dir,ref_node,ref_node_property,goal_node2,goal_node_property,goal_section);
+                    %直進の場合（直進侵入）
+                    if ref_move_dir == next_move_dir
+                        %ゴール分カウンタを増加
+                        straight_count = straight_count+uint8(1);
+                        %現在ノードから直進カウンタ分移動する関数。
+                        [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
+                          = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+%                         disp("ゴール直線侵入")
+%                         disp(current_node)
+                    %ターンの場合（斜め侵入）
+                    %45度ターンのみ想定(一つ先の移動方向でターンの種類が決定)
+                    else
+%                         disp("ゴール時直進前")
+%                         disp(current_node)
+                        %直進カウンタがあれば移動
+                        if straight_count > 0
+                            %軌跡をプロット
+                            straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);                            
+                            %現在ノードから直進カウンタ分移動する関数。
+                            [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
+                                = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                        end
+%                         disp("ゴール時直進後")
+%                         disp(current_node)
+                        %進行方向のバッファをクリア
+                        move_dir_buffer = zeros(3,1);
+                        %1つ先までの進行方向から、ターンのパターンを決定
+                        %現在進行方向からの相対的な移動方向をバッファ
+                        move_dir_buffer(1) = bitand(int8(next_move_dir)-int8(current_move_dir),7);
+                        %ターンの種類を判定する
+                        [turn_pattern_num] = get_turn_pattern_num(move_dir_buffer,ref_move_mode);
+                        %ターンの軌跡を描画する
+                        slalom_plot(current_node,current_node_property,current_move_dir,current_move_mode,turn_pattern_num);
+                        %パターンが決まらなかった場合、エラー
+                        if turn_pattern_num == 0
+                            error('パターンが見つかりませんでした。(ゴール時)')
+                        end
+                        %パターンに応じた移動処理
+                        if turn_pattern_num == turn_pattern.r_45
+                            disp("右45度")
+                            [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                                = turn_r_45(current_node,current_node_property,current_move_dir,current_move_mode);
+
+                        elseif turn_pattern_num == turn_pattern.l_45
+                            disp("左45度")
+                            [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                                = turn_l_45(current_node,current_node_property,current_move_dir,current_move_mode);
+                        else
+                            error("想定していないターンパターンです（ゴール進入時）")
+                        end
+                    end
+                %参照位置がセクションであるとき
+                else
+                    %直進カウンタがあれば、移動する。
+%                     disp("ゴール時直進（セクション）")
+                    if straight_count > 0
+                        %軌跡をプロット
+                        straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                        %現在ノードから直進カウンタ分移動する関数。
+                        [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
+                            = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                    end
+                end
+                %ゴール処理がおわったらフラグを立てる
+%                 disp("ゴール後")
+%                 disp(straight_count)
+%                 disp(current_node)
+                goal_flag = 1;
+            end
+            
+        %基準ノードから見て、進行方向が異なる(曲がる)とき
+        else
+%             disp("ターン")
+            %直進カウンタあるとき
+            if straight_count > 0
+                %軌跡をプロット
+                straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);                
+                %現在ノードから直進カウンタ分移動する関数。
+                [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
+                    = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+%                 disp("ターン前直進カウンタ")
+%                 disp(straight_count)
+%                 disp(current_node)
+            end
+            
+            %進行方向のバッファをクリア
+            move_dir_buffer = zeros(3,1);
+            %3つ先までの進行方向から、ターンのパターンを決定
+            for i = 1:1:3
+                %現在進行方向からの相対的な移動方向をバッファ
+%                 disp(["current_move_dir",num2str(current_move_dir)])
+%                 disp(["next_move_dir",num2str(next_move_dir)])
+                move_dir_buffer(i) = bitand(int8(next_move_dir)-int8(current_move_dir),7);
+                %ターンの種類を判定する
+                [turn_pattern_num] = get_turn_pattern_num(move_dir_buffer,ref_move_mode);
+
+                %パターンが確定していれば終了
+                if turn_pattern_num ~= 0
+                    %パターンの軌跡を描画
+                    slalom_plot(current_node,current_node_property,current_move_dir,current_move_mode,turn_pattern_num);
+                    break;
+                else
+                    %次の進行方向を決定する
+                    [next_move_dir,next_node,next_node_property]=...
+                        get_next_dir_diagonal(row_num_node,col_num_node,next_move_dir,next_node,next_node_property,goal_node2,goal_node_property,goal_section);
+                end
+                %3回目でパターンが決まらなかった場合、エラー
+                if turn_pattern_num == 0 && i == 3
+                    error('パターンが見つかりませんでした。')
+                end
+            end
+            
+            %パターンに応じて移動
+            if turn_pattern_num == turn_pattern.r_45
+                disp("右45度")
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_r_45(current_node,current_node_property,current_move_dir,current_move_mode);
+            
+            elseif turn_pattern_num == turn_pattern.l_45
+                disp("左45度")
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_l_45(current_node,current_node_property,current_move_dir,current_move_mode);
+            
+            elseif turn_pattern_num == turn_pattern.r_90
+                if current_move_mode == move_dir_property.straight
+                    disp("右90度")
+                elseif current_move_mode == move_dir_property.diagonal
+                    disp("右V90度")
+                end
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_r_90(current_node,current_node_property,current_move_dir,current_move_mode);
+                
+            elseif turn_pattern_num == turn_pattern.l_90
+                if current_move_mode == move_dir_property.straight
+                    disp("左90度")
+                elseif current_move_mode == move_dir_property.diagonal
+                    disp("左V90度")
+                end
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_l_90(current_node,current_node_property,current_move_dir,current_move_mode);
+            
+            elseif turn_pattern_num == turn_pattern.r_135
+                disp("右135度")
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_r_135(current_node,current_node_property,current_move_dir,current_move_mode);                
+            
+            elseif turn_pattern_num == turn_pattern.l_135
+                disp("左135度")
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_l_135(current_node,current_node_property,current_move_dir,current_move_mode); 
+                
+            elseif turn_pattern_num == turn_pattern.r_180  
+                disp("右180度")
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_r_180(current_node,current_node_property,current_move_dir,current_move_mode); 
+                
+            elseif turn_pattern_num == turn_pattern.l_180
+                disp("左180度")
+                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                    = turn_l_180(current_node,current_node_property,current_move_dir,current_move_mode);                 
+            end
+%             disp("ターン終了時、ノード")
+%             disp(current_node)
+%             disp(goal_node2)
+            %移動後、ゴールを判定
+            if isequal(current_node,goal_node2) && (current_node_property == goal_node_property)
+                goal_flag = 1;
+            end
+            
+            %基準ノードを移動
+            ref_node = next_node;
+            ref_node_property = next_node_property;
+            ref_move_dir = current_move_dir;
+            ref_move_mode = current_move_mode;
+
+        end
+        
+        %ゴールフラグが立っていれば終了
+        if goal_flag == 1
+            break;
+        end
+        
+        %次の移動方向を取得
+        %斜め込みの進行方法選択
+        [next_move_dir,next_node,next_node_property]...
+            =get_next_dir_diagonal(row_num_node,col_num_node,ref_move_dir,ref_node,ref_node_property,goal_node2,goal_node_property,goal_section);
+%         disp("次進行方向")
+%         disp(next_move_dir)
+    end
+    
+    %パターンを判定する関数
+        function [turn_pattern_num] = get_turn_pattern_num(move_dir_buffer,ref_move_mode)
+            
+            %旋回パターン番号の初期化
+            turn_pattern_num = turn_pattern.default;
+
+            %直進時
+            if ref_move_mode == move_dir_property.straight
+                %次が45度まがるとき(右折パターン)
+                if move_dir_buffer(1) == 1
+                    if move_dir_buffer(2) == 1
+                        turn_pattern_num = turn_pattern.r_45;
+                    elseif move_dir_buffer(2) == 2
+                        turn_pattern_num = turn_pattern.r_90;
+                    elseif move_dir_buffer(2) == 3
+                        if move_dir_buffer(3) == 3
+                            turn_pattern_num = turn_pattern.r_135;
+                        elseif move_dir_buffer(3) == 4 
+                            turn_pattern_num = turn_pattern.r_180;
+                        end
+                    end
+                %次が-45度まがるとき(左折パターン)    
+                elseif move_dir_buffer(1) == 7
+                    if move_dir_buffer(2) == 7
+                        turn_pattern_num = turn_pattern.l_45;
+                    elseif move_dir_buffer(2) == 6
+                        turn_pattern_num = turn_pattern.l_90;
+                    elseif move_dir_buffer(2) == 5
+                        if move_dir_buffer(3) == 5
+                            turn_pattern_num = turn_pattern.l_135;
+                        elseif move_dir_buffer(3) == 4 
+                            turn_pattern_num = turn_pattern.l_180;
+                        end
+                    end 
+                end
+            
+            %斜めの時
+            elseif ref_move_mode == move_dir_property.diagonal
+                %右折パターン
+                if move_dir_buffer(1) == 1
+                    turn_pattern_num = turn_pattern.r_45;
+                elseif move_dir_buffer(1) == 2
+                    if move_dir_buffer(2) == 2
+                       turn_pattern_num = turn_pattern.r_90; 
+                    elseif move_dir_buffer(2) == 3
+                       turn_pattern_num = turn_pattern.r_135; 
+                    end
+                %左折パターン    
+                elseif move_dir_buffer(1) == 7
+                        turn_pattern_num = turn_pattern.l_45;
+                elseif move_dir_buffer(1) == 6
+                    if move_dir_buffer(2) == 6
+                       turn_pattern_num = turn_pattern.l_90; 
+                    elseif move_dir_buffer(2) == 5
+                       turn_pattern_num = turn_pattern.l_135; 
+                    end
+                end
+                
+            else
+                error('進行方向モードが予期せぬ値です。')
+            end
+        end
+end
+%% get_next_dir_diagonal 斜め有での進行方向,行先取得
+    function [next_dir,next_node,next_node_property]=get_next_dir_diagonal(row_num_node,col_num_node,current_move_dir,current_node,current_matrix_dir,goal_node2,goal_matrix_dir2,goal_section)
+        %現在のエッジはゴールノードか
+        if isequal(current_node,goal_node2) && current_matrix_dir == goal_matrix_dir2
+        %ゴールノードの場合
+            %ゴールノードが行方向の場合
+            if goal_matrix_dir2 == matrix_dir.Row
+                if goal_section(2) == goal_node2(1) && goal_section(1) == goal_node2(2)
+                    next_dir = g_d_direction.North;
+                    next_node = goal_node2;
+                    next_node_property = matrix_dir.section;
+                else
+                    next_dir = g_d_direction.South;
+                    next_node = [goal_node2(1)-1,goal_node2(2)];
+                    next_node_property = matrix_dir.section;
+                end
+            else
+            %ゴールノードが列方向の場合
+                if goal_section(2) == goal_node2(1) && goal_section(1) == goal_node2(2)
+                    next_dir = g_d_direction.East;
+                    next_node = [goal_node2(1),goal_node2(2)];
+                    next_node_property = matrix_dir.section;                    
+                else
+                    next_dir = g_d_direction.West;
+                    next_node = [goal_node2(1),goal_node2(2)-1];
+                    next_node_property = matrix_dir.section;  
+                end
+            end
+        else
+        %ゴールノードでない場合
+            %閾値を定義
+            map_min = uint16(65535);
+            %現在のノードの方向から優先的に進行方向を確定
+            for k = 0:7
+                temp = rem(current_move_dir + k,8);
+                %現在のノードが行方向の時
+                if current_matrix_dir == matrix_dir.Row
+                        if temp == g_d_direction.North
+                            if row_num_node(current_node(1)+1,current_node(2)) < map_min
+                                %最小値を更新
+                                map_min = row_num_node(current_node(1)+1,current_node(2));
+                                %現在ノードの進行方向を北向きに
+                                next_dir = g_d_direction.North;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Row;
+                                next_node = [current_node(1)+1,current_node(2)];
+                            end
+                        elseif temp == g_d_direction.North_East
+                            if col_num_node(current_node(1),current_node(2)+1) < map_min
+                                %最小値を更新
+                                map_min = col_num_node(current_node(1),current_node(2)+1);
+                                %現在ノードの進行方向を東北向きに
+                                next_dir = g_d_direction.North_East;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Col;
+                                next_node = [current_node(1),current_node(2)+1];
+                            end
+                        elseif temp == g_d_direction.East
+                            %柱
+                        elseif temp == g_d_direction.South_East
+                            if col_num_node(current_node(1)-1,current_node(2)+1) < map_min
+                                %最小値を更新
+                                map_min = col_num_node(current_node(1)-1,current_node(2)+1);
+                                %現在ノードの進行方向を南東向きに
+                                next_dir = g_d_direction.South_East;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Col;
+                                next_node = [current_node(1)-1,current_node(2)+1];
+                            end
+                        elseif temp == g_d_direction.South
+                            if row_num_node(current_node(1)-1,current_node(2)) < map_min
+                                %最小値を更新
+                                map_min = row_num_node(current_node(1)-1,current_node(2));
+                                %現在ノードの進行方向を南向きに
+                                next_dir = g_d_direction.South;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Row;
+                                next_node = [current_node(1)-1,current_node(2)];
+                            end
+                        elseif temp == g_d_direction.South_West
+                            if col_num_node(current_node(1)-1,current_node(2)) < map_min
+                                %最小値を更新
+                                map_min = col_num_node(current_node(1)-1,current_node(2));
+                                %現在ノードの進行方向を南西向きに
+                                next_dir = g_d_direction.South_West;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Col;
+                                next_node = [current_node(1)-1,current_node(2)];
+                            end
+                        elseif temp == g_d_direction.West
+                            %柱
+                        elseif temp == g_d_direction.North_West        
+                            if col_num_node(current_node(1),current_node(2)) < map_min
+                                %最小値を更新
+                                map_min = col_num_node(current_node(1),current_node(2));
+                                %現在ノードの進行方向を北西向きに
+                                next_dir = g_d_direction.North_West;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Col;
+                                next_node = [current_node(1),current_node(2)];
+                            end                        
+                        end
+                %現在のノードが行方向の時        
+                else
+                        if temp == g_d_direction.North
+                        %柱
+                        elseif temp == g_d_direction.North_East
+                            if row_num_node(current_node(1)+1,current_node(2)) < map_min
+                                %最小値を更新
+                                map_min = row_num_node(current_node(1)+1,current_node(2));
+                                %現在ノードの進行方向を北東向きに
+                                next_dir = g_d_direction.North_East;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Row;
+                                next_node = [current_node(1)+1,current_node(2)];
+                            end
+                        elseif temp == g_d_direction.East
+                            if col_num_node(current_node(1),current_node(2)+1) < map_min
+                                %最小値を更新
+                                map_min = col_num_node(current_node(1),current_node(2)+1);
+                                %現在ノードの進行方向を東向きに
+                                next_dir = g_d_direction.East;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Col;
+                                next_node = [current_node(1),current_node(2)+1];
+                            end
+                        elseif temp == g_d_direction.South_East
+                            if row_num_node(current_node(1),current_node(2)) < map_min
+                                %最小値を更新
+                                map_min = row_num_node(current_node(1),current_node(2));
+                                %現在ノードの進行方向を南東向きに
+                                next_dir = g_d_direction.South_East;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Row;
+                                next_node = [current_node(1),current_node(2)];
+                            end
+                        elseif temp == g_d_direction.South
+                            %柱
+                        elseif temp == g_d_direction.South_West
+                            if row_num_node(current_node(1),current_node(2)-1) < map_min
+                                %最小値を更新
+                                map_min = row_num_node(current_node(1),current_node(2)-1);
+                                %現在ノードの進行方向を南西向きに
+                                next_dir = g_d_direction.South_West;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Row;
+                                next_node = [current_node(1),current_node(2)-1];
+                            end
+                        elseif temp == g_d_direction.West
+                            if col_num_node(current_node(1),current_node(2)-1) < map_min
+                                %最小値を更新
+                                map_min = col_num_node(current_node(1),current_node(2)-1);
+                                %現在ノードの進行方向を西向きに
+                                next_dir = g_d_direction.West;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Col;
+                                next_node = [current_node(1),current_node(2)-1];
+                            end
+                        elseif temp == g_d_direction.North_West
+                            if row_num_node(current_node(1)+1,current_node(2)-1) < map_min
+                                %最小値を更新
+                                map_min = row_num_node(current_node(1)+1,current_node(2)-1);
+                                %現在ノードの進行方向を北西向きに
+                                next_dir = g_d_direction.North_West;
+                                %進行方向先の座標、行列の方向を更新
+                                next_node_property = matrix_dir.Row;
+                                next_node = [current_node(1)+1,current_node(2)-1];
+                            end
+                        end
+
+                end
+
+            end
+
+        end
+    end
+
+%% 移動用関数
+% 直進
+    function[current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
+            = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count)
+        
+        %直進時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+straight_count,current_node(2)];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight;
+                disp(['北に',num2str(straight_count),'マス直進'])
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1),current_node(2)+straight_count];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight;
+                disp(['東に',num2str(straight_count),'マス直進'])
+            
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-straight_count,current_node(2)];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight;
+                disp(['南に',num2str(straight_count),'マス直進'])
+
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1),current_node(2)-straight_count];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight;
+                disp(['西に',num2str(straight_count),'マス直進'])
+            else
+                error("想定されていない動作方向です。")
+            end
+            
+        %斜め直進のとき    
+        elseif current_move_mode == move_dir_property.diagonal
+            %直進カウンタを2で割った商とあまり、その合計を計算
+            %(移動先ノード座標の一般化用)
+            temp_quotient = idivide(straight_count,2);
+            temp_remainder = rem(straight_count,2);
+            temp_qr = temp_quotient+temp_remainder;
+            
+            if current_move_dir == g_d_direction.North_East
+                if current_node_property == matrix_dir.Row
+                    current_node = [current_node(1)+temp_quotient,current_node(2)+temp_qr];
+                    current_node_property = current_node_property+temp_remainder;
+                    current_move_dir = g_d_direction.North_East;
+                    current_move_mode = move_dir_property.diagonal;
+                    
+                elseif current_node_property == matrix_dir.Col
+                    current_node = [current_node(1)+temp_qr,current_node(2)+temp_quotient];
+                    current_node_property = current_node_property-temp_remainder;
+                    current_move_dir = g_d_direction.North_East;
+                    current_move_mode = move_dir_property.diagonal;
+                else
+                    error("想定されていないノード属性です。")
+                end
+                disp(['北東に',num2str(straight_count),'ノード直進'])
+                
+            elseif current_move_dir == g_d_direction.South_East
+                if current_node_property == matrix_dir.Row
+                    current_node = [current_node(1)-temp_qr,current_node(2)+temp_qr];
+                    current_node_property = current_node_property+temp_remainder;
+                    current_move_dir = g_d_direction.South_East;
+                    current_move_mode = move_dir_property.diagonal;
+                    
+                elseif current_node_property == matrix_dir.Col
+                    current_node = [current_node(1)-temp_quotient,current_node(2)+temp_quotient];
+                    current_node_property = current_node_property-temp_remainder;
+                    current_move_dir = g_d_direction.South_East;
+                    current_move_mode = move_dir_property.diagonal;
+                else
+                    error("想定されていないノード属性です。")
+                end
+                disp(['南東に',num2str(straight_count),'ノード直進'])
+                
+            elseif current_move_dir == g_d_direction.South_West
+                if current_node_property == matrix_dir.Row
+                    current_node = [current_node(1)-temp_qr,current_node(2)-temp_quotient];
+                    current_node_property = current_node_property+temp_remainder;
+                    current_move_dir = g_d_direction.South_West;
+                    current_move_mode = move_dir_property.diagonal;
+                    
+                elseif current_node_property == matrix_dir.Col
+                    current_node = [current_node(1)-temp_quotient,current_node(2)-temp_qr];
+                    current_node_property = current_node_property-temp_remainder;
+                    current_move_dir = g_d_direction.South_West;
+                    current_move_mode = move_dir_property.diagonal;
+                else
+                    error("想定されていないノード属性です。")
+                end
+                disp(['南西に',num2str(straight_count),'ノード直進'])
+                
+            elseif current_move_dir == g_d_direction.North_West
+                if current_node_property == matrix_dir.Row
+                    current_node = [current_node(1)+temp_quotient,current_node(2)-temp_quotient];
+                    current_node_property = current_node_property+temp_remainder;
+                    current_move_dir = g_d_direction.North_West;
+                    current_move_mode = move_dir_property.diagonal;
+                    
+                elseif current_node_property == matrix_dir.Col
+                    current_node = [current_node(1)+temp_qr,current_node(2)-temp_qr];
+                    current_node_property = current_node_property-temp_remainder;
+                    current_move_dir = g_d_direction.North_West;
+                    current_move_mode = move_dir_property.diagonal;
+                else
+                    error("想定されていないノード属性です。")
+                end
+                disp(['北西に',num2str(straight_count),'ノード直進'])
+            end
+        else
+            disp("想定されていない動作モードです")
+        end
+        %移動完了時、直進カウンタをクリア
+        straight_count = 0;
+    end
+% 右45度
+    function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_r_45(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.North_East;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1),current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South_East;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-2,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.South_West;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1)+1,current_node(2)-2];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North_West;
+                current_move_mode = move_dir_property.diagonal;
+            else
+                error('想定外の進行方向です(r_45_直進)')
+            end
+        elseif current_move_mode == move_dir_property.diagonal
+            if current_move_dir == g_d_direction.North_East
+                current_node = [current_node(1),current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_East
+                current_node = [current_node(1),current_node(2)];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_West
+                current_node = [current_node(1)-1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.North_West
+                current_node = [current_node(1)+1,current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight; 
+            else
+                error('想定外の進行方向です(r_45_斜め)')
+            end
+        else
+            error('想定外の進行モードです')
+        end
+    
+    end
+
+% 左45度
+    function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_l_45(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.North_West;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North_East;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-2,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.South_East;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1),current_node(2)-2];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South_West;
+                current_move_mode = move_dir_property.diagonal;
+            else
+                error('想定外の進行方向です(l_45_直進)')
+            end
+        elseif current_move_mode == move_dir_property.diagonal
+            if current_move_dir == g_d_direction.North_East
+                current_node = [current_node(1)+1,current_node(2)];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_East
+                current_node = [current_node(1)-1,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_West
+                current_node = [current_node(1),current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.North_West
+                current_node = [current_node(1),current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight; 
+            else
+                error('想定外の進行方向です(l_45_斜め)')
+            end
+        else
+            error('想定外の進行モードです')
+        end
+    
+    end
+
+% 右90度
+   function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_r_90(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1),current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-2,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1)+1,current_node(2)+2];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight;
+            else
+                error('想定外の進行方向です(r_90)')
+            end
+        %斜めパターンの時（V90）    
+        elseif current_move_mode == move_dir_property.diagonal
+            if current_move_dir == g_d_direction.North_East
+                current_node = [current_node(1),current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South_East;
+                current_move_mode = move_dir_property.diagonal; 
+                
+            elseif current_move_dir == g_d_direction.South_East
+                current_node = [current_node(1)-1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.South_West;
+                current_move_mode = move_dir_property.diagonal; 
+                
+            elseif current_move_dir == g_d_direction.South_West
+                current_node = [current_node(1),current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North_West;
+                current_move_mode = move_dir_property.diagonal; 
+                
+            elseif current_move_dir == g_d_direction.North_West
+                current_node = [current_node(1)+1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.North_East;
+                current_move_mode = move_dir_property.diagonal; 
+            else
+                error('想定外の進行方向です(r_V90)')
+            end
+        else
+            error('想定外の進行モードです')
+        end
+    
+   end
+
+% 左90度
+   function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_l_90(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-2,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1),current_node(2)-2];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight;
+            else
+                error('想定外の進行方向です(l_90)')
+            end
+        %斜めパターンの時（V90）    
+        elseif current_move_mode == move_dir_property.diagonal
+            if current_move_dir == g_d_direction.North_East
+                current_node = [current_node(1)+1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.North_West;
+                current_move_mode = move_dir_property.diagonal; 
+                
+            elseif current_move_dir == g_d_direction.South_East
+                current_node = [current_node(1),current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North_East;
+                current_move_mode = move_dir_property.diagonal; 
+                
+            elseif current_move_dir == g_d_direction.South_West
+                current_node = [current_node(1)-1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.South_East;
+                current_move_mode = move_dir_property.diagonal; 
+                
+            elseif current_move_dir == g_d_direction.North_West
+                current_node = [current_node(1),current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South_West;
+                current_move_mode = move_dir_property.diagonal; 
+            else
+                error('想定外の進行方向です(r_V90)')
+            end
+        else
+            error('想定外の進行モードです')
+        end
+    
+   end
+
+% 右135度
+   function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_r_135(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South_East;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1)-1,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.South_West;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-1,current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North_West;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1)+1,current_node(2)-1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.North_East;
+                current_move_mode = move_dir_property.diagonal;
+            else
+                error('想定外の進行方向です(r_135)')
+            end
+        %斜めパターンの時    
+        elseif current_move_mode == move_dir_property.diagonal
+            if current_move_dir == g_d_direction.North_East
+                current_node = [current_node(1),current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_East
+                current_node = [current_node(1)-1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_West
+                current_node = [current_node(1),current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.North_West
+                current_node = [current_node(1)+1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight; 
+            else
+                error('想定外の進行方向です(r_135_斜め)')
+            end
+        else
+            error('想定外の進行モードです')
+        end
+    
+   end
+
+% 左135度
+   function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_l_135(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South_West;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.North_West;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-1,current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North_East;
+                current_move_mode = move_dir_property.diagonal;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1)-1,current_node(2)-1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.South_East;
+                current_move_mode = move_dir_property.diagonal;
+            else
+                error('想定外の進行方向です(l_135)')
+            end
+        %斜めパターンの時 
+        elseif current_move_mode == move_dir_property.diagonal
+            if current_move_dir == g_d_direction.North_East
+                current_node = [current_node(1)+1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_East
+                current_node = [current_node(1),current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.South_West
+                current_node = [current_node(1)-1,current_node(2)];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight; 
+                
+            elseif current_move_dir == g_d_direction.North_West
+                current_node = [current_node(1),current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight; 
+            else
+                error('想定外の進行方向です(l_135_斜め)')
+            end
+        else
+            error('想定外の進行モードです')
+        end
+    
+   end
+
+% 右180度
+   function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_r_180(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1)-1,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-1,current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1)+1,current_node(2)-1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight;
+            else
+                error('想定外の進行方向です(r_180)')
+            end
+        %斜めパターンの時    
+        elseif current_move_mode == move_dir_property.diagonal
+            error('想定外の進行方向です(r_180_斜め)')
+        else
+            error('想定外の進行モードです')
+        end
+    
+   end
+
+% 左180度
+   function [current_node,current_node_property,current_move_dir,current_move_mode] ...
+            = turn_l_180(current_node,current_node_property,current_move_dir,current_move_mode)
+        %直進パターンの時
+        if current_move_mode == move_dir_property.straight
+            if current_move_dir == g_d_direction.North
+                current_node = [current_node(1)+1,current_node(2)-1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.South;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.East
+                current_node = [current_node(1)+1,current_node(2)+1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.West;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.South
+                current_node = [current_node(1)-1,current_node(2)+1];
+                current_node_property = matrix_dir.Row;
+                current_move_dir = g_d_direction.North;
+                current_move_mode = move_dir_property.straight;
+                
+            elseif current_move_dir == g_d_direction.West
+                current_node = [current_node(1)-1,current_node(2)-1];
+                current_node_property = matrix_dir.Col;
+                current_move_dir = g_d_direction.East;
+                current_move_mode = move_dir_property.straight;
+            else
+                error('想定外の進行方向です(l_180)')
+            end
+        %斜めパターンの時 
+        elseif current_move_mode == move_dir_property.diagonal
+          error('想定外の進行方向です(l_180_斜め)')
+        else
+            error('想定外の進行モードです')
+        end
+    
+   end
+
+end
 
 
