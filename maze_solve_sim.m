@@ -14,8 +14,8 @@ addpath(strcat(currentdir,'/src'),'-end')
     sim_mode.known = uint8(1); %壁情報を既知として、最短の実行
     
     %シミュレーションモードに応じて以下を変更
-    %sim_mode_flg = sim_mode.unknown;
-    sim_mode_flg = sim_mode.known;
+    sim_mode_flg = sim_mode.unknown;
+    %sim_mode_flg = sim_mode.known;
 %% mode定義
     r_mode.search = uint8(0);
     r_mode.fust_run = uint8(1);
