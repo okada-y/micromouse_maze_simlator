@@ -1,4 +1,4 @@
-function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode)%#codegen
+function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode)%#codegen
 %maze_solve 実機での迷路探索関数
 %入力 迷路壁情報,迷路探索情報,迷路縦サイズ,迷路横サイズ,ゴール座標,
 %出力 壁情報,探索情報
@@ -6,7 +6,7 @@ function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maz
 % グローバル変数宣言
 global maze_fig;
 global g_direction;
-global maze_goal;
+% global maze_goal;
 global matrix_dir;
 global g_d_direction;
 global l_direction;

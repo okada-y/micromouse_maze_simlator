@@ -14,8 +14,8 @@ addpath(strcat(currentdir,'/src'),'-end')
     sim_mode.known = uint8(1); %壁情報を既知として、最短の実行
     
     %シミュレーションモードに応じて以下を変更
-    sim_mode_flg = sim_mode.unknown;
-    %sim_mode_flg = sim_mode.known;
+%     sim_mode_flg = sim_mode.unknown;
+    sim_mode_flg = sim_mode.known;
 %% mode定義
     r_mode.search = uint8(0);
     r_mode.fust_run = uint8(1);
@@ -41,7 +41,7 @@ maze_fig.Position = [1,41,1920,963];
 %%
 maze_data_plot(maze_row_size,maze_col_size,maze_row_data,maze_col_data);
 %% 迷路パラメータ設定
-global maze_goal
+% global maze_goal
 maze_goal = uint8(zeros(9,2));
 
 %指定する迷路に合わせてゴール座標、サイズを変更
@@ -91,13 +91,13 @@ if sim_mode_flg == sim_mode.unknown
 
     %% モード定義
     run_mode = r_mode.search;
-    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode);
+    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
 
     %% 探索情報をもとに最短走行
 
     %モード定義
     run_mode = r_mode.fust_run;
-    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode);
+    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
 end
 
 if sim_mode_flg == sim_mode.known
@@ -106,7 +106,7 @@ if sim_mode_flg == sim_mode.known
     %モード定義
     run_mode = r_mode.fust_run_diagonal;
     maze_wall_search = ones(32,32,'uint8')*15;
-    [maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_serial,maze_wall_search,maze_row_size,maze_col_size,goal_size,run_mode);
+    [maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_serial,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
 
 
 end
