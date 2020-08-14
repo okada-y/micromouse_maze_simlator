@@ -1,7 +1,15 @@
 function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode)%#codegen
+
 %maze_solve 実機での迷路探索関数
 %入力 迷路壁情報,迷路探索情報,迷路縦サイズ,迷路横サイズ,ゴール座標,
 %出力 壁情報,探索情報
+
+%C言語関数インクルード
+ if coder.target('MATLAB')
+ else
+     coder.updateBuildInfo('addSourceFiles','C:\work\matlab\maze_sim_git\src\C_src\matlab_movement.c');
+     coder.cinclude('C:\work\matlab\maze_sim_git\src\C_src\matlab_movement.h');
+ end
 
 % グローバル変数宣言
 global maze_fig;
@@ -16,7 +24,7 @@ global turn_pattern;
 %ローカル変数宣言
 new_goal = uint8(zeros(9,2));
 new_goal_size = uint8(1); 
-contour_map = zeros(32,32);
+contour_map = zeros(32,32,'uint16');
 row_num_node = ones(33,32,'uint16')*uint16(65535);
 col_num_node = ones(32,33,'uint16')*uint16(65535);
 goal_section = [0,0];
@@ -116,14 +124,16 @@ if run_mode == r_mode.search
         contour_map_temp(contour_map_temp == 0) =  65535;
               
         %未探索マスのうち、現在地から一番近いマスの要素番号を抽出
+%         num_temp =uint16(0);
         num_temp = uint16(find(contour_map_temp == min(contour_map_temp,[],'all'),1));
         %行番号を抽出(32行なので、行番号:32で割ったあまり)
-        row_temp = uint8(rem(num_temp-1,32)+1);
+        row_temp = uint8(rem(num_temp(1)-1,32)+1);
         %列番号を抽出(32で割ったときの商)
-        col_temp = uint8(idivide(num_temp-1,32)+1);
+        col_temp = uint8(idivide(num_temp(1)-1,32)+1);
         
         if(contour_map_temp(row_temp,col_temp) == 65535)
            break
+           
         else 
             new_goal(1,:) = [col_temp,row_temp];
             new_goal_size = uint8(1);
@@ -135,7 +145,6 @@ if run_mode == r_mode.search
         end
      end       
         
-    
     
     %スタートを目的地として足立法で再探索
     new_goal(1,:) = uint8([1,1]);
@@ -239,7 +248,7 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map
             %壁情報取得
             [maze_wall,maze_wall_search] = wall_set(maze_row_size,maze_col_size,current_x,current_y,current_dir,maze_wall,maze_wall_search);
             if coder.target('MATLAB')
-            maze_wall_plot(maze_wall,current_x,current_y,maze_row_size,maze_col_size);
+             maze_wall_plot(maze_wall,current_x,current_y,maze_row_size,maze_col_size);
             end
             
             % 等高線MAP生成
@@ -267,7 +276,10 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map
                 case l_direction.front
                     [current_x,current_y] = move_step(current_x,current_y,current_dir);
                     %disp("front")
-
+                    if coder.target('MATLAB')
+                    else
+                        coder.ceval('movefront',uint8(0),uint8(0),uint8(move_dir_property.straight));
+                    end
                 case l_direction.right
                     [current_dir] = turn_clk_90deg(current_dir);
                     [current_x,current_y] = move_step(current_x,current_y,current_dir);
@@ -640,7 +652,7 @@ end
 
     %ゴール座標に0を入力
     for temp = 1:1:l_goal_size
-        contour_map(maze_goal(temp,2),maze_goal(temp,1)) = 0;
+        contour_map(maze_goal(temp,2),maze_goal(temp,1)) = uint16(0);
     end
 
 
@@ -669,7 +681,7 @@ end
                     if (bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.North)) == wall.nowall)
                         %北側のMAPが更新されているか判断、されていなければ書き込み
                         if contour_map(row(tempn)+1,col(tempn)) == max_length 
-                        contour_map(row(tempn)+1,col(tempn)) = tempi+1;
+                        contour_map(row(tempn)+1,col(tempn)) = tempi+uint16(1);
                         change_flag = uint8(1);
                         end
                     end
@@ -678,7 +690,7 @@ end
                     if (bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.East)) == wall.nowall)
                         %東側のMAPが更新されているか判断、されていなければ書き込み
                         if contour_map(row(tempn),col(tempn)+1) == max_length 
-                        contour_map(row(tempn),col(tempn)+1) = tempi+1;
+                        contour_map(row(tempn),col(tempn)+1) = tempi+uint16(1);
                         change_flag = uint8(1);
                         end
                     end
@@ -687,7 +699,7 @@ end
                     if (bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.South)) == wall.nowall)
                         %南側のMAPが更新されているか判断、されていなければ書き込み
                         if contour_map(row(tempn)-1,col(tempn)) == max_length 
-                        contour_map(row(tempn)-1,col(tempn)) = tempi+1;
+                        contour_map(row(tempn)-1,col(tempn)) = tempi+uint16(1);
                         change_flag = uint8(1);
                         end
                     end
@@ -696,7 +708,7 @@ end
                     if (bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.West)) == wall.nowall)
                         %西側のMAPが更新されているか判断、されていなければ書き込み
                         if contour_map(row(tempn),col(tempn)-1) == max_length 
-                        contour_map(row(tempn),col(tempn)-1) = tempi+1;
+                        contour_map(row(tempn),col(tempn)-1) = tempi+uint16(1);
                         change_flag = uint8(1);
                         end
                     end
@@ -776,9 +788,10 @@ end
     tempi = uint8(0);
     
     %マウス位置表示用オブジェクト
-    ax = gca;
-    h = hgtransform('Parent',ax);
-
+    if coder.target('MATLAB')
+        ax = gca;
+        h = hgtransform('Parent',ax);
+    end
     %マウスの初期位置設定
     current_x = uint8(1);
     current_y = uint8(1);
@@ -793,9 +806,11 @@ end
     search_start_y = current_y; %探索開始時y
 
     %探索開始位置プロット
-    hold on
-    plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'ob','MarkerSize',10,'MarkerFaceColor','r','Parent',h);
-    hold off
+        if coder.target('MATLAB')
+            hold on
+            plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'ob','MarkerSize',10,'MarkerFaceColor','r','Parent',h);
+            hold off
+        end
 
 %     %足跡プロット
 %     hold on
@@ -931,7 +946,7 @@ straight_weight = uint16(5);
     % 進行方向 : 1+2+4+8(東西南北すべて)=15
     % を入力
     for tempn = 1:1:goal_size
-        contour_map(maze_goal(tempn,2),maze_goal(tempn,1)) = 0;
+        contour_map(maze_goal(tempn,2),maze_goal(tempn,1)) = uint16(0);
         move_dir_map(maze_goal(tempn,2),maze_goal(tempn,1)) = bitshift(uint8(1),g_direction.North)...
                                                                +bitshift(uint8(1),g_direction.East)...
                                                                +bitshift(uint8(1),g_direction.South)...
@@ -970,9 +985,9 @@ straight_weight = uint16(5);
                             %かつ北のマスが更新予定値よりも大きな値の場合
                             if contour_map(row(tempn)+1,col(tempn)) > contour_map(row(tempn),col(tempn))+1
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn)+1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn)+1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新
-                                contour_map(row(tempn)+1,col(tempn)) = contour_map(row(tempn),col(tempn))+1;
+                                contour_map(row(tempn)+1,col(tempn)) = contour_map(row(tempn),col(tempn))+uint16(1);
                                 %移動方向MAP更新
                                 move_dir_map(row(tempn)+1,col(tempn)) = bitshift(uint8(1),g_direction.North);
                                 %更新フラグを立てる
@@ -984,7 +999,7 @@ straight_weight = uint16(5);
                             %かつ北のマスの歩数MAP値が、更新予定値より大きい場合
                             if contour_map(row(tempn)+1,col(tempn)) > contour_map(row(tempn),col(tempn))+straight_weight     
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn)+1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn)+1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新(重みづけあり)
                                 contour_map(row(tempn)+1,col(tempn)) = contour_map(row(tempn),col(tempn))+straight_weight;
                                 %移動方向MAP更新
@@ -1007,9 +1022,9 @@ straight_weight = uint16(5);
                             %かつ東のマスが更新予定値よりも大きな値の場合
                             if contour_map(row(tempn),col(tempn)+1) > contour_map(row(tempn),col(tempn))+1
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新
-                                contour_map(row(tempn),col(tempn)+1) = contour_map(row(tempn),col(tempn))+1;
+                                contour_map(row(tempn),col(tempn)+1) = contour_map(row(tempn),col(tempn))+uint16(1);
                                 %移動方向MAP更新
                                 move_dir_map(row(tempn),col(tempn)+1) = bitshift(uint8(1),g_direction.East);
                                 %更新フラグを立てる
@@ -1021,7 +1036,7 @@ straight_weight = uint16(5);
                             %かつ東のマスの歩数MAP値が、更新予定値より大きい場合
                             if contour_map(row(tempn),col(tempn)+1) > contour_map(row(tempn),col(tempn))+straight_weight     
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新(重みづけあり)
                                 contour_map(row(tempn),col(tempn)+1) = contour_map(row(tempn),col(tempn))+straight_weight;
                                 %移動方向MAP更新
@@ -1043,9 +1058,9 @@ straight_weight = uint16(5);
                             %かつ南のマスが更新予定値よりも大きな値の場合
                             if contour_map(row(tempn)-1,col(tempn)) > contour_map(row(tempn),col(tempn))+1
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新
-                                contour_map(row(tempn)-1,col(tempn)) = contour_map(row(tempn),col(tempn))+1;
+                                contour_map(row(tempn)-1,col(tempn)) = contour_map(row(tempn),col(tempn))+uint16(1);
                                 %移動方向MAP更新
                                 move_dir_map(row(tempn)-1,col(tempn)) = bitshift(uint8(1),g_direction.South);
                                 %更新フラグを立てる
@@ -1057,7 +1072,7 @@ straight_weight = uint16(5);
                             %かつ南のマスの歩数MAP値が、更新予定値より大きい場合
                             if contour_map(row(tempn)-1,col(tempn)) > contour_map(row(tempn),col(tempn))+straight_weight     
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新(重みづけあり)
                                 contour_map(row(tempn)-1,col(tempn)) = contour_map(row(tempn),col(tempn))+straight_weight;
                                 %移動方向MAP更新
@@ -1079,9 +1094,9 @@ straight_weight = uint16(5);
                             %かつ北のマスが更新予定値よりも大きな値の場合
                             if contour_map(row(tempn),col(tempn)-1) > contour_map(row(tempn),col(tempn))+1
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn),col(tempn)-1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn),col(tempn)-1) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新
-                                contour_map(row(tempn),col(tempn)-1) = contour_map(row(tempn),col(tempn))+1;
+                                contour_map(row(tempn),col(tempn)-1) = contour_map(row(tempn),col(tempn))+uint16(1);
                                 %移動方向MAP更新
                                 move_dir_map(row(tempn),col(tempn)-1) = bitshift(uint8(1),g_direction.West);
                                 %更新フラグを立てる
@@ -1093,7 +1108,7 @@ straight_weight = uint16(5);
                             %かつ北のマスの歩数MAP値が、更新予定値より大きい場合
                             if contour_map(row(tempn),col(tempn)-1) > contour_map(row(tempn),col(tempn))+straight_weight     
                                 %更新確認用のMAP更新
-                                contour_refine_map(row(tempn),col(tempn)-1) = contour_refine_map(row(tempn),col(tempn))+1;
+                                contour_refine_map(row(tempn),col(tempn)-1) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                                 %歩数MAP更新(重みづけあり)
                                 contour_map(row(tempn),col(tempn)-1) = contour_map(row(tempn),col(tempn))+straight_weight;
                                 %移動方向MAP更新
@@ -1126,7 +1141,7 @@ function [row_num_node,col_num_node,goal_num,start_num] = make_map_fustrun_diago
 %パラメータ設定
 
     % 迷路パラメータ設定
-    max_length = 32*32;
+    max_length = uint16(32*32);
 
     % ルートの重み設定
     weight_straight = uint16(6);
@@ -1803,9 +1818,9 @@ end
         
         %スタートノード,方向を設定
         current_matrix_dir = matrix_dir.Row; %スタートノードは行方向
-        current_node = [2,1];%スタートマスの北のノード
+        current_node = uint8([2,1]);%スタートマスの北のノード
         next_matrix_dir = matrix_dir.Row; %進行方向先のノード方向（仮）
-        next_node = [2,1];%進行方向先のノード座標
+        next_node =uint8([2,1]);%進行方向先のノード座標
         current_dir_dgnd = g_d_direction.North;%進行方向（最初の仮の値は北向き）
         map_min = uint16(65535);
         while 1
@@ -2039,6 +2054,11 @@ end
 % 確定されたゴールのノードと、ゴール時の進入角度から、
 % ゴールマスを確定する。
     function[goal_section,goal_node2,goal_matrix_dir2]=decide_goal_section(maze_goal,goal_node,goal_matrix_dir,goal_dir)
+        
+        goal_section = uint8([1,1]);%(y,x)
+        goal_node2 = uint8([1,1]);
+        goal_matrix_dir2 = matrix_dir.Row;
+        
         if goal_dir == g_d_direction.North
             if goal_matrix_dir == matrix_dir.Row
                 if goal_judge(maze_goal,goal_node(2),goal_node(1)+1)
@@ -2249,7 +2269,7 @@ end
         %ゴール判定関数
         function[result] = goal_judge(maze_goal,x,y)
             %入力座標の配列を作成
-            temp = [ones(9,1)*x,ones(9,1)*y];
+            temp = [ones(9,1,'uint8')*x,ones(9,1,'uint8')*y];
             %ゴール座標と比較
             temp1 = logical(maze_goal == temp);
             %x,yともに一致するか確認、一致なら1を返す
@@ -2325,7 +2345,9 @@ end
                         %直進カウンタがあれば移動
                         if straight_count > 0
                             %軌跡をプロット
-                            straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);                            
+                            if coder.target('MATLAB')
+                                straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);  
+                            end
                             %現在ノードから直進カウンタ分移動する関数。
                             [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
                                 = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
@@ -2340,23 +2362,34 @@ end
                         %ターンの種類を判定する
                         [turn_pattern_num] = get_turn_pattern_num(move_dir_buffer,ref_move_mode);
                         %ターンの軌跡を描画する
-                        slalom_plot(current_node,current_node_property,current_move_dir,current_move_mode,turn_pattern_num);
+                        if coder.target('MATLAB')
+                            slalom_plot(current_node,current_node_property,current_move_dir,current_move_mode,turn_pattern_num);
+                        end
                         %パターンが決まらなかった場合、エラー
                         if turn_pattern_num == 0
-                            error('パターンが見つかりませんでした。(ゴール時)')
+                            if coder.target('MATLAB')
+%                                 error('パターンが見つかりませんでした。(ゴール時)')
+                                    error('The pattern was not found.(At goal)')
+                            end
                         end
                         %パターンに応じた移動処理
                         if turn_pattern_num == turn_pattern.r_45
-                            disp("右45度")
+                             if coder.target('MATLAB')
+                                disp("right45deg")
+                             end
                             [current_node,current_node_property,current_move_dir,current_move_mode] ...
                                 = turn_r_45(current_node,current_node_property,current_move_dir,current_move_mode);
 
                         elseif turn_pattern_num == turn_pattern.l_45
-                            disp("左45度")
+                            if coder.target('MATLAB')
+                                disp("left45deg")
+                            end
                             [current_node,current_node_property,current_move_dir,current_move_mode] ...
                                 = turn_l_45(current_node,current_node_property,current_move_dir,current_move_mode);
                         else
-                            error("想定していないターンパターンです（ゴール進入時）")
+                            if coder.target('MATLAB')
+                                error("It is an unexpected turn pattern (when entering the goal)")
+                            end
                         end
                     end
                 %参照位置がセクションであるとき
@@ -2365,7 +2398,9 @@ end
 %                     disp("ゴール時直進（セクション）")
                     if straight_count > 0
                         %軌跡をプロット
-                        straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                        if coder.target('MATLAB')
+                            straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                        end
                         %現在ノードから直進カウンタ分移動する関数。
                         [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
                             = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
@@ -2384,7 +2419,9 @@ end
             %直進カウンタあるとき
             if straight_count > 0
                 %軌跡をプロット
-                straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);                
+                if coder.target('MATLAB')
+                    straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);     
+                end
                 %現在ノードから直進カウンタ分移動する関数。
                 [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
                     = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
@@ -2407,7 +2444,9 @@ end
                 %パターンが確定していれば終了
                 if turn_pattern_num ~= 0
                     %パターンの軌跡を描画
-                    slalom_plot(current_node,current_node_property,current_move_dir,current_move_mode,turn_pattern_num);
+                    if coder.target('MATLAB')
+                        slalom_plot(current_node,current_node_property,current_move_dir,current_move_mode,turn_pattern_num);
+                    end
                     break;
                 else
                     %次の進行方向を決定する
@@ -2416,56 +2455,74 @@ end
                 end
                 %3回目でパターンが決まらなかった場合、エラー
                 if turn_pattern_num == 0 && i == 3
-                    error('パターンが見つかりませんでした。')
+                    if coder.target('MATLAB') 
+                        error('The pattern was not found.')
+                    end
                 end
             end
             
             %パターンに応じて移動
             if turn_pattern_num == turn_pattern.r_45
-                disp("右45度")
+                if coder.target('MATLAB')
+                    disp("right45deg")
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_45(current_node,current_node_property,current_move_dir,current_move_mode);
             
             elseif turn_pattern_num == turn_pattern.l_45
-                disp("左45度")
-                [current_node,current_node_property,current_move_dir,current_move_mode] ...
+                if coder.target('MATLAB')
+                    disp("left45deg")
+                end
+                    [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_45(current_node,current_node_property,current_move_dir,current_move_mode);
             
             elseif turn_pattern_num == turn_pattern.r_90
-                if current_move_mode == move_dir_property.straight
-                    disp("右90度")
-                elseif current_move_mode == move_dir_property.diagonal
-                    disp("右V90度")
+                if coder.target('MATLAB')
+                    if current_move_mode == move_dir_property.straight
+                        disp("right90deg")
+                    elseif current_move_mode == move_dir_property.diagonal
+                        disp("rightV90deg")
+                    end
                 end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_90(current_node,current_node_property,current_move_dir,current_move_mode);
                 
             elseif turn_pattern_num == turn_pattern.l_90
-                if current_move_mode == move_dir_property.straight
-                    disp("左90度")
-                elseif current_move_mode == move_dir_property.diagonal
-                    disp("左V90度")
+                if coder.target('MATLAB')
+                    if current_move_mode == move_dir_property.straight
+                        disp("left90deg")
+                    elseif current_move_mode == move_dir_property.diagonal
+                        disp("leftV90deg")
+                    end
                 end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_90(current_node,current_node_property,current_move_dir,current_move_mode);
             
             elseif turn_pattern_num == turn_pattern.r_135
-                disp("右135度")
+                if coder.target('MATLAB')
+                    disp("right135deg")
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_135(current_node,current_node_property,current_move_dir,current_move_mode);                
             
             elseif turn_pattern_num == turn_pattern.l_135
-                disp("左135度")
+                if coder.target('MATLAB')
+                    disp("left135deg")
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_135(current_node,current_node_property,current_move_dir,current_move_mode); 
                 
             elseif turn_pattern_num == turn_pattern.r_180  
-                disp("右180度")
+                if coder.target('MATLAB')
+                    disp("right180deg")
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_180(current_node,current_node_property,current_move_dir,current_move_mode); 
                 
             elseif turn_pattern_num == turn_pattern.l_180
-                disp("左180度")
+                if coder.target('MATLAB')
+                    disp("left180deg")
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_180(current_node,current_node_property,current_move_dir,current_move_mode);                 
             end
@@ -2557,12 +2614,21 @@ end
                 end
                 
             else
-                error('進行方向モードが予期せぬ値です。')
+                if coder.target('MATLAB')
+                    error('ref move mode is unexpected')
+                end     
             end
         end
 end
 %% get_next_dir_diagonal 斜め有での進行方向,行先取得
     function [next_dir,next_node,next_node_property]=get_next_dir_diagonal(row_num_node,col_num_node,current_move_dir,current_node,current_matrix_dir,goal_node2,goal_matrix_dir2,goal_section)
+ 
+        %出力変数定義
+        next_dir = g_d_direction.North;
+        next_node =uint8( [1,1]);
+        next_node_property = matrix_dir.Row;
+        
+        
         %現在のエッジはゴールノードか
         if isequal(current_node,goal_node2) && current_matrix_dir == goal_matrix_dir2
         %ゴールノードの場合
@@ -2700,34 +2766,40 @@ end
                         elseif temp == g_d_direction.South
                             %柱
                         elseif temp == g_d_direction.South_West
-                            if row_num_node(current_node(1),current_node(2)-1) < map_min
-                                %最小値を更新
-                                map_min = row_num_node(current_node(1),current_node(2)-1);
-                                %現在ノードの進行方向を南西向きに
-                                next_dir = g_d_direction.South_West;
-                                %進行方向先の座標、行列の方向を更新
-                                next_node_property = matrix_dir.Row;
-                                next_node = [current_node(1),current_node(2)-1];
+                            if current_node(2)-1 > 0
+                                if row_num_node(current_node(1),current_node(2)-1) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1),current_node(2)-1);
+                                    %現在ノードの進行方向を南西向きに
+                                    next_dir = g_d_direction.South_West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_node_property = matrix_dir.Row;
+                                    next_node = [current_node(1),current_node(2)-1];
+                                end
                             end
                         elseif temp == g_d_direction.West
-                            if col_num_node(current_node(1),current_node(2)-1) < map_min
-                                %最小値を更新
-                                map_min = col_num_node(current_node(1),current_node(2)-1);
-                                %現在ノードの進行方向を西向きに
-                                next_dir = g_d_direction.West;
-                                %進行方向先の座標、行列の方向を更新
-                                next_node_property = matrix_dir.Col;
-                                next_node = [current_node(1),current_node(2)-1];
+                            if current_node(2)-1 > 0
+                                if col_num_node(current_node(1),current_node(2)-1) < map_min
+                                    %最小値を更新
+                                    map_min = col_num_node(current_node(1),current_node(2)-1);
+                                    %現在ノードの進行方向を西向きに
+                                    next_dir = g_d_direction.West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_node_property = matrix_dir.Col;
+                                    next_node = [current_node(1),current_node(2)-1];
+                                end
                             end
                         elseif temp == g_d_direction.North_West
-                            if row_num_node(current_node(1)+1,current_node(2)-1) < map_min
-                                %最小値を更新
-                                map_min = row_num_node(current_node(1)+1,current_node(2)-1);
-                                %現在ノードの進行方向を北西向きに
-                                next_dir = g_d_direction.North_West;
-                                %進行方向先の座標、行列の方向を更新
-                                next_node_property = matrix_dir.Row;
-                                next_node = [current_node(1)+1,current_node(2)-1];
+                            if current_node(2)-1 > 0
+                                if row_num_node(current_node(1)+1,current_node(2)-1) < map_min
+                                    %最小値を更新
+                                    map_min = row_num_node(current_node(1)+1,current_node(2)-1);
+                                    %現在ノードの進行方向を北西向きに
+                                    next_dir = g_d_direction.North_West;
+                                    %進行方向先の座標、行列の方向を更新
+                                    next_node_property = matrix_dir.Row;
+                                    next_node = [current_node(1)+1,current_node(2)-1];
+                                end
                             end
                         end
 
@@ -2750,32 +2822,38 @@ end
                 current_node_property = matrix_dir.Row;
                 current_move_dir = g_d_direction.North;
                 current_move_mode = move_dir_property.straight;
-                disp(['北に',num2str(straight_count),'マス直進'])
-                
+                if coder.target('MATLAB')
+                    disp(['North',num2str(straight_count),'node straight'])
+                end
             elseif current_move_dir == g_d_direction.East
                 current_node = [current_node(1),current_node(2)+straight_count];
                 current_node_property = matrix_dir.Col;
                 current_move_dir = g_d_direction.East;
                 current_move_mode = move_dir_property.straight;
-                disp(['東に',num2str(straight_count),'マス直進'])
-            
+                if coder.target('MATLAB')
+                    disp(['East',num2str(straight_count),'node straight'])
+                end
             elseif current_move_dir == g_d_direction.South
                 current_node = [current_node(1)-straight_count,current_node(2)];
                 current_node_property = matrix_dir.Row;
                 current_move_dir = g_d_direction.South;
                 current_move_mode = move_dir_property.straight;
-                disp(['南に',num2str(straight_count),'マス直進'])
-
+                if coder.target('MATLAB')
+                    disp(['South',num2str(straight_count),'node straight'])
+                end
             elseif current_move_dir == g_d_direction.West
                 current_node = [current_node(1),current_node(2)-straight_count];
                 current_node_property = matrix_dir.Col;
                 current_move_dir = g_d_direction.West;
                 current_move_mode = move_dir_property.straight;
-                disp(['西に',num2str(straight_count),'マス直進'])
+                if coder.target('MATLAB')
+                    disp(['West',num2str(straight_count),'square Go straight'])
+                end
             else
-                error("想定されていない動作方向です。")
+                if coder.target('MATLAB')
+                    error("Unexpected movement direction")
+                end
             end
-            
         %斜め直進のとき    
         elseif current_move_mode == move_dir_property.diagonal
             %直進カウンタを2で割った商とあまり、その合計を計算
@@ -2797,10 +2875,13 @@ end
                     current_move_dir = g_d_direction.North_East;
                     current_move_mode = move_dir_property.diagonal;
                 else
-                    error("想定されていないノード属性です。")
+                     if coder.target('MATLAB')
+                        error("Unexpected node attribute")
+                     end
                 end
-                disp(['北東に',num2str(straight_count),'ノード直進'])
-                
+                 if coder.target('MATLAB')
+                     disp(['North East',num2str(straight_count),'node straight'])
+                 end
             elseif current_move_dir == g_d_direction.South_East
                 if current_node_property == matrix_dir.Row
                     current_node = [current_node(1)-temp_qr,current_node(2)+temp_qr];
@@ -2814,10 +2895,13 @@ end
                     current_move_dir = g_d_direction.South_East;
                     current_move_mode = move_dir_property.diagonal;
                 else
-                    error("想定されていないノード属性です。")
+                     if coder.target('MATLAB')
+                        error("Unexpected node attribute")
+                     end
                 end
-                disp(['南東に',num2str(straight_count),'ノード直進'])
-                
+                if coder.target('MATLAB')
+                    disp(['South East',num2str(straight_count),'node straight'])
+                end
             elseif current_move_dir == g_d_direction.South_West
                 if current_node_property == matrix_dir.Row
                     current_node = [current_node(1)-temp_qr,current_node(2)-temp_quotient];
@@ -2831,10 +2915,13 @@ end
                     current_move_dir = g_d_direction.South_West;
                     current_move_mode = move_dir_property.diagonal;
                 else
-                    error("想定されていないノード属性です。")
+                     if coder.target('MATLAB')
+                        error("Unexpected node attribute")
+                     end
                 end
-                disp(['南西に',num2str(straight_count),'ノード直進'])
-                
+                 if coder.target('MATLAB')
+                     disp(['South West',num2str(straight_count),'node straight'])
+                 end
             elseif current_move_dir == g_d_direction.North_West
                 if current_node_property == matrix_dir.Row
                     current_node = [current_node(1)+temp_quotient,current_node(2)-temp_quotient];
@@ -2848,15 +2935,21 @@ end
                     current_move_dir = g_d_direction.North_West;
                     current_move_mode = move_dir_property.diagonal;
                 else
-                    error("想定されていないノード属性です。")
+                     if coder.target('MATLAB')
+                          error("Unexpected node attribute")
+                     end
                 end
-                disp(['北西に',num2str(straight_count),'ノード直進'])
+                 if coder.target('MATLAB')
+                   disp(['Northwest',num2str(straight_count),'node straight'])
+                 end
             end
         else
-            disp("想定されていない動作モードです")
+             if coder.target('MATLAB')
+                disp("Unexpected operating mode")
+             end
         end
         %移動完了時、直進カウンタをクリア
-        straight_count = 0;
+        straight_count = uint8(0);
     end
 % 右45度
     function [current_node,current_node_property,current_move_dir,current_move_mode] ...
@@ -2887,7 +2980,9 @@ end
                 current_move_dir = g_d_direction.North_West;
                 current_move_mode = move_dir_property.diagonal;
             else
-                error('想定外の進行方向です(r_45_直進)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction (r_45_straight)')
+                 end
             end
         elseif current_move_mode == move_dir_property.diagonal
             if current_move_dir == g_d_direction.North_East
@@ -2914,10 +3009,14 @@ end
                 current_move_dir = g_d_direction.North;
                 current_move_mode = move_dir_property.straight; 
             else
-                error('想定外の進行方向です(r_45_斜め)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction (r_45_diagonal)')
+                 end
             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                 error('Unexpected progress mode')
+             end
         end
     
     end
@@ -2951,7 +3050,9 @@ end
                 current_move_dir = g_d_direction.South_West;
                 current_move_mode = move_dir_property.diagonal;
             else
-                error('想定外の進行方向です(l_45_直進)')
+                 if coder.target('MATLAB')
+                   error('Unexpected traveling direction (l_45_straight)')
+                 end
             end
         elseif current_move_mode == move_dir_property.diagonal
             if current_move_dir == g_d_direction.North_East
@@ -2978,10 +3079,14 @@ end
                 current_move_dir = g_d_direction.West;
                 current_move_mode = move_dir_property.straight; 
             else
-                error('想定外の進行方向です(l_45_斜め)')
+                 if coder.target('MATLAB')
+                     error('Unexpected traveling direction (l_45_diagonal)')
+                 end
             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                 error('Unexpected progress mode')
+             end
         end
     
     end
@@ -3015,7 +3120,9 @@ end
                 current_move_dir = g_d_direction.North;
                 current_move_mode = move_dir_property.straight;
             else
-                error('想定外の進行方向です(r_90)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction (r_90)')
+                 end
             end
         %斜めパターンの時（V90）    
         elseif current_move_mode == move_dir_property.diagonal
@@ -3043,10 +3150,14 @@ end
                 current_move_dir = g_d_direction.North_East;
                 current_move_mode = move_dir_property.diagonal; 
             else
-                error('想定外の進行方向です(r_V90)')
+                 if coder.target('MATLAB')
+                     error('Unexpected traveling direction (r_V90)')
+                 end
             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                 error('Unexpected progress mode')
+             end
         end
     
    end
@@ -3080,7 +3191,9 @@ end
                 current_move_dir = g_d_direction.South;
                 current_move_mode = move_dir_property.straight;
             else
-                error('想定外の進行方向です(l_90)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction (l_90)')
+                 end
             end
         %斜めパターンの時（V90）    
         elseif current_move_mode == move_dir_property.diagonal
@@ -3108,10 +3221,14 @@ end
                 current_move_dir = g_d_direction.South_West;
                 current_move_mode = move_dir_property.diagonal; 
             else
-                error('想定外の進行方向です(r_V90)')
+                 if coder.target('MATLAB')
+                     error('Unexpected traveling direction(r_V90)')
+                 end
             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                error('Unexpected progress mode')
+             end
         end
     
    end
@@ -3145,7 +3262,9 @@ end
                 current_move_dir = g_d_direction.North_East;
                 current_move_mode = move_dir_property.diagonal;
             else
-                error('想定外の進行方向です(r_135)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction(r_135)')
+                 end
             end
         %斜めパターンの時    
         elseif current_move_mode == move_dir_property.diagonal
@@ -3173,10 +3292,14 @@ end
                 current_move_dir = g_d_direction.East;
                 current_move_mode = move_dir_property.straight; 
             else
-                error('想定外の進行方向です(r_135_斜め)')
+                 if coder.target('MATLAB')
+                     error('Unexpected traveling direction (r_135_diagonal)')
+                 end
             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                error('Unexpected progress mode')
+             end
         end
     
    end
@@ -3210,7 +3333,9 @@ end
                 current_move_dir = g_d_direction.South_East;
                 current_move_mode = move_dir_property.diagonal;
             else
-                error('想定外の進行方向です(l_135)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction(l_135)')
+                 end
             end
         %斜めパターンの時 
         elseif current_move_mode == move_dir_property.diagonal
@@ -3238,10 +3363,14 @@ end
                 current_move_dir = g_d_direction.South;
                 current_move_mode = move_dir_property.straight; 
             else
-                error('想定外の進行方向です(l_135_斜め)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction(l_135_diagonal)')
+                 end
             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                error('Unexpected progress mode')
+             end
         end
     
    end
@@ -3275,13 +3404,19 @@ end
                 current_move_dir = g_d_direction.East;
                 current_move_mode = move_dir_property.straight;
             else
-                error('想定外の進行方向です(r_180)')
+                 if coder.target('MATLAB')
+                    error('Unexpected traveling direction (r_180)')
+                 end
             end
         %斜めパターンの時    
         elseif current_move_mode == move_dir_property.diagonal
-            error('想定外の進行方向です(r_180_斜め)')
+             if coder.target('MATLAB')
+                error('Unexpected traveling direction (r_180_diagonal)')
+             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                 error('Unexpected progress mode')
+             end
         end
     
    end
@@ -3315,13 +3450,19 @@ end
                 current_move_dir = g_d_direction.East;
                 current_move_mode = move_dir_property.straight;
             else
-                error('想定外の進行方向です(l_180)')
+                 if coder.target('MATLAB')
+                     error('Unexpected traveling direction (l_180)')
+                 end
             end
         %斜めパターンの時 
         elseif current_move_mode == move_dir_property.diagonal
-          error('想定外の進行方向です(l_180_斜め)')
+             if coder.target('MATLAB')
+                 error('Unexpected traveling direction (l_180_diagonal)')
+             end
         else
-            error('想定外の進行モードです')
+             if coder.target('MATLAB')
+                    error('Unexpected progress mode')
+             end
         end
     
    end
