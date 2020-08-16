@@ -5,7 +5,7 @@
  * File: maze_solve.c
  *
  * MATLAB Coder version            : 4.2
- * C/C++ source code generated on  : 14-Aug-2020 15:40:02
+ * C/C++ source code generated on  : 16-Aug-2020 15:44:45
  */
 
 /* Include Files */
@@ -100,7 +100,7 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
   char *current_y, unsigned char *current_dir, unsigned char maze_row_size,
   unsigned char maze_col_size, unsigned char maze_wall[1024], unsigned char
   maze_wall_search[1024], const unsigned char exploration_goal[18], unsigned
-  char start_flg, unsigned char goal_after_flg, unsigned short contour_map[1024]);
+  char *start_flg, unsigned char goal_after_flg, unsigned short contour_map[1024]);
 static void decide_goal_node_dir(const unsigned char maze_goal[18], unsigned
   char goal_size, const unsigned short row_num_node[1056], const unsigned short
   col_num_node[1056], unsigned char goal_node[2], unsigned char *goal_matrix_dir,
@@ -157,7 +157,7 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
   char *current_y, unsigned char *current_dir, unsigned char maze_row_size,
   unsigned char maze_col_size, unsigned char maze_wall[1024], unsigned char
   maze_wall_search[1024], const unsigned char exploration_goal[18], unsigned
-  char l_goal_size, unsigned char start_flg, unsigned char goal_after_flg,
+  char l_goal_size, unsigned char *start_flg, unsigned char goal_after_flg,
   unsigned short contour_map[1024]);
 static void turn_180deg(unsigned char *current_dir);
 static void turn_clk_90deg(unsigned char *current_dir);
@@ -3048,7 +3048,7 @@ static void b_make_map_fustrun_diagonal(coder_internal_ref_2 *max_length,
  *                unsigned char maze_wall[1024]
  *                unsigned char maze_wall_search[1024]
  *                const unsigned char exploration_goal[18]
- *                unsigned char start_flg
+ *                unsigned char *start_flg
  *                unsigned char goal_after_flg
  *                unsigned short contour_map[1024]
  * Return Type  : void
@@ -3059,7 +3059,7 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
   char *current_y, unsigned char *current_dir, unsigned char maze_row_size,
   unsigned char maze_col_size, unsigned char maze_wall[1024], unsigned char
   maze_wall_search[1024], const unsigned char exploration_goal[18], unsigned
-  char start_flg, unsigned char goal_after_flg, unsigned short contour_map[1024])
+  char *start_flg, unsigned char goal_after_flg, unsigned short contour_map[1024])
 {
   unsigned char goal_flg;
   int exitg1;
@@ -3078,15 +3078,12 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
     exitg1 = 0;
 
     /* 壁情報取得 */
-    /* 初回動作時、もしくはゴール直後は壁情報を更新しない */
-    if ((start_flg != 1) || (goal_after_flg != 1)) {
+    /* ゴール直後は壁情報を更新しない */
+    if (goal_after_flg != 1) {
       wall_set(wall, wall_flg, search, maze_goal, maze_row_size, maze_col_size, *
                current_x, *current_y, *current_dir, maze_wall, maze_wall_search);
     } else {
-      /* 初回動作、もしくはゴール直後のとき */
-      start_flg = 0U;
-
-      /* スタート直後フラグをクリア */
+      /* ゴール直後のとき */
       goal_after_flg = 0U;
 
       /* ゴール直後フラグをクリア */
@@ -3139,7 +3136,10 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("front") */
-        m_move_front(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_front(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -3150,7 +3150,10 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("right") */
-        m_move_right(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_right(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -3161,8 +3164,10 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("back") */
-        /* 壁フラグをクリア */
-        m_move_back(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_back(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -3173,8 +3178,10 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("left") */
-        /* 壁フラグをクリア */
-        m_move_left(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_left(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -11016,7 +11023,7 @@ static void move_straight(unsigned char current_node[2], unsigned char
  *                unsigned char maze_wall_search[1024]
  *                const unsigned char exploration_goal[18]
  *                unsigned char l_goal_size
- *                unsigned char start_flg
+ *                unsigned char *start_flg
  *                unsigned char goal_after_flg
  *                unsigned short contour_map[1024]
  * Return Type  : void
@@ -11027,7 +11034,7 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
   char *current_y, unsigned char *current_dir, unsigned char maze_row_size,
   unsigned char maze_col_size, unsigned char maze_wall[1024], unsigned char
   maze_wall_search[1024], const unsigned char exploration_goal[18], unsigned
-  char l_goal_size, unsigned char start_flg, unsigned char goal_after_flg,
+  char l_goal_size, unsigned char *start_flg, unsigned char goal_after_flg,
   unsigned short contour_map[1024])
 {
   unsigned char goal_flg;
@@ -11049,15 +11056,12 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
     exitg1 = 0;
 
     /* 壁情報取得 */
-    /* 初回動作時、もしくはゴール直後は壁情報を更新しない */
-    if ((start_flg != 1) || (goal_after_flg != 1)) {
+    /* ゴール直後は壁情報を更新しない */
+    if (goal_after_flg != 1) {
       wall_set(wall, wall_flg, search, maze_goal, maze_row_size, maze_col_size, *
                current_x, *current_y, *current_dir, maze_wall, maze_wall_search);
     } else {
-      /* 初回動作、もしくはゴール直後のとき */
-      start_flg = 0U;
-
-      /* スタート直後フラグをクリア */
+      /* ゴール直後のとき */
       goal_after_flg = 0U;
 
       /* ゴール直後フラグをクリア */
@@ -11113,7 +11117,10 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("front") */
-        m_move_front(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_front(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -11124,7 +11131,10 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("right") */
-        m_move_right(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_right(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -11135,8 +11145,10 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("back") */
-        /* 壁フラグをクリア */
-        m_move_back(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_back(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -11147,8 +11159,10 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         move_step(current_x, current_y, *current_dir);
 
         /* disp("left") */
-        /* 壁フラグをクリア */
-        m_move_left(start_flg, wall_flg->contents, move_dir_property.straight);
+        m_move_left(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* スタート直後フラグをクリア */
+        *start_flg = 0U;
 
         /* 壁フラグをクリア */
         wall_flg->contents = 0U;
@@ -11161,7 +11175,7 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
 
   /* ゴール時停止フラグが立っているとき */
   /* 停止動作を実施 */
-  m_goal_movement(start_flg, wall_flg->contents, move_dir_property.straight);
+  m_goal_movement(*start_flg, wall_flg->contents, move_dir_property.straight);
 
   /* ゴール時停止フラグが立っていなければ、動作させたまま終了 */
   /*           */
@@ -13266,17 +13280,17 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
   coder_internal_ref_5 wall;
   coder_internal_ref_4 search;
   coder_internal_ref_3 num_temp;
-  unsigned char col_temp;
   coder_internal_ref_2 max_length;
+  unsigned char col_temp;
   unsigned short minval;
   coder_internal_ref current_x;
   coder_internal_ref current_y;
   coder_internal_ref current_dir;
-  unsigned char search_flag;
   unsigned char goal_section[2];
+  unsigned char search_flag;
   unsigned char b_goal_section[2];
   unsigned char goal_node2[2];
-  unsigned char goal_matrix_dir2;
+  unsigned char start_flg;
   int exitg1;
   bool exitg2;
   bool b0;
@@ -13292,7 +13306,7 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
   /* ローカル変数定義  */
   /*  ゴール時ストップフラグ(0:移動継続　1:ストップ) */
   /*  スタートフラグ(0:動作中　1:停止からの移動開始) */
-  /* ゴール直後フラグ(0:ゴール直後でない　1:ゴール直後) */
+  /* ゴール直後フラグ(0:ゴール直後でない, 1:ゴール直後) */
   wall_flg.contents = 0U;
 
   /* 壁フラグ(1:前、2:右、（4:後ろ)、8:左) */
@@ -13368,6 +13382,10 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
   if (run_mode == 0) {
     /* マウスの初期位置設定 */
     /* for C gen */
+    /* 各フラグを定義 */
+    /* 停止直後 */
+    /* 停止処理を実施する */
+    /* ゴール直後フラグはクリア */
     /* 一マス前進 */
     col_temp = 1U;
 
@@ -13399,25 +13417,29 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
       /* disp("west_step") */
     }
 
+    /* C言語でのスタート処理 */
+    m_start_movement(1, 0, move_dir_property.straight);
+
+    /* 停止直後フラグをクリア */
     /* ゴールをプロット */
-    /* 各フラグを定義 */
-    /* 停止直後 */
-    /* 停止処理を実施する */
-    /* ゴール直後フラグはクリア */
     /* 足立法による探索 */
     current_x.contents = col_temp;
     current_y.contents = search_flag;
     current_dir.contents = g_direction.North;
+    start_flg = 0U;
     search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &num_temp,
                   &current_x.contents, &current_y.contents,
                   &current_dir.contents, maze_row_size, maze_col_size, maze_wall,
-                  maze_wall_search, maze_goal, goal_size, 1U, 0U, contour_map);
+                  maze_wall_search, maze_goal, goal_size, &start_flg, 0U,
+                  contour_map);
 
     /* ひとまづゴール(停止) */
     /* 各フラグを定義 */
+    start_flg = 1U;
+
     /* 停止直後 */
     /* 停止処理を実施しない */
-    /* ゴール直後フラグをたてる（処理上どちらでもよい) */
+    /* ゴール直後フラグをたてる */
     /* ゴールをすべて探索 */
     do {
       exitg1 = 0;
@@ -13441,7 +13463,7 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
         b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &num_temp,
                         &current_x.contents, &current_y.contents,
                         &current_dir.contents, maze_row_size, maze_col_size,
-                        maze_wall, maze_wall_search, new_goal, 1U, 1U,
+                        maze_wall, maze_wall_search, new_goal, &start_flg, 1U,
                         contour_map);
 
         /* ゴール直後フラグをたてる */
@@ -13522,7 +13544,7 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
         b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &num_temp,
                         &current_x.contents, &current_y.contents,
                         &current_dir.contents, maze_row_size, maze_col_size,
-                        maze_wall, maze_wall_search, new_goal, 1U, 1U,
+                        maze_wall, maze_wall_search, new_goal, &start_flg, 1U,
                         contour_map);
 
         /* ゴール直後フラグをたてる */
@@ -13530,19 +13552,20 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
     } while (exitg1 == 0);
 
     /* 未探索マスが見つからないとき、停止処理を実施 */
-    m_goal_movement(1, wall_flg.contents, move_dir_property.straight);
+    m_goal_movement(start_flg, wall_flg.contents, move_dir_property.straight);
 
     /* スタートを目的地として足立法で再探索 */
     /* 各フラグを定義 */
     /* 停止直後 */
     /* 停止処理を実施する */
-    /* ゴール直後フラグをたてる（処理上どちらでもよい) */
+    /* ゴール直後フラグをたてる */
     new_goal[0] = 1U;
     new_goal[9] = 1U;
+    start_flg = 1U;
     search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &num_temp,
                   &current_x.contents, &current_y.contents,
                   &current_dir.contents, maze_row_size, maze_col_size, maze_wall,
-                  maze_wall_search, new_goal, 1U, 1U, 1U, contour_map);
+                  maze_wall_search, new_goal, 1U, &start_flg, 1U, contour_map);
 
     /* for code generation */
   }
@@ -13577,7 +13600,7 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
 
     /* 確定されたゴールノード、方向からゴールマス、ノードを再定義 */
     decide_goal_section(b_maze_goal.contents, goal_section, search_flag,
-                        col_temp, b_goal_section, goal_node2, &goal_matrix_dir2);
+                        col_temp, b_goal_section, goal_node2, &start_flg);
 
     /* 確定されたゴールマスから、再度マップを生成 */
     goal_section[0] = b_goal_section[1];
@@ -13616,7 +13639,7 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
     /*      end */
     /* 生成されたMAPをもとに最短走行 */
     make_route_diagonal(row_num_node, col_num_node, goal_section, goal_node2,
-                        goal_matrix_dir2);
+                        start_flg);
   }
 
   c_emxFreeStruct_coder_internal_(&num_temp);

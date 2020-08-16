@@ -29,6 +29,11 @@ void m_move_back(unsigned char start_flg,unsigned char wall_flg,unsigned char mo
 //     c側で記述した動作関数を記述すること
 }
 
+//スタート時動作
+void m_start_movement(unsigned char start_flg,unsigned char wall_flg,unsigned char move_dir_property){  
+//     c側で記述した動作関数を記述すること
+}
+
 //ゴール時の動作（停止処理）
 void m_goal_movement(unsigned char start_flg,unsigned char wall_flg,unsigned char move_dir_property){  
 //     c側で記述した動作関数を記述すること

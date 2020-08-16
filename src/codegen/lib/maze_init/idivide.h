@@ -5,7 +5,7 @@
  * File: idivide.h
  *
  * MATLAB Coder version            : 4.2
- * C/C++ source code generated on  : 14-Aug-2020 15:40:02
+ * C/C++ source code generated on  : 16-Aug-2020 15:44:45
  */
 
 #ifndef IDIVIDE_H

@@ -16,7 +16,7 @@ function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maz
 %ローカル変数定義 
 stop_flg = uint8(0);    % ゴール時ストップフラグ(0:移動継続　1:ストップ)
 start_flg = uint8(0);   % スタートフラグ(0:動作中　1:停止からの移動開始)
-goal_after_flg = uint8(0);  %ゴール直後フラグ(0:ゴール直後でない　1:ゴール直後)
+goal_after_flg = uint8(0); %ゴール直後フラグ(0:ゴール直後でない, 1:ゴール直後)
 wall_flg = uint8(0);    %壁フラグ(1:前、2:右、（4:後ろ)、8:左)
 
 % グローバル変数宣言
@@ -89,26 +89,31 @@ if run_mode == r_mode.search
        %for C gen
     end
     
-    %一マス前進
-     [current_x,current_y] = move_step(current_x,current_y,current_dir);  
-     
-    %ゴールをプロット
-    goal_plot(goal_size,maze_goal);
-    
     %各フラグを定義
     start_flg = uint8(1);%停止直後
     stop_flg = uint8(1);%停止処理を実施する
     goal_after_flg = uint8(0);%ゴール直後フラグはクリア
+    
+    %一マス前進
+     [current_x,current_y] = move_step(current_x,current_y,current_dir);  
+     %C言語でのスタート処理
+     if ~coder.target('MATLAB')
+        coder.ceval('m_start_movement',start_flg,wall_flg,uint8(move_dir_property.straight));
+    end
+    start_flg = uint8(0);%停止直後フラグをクリア
+     
+    %ゴールをプロット
+    goal_plot(goal_size,maze_goal);
 
     %足立法による探索
-    [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
+    [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
         = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,maze_goal,goal_size,start_flg,stop_flg,goal_after_flg);
 
     %ひとまづゴール(停止)
     %各フラグを定義
     start_flg = uint8(1);%停止直後
     stop_flg = uint8(0);%停止処理を実施しない
-    goal_after_flg = uint8(1);%ゴール直後フラグをたてる（処理上どちらでもよい)
+    goal_after_flg = uint8(1);%ゴール直後フラグをたてる
     
     %ゴールをすべて探索
     while 1
@@ -122,7 +127,7 @@ if run_mode == r_mode.search
              end        
         end
         if search_flag == 1
-            [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
+            [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
                 = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size),start_flg,stop_flg,goal_after_flg);
             goal_after_flg = uint8(1);%ゴール直後フラグをたてる
         else
@@ -163,7 +168,7 @@ if run_mode == r_mode.search
             %ゴールをプロット             
             goal_plot(new_goal_size,new_goal);
             
-            [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
+            [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
                 = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size),start_flg,stop_flg,goal_after_flg);
             goal_after_flg = uint8(1);%ゴール直後フラグをたてる
         end
@@ -174,10 +179,10 @@ if run_mode == r_mode.search
     %各フラグを定義
     start_flg = uint8(1);%停止直後
     stop_flg = uint8(1);%停止処理を実施する
-    goal_after_flg = uint8(1);%ゴール直後フラグをたてる（処理上どちらでもよい)
+    goal_after_flg = uint8(1);%ゴール直後フラグをたてる
     
     new_goal(1,:) = uint8([1,1]);
-     [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
+     [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
          = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,coder.ignoreConst(new_goal),coder.ignoreConst(new_goal_size),start_flg,stop_flg,goal_after_flg);
     
         if coder.target('MATLAB')
@@ -261,7 +266,7 @@ end
 
 
 %% search_adachi 足立法での探索
-function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map]...
+function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
             = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,exploration_goal,l_goal_size,start_flg,stop_flg,goal_after_flg) %#codegen
     %入力　現在位置x,y,現在方向,迷路行方向サイズ,迷路列方向サイズ,迷路壁情報,迷路壁の探索情報,ゴール座標
     %出力  現在位置x,y,現在方向,壁情報,探索情報
@@ -275,12 +280,11 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map
       search_start_y = uint8(1);
         while 1
             %壁情報取得
-            %初回動作時、もしくはゴール直後は壁情報を更新しない
-            if start_flg ~= 1 || goal_after_flg ~= 1
+            %ゴール直後は壁情報を更新しない
+            if goal_after_flg ~= 1
             [maze_wall,maze_wall_search] = wall_set(maze_row_size,maze_col_size,current_x,current_y,current_dir,maze_wall,maze_wall_search);
             else
-                %初回動作、もしくはゴール直後のとき
-                start_flg = uint8(0);%スタート直後フラグをクリア
+                %ゴール直後のとき
                 goal_after_flg= uint8(0);%ゴール直後フラグをクリア
             end
             
@@ -324,40 +328,47 @@ function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map
                     %disp("front")
                     if ~coder.target('MATLAB')
                         coder.ceval('m_move_front',start_flg,wall_flg,uint8(move_dir_property.straight));
-                        %壁フラグをクリア
-                        wall_flg = uint8(0);
                     end
+                    %スタート直後フラグをクリア
+                     start_flg = uint8(0);
+                    %壁フラグをクリア
+                    wall_flg = uint8(0);
+                    
                 case l_direction.right
                     [current_dir] = turn_clk_90deg(current_dir);
                     [current_x,current_y] = move_step(current_x,current_y,current_dir);
                     %disp("right")
                     if ~coder.target('MATLAB')
                         coder.ceval('m_move_right',start_flg,wall_flg,uint8(move_dir_property.straight));
-                        %壁フラグをクリア
-                        wall_flg = uint8(0);
                     end                 
-
+                    %スタート直後フラグをクリア
+                     start_flg = uint8(0);
+                    %壁フラグをクリア
+                    wall_flg = uint8(0);
+                    
                 case l_direction.back
                     [current_dir] = turn_180deg(current_dir);
                     [current_x,current_y] = move_step(current_x,current_y,current_dir);
                     %disp("back")
-                    %壁フラグをクリア
                     if ~coder.target('MATLAB')
                         coder.ceval('m_move_back',start_flg,wall_flg,uint8(move_dir_property.straight));
-                        %壁フラグをクリア
-                        wall_flg = uint8(0);
-                    end             
+                    end
+                    %スタート直後フラグをクリア
+                     start_flg = uint8(0);
+                    %壁フラグをクリア
+                    wall_flg = uint8(0);
 
                 case l_direction.left
                     [current_dir] = turn_conclk_90deg(current_dir);
                     [current_x,current_y] = move_step(current_x,current_y,current_dir);
                     %disp("left")
-                    %壁フラグをクリア
                     if ~coder.target('MATLAB')
                         coder.ceval('m_move_left',start_flg,wall_flg,uint8(move_dir_property.straight));
-                        %壁フラグをクリア
-                        wall_flg = uint8(0);
                     end             
+                    %スタート直後フラグをクリア
+                     start_flg = uint8(0);
+                    %壁フラグをクリア
+                    wall_flg = uint8(0);
 
                 otherwise
             end
