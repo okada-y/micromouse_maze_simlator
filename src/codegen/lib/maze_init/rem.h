@@ -5,7 +5,7 @@
  * File: rem.h
  *
  * MATLAB Coder version            : 4.2
- * C/C++ source code generated on  : 16-Aug-2020 15:44:45
+ * C/C++ source code generated on  : 24-Aug-2020 20:13:17
  */
 
 #ifndef REM_H
@@ -19,8 +19,6 @@
 
 /* Function Declarations */
 extern unsigned char b_rem(unsigned char x);
-extern void c_rem(const emxArray_uint16_T *x, emxArray_uint16_T *r);
-extern void d_rem(const emxArray_uint16_T *x, emxArray_uint16_T *r);
 
 #endif
 

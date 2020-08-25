@@ -10,17 +10,6 @@ MEX {
 		c_emlrt_marshallIn;
 		emlrt_synchGlobalsFromML;
 		emlrt_synchGlobalsToML;
-		c_emxFreeStruct_coder_internal_;
-		c_emxInitStruct_coder_internal_;
-		emxEnsureCapacity_real_T;
-		emxEnsureCapacity_uint16_T;
-		emxEnsureCapacity_uint8_T;
-		emxFree_real_T;
-		emxFree_uint16_T;
-		emxFree_uint8_T;
-		emxInit_real_T;
-		emxInit_uint16_T;
-		emxInit_uint8_T;
 		maze_init_mex_initialize;
 		maze_init_mex_terminate;
 		maze_init_mex_atexit;

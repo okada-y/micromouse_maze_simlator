@@ -80,7 +80,7 @@ static emlrtBCInfo f_emlrtBCI = { 1,   /* iFirst */
 static emlrtBCInfo g_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
   60,                                  /* lineNo */
-  24,                                  /* colNo */
+  27,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_init",                         /* fName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_init.m",/* pName */

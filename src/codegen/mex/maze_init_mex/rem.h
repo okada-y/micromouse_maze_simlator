@@ -26,12 +26,7 @@
 
 /* Function Declarations */
 extern uint8_T b_rem(uint8_T x);
-extern void c_rem(const emlrtStack *sp, const emxArray_uint16_T *x,
-                  emxArray_uint16_T *r);
-extern uint16_T d_rem(uint16_T x);
-extern void e_rem(const emlrtStack *sp, const emxArray_uint16_T *x,
-                  emxArray_uint16_T *r);
-extern uint8_T f_rem(uint8_T x);
+extern uint8_T c_rem(uint8_T x);
 
 #endif
 

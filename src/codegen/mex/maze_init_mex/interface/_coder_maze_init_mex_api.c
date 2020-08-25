@@ -18,11 +18,11 @@
 #include "maze_init_mex_data.h"
 
 /* Function Declarations */
-static const mxArray *j_emlrt_marshallOut(const uint8_T u[1024]);
-static void k_emlrt_marshallOut(const uint8_T u[1024], const mxArray *y);
-static const mxArray *l_emlrt_marshallOut(const uint16_T u[1024]);
-static const mxArray *m_emlrt_marshallOut(const uint16_T u[1056]);
+static const mxArray *k_emlrt_marshallOut(const uint8_T u[1024]);
+static void l_emlrt_marshallOut(const uint8_T u[1024], const mxArray *y);
+static const mxArray *m_emlrt_marshallOut(const uint16_T u[1024]);
 static const mxArray *n_emlrt_marshallOut(const uint16_T u[1056]);
+static const mxArray *o_emlrt_marshallOut(const uint16_T u[1056]);
 static uint8_T p_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   *maze_row_size, const char_T *identifier);
 static uint8_T (*q_emlrt_marshallIn(const emlrtStack *sp, const mxArray
@@ -39,75 +39,75 @@ static uint8_T (*x_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
   const emlrtMsgIdentifier *msgId))[18];
 
 /* Function Definitions */
-static const mxArray *j_emlrt_marshallOut(const uint8_T u[1024])
-{
-  const mxArray *y;
-  const mxArray *m10;
-  static const int32_T iv5[2] = { 0, 0 };
-
-  static const int32_T iv6[2] = { 32, 32 };
-
-  y = NULL;
-  m10 = emlrtCreateNumericArray(2, iv5, mxUINT8_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m10, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m10, iv6, 2);
-  emlrtAssign(&y, m10);
-  return y;
-}
-
-static void k_emlrt_marshallOut(const uint8_T u[1024], const mxArray *y)
-{
-  static const int32_T iv7[2] = { 32, 32 };
-
-  emlrtMxSetData((mxArray *)y, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)y, iv7, 2);
-}
-
-static const mxArray *l_emlrt_marshallOut(const uint16_T u[1024])
-{
-  const mxArray *y;
-  const mxArray *m11;
-  static const int32_T iv8[2] = { 0, 0 };
-
-  static const int32_T iv9[2] = { 32, 32 };
-
-  y = NULL;
-  m11 = emlrtCreateNumericArray(2, iv8, mxUINT16_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m11, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m11, iv9, 2);
-  emlrtAssign(&y, m11);
-  return y;
-}
-
-static const mxArray *m_emlrt_marshallOut(const uint16_T u[1056])
+static const mxArray *k_emlrt_marshallOut(const uint8_T u[1024])
 {
   const mxArray *y;
   const mxArray *m12;
-  static const int32_T iv10[2] = { 0, 0 };
+  static const int32_T iv9[2] = { 0, 0 };
 
-  static const int32_T iv11[2] = { 33, 32 };
+  static const int32_T iv10[2] = { 32, 32 };
 
   y = NULL;
-  m12 = emlrtCreateNumericArray(2, iv10, mxUINT16_CLASS, mxREAL);
+  m12 = emlrtCreateNumericArray(2, iv9, mxUINT8_CLASS, mxREAL);
   emlrtMxSetData((mxArray *)m12, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m12, iv11, 2);
+  emlrtSetDimensions((mxArray *)m12, iv10, 2);
   emlrtAssign(&y, m12);
   return y;
 }
 
-static const mxArray *n_emlrt_marshallOut(const uint16_T u[1056])
+static void l_emlrt_marshallOut(const uint8_T u[1024], const mxArray *y)
+{
+  static const int32_T iv11[2] = { 32, 32 };
+
+  emlrtMxSetData((mxArray *)y, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)y, iv11, 2);
+}
+
+static const mxArray *m_emlrt_marshallOut(const uint16_T u[1024])
 {
   const mxArray *y;
   const mxArray *m13;
   static const int32_T iv12[2] = { 0, 0 };
 
-  static const int32_T iv13[2] = { 32, 33 };
+  static const int32_T iv13[2] = { 32, 32 };
 
   y = NULL;
   m13 = emlrtCreateNumericArray(2, iv12, mxUINT16_CLASS, mxREAL);
   emlrtMxSetData((mxArray *)m13, (void *)&u[0]);
   emlrtSetDimensions((mxArray *)m13, iv13, 2);
   emlrtAssign(&y, m13);
+  return y;
+}
+
+static const mxArray *n_emlrt_marshallOut(const uint16_T u[1056])
+{
+  const mxArray *y;
+  const mxArray *m14;
+  static const int32_T iv14[2] = { 0, 0 };
+
+  static const int32_T iv15[2] = { 33, 32 };
+
+  y = NULL;
+  m14 = emlrtCreateNumericArray(2, iv14, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m14, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m14, iv15, 2);
+  emlrtAssign(&y, m14);
+  return y;
+}
+
+static const mxArray *o_emlrt_marshallOut(const uint16_T u[1056])
+{
+  const mxArray *y;
+  const mxArray *m15;
+  static const int32_T iv16[2] = { 0, 0 };
+
+  static const int32_T iv17[2] = { 32, 33 };
+
+  y = NULL;
+  m15 = emlrtCreateNumericArray(2, iv16, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m15, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m15, iv17, 2);
+  emlrtAssign(&y, m15);
   return y;
 }
 
@@ -219,9 +219,9 @@ void maze_init_api(const mxArray * const prhs[2], int32_T nlhs, const mxArray
   MEXGlobalSyncOutFunction(true);
 
   /* Marshall function outputs */
-  plhs[0] = j_emlrt_marshallOut(*maze_wall);
+  plhs[0] = k_emlrt_marshallOut(*maze_wall);
   if (nlhs > 1) {
-    plhs[1] = j_emlrt_marshallOut(*maze_wall_search);
+    plhs[1] = k_emlrt_marshallOut(*maze_wall_search);
   }
 }
 
@@ -273,23 +273,23 @@ void maze_solve_api(const mxArray *prhs[7], int32_T nlhs, const mxArray *plhs[5]
   MEXGlobalSyncOutFunction(true);
 
   /* Marshall function outputs */
-  k_emlrt_marshallOut(*maze_wall, prhs_copy_idx_0);
+  l_emlrt_marshallOut(*maze_wall, prhs_copy_idx_0);
   plhs[0] = prhs_copy_idx_0;
   if (nlhs > 1) {
-    k_emlrt_marshallOut(*maze_wall_search, prhs_copy_idx_1);
+    l_emlrt_marshallOut(*maze_wall_search, prhs_copy_idx_1);
     plhs[1] = prhs_copy_idx_1;
   }
 
   if (nlhs > 2) {
-    plhs[2] = l_emlrt_marshallOut(*contour_map);
+    plhs[2] = m_emlrt_marshallOut(*contour_map);
   }
 
   if (nlhs > 3) {
-    plhs[3] = m_emlrt_marshallOut(*row_num_node);
+    plhs[3] = n_emlrt_marshallOut(*row_num_node);
   }
 
   if (nlhs > 4) {
-    plhs[4] = n_emlrt_marshallOut(*col_num_node);
+    plhs[4] = o_emlrt_marshallOut(*col_num_node);
   }
 }
 

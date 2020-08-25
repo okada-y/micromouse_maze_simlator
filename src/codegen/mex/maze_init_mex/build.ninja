@@ -45,15 +45,11 @@ build $builddir\maze_solve.o : cc $root\maze_solve.c
 build $builddir\eml_int_forloop_overflow_check.o : cc $root\eml_int_forloop_overflow_check.c
 build $builddir\goal_plot.o : cc $root\goal_plot.c
 build $builddir\rem.o : cc $root\rem.c
-build $builddir\find.o : cc $root\find.c
-build $builddir\indexShapeCheck.o : cc $root\indexShapeCheck.c
-build $builddir\idivide.o : cc $root\idivide.c
 build $builddir\isequal.o : cc $root\isequal.c
 build $builddir\_coder_maze_init_mex_info.o : cc $root\interface\_coder_maze_init_mex_info.c
 build $builddir\_coder_maze_init_mex_api.o : cc $root\interface\_coder_maze_init_mex_api.c
 build $builddir\_coder_maze_init_mex_mex.o : cc $root\interface\_coder_maze_init_mex_mex.c
-build $builddir\maze_init_mex_emxutil.o : cc $root\maze_init_mex_emxutil.c
 build $builddir\c_mexapi_version.o : cc $matlabdir\extern\version\c_mexapi_version.c
 
 # Link
-build $root\maze_init_mex.mexw64 : link $builddir\matlab_movement.o $builddir\matlab_IR_sensor.o $builddir\maze_init_mex_mexutil.o $builddir\maze_init_mex_data.o $builddir\maze_init_mex_initialize.o $builddir\maze_init_mex_terminate.o $builddir\maze_init.o $builddir\maze_solve.o $builddir\eml_int_forloop_overflow_check.o $builddir\goal_plot.o $builddir\rem.o $builddir\find.o $builddir\indexShapeCheck.o $builddir\idivide.o $builddir\isequal.o $builddir\_coder_maze_init_mex_info.o $builddir\_coder_maze_init_mex_api.o $builddir\_coder_maze_init_mex_mex.o $builddir\maze_init_mex_emxutil.o $builddir\c_mexapi_version.o 
+build $root\maze_init_mex.mexw64 : link $builddir\matlab_movement.o $builddir\matlab_IR_sensor.o $builddir\maze_init_mex_mexutil.o $builddir\maze_init_mex_data.o $builddir\maze_init_mex_initialize.o $builddir\maze_init_mex_terminate.o $builddir\maze_init.o $builddir\maze_solve.o $builddir\eml_int_forloop_overflow_check.o $builddir\goal_plot.o $builddir\rem.o $builddir\isequal.o $builddir\_coder_maze_init_mex_info.o $builddir\_coder_maze_init_mex_api.o $builddir\_coder_maze_init_mex_mex.o $builddir\c_mexapi_version.o 

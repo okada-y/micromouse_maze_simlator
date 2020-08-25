@@ -5,7 +5,7 @@
  * File: maze_init_types.h
  *
  * MATLAB Coder version            : 4.2
- * C/C++ source code generated on  : 16-Aug-2020 15:44:45
+ * C/C++ source code generated on  : 24-Aug-2020 20:13:17
  */
 
 #ifndef MAZE_INIT_TYPES_H
@@ -42,36 +42,6 @@ typedef struct {
 
 #endif                                 /*typedef_c_struct_T*/
 
-#ifndef struct_emxArray_uint16_T
-#define struct_emxArray_uint16_T
-
-struct emxArray_uint16_T
-{
-  unsigned short *data;
-  int *size;
-  int allocatedSize;
-  int numDimensions;
-  bool canFreeData;
-};
-
-#endif                                 /*struct_emxArray_uint16_T*/
-
-#ifndef typedef_emxArray_uint16_T
-#define typedef_emxArray_uint16_T
-
-typedef struct emxArray_uint16_T emxArray_uint16_T;
-
-#endif                                 /*typedef_emxArray_uint16_T*/
-
-#ifndef typedef_coder_internal_ref_3
-#define typedef_coder_internal_ref_3
-
-typedef struct {
-  emxArray_uint16_T *contents;
-} coder_internal_ref_3;
-
-#endif                                 /*typedef_coder_internal_ref_3*/
-
 #ifndef typedef_d_struct_T
 #define typedef_d_struct_T
 
@@ -93,48 +63,6 @@ typedef struct {
 } e_struct_T;
 
 #endif                                 /*typedef_e_struct_T*/
-
-#ifndef struct_emxArray_real_T
-#define struct_emxArray_real_T
-
-struct emxArray_real_T
-{
-  double *data;
-  int *size;
-  int allocatedSize;
-  int numDimensions;
-  bool canFreeData;
-};
-
-#endif                                 /*struct_emxArray_real_T*/
-
-#ifndef typedef_emxArray_real_T
-#define typedef_emxArray_real_T
-
-typedef struct emxArray_real_T emxArray_real_T;
-
-#endif                                 /*typedef_emxArray_real_T*/
-
-#ifndef struct_emxArray_uint8_T
-#define struct_emxArray_uint8_T
-
-struct emxArray_uint8_T
-{
-  unsigned char *data;
-  int *size;
-  int allocatedSize;
-  int numDimensions;
-  bool canFreeData;
-};
-
-#endif                                 /*struct_emxArray_uint8_T*/
-
-#ifndef typedef_emxArray_uint8_T
-#define typedef_emxArray_uint8_T
-
-typedef struct emxArray_uint8_T emxArray_uint8_T;
-
-#endif                                 /*typedef_emxArray_uint8_T*/
 
 #ifndef typedef_h_struct_T
 #define typedef_h_struct_T

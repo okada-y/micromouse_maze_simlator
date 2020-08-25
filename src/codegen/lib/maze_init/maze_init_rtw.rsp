@@ -1,10 +1,8 @@
-idivide.o
 isequal.o
 matlab_IR_sensor.o
 matlab_movement.o
 maze_init.o
 maze_init_data.o
-maze_init_emxutil.o
 maze_init_initialize.o
 maze_init_terminate.o
 maze_solve.o

@@ -57,10 +57,10 @@ maze_wall_search(2,1) = bitor(maze_wall(2,1),bitshift(uint8(1),t_direction.South
 
 %迷路が32マス未満の時、サイズ以上の範囲は、探索不要（不可）のため、探索済みとする。
 if maze_col_size < 32
-    maze_wall_search(:,maze_col_size:end) = uint8(15);
+    maze_wall_search(1:32,maze_col_size:32) = uint8(15);
 end
 if maze_row_size < 32
-    maze_wall_search(maze_row_size:end,:) = uint8(15);
+    maze_wall_search(maze_row_size:32,:) = uint8(15);
 end
 
 

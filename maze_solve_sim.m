@@ -11,10 +11,12 @@ addpath(strcat(currentdir,'/src'),'-end')
 
 %% シミュレーションモード選択
     sim_mode.unknown = uint8(0); %壁情報がない状態から、探索、最短の実行
-    sim_mode.known = uint8(1); %壁情報を既知として、最短の実行
+    sim_mode.known_straight = uint8(1); %壁情報を既知として、最短の実行
+    sim_mode.known_diagonal = uint8(2); %壁情報を既知として、最短の実行
     
-    %シミュレーションモードに応じて以下を変更
+    %シミュレーションモードを決定
     sim_mode_flg = sim_mode.unknown;
+    
 %     sim_mode_flg = sim_mode.known;
 %% mode定義
     r_mode.search = uint8(0);
@@ -51,9 +53,9 @@ maze_goal = uint8(zeros(9,2));
 %2018関東　 10 10 4
 %2018全セミ 13 13 4 
 
-goal_size = uint8(4);%ゴールサイズを入力する
-goal_x = 10;%ゴール左下のx座標
-goal_y = 10;%ゴール左下のy座標
+goal_x = 18;%ゴール左下のx座標
+goal_y = 14;%ゴール左下のy座標
+goal_size = uint8(9);%ゴールサイズを入力する
 
 
 goal_size_d = double(goal_size);
@@ -94,21 +96,30 @@ if sim_mode_flg == sim_mode.unknown
     [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
 
     %% 探索情報をもとに最短走行
-
     %モード定義
     run_mode = r_mode.fust_run;
     [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
 end
 
-if sim_mode_flg == sim_mode.known
-%% 全壁を既知とした最短走行
+if sim_mode_flg == sim_mode.known_straight
+%% 全壁を既知とした最短走行(直線)
+    
+    %モード定義
+    run_mode = r_mode.fust_run;
+    maze_wall_search = ones(32,32,'uint8')*15;
+    [maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_serial,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
+
+end
+
+if sim_mode_flg == sim_mode.known_diagonal
+%% 全壁を既知とした最短走行(ななめ)
     
     %モード定義
     run_mode = r_mode.fust_run_diagonal;
     maze_wall_search = ones(32,32,'uint8')*15;
     [maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_serial,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
 
-
 end
+
 
 
