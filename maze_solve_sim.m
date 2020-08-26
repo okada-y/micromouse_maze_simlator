@@ -14,14 +14,43 @@ addpath(strcat(currentdir,'/src'),'-end')
     sim_mode.known_straight = uint8(1); %壁情報を既知として、最短の実行
     sim_mode.known_diagonal = uint8(2); %壁情報を既知として、最短の実行
     
-    %シミュレーションモードを決定
-    sim_mode_flg = sim_mode.unknown;
-    
-%     sim_mode_flg = sim_mode.known;
 %% mode定義
+    %走行モード
     r_mode.search = uint8(0);
     r_mode.fust_run = uint8(1);
     r_mode.fust_run_diagonal = uint8(2);
+    %探索モード
+    s_mode.all = uint8(0);
+    s_mode.short =uint8(1);  
+    
+%% シミュレーションモードを設定（手入力）
+    sim_mode_flg = sim_mode.unknown;
+    search_mode = s_mode.short;
+%% 迷路パラメータ設定(手入力)
+% global maze_goal
+maze_goal = uint8(zeros(9,2));
+
+%指定する迷路に合わせてゴール座標、サイズを変更
+%大会名　　　x  y size
+%2019全日本　18 14 9
+%2019中部　　7 10 4
+%2018関東　 10 10 4
+%2018全セミ 13 13 4 
+
+goal_x = 7;%ゴール左下のx座標
+goal_y = 10;%ゴール左下のy座標
+goal_size = uint8(4);%ゴールサイズを入力する
+
+goal_size_d = double(goal_size);
+
+%ゴール座標入力
+for i = 1:sqrt(goal_size_d)
+    for l = 1:sqrt(goal_size_d)
+        maze_goal((l-1)*sqrt(goal_size_d)+i,:) = [goal_x+(i-1),goal_y+(l-1)];
+    end
+end
+    
+    
 %% 迷路データ取得
 global  maze_serial;
  [maze_row_size,maze_col_size,maze_row_data,maze_col_data] = maze_data_get;
@@ -35,6 +64,7 @@ global  maze_serial;
 global maze_fig;
 global maze_fig_ax;
 maze_fig_ax = gca;
+set(maze_fig_ax,'color','none','NextPlot','add')
 maze_fig = gcf;
 
 %figureの出力位置
@@ -42,30 +72,7 @@ maze_fig.Position = [1,41,1920,963];
 
 %%
 maze_data_plot(maze_row_size,maze_col_size,maze_row_data,maze_col_data);
-%% 迷路パラメータ設定
-% global maze_goal
-maze_goal = uint8(zeros(9,2));
 
-%指定する迷路に合わせてゴール座標、サイズを変更
-%大会名　　　x  y size
-%2019全日本　18 14 9
-%2019中部　　7 10 4
-%2018関東　 10 10 4
-%2018全セミ 13 13 4 
-
-goal_x = 18;%ゴール左下のx座標
-goal_y = 14;%ゴール左下のy座標
-goal_size = uint8(9);%ゴールサイズを入力する
-
-
-goal_size_d = double(goal_size);
-
-%ゴール座標入力
-for i = 1:sqrt(goal_size_d)
-    for l = 1:sqrt(goal_size_d)
-        maze_goal((l-1)*sqrt(goal_size_d)+i,:) = [goal_x+(i-1),goal_y+(l-1)];
-    end
-end
 
 %% 壁センサ値初期値入力(Cコード生成用)
 %壁センサAD値格納変数
@@ -88,17 +95,17 @@ if sim_mode_flg == sim_mode.unknown
     %% 足立法で探索
 
     %% 迷路情報初期化
-    [maze_wall,maze_wall_search] = maze_init(maze_row_size,maze_col_size);
+    [maze_wall,maze_wall_search] = maze_init(maze_row_size,maze_col_size);    
     maze_wall_plotall(maze_row_size,maze_col_size,maze_wall);
 
     %% モード定義
     run_mode = r_mode.search;
-    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
+    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode,search_mode);
 
     %% 探索情報をもとに最短走行
     %モード定義
     run_mode = r_mode.fust_run;
-    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode);
+    [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode,search_mode);
 end
 
 if sim_mode_flg == sim_mode.known_straight

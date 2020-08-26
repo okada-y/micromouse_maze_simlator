@@ -1,4 +1,4 @@
-function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode)%#codegen
+function[maze_wall,maze_wall_search,contour_map,row_num_node,col_num_node] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode,search_mode)%#codegen
 
 %maze_solve 実機での迷路探索関数
 %入力 迷路壁情報,迷路探索情報,迷路縦サイズ,迷路横サイズ,ゴール座標,
@@ -20,7 +20,14 @@ goal_after_flg = uint8(0); %ゴール直後フラグ(0:ゴール直後でない, 1:ゴール直後)
 wall_flg = uint8(0);    %壁フラグ(1:前、2:右、（4:後ろ)、8:左)
 
 % グローバル変数宣言
-global maze_fig;
+global maze_fig;%メインfigure
+global maze_fig_ax;%メインaxes
+global sh_route_line;%最短経路ラインオブジェクト保持用
+sh_route_line = gobjects(1024,1);%最大経路長で配列化
+
+global goal_line;%ゴールラインオブジェクト保持用
+goal_line = gobjects(9,1);
+
 global g_direction;
 % global maze_goal;
 global matrix_dir;
@@ -65,7 +72,14 @@ search = struct('unknown',uint8(0),'known',uint8(1));
 
 %走行モード定義
 r_mode = struct('search',uint8(0),'fust_run',uint8(1),'fust_run_diagonal',uint8(2));
+s_mode = struct('all',uint8(0),'short',uint8(1));%探索モード
 
+%未探索壁扱いモード定義
+w_mode =struct('no_wall',uint8(0),'wall',uint8(1));
+%最短経路導出モード
+Sh_route_mode = struct('no_run',uint8(0),'run',uint8(1));
+%足立法による探索モード　ゴールor探索
+adachi_search_mode = struct('goal',uint8(0),'search',uint8(1));
 %% 探索
 if run_mode == r_mode.search
     
@@ -82,9 +96,9 @@ if run_mode == r_mode.search
         [h] = hgtransform_init;
         %探索開始位置プロット
         figure(maze_fig);
-        hold on
+%         hold on
         plot(current_x * 9 -4.5,current_y * 9 -4.5,'ob','MarkerFaceColor','b','Parent',h);
-        hold off
+%         hold off
     else
         %for C gen
     end
@@ -106,8 +120,9 @@ if run_mode == r_mode.search
     goal_plot(goal_size,maze_goal);
     
     %足立法による探索
-    [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
-        = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,maze_goal,goal_size,start_flg,stop_flg,goal_after_flg);
+    [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,~]...
+        = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,maze_goal,goal_size,...
+        start_flg,stop_flg,goal_after_flg,adachi_search_mode.goal);
     
     %ひとまづゴール(停止)
     %各フラグを定義
@@ -128,7 +143,8 @@ if run_mode == r_mode.search
         end
         if search_flag == 1
             [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
-                = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size),start_flg,stop_flg,goal_after_flg);
+                = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size),...
+                start_flg,stop_flg,goal_after_flg,adachi_search_mode.search);
             goal_after_flg = uint8(1);%ゴール直後フラグをたてる
         else
             break
@@ -136,33 +152,69 @@ if run_mode == r_mode.search
         
     end
     
+    %帰路探索
+    
+    %全面探索
     %未探索マスがなくなるまで。
     %現地点から一番近い未探索マスを探索
     %現在地からコンターマップを展開、探索済みでないマスが見つかれば、そこをゴールとする。
-    
-    
-%     while 1
-%         
-%         [contour_map,max_length,new_goal] = make_map_new_goal(maze_wall,maze_wall_search,current_x,current_y);
-%         if(new_goal(1) == 0)
-%             %新規ゴールが見つからないとき、停止処理を実施
-%             if ~coder.target('MATLAB')
-%                 coder.ceval('m_goal_movement',start_flg,wall_flg,uint8(move_dir_property.straight));
-%             end
-%             break
-%             %新規ゴールが見つかったとき。
-%         else
-%             %         new_goal(1,:) = [col_temp,row_temp];
-%             new_goal_size = uint8(1);
-%             %ゴールをプロット
-%             goal_plot(new_goal_size,new_goal);
-%             %既存のコンターを使用し、探索。
-%             [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
-%                 = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size),start_flg,stop_flg,goal_after_flg);
-%             goal_after_flg = uint8(1);%ゴール直後フラグをたてる
-%         end
-%     end
-    
+    switch search_mode
+        case s_mode.all
+            while 1
+                [contour_map,max_length,new_goal] = make_new_goal_all(maze_wall,maze_wall_search,current_x,current_y);
+                if(new_goal(1) == 0)
+                    %新規ゴールが見つからないとき、停止処理を実施
+                    if ~coder.target('MATLAB')
+                        coder.ceval('m_goal_movement',start_flg,wall_flg,uint8(move_dir_property.straight));
+                    end
+                    break
+                    %新規ゴールが見つかったとき。
+                else
+                    new_goal_size = uint8(1);
+                    %ゴールをプロット
+                    goal_plot(new_goal_size,new_goal);
+                    %既存のコンターを使用し、探索。
+                    [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
+                        = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size),...
+                        start_flg,stop_flg,goal_after_flg,adachi_search_mode.search);
+                    goal_after_flg = uint8(1);%ゴール直後フラグをたてる
+                end
+            end
+            
+            %最短経路探索
+            %最短となりうるマスの未探索のみ探索
+        case s_mode.short
+            while 1
+                %未探索壁はないものとして、ゴールからスタートまで、コンターマップを展開（直線の重みあり）
+                [contour_map,max_length] = make_map_fustrun(maze_goal,maze_wall,maze_wall_search,w_mode.no_wall);
+                %マップをもとに、最短経路を導出。経路上の未探索マスとその数を出力
+                [unexp_square,unexp_square_idx] = fust_run(maze_wall,maze_wall_search,contour_map,maze_goal,max_length,Sh_route_mode.no_run);
+                % 想定最短経路をプロットしたいねぇ
+                
+                %未探索マスがなければ、ブレイク
+                if unexp_square_idx == 0
+                    %新規ゴールが見つからないとき、停止処理を実施
+                    if ~coder.target('MATLAB')
+                        coder.ceval('m_goal_movement',start_flg,wall_flg,uint8(move_dir_property.straight));
+                    end
+                    break
+                end
+                %未探索マスがある場合、探索する。
+                new_goal_size = uint8(1);
+                %現在地点からコンターを展開し、該当の未探索が更新されれば、そこを新規ゴールとして出力
+                [contour_map,max_length,new_goal] = make_new_goal_sh(maze_wall,current_x,current_y,unexp_square,unexp_square_idx);
+                %ゴールをプロット
+                 goal_plot(1,new_goal);
+                %新規ゴールに向け、探索
+                [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
+                    = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,coder.ignoreConst(new_goal),coder.ignoreConst(new_goal_size),...
+                    start_flg,stop_flg,goal_after_flg,adachi_search_mode.search);
+                
+            end
+            
+            %その他の場合無視
+        otherwise
+    end
     
     %スタートを目的地として足立法で再探索
     %各フラグを定義
@@ -170,9 +222,14 @@ if run_mode == r_mode.search
     stop_flg = uint8(1);%停止処理を実施する
     goal_after_flg = uint8(1);%ゴール直後フラグをたてる
     
+    %スタートをゴールに設定
     new_goal(1,:) = uint8([1,1]);
+    %ゴールをプロット
+    goal_plot(1,new_goal);
+    %足立法で帰宅
     [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
-        = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,coder.ignoreConst(new_goal),coder.ignoreConst(new_goal_size),start_flg,stop_flg,goal_after_flg);
+        = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,coder.ignoreConst(new_goal),coder.ignoreConst(new_goal_size),...
+        start_flg,stop_flg,goal_after_flg,adachi_search_mode.goal);
     
     if coder.target('MATLAB')
         %for MATLAB
@@ -181,25 +238,29 @@ if run_mode == r_mode.search
     else
         %for code generation
     end
-    
+    %終了時、ゴールプロットを消す。
+     goal_plot(0,0);
 end
 
 %% 最短走行
 if run_mode == r_mode.fust_run
     %探索情報をもとに等高線MAPを生成
-    [contour_map,max_length] = make_map_fustrun(maze_goal,maze_wall,maze_wall_search);
+    [contour_map,max_length] = make_map_fustrun(maze_goal,maze_wall,maze_wall_search,w_mode.wall);
     
-    %コンターマップの描画
-    if coder.target('MATLAB')
-        for l = 1:32
-            for j = 1:32
-                text((j-1)*9+4.5,(l-1)*9+4.5,string(contour_map(l,j)),'HorizontalAlignment','center');
-            end
-        end
-    end
+    %ゴールの描画
+        goal_plot(goal_size,maze_goal);
+    
+%     %コンターマップの描画
+%     if coder.target('MATLAB')
+%         for l = 1:32
+%             for j = 1:32
+%                 text((j-1)*9+4.5,(l-1)*9+4.5,string(contour_map(l,j)),'HorizontalAlignment','center');
+%             end
+%         end
+%     end
     
     %最短距離走行
-    fust_run(maze_wall,contour_map,maze_goal,max_length)
+    fust_run(maze_wall,maze_wall_search,contour_map,maze_goal,max_length,Sh_route_mode.run);
 end
 
 %% 斜めでの最短走行
@@ -227,7 +288,7 @@ end
 
 %% search_adachi 足立法での探索
     function [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
-            = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,exploration_goal,l_goal_size,start_flg,stop_flg,goal_after_flg) %#codegen
+            = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,exploration_goal,l_goal_size,start_flg,stop_flg,goal_after_flg,adachi_s_mode) %#codegen
         %入力　現在位置x,y,現在方向,迷路行方向サイズ,迷路列方向サイズ,迷路壁情報,迷路壁の探索情報,ゴール座標
         %出力  現在位置x,y,現在方向,壁情報,探索情報
         
@@ -270,13 +331,24 @@ end
                 [contour_map,~] = make_map_find(exploration_goal,l_goal_size,maze_wall,current_x,current_y);
             end
             
+            
             %現在位置がゴールか判定
             for i = 1:1:l_goal_size
                 if (current_x == exploration_goal(i,1)) && (current_y == exploration_goal(i,2))
                     goal_flg = uint8(1);
                 end
             end
-            
+            %探索モードの場合、対象のマスがすべて探索済みのとき、ゴールフラグを立てる
+            if adachi_s_mode == adachi_search_mode.search
+                goal_flg = uint8(1);
+                for i = 1:1:l_goal_size
+                    %ゴール座標が未探索であれば、フラグをおろし、ブレイク
+                    if (maze_wall_search(exploration_goal(i,2),exploration_goal(i,1)) ~= 15)
+                        goal_flg = uint8(0);
+                        break
+                    end
+                end
+            end
             %ゴール時処理
             if goal_flg == 1
                 if stop_flg == 1 %ゴール時停止フラグが立っているとき
@@ -351,8 +423,8 @@ end
                 hgtransform_update(h,current_x,current_y,search_start_x,search_start_y,9);
                 %探索状況の更新
                 maze_search_plot_update(search_surf,maze_wall_search,maze_col_size,maze_row_size);
-                drawnow limitrate nocallbacks
-                %pause(0.01)
+%                  pause(0.05)
+                drawnow %limitrate nocallbacks
             else
                 %for code generation
             end
@@ -361,31 +433,31 @@ end
 
 
 %% move_step 一マス前進する関数
-    function [current_x,current_y] = move_step(current_x,current_y,current_dir)
+    function [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir)
         %入力 現在位置x,y,現在方向
         %出力 現在位置x,y
         
         %北に一マス
-        if current_dir == g_direction.North
-            current_y = current_y+1;
+        if temp_dir == g_direction.North
+            temp_y = temp_y+1;
             %disp("north_step")
         end
         
         %東に一マス
-        if current_dir == g_direction.East
-            current_x = current_x+1;
+        if temp_dir == g_direction.East
+            temp_x = temp_x+1;
             %disp("east_step")
         end
         
         %南に一マス
-        if current_dir == g_direction.South
-            current_y = current_y-1;
+        if temp_dir == g_direction.South
+            temp_y = temp_y-1;
             %disp("south_step")
         end
         
         %西に一マス
-        if current_dir == g_direction.West
-            current_x = current_x-1;
+        if temp_dir == g_direction.West
+            temp_x = temp_x-1;
             %disp("west_step")
         end
         
@@ -670,8 +742,8 @@ end
             end
         end
     end
-%% make_map_new_goal 現在位置から新規のゴールを目指すためのMAPを作る。
-    function [contour_map,max_length,new_goal] = make_map_new_goal(maze_wall,maze_wall_search,current_x,current_y)
+%% make_new_goal_all 現在位置から新規のゴールを作る。(全面探索用)
+    function [contour_map,max_length,new_goal] = make_new_goal_all(maze_wall,maze_wall_search,current_x,current_y)
         
         % 迷路パラメータ設定
         max_length = uint16(65535);
@@ -786,6 +858,144 @@ end
             if change_flag == uint8(0)  || new_goal(1) ~=0
                 %disp(tempi)
                 break;
+            end
+        end
+        
+    end
+
+
+%% make_new_goal_sh 現在位置から新規のゴール生成する。(最短経路探索用)
+    function[contour_map,max_length,new_goal] =make_new_goal_sh(maze_wall,current_x,current_y,unexp_square,unexp_square_idx)
+        
+        % 迷路パラメータ設定
+        max_length = uint16(65535);
+        %新規ゴール座標格納用変数
+        new_goal = uint8([0,0]);
+        
+        %コンター更新マス保管用
+        contor_renew_square = zeros(1024,2,'uint8'); %更新座標
+        contor_renew_square_temp = zeros(1024,2,'uint8'); %更新座標更新用
+        contor_renew_square_idx = uint8(1);%更新座標
+        contor_renew_square_idx_temp = uint8(1);%更新座標更新用
+        
+        %MAPの初期化(すべての要素にmax_lengthを入力)
+        %32マス分mapを保持
+        %16bitにすべき
+        contour_map = ones(32,32,'uint16');
+        contour_map = contour_map * max_length;
+        
+        %スタート地点の歩数を1だけ減らし、判別可能な状態にする。
+        contour_map(current_y,current_x) = max_length - uint16(1);
+        
+        %初回の更新座標 = 現在位置　を入力
+        contor_renew_square(1,:) = [current_y,current_x];
+        
+        %現在の位置からコンターを展開。
+        %最短経路にコンターが展開されればそこを新規ゴールとし、終了する。
+        for tempi = 0:1:max_length-1 %歩数カウントは0~max_length
+            %map更新確認用フラグ
+            change_flag = uint8(0);
+            
+            %更新された座標に対し、コンターマップを展開
+            for tempn = 1:1:contor_renew_square_idx
+                %北側
+                if (bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.North)) == wall.nowall)
+                    %北側のMAPが更新されているか判断、されていなければ書き込み
+                    if contour_map(contor_renew_square(tempn,1)+1,contor_renew_square(tempn,2)) == max_length
+                        contour_map(contor_renew_square(tempn,1)+1,contor_renew_square(tempn,2)) = max_length-(tempi + uint16(2));
+                        change_flag = uint8(1);
+                        %更新マスを更新
+                        contor_renew_square_temp(contor_renew_square_idx_temp,:) = [contor_renew_square(tempn,1)+1,contor_renew_square(tempn,2)];
+                        %更新マス用インデックスを増加
+                        contor_renew_square_idx_temp = contor_renew_square_idx_temp+1;
+                        %更新した地点が最短経路未探索領域であれば、そこを新規ゴール点とし、コンター展開を終了する。
+                        if(sh_route_unexp_sq_jud(unexp_square,unexp_square_idx,contor_renew_square(tempn,1)+1,contor_renew_square(tempn,2))==1)
+                            new_goal = [contor_renew_square(tempn,2),contor_renew_square(tempn,1)+1];
+                            break
+                        end
+                    end
+                end
+                
+                %東側
+                if (bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.East)) == wall.nowall)
+                    %東側のMAPが更新されているか判断、されていなければ書き込み
+                    if contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)+1) == max_length
+                        contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)+1) = max_length-(tempi + uint16(2));
+                        change_flag = uint8(1);
+                        %更新マスを更新
+                        contor_renew_square_temp(contor_renew_square_idx_temp,:) = [contor_renew_square(tempn,1),contor_renew_square(tempn,2)+1];
+                        %更新マス用インデックスを増加
+                        contor_renew_square_idx_temp = contor_renew_square_idx_temp+1;
+                        %更新した地点が未探索領域であれば、そこを新規ゴール点とし、コンター展開を終了する。
+                        if(sh_route_unexp_sq_jud(unexp_square,unexp_square_idx,contor_renew_square(tempn,1),contor_renew_square(tempn,2)+1)==1)
+                            new_goal = [contor_renew_square(tempn,2)+1,contor_renew_square(tempn,1)];
+                            break
+                        end
+                    end
+                end
+                
+                %南側
+                if (bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.South)) == wall.nowall)
+                    %南側のMAPが更新されているか判断、されていなければ書き込み
+                    if contour_map(contor_renew_square(tempn,1)-1,contor_renew_square(tempn,2)) == max_length
+                        contour_map(contor_renew_square(tempn,1)-1,contor_renew_square(tempn,2)) = max_length-(tempi + uint16(2));
+                        change_flag = uint8(1);
+                        %更新マスを更新
+                        contor_renew_square_temp(contor_renew_square_idx_temp,:) = [contor_renew_square(tempn,1)-1,contor_renew_square(tempn,2)];
+                        %更新マス用インデックスを増加
+                        contor_renew_square_idx_temp = contor_renew_square_idx_temp+1;
+                        %更新した地点が未探索領域であれば、そこを新規ゴール点とし、コンター展開を終了する。
+                        if(sh_route_unexp_sq_jud(unexp_square,unexp_square_idx,contor_renew_square(tempn,1)-1,contor_renew_square(tempn,2))==1)
+                            new_goal = [contor_renew_square(tempn,2),contor_renew_square(tempn,1)-1];
+                            break
+                        end
+                    end
+                end
+                
+                %西側
+                if (bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.West)) == wall.nowall)
+                    %西側のMAPが更新されているか判断、されていなければ書き込み
+                    if contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1) == max_length
+                        contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1) = max_length-(tempi + uint16(2));
+                        change_flag = uint8(1);
+                        %更新マスを更新
+                        contor_renew_square_temp(contor_renew_square_idx_temp,:) = [contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1];
+                        %更新マス用インデックスを増加
+                        contor_renew_square_idx_temp = contor_renew_square_idx_temp+1;
+                        %更新した地点が未探索領域であれば、そこを新規ゴール点とし、コンター展開を終了する。
+                        if(sh_route_unexp_sq_jud(unexp_square,unexp_square_idx,contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1)==1)
+                            new_goal = [contor_renew_square(tempn,2)-1,contor_renew_square(tempn,1)];
+                            break
+                        end
+                    end
+                end
+            end
+            %ゴール更新マスの更新とインデックスのクリア
+            contor_renew_square = contor_renew_square_temp;
+            contor_renew_square_temp = zeros(1024,2,'uint8');
+            contor_renew_square_idx = contor_renew_square_idx_temp -1 ;
+            contor_renew_square_idx_temp = uint8(1);
+            
+            %更新がない、もしくはゴールが設定されていれば終了
+            if change_flag == uint8(0)  || new_goal(1) ~=0
+                %disp(tempi)
+                break;
+            end
+        end
+        
+        %最短経路未探索マス合致判定関数(入れ子)
+        %出力:判定結果　0,合致なし　1,合致あり
+        function [result] = sh_route_unexp_sq_jud(temp_unexp_square,temp_unexp_square_idx,temp_y,temp_x)
+            result = uint8(0);
+            if temp_unexp_square_idx == 0
+            else
+                for i = 1:1:temp_unexp_square_idx
+                    %最短経路の未探索のマスと入力座標が一致すればフラグを立ててブレイク
+                    if (temp_unexp_square(i,1) == temp_y) &&(temp_unexp_square(i,2) ==temp_x)
+                        result = uint8(1);
+                        break
+                    end
+                end
             end
         end
         
@@ -950,51 +1160,53 @@ end
 
 
 %% fust_run 最短経路走行
-    function [] = fust_run(maze_wall,contour_map,maze_goal,max_length)
+    function [unexp_square,unexp_square_idx] = fust_run(maze_wall,maze_wall_search,contour_map,maze_goal,max_length,Sh_r_mode)
         %入力　壁情報,壁探索情報,等高線MAP,ゴール座標,最大経路長
-        %出力
+        %出力   最短経路上の未探索マスの座標、未探索マスの数
+        
+        %最短経路表示用ax
+%         global sh_route_ax
         
         %local変数宣言
         goal_flag = uint8(0);  %ゴール判定フラグ
         little = max_length; %進行方向選定用閾値
         tempi = uint8(0);
         
-        %マウス位置表示用オブジェクト
-        if coder.target('MATLAB')
-            ax = gca;
-            h = hgtransform('Parent',ax);
-        end
+        unexp_square = zeros(512,2,'uint8');
+        unexp_square_idx = uint8(0);
+        
+%         %マウス位置表示用オブジェクト
+%         if coder.target('MATLAB')
+%             ax = gca;
+%             h = hgtransform('Parent',ax);
+%         end
+         
         %マウスの初期位置設定
-        current_x = uint8(1);
-        current_y = uint8(1);
-        
-        previous_x = current_x;
-        previous_y = current_y;
-        
-        
-        current_dir = g_direction.North;
+        temp_x = uint8(1);
+        temp_y = uint8(1);
+        previous_x = temp_x;
+        previous_y = temp_y;
+        %マウスの初期方向定義
+        temp_dir = g_direction.North;
         next_dir = g_direction.North;
-        search_start_x = current_x; %探索開始時x
-        search_start_y = current_y; %探索開始時y
         
-        %探索開始位置プロット
-        if coder.target('MATLAB')
-            hold on
-            plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'ob','MarkerSize',10,'MarkerFaceColor','r','Parent',h);
-            hold off
-        end
+        search_start_x = temp_x; %探索開始時x
+        search_start_y = temp_y; %探索開始時y
         
-        %     %足跡プロット
-        %     hold on
-        %     plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
-        %     hold off
-        %     drawnow limitrate nocallbacks
+        %実行時、既存の最短ルート表示を削除する
+        delete(sh_route_line)
+        sh_route_line = gobjects(1024,1);
         
-        while 1
-            
+        for tempk = 1:1:max_length
+            %現在位置が未探索マスか判定
+            if(maze_wall_search(temp_y,temp_x) ~=15)
+                %未探索マスであれば、記録する。インデックスを増加させる。
+                unexp_square(unexp_square_idx+1,:) = [temp_y,temp_x];
+                unexp_square_idx = unexp_square_idx + uint8(1);
+            end
             %現在位置がゴールか判定
             for tempi = 1:1:goal_size
-                if (current_x == maze_goal(tempi,1)) && (current_y == maze_goal(tempi,2))
+                if (temp_x == maze_goal(tempi,1)) && (temp_y == maze_goal(tempi,2))
                     goal_flag = uint8(1);
                 end
             end
@@ -1007,36 +1219,36 @@ end
             %優先順位　北⇒東⇒南⇒西
             
             %北側の壁のありなし
-            if bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.North)) == wall.nowall
+            if bitand(maze_wall(temp_y,temp_x),bitshift(uint8(1),g_direction.North)) == wall.nowall
                 %北側の等高線mapが閾値より低ければ、
-                if contour_map(current_y+1,current_x) < little
+                if contour_map(temp_y+1,temp_x) < little
                     %閾値を北側の等高map値に変更
-                    little = contour_map(current_y+1,current_x);
+                    little = contour_map(temp_y+1,temp_x);
                     %北側を進行方向に変更y
                     next_dir = g_direction.North;
                 end
             end
             
             %東側
-            if bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.East)) == wall.nowall
-                if contour_map(current_y,current_x+1) < little
-                    little = contour_map(current_y,current_x+1);
+            if bitand(maze_wall(temp_y,temp_x),bitshift(uint8(1),g_direction.East)) == wall.nowall
+                if contour_map(temp_y,temp_x+1) < little
+                    little = contour_map(temp_y,temp_x+1);
                     next_dir = g_direction.East;
                 end
             end
             
             %南側
-            if bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.South)) == wall.nowall
-                if contour_map(current_y-1,current_x) < little
-                    little = contour_map(current_y-1,current_x);
+            if bitand(maze_wall(temp_y,temp_x),bitshift(uint8(1),g_direction.South)) == wall.nowall
+                if contour_map(temp_y-1,temp_x) < little
+                    little = contour_map(temp_y-1,temp_x);
                     next_dir = g_direction.South;
                 end
             end
             
             %西側
-            if bitand(maze_wall(current_y,current_x),bitshift(uint8(1),g_direction.West)) == wall.nowall
-                if contour_map(current_y,current_x-1) < little
-                    little = contour_map(current_y,current_x-1);
+            if bitand(maze_wall(temp_y,temp_x),bitshift(uint8(1),g_direction.West)) == wall.nowall
+                if contour_map(temp_y,temp_x-1) < little
+                    little = contour_map(temp_y,temp_x-1);
                     next_dir = g_direction.West;
                 end
             end
@@ -1044,52 +1256,46 @@ end
             
             
             %%現在方向と進行方向に応じた処理
-            switch rem((4 + next_dir - current_dir),4)
+            switch rem((4 + next_dir - temp_dir),4)
                 case l_direction.front
-                    [current_x,current_y] = move_step(current_x,current_y,current_dir);
+                    [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
                     %disp("front")
                     
                 case l_direction.right
-                    [current_dir] = turn_clk_90deg(current_dir);
-                    [current_x,current_y] = move_step(current_x,current_y,current_dir);
+                    [temp_dir] = turn_clk_90deg(temp_dir);
+                    [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
                     %disp("right")
                     
                 case l_direction.back
-                    [current_dir] = turn_180deg(current_dir);
-                    [current_x,current_y] = move_step(current_x,current_y,current_dir);
+                    [temp_dir] = turn_180deg(temp_dir);
+                    [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
                     %disp("back")
                     
                 case l_direction.left
-                    [current_dir] = turn_conclk_90deg(current_dir);
-                    [current_x,current_y] = move_step(current_x,current_y,current_dir);
+                    [temp_dir] = turn_conclk_90deg(temp_dir);
+                    [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
                     %disp("left")
                     
                 otherwise
             end
-            
+
             if coder.target('MATLAB')
                 %for MATLAB
-                %マウス描画位置更新
-                m = makehgtform('translate',double(current_x-search_start_x)*9,double(current_y-search_start_y)*9,0);
-                h.Matrix = m;
                 %軌跡プロット
-                hold on
-                plot([double(previous_x)*9-4.5,double(current_x)*9-4.5],[double(previous_y)*9-4.5,double(current_y)*9-4.5]...
-                    ,'Color','#D95319','LineWidth',3)
-                %             plot(double(current_x) * 9 -4.5,double(current_y) * 9 -4.5,'.r');
-                hold off
-                drawnow limitrate nocallbacks
+                sh_route_line(tempk) = plot([double(previous_x)*9-4.5,double(temp_x)*9-4.5],[double(previous_y)*9-4.5,double(temp_y)*9-4.5]...
+                    ,'Color','#0000FF','LineWidth',3);
             else
                 %for code generation
             end
-            
-            previous_x = current_x;
-            previous_y = current_y;
+            previous_x = temp_x;
+            previous_y = temp_y;
         end
+%          pause(0.05)
+        drawnow %limitrate nocallbacks
     end
 
 %% make_map_fustrun 最短走行用等高線MAPを生成
-    function [contour_map,max_length] = make_map_fustrun(maze_goal,maze_wall,maze_wall_search)
+    function [contour_map,max_length] = make_map_fustrun(maze_goal,maze_wall,maze_wall_search,unknown_wall_flg)
         %未知壁の領域は仮想壁をおいて侵入しない。
         %入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数),迷路探索情報(16進数)
         %出力 等高線map,最大経路長
@@ -1141,9 +1347,9 @@ end
                 
                 %北側
                 
-                %壁が無い & 探索済みであるとき
+                %壁が無い & (探索済み || ~未知壁フラグ)であるとき
                 if logical(bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.North))) == wall.nowall...
-                        && logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.North))) == search.known
+                        && ((logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.North))) == search.known) || ~unknown_wall_flg)
                     
                     %かつ進行方向が北向きである時
                     if logical(bitand(move_dir_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.North)))
@@ -1184,9 +1390,9 @@ end
                 
                 %東側
                 
-                %壁が無い & 探索済みであるとき
+                %壁が無い & (探索済み|| ~未知壁フラグ)であるとき
                 if logical(bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.East))) == wall.nowall...
-                        && logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.East))) == search.known
+                        && (logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.East))) == search.known || ~unknown_wall_flg)
                     
                     %かつ進行方向が東向きである時
                     if logical(bitand(move_dir_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.East)))
@@ -1228,9 +1434,9 @@ end
                 
                 %南側
                 
-                %壁が無い & 探索済みであるとき
+                %壁が無い &  (探索済み|| ~未知壁フラグ)であるとき
                 if logical(bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.South))) == wall.nowall...
-                        && logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.South))) == search.known
+                        && (logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.South))) == search.known || ~unknown_wall_flg)
                     
                     %かつ進行方向が南向きである時
                     if logical(bitand(move_dir_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.South)))
@@ -1254,8 +1460,6 @@ end
                     else
                         %かつ南のマスの歩数MAP値が、更新予定値より大きい場合
                         if contour_map(contor_renew_square(tempn,1)-1,contor_renew_square(tempn,2)) > contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+straight_weight
-                            %                                 %更新確認用のMAP更新
-                            %                                 contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                             %歩数MAP更新(重みづけあり)
                             contour_map(contor_renew_square(tempn,1)-1,contor_renew_square(tempn,2)) = contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+straight_weight;
                             %移動方向MAP更新
@@ -1272,16 +1476,14 @@ end
                 
                 %西側
                 
-                %壁が無い & 探索済みであるとき
+                %壁が無い &  (探索済み|| ~未知壁フラグ)であるとき
                 if logical(bitand(maze_wall(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.West))) == wall.nowall...
-                        && logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.West))) == search.known
+                        && (logical(bitand(maze_wall_search(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.West))) == search.known || ~unknown_wall_flg)
                     
                     %かつ進行方向が西向きである時
                     if logical(bitand(move_dir_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)),bitshift(uint8(1),g_direction.West)))
                         %かつ北のマスが更新予定値よりも大きな値の場合
                         if contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1) > contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+1
-                            %                                 %更新確認用のMAP更新
-                            %                                 contour_refine_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1) = contour_refine_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+uint16(1);
                             %歩数MAP更新
                             contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1) = contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+uint16(1);
                             %移動方向MAP更新
@@ -1299,8 +1501,6 @@ end
                     else
                         %かつ北のマスの歩数MAP値が、更新予定値より大きい場合
                         if contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1) > contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+straight_weight
-                            %                                 %更新確認用のMAP更新
-                            %                                 contour_refine_map(row(tempn),col(tempn)-1) = contour_refine_map(row(tempn),col(tempn))+uint16(1);
                             %歩数MAP更新(重みづけあり)
                             contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)-1) = contour_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+straight_weight;
                             %移動方向MAP更新
@@ -1320,8 +1520,8 @@ end
             contor_renew_square_temp = zeros(1024,2,'uint8');
             contor_renew_square_idx = contor_renew_square_idx_temp -1 ;
             contor_renew_square_idx_temp = uint8(1);
-            %更新がなければ終了
-            if change_flag == 0
+            %更新がなければ || スタート地点が更新されていれば終了
+            if (change_flag == 0) || contour_map(1,1)~=uint16(65535)
                 break;
             end
         end
@@ -1493,9 +1693,9 @@ end
         for i = 0:1:max_length-1 %更新確認用の歩数カウントは0~max_length
             
             change_flag = uint8(0); %map更新確認用フラグ
-            %Row_Edgeの処理[33行,32列]           
+            %Row_Edgeの処理[33行,32列]
             %検索した座標に対し、歩数mapを更新
-            for n = 1:1:contor_renew_node_row_idx-1                
+            for n = 1:1:contor_renew_node_row_idx-1
                 %北側
                 %壁が無い & 探索済みであるとき
                 if logical(bitand(maze_wall(contor_renew_node_row(n,1),contor_renew_node_row(n,2)),bitshift(uint8(1),g_direction.North))) == wall.nowall...
@@ -1558,18 +1758,18 @@ end
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1) = bitshift(uint8(1),g_d_direction.North_East);
                             %更新フラグを立てる
                             change_flag = uint8(1);
-                             %更新ノードを更新
+                            %更新ノードを更新
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1];
                             %更新マス用インデックスを増加
-                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;                           
-                                                        
-                        %かつ北東のノードが更新予定値と同じ場合
+                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
+                            
+                            %かつ北東のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_diagonal
                             %移動方向を追加
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1) = bitor(col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1),bitshift(uint8(1),g_d_direction.North_East));
                         end
                         
-                    %かつ進行方向が北東向きでないとき
+                        %かつ進行方向が北東向きでないとき
                     else
                         %かつ北東のノードの歩数MAP値が、更新予定値より大きい場合
                         if col_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1) > row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
@@ -1579,12 +1779,12 @@ end
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1) = bitshift(uint8(1),g_d_direction.North_East);
                             %更新フラグを立てる
                             change_flag = uint8(1);
-                             %更新ノードを更新
+                            %更新ノードを更新
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1];
                             %更新マス用インデックスを増加
-                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;         
+                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
-                        %かつ北東のノードが更新予定値と同じ場合
+                            %かつ北東のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
                             %移動方向を追加
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1) = bitor(col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)+1),bitshift(uint8(1),g_d_direction.North_East));
@@ -1611,15 +1811,15 @@ end
                             %更新ノードを更新
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)+1];
                             %更新マス用インデックスを増加
-                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;   
+                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
-                        %かつ南東のノードが更新予定値と同じ場合
+                            %かつ南東のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)+1) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_diagonal
                             %移動方向を追加
                             col_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)+1) = bitor(col_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)+1),bitshift(uint8(1),g_d_direction.South_East));
                         end
                         
-                    %かつ進行方向が南東向きでないとき
+                        %かつ進行方向が南東向きでないとき
                     else
                         %かつ南東のノードの歩数MAP値が、更新予定値より大きい場合
                         if col_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)+1) > row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
@@ -1632,7 +1832,7 @@ end
                             %更新ノードを更新
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)+1];
                             %更新マス用インデックスを増加
-                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;   
+                            contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
                             %かつ南東のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)+1) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
@@ -1660,9 +1860,9 @@ end
                             %更新ノードを更新
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)];
                             %更新マス用インデックスを増加
-                            contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;   
+                            contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
                             
-                        %かつ南のノードが更新予定値と同じ場合
+                            %かつ南のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_straight
                             %移動方向を追加
                             row_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) = bitor(row_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)),bitshift(uint8(1),g_d_direction.South));
@@ -1672,7 +1872,7 @@ end
                     else
                         %かつ南のノードの歩数MAP値が、更新予定値より大きい場合
                         if row_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) > row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
-
+                            
                             %歩数MAP更新(重みづけあり)
                             row_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) = row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn;
                             %移動方向MAP更新
@@ -1682,9 +1882,9 @@ end
                             %更新ノードを更新
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)];
                             %更新マス用インデックスを増加
-                            contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;   
-
-                        %かつ南のノードが更新予定値と同じ場合
+                            contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
+                            
+                            %かつ南のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
                             %移動方向を追加
                             row_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) = bitor(row_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)),bitshift(uint8(1),g_d_direction.South));
@@ -1711,13 +1911,13 @@ end
                             %更新マス用インデックスを増加
                             contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
-                        %かつ南西のノードが更新予定値と同じ場合
+                            %かつ南西のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_diagonal
                             %移動方向を追加
                             col_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) = bitor(col_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)),bitshift(uint8(1),g_d_direction.South_West));
                         end
                         
-                    %かつ進行方向が南西向きでないとき
+                        %かつ進行方向が南西向きでないとき
                     else
                         %かつ南西のノードの歩数MAP値が、更新予定値より大きい場合
                         if col_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) > row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
@@ -1732,7 +1932,7 @@ end
                             %更新マス用インデックスを増加
                             contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
-                        %かつ南西のノードが更新予定値と同じ場合
+                            %かつ南西のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
                             %移動方向を追加
                             col_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)) = bitor(col_dir_node(contor_renew_node_row(n,1)-1,contor_renew_node_row(n,2)),bitshift(uint8(1),g_d_direction.South_West));
@@ -1754,12 +1954,12 @@ end
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)) = bitshift(uint8(1),g_d_direction.North_West);
                             %更新フラグを立てる
                             change_flag = uint8(1);
-                             %更新ノードを更新
+                            %更新ノードを更新
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_row(n,1),contor_renew_node_row(n,2)];
                             %更新マス用インデックスを増加
                             contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
-                        %かつ北西のノードが更新予定値と同じ場合
+                            %かつ北西のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_diagonal
                             %移動方向を追加
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)) = bitor(col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)),bitshift(uint8(1),g_d_direction.North_West));
@@ -1775,12 +1975,12 @@ end
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)) = bitshift(uint8(1),g_d_direction.North_West);
                             %更新フラグを立てる
                             change_flag = uint8(1);
-                             %更新ノードを更新
+                            %更新ノードを更新
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_row(n,1),contor_renew_node_row(n,2)];
                             %更新マス用インデックスを増加
                             contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
-                        %かつ北西のノードが更新予定値と同じ場合
+                            %かつ北西のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)) == row_num_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2))+weight_turn
                             %移動方向を追加
                             col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)) = bitor(col_dir_node(contor_renew_node_row(n,1),contor_renew_node_row(n,2)),bitshift(uint8(1),g_d_direction.North_West));
@@ -1790,7 +1990,7 @@ end
             end
             
             %Col_Edgeの処理[32行,33列]
-           
+            
             %検索した座標に対し、歩数mapを更新
             for n = 1:1:contor_renew_node_col_idx-1
                 
@@ -1814,13 +2014,13 @@ end
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)];
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
-                        %かつ北東のノードが更新予定値と同じ場合
+                            %かつ北東のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_diagonal
                             %移動方向を追加
                             row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)) = bitor(row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)),bitshift(uint8(1),g_d_direction.North_East));
                         end
                         
-                    %かつ進行方向が北東向きでないとき
+                        %かつ進行方向が北東向きでないとき
                     else
                         %かつ北東のノードの歩数MAP値が、更新予定値より大きい場合
                         if row_num_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)) > col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_turn
@@ -1835,7 +2035,7 @@ end
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
                             
-                        %かつ北東のノードが更新予定値と同じ場合
+                            %かつ北東のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_turn
                             %移動方向を追加
                             row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)) = bitor(row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)),bitshift(uint8(1),g_d_direction.North_East));
@@ -1862,7 +2062,7 @@ end
                             %更新マス用インデックスを増加
                             contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
                             
-                        %かつ東のノードが更新予定値と同じ場合
+                            %かつ東のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)+1) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_straight
                             %移動方向を追加
                             col_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)+1) = bitor(col_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)+1),bitshift(uint8(1),g_d_direction.East));
@@ -1882,7 +2082,7 @@ end
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_col(n,1),contor_renew_node_col(n,2)+1];
                             %更新マス用インデックスを増加
                             contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
-                        %かつ東のノードが更新予定値と同じ場合
+                            %かつ東のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)+1) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_turn
                             %移動方向を追加
                             col_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)+1) = bitor(col_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)+1),bitshift(uint8(1),g_d_direction.East));
@@ -1909,7 +2109,7 @@ end
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_col(n,1),contor_renew_node_col(n,2)];
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
-                        %かつ南東のノードが更新予定値と同じ場合
+                            %かつ南東のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_diagonal
                             %移動方向を追加
                             row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)) = bitor(row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)),bitshift(uint8(1),g_d_direction.South_East));
@@ -1930,7 +2130,7 @@ end
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_col(n,1),contor_renew_node_col(n,2)];
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
-                        %かつ南東のノードが更新予定値と同じ場合
+                            %かつ南東のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_turn
                             %移動方向を追加
                             row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)) = bitor(row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)),bitshift(uint8(1),g_d_direction.South_East));
@@ -1958,7 +2158,7 @@ end
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1];
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
-                        %かつ南西のノードが更新予定値と同じ場合
+                            %かつ南西のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_diagonal
                             %移動方向を追加
                             row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1) = bitor(row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1),bitshift(uint8(1),g_d_direction.South_West));
@@ -1978,7 +2178,7 @@ end
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1];
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
-                        %かつ南西のノードが更新予定値と同じ場合
+                            %かつ南西のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_turn
                             %移動方向を追加
                             row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1) = bitor(row_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1),bitshift(uint8(1),g_d_direction.South_West));
@@ -2004,13 +2204,13 @@ end
                             contor_renew_node_col_temp(contor_renew_node_col_idx_temp,:) = [contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1];
                             %更新マス用インデックスを増加
                             contor_renew_node_col_idx_temp = contor_renew_node_col_idx_temp+1;
-                        %かつ西のノードが更新予定値と同じ場合
+                            %かつ西のノードが更新予定値と同じ場合
                         elseif col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_straight
                             %移動方向を追加
                             col_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1) = bitor(col_dir_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1),bitshift(uint8(1),g_d_direction.West));
                         end
                         
-                    %かつ進行方向が西向きでないとき
+                        %かつ進行方向が西向きでないとき
                     else
                         %かつ西のノードの歩数MAP値が、更新予定値より大きい場合
                         if col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2)-1) > col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_turn
@@ -2046,12 +2246,12 @@ end
                             row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)-1) = bitshift(uint8(1),g_d_direction.North_West);
                             %更新フラグを立てる
                             change_flag = uint8(1);
-                             %更新ノードを更新
+                            %更新ノードを更新
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)-1];
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;
                             
-                        %かつ北西のノードが更新予定値と同じ場合
+                            %かつ北西のノードが更新予定値と同じ場合
                         elseif row_num_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)-1) == col_num_node(contor_renew_node_col(n,1),contor_renew_node_col(n,2))+weight_diagonal
                             %移動方向を追加
                             row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)-1) = bitor(row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)-1),bitshift(uint8(1),g_d_direction.North_West));
@@ -2067,7 +2267,7 @@ end
                             row_dir_node(contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)-1) = bitshift(uint8(1),g_d_direction.North_West);
                             %更新フラグを立てる
                             change_flag = uint8(1);
-                             %更新ノードを更新
+                            %更新ノードを更新
                             contor_renew_node_row_temp(contor_renew_node_row_idx_temp,:) = [contor_renew_node_col(n,1)+1,contor_renew_node_col(n,2)-1];
                             %更新マス用インデックスを増加
                             contor_renew_node_row_idx_temp = contor_renew_node_row_idx_temp+1;

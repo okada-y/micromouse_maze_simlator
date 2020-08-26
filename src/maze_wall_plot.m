@@ -37,7 +37,7 @@
     i = uint16(y);
     n = uint16(x);
 
-    hold on
+%     hold on
     %–k•Çî•ñƒvƒƒbƒg
     if bitand(wall(i,n),bitshift(1,g_direction.North)) 
         plot([n-1,n].*step,[i,i].*step,'r','LineWidth',2)
@@ -54,5 +54,5 @@
     if bitand(wall(i,n),bitshift(1,g_direction.West)) 
         plot([n-1,n-1].*step,[i-1,i].*step,'r','LineWidth',2)
     end
-    hold off
+%     hold off
  end
