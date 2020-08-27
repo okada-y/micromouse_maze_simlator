@@ -23,6 +23,13 @@ static emlrtRTEInfo d_emlrtRTEI = { 88,/* lineNo */
 };
 
 /* Function Definitions */
+void b_check_forloop_overflow_error(const emlrtStack *sp)
+{
+  emlrtErrorWithMessageIdR2018a(sp, &d_emlrtRTEI,
+    "Coder:toolbox:int_forloop_overflow", "Coder:toolbox:int_forloop_overflow",
+    3, 4, 6, "uint16");
+}
+
 void check_forloop_overflow_error(const emlrtStack *sp)
 {
   emlrtErrorWithMessageIdR2018a(sp, &d_emlrtRTEI,

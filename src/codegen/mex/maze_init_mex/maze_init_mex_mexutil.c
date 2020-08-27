@@ -38,15 +38,15 @@ static d_struct_T h_emlrt_marshallIn(const emlrtStack *sp, const mxArray
 static const mxArray *h_emlrt_marshallOut(const e_struct_T u);
 static d_struct_T i_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
   const emlrtMsgIdentifier *parentId);
-static const mxArray *i_emlrt_marshallOut(const h_struct_T u);
+static const mxArray *i_emlrt_marshallOut(const i_struct_T u);
 static e_struct_T j_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   *b_move_dir_property, const char_T *identifier);
 static const mxArray *j_emlrt_marshallOut(const int16_T u);
 static e_struct_T k_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
   const emlrtMsgIdentifier *parentId);
-static h_struct_T l_emlrt_marshallIn(const emlrtStack *sp, const mxArray
+static i_struct_T l_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   *b_turn_pattern, const char_T *identifier);
-static h_struct_T m_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
+static i_struct_T m_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
   const emlrtMsgIdentifier *parentId);
 static int16_T n_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   *b_wall_sensor_front_th, const char_T *identifier);
@@ -101,23 +101,23 @@ static const mxArray *d_emlrt_marshallOut(const b_struct_T u)
   static const char * sv0[3] = { "Row", "Col", "section" };
 
   const mxArray *b_y;
-  const mxArray *m5;
+  const mxArray *m7;
   y = NULL;
   emlrtAssign(&y, emlrtCreateStructMatrix(1, 1, 3, sv0));
   b_y = NULL;
-  m5 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m5) = u.Row;
-  emlrtAssign(&b_y, m5);
+  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m7) = u.Row;
+  emlrtAssign(&b_y, m7);
   emlrtSetFieldR2017b(y, 0, "Row", b_y, 0);
   b_y = NULL;
-  m5 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m5) = u.Col;
-  emlrtAssign(&b_y, m5);
+  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m7) = u.Col;
+  emlrtAssign(&b_y, m7);
   emlrtSetFieldR2017b(y, 0, "Col", b_y, 1);
   b_y = NULL;
-  m5 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m5) = u.section;
-  emlrtAssign(&b_y, m5);
+  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m7) = u.section;
+  emlrtAssign(&b_y, m7);
   emlrtSetFieldR2017b(y, 0, "section", b_y, 2);
   return y;
 }
@@ -155,28 +155,28 @@ static const mxArray *e_emlrt_marshallOut(const struct_T u)
   static const char * sv1[4] = { "North", "East", "South", "West" };
 
   const mxArray *b_y;
-  const mxArray *m6;
+  const mxArray *m8;
   y = NULL;
   emlrtAssign(&y, emlrtCreateStructMatrix(1, 1, 4, sv1));
   b_y = NULL;
-  m6 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m6) = u.North;
-  emlrtAssign(&b_y, m6);
+  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m8) = u.North;
+  emlrtAssign(&b_y, m8);
   emlrtSetFieldR2017b(y, 0, "North", b_y, 0);
   b_y = NULL;
-  m6 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m6) = u.East;
-  emlrtAssign(&b_y, m6);
+  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m8) = u.East;
+  emlrtAssign(&b_y, m8);
   emlrtSetFieldR2017b(y, 0, "East", b_y, 1);
   b_y = NULL;
-  m6 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m6) = u.South;
-  emlrtAssign(&b_y, m6);
+  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m8) = u.South;
+  emlrtAssign(&b_y, m8);
   emlrtSetFieldR2017b(y, 0, "South", b_y, 2);
   b_y = NULL;
-  m6 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m6) = u.West;
-  emlrtAssign(&b_y, m6);
+  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m8) = u.West;
+  emlrtAssign(&b_y, m8);
   emlrtSetFieldR2017b(y, 0, "West", b_y, 3);
   return y;
 }
@@ -214,48 +214,48 @@ static const mxArray *f_emlrt_marshallOut(const c_struct_T u)
     "South", "South_West", "West", "North_West" };
 
   const mxArray *b_y;
-  const mxArray *m7;
+  const mxArray *m9;
   y = NULL;
   emlrtAssign(&y, emlrtCreateStructMatrix(1, 1, 8, sv2));
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.North;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.North;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "North", b_y, 0);
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.North_East;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.North_East;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "North_East", b_y, 1);
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.East;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.East;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "East", b_y, 2);
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.South_East;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.South_East;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "South_East", b_y, 3);
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.South;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.South;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "South", b_y, 4);
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.South_West;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.South_West;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "South_West", b_y, 5);
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.West;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.West;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "West", b_y, 6);
   b_y = NULL;
-  m7 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m7) = u.North_West;
-  emlrtAssign(&b_y, m7);
+  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m9) = u.North_West;
+  emlrtAssign(&b_y, m9);
   emlrtSetFieldR2017b(y, 0, "North_West", b_y, 7);
   return y;
 }
@@ -306,28 +306,28 @@ static const mxArray *g_emlrt_marshallOut(const d_struct_T u)
   static const char * sv3[4] = { "front", "right", "back", "left" };
 
   const mxArray *b_y;
-  const mxArray *m8;
+  const mxArray *m10;
   y = NULL;
   emlrtAssign(&y, emlrtCreateStructMatrix(1, 1, 4, sv3));
   b_y = NULL;
-  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m8) = u.front;
-  emlrtAssign(&b_y, m8);
+  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m10) = u.front;
+  emlrtAssign(&b_y, m10);
   emlrtSetFieldR2017b(y, 0, "front", b_y, 0);
   b_y = NULL;
-  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m8) = u.right;
-  emlrtAssign(&b_y, m8);
+  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m10) = u.right;
+  emlrtAssign(&b_y, m10);
   emlrtSetFieldR2017b(y, 0, "right", b_y, 1);
   b_y = NULL;
-  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m8) = u.back;
-  emlrtAssign(&b_y, m8);
+  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m10) = u.back;
+  emlrtAssign(&b_y, m10);
   emlrtSetFieldR2017b(y, 0, "back", b_y, 2);
   b_y = NULL;
-  m8 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m8) = u.left;
-  emlrtAssign(&b_y, m8);
+  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m10) = u.left;
+  emlrtAssign(&b_y, m10);
   emlrtSetFieldR2017b(y, 0, "left", b_y, 3);
   return y;
 }
@@ -351,18 +351,18 @@ static const mxArray *h_emlrt_marshallOut(const e_struct_T u)
   static const char * sv4[2] = { "straight", "diagonal" };
 
   const mxArray *b_y;
-  const mxArray *m9;
+  const mxArray *m11;
   y = NULL;
   emlrtAssign(&y, emlrtCreateStructMatrix(1, 1, 2, sv4));
   b_y = NULL;
-  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m9) = u.straight;
-  emlrtAssign(&b_y, m9);
+  m11 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m11) = u.straight;
+  emlrtAssign(&b_y, m11);
   emlrtSetFieldR2017b(y, 0, "straight", b_y, 0);
   b_y = NULL;
-  m9 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m9) = u.diagonal;
-  emlrtAssign(&b_y, m9);
+  m11 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m11) = u.diagonal;
+  emlrtAssign(&b_y, m11);
   emlrtSetFieldR2017b(y, 0, "diagonal", b_y, 1);
   return y;
 }
@@ -394,60 +394,60 @@ static d_struct_T i_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
   return y;
 }
 
-static const mxArray *i_emlrt_marshallOut(const h_struct_T u)
+static const mxArray *i_emlrt_marshallOut(const i_struct_T u)
 {
   const mxArray *y;
   static const char * sv5[9] = { "default", "r_45", "l_45", "r_90", "l_90",
     "r_135", "l_135", "r_180", "l_180" };
 
   const mxArray *b_y;
-  const mxArray *m10;
+  const mxArray *m12;
   y = NULL;
   emlrtAssign(&y, emlrtCreateStructMatrix(1, 1, 9, sv5));
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.b_default;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.b_default;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "default", b_y, 0);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.r_45;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.r_45;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "r_45", b_y, 1);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.l_45;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.l_45;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "l_45", b_y, 2);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.r_90;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.r_90;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "r_90", b_y, 3);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.l_90;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.l_90;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "l_90", b_y, 4);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.r_135;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.r_135;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "r_135", b_y, 5);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.l_135;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.l_135;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "l_135", b_y, 6);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.r_180;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.r_180;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "r_180", b_y, 7);
   b_y = NULL;
-  m10 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
-  *(uint8_T *)emlrtMxGetData(m10) = u.l_180;
-  emlrtAssign(&b_y, m10);
+  m12 = emlrtCreateNumericMatrix(1, 1, mxUINT8_CLASS, mxREAL);
+  *(uint8_T *)emlrtMxGetData(m12) = u.l_180;
+  emlrtAssign(&b_y, m12);
   emlrtSetFieldR2017b(y, 0, "l_180", b_y, 8);
   return y;
 }
@@ -468,11 +468,11 @@ static e_struct_T j_emlrt_marshallIn(const emlrtStack *sp, const mxArray
 static const mxArray *j_emlrt_marshallOut(const int16_T u)
 {
   const mxArray *y;
-  const mxArray *m11;
+  const mxArray *m13;
   y = NULL;
-  m11 = emlrtCreateNumericMatrix(1, 1, mxINT16_CLASS, mxREAL);
-  *(int16_T *)emlrtMxGetData(m11) = u;
-  emlrtAssign(&y, m11);
+  m13 = emlrtCreateNumericMatrix(1, 1, mxINT16_CLASS, mxREAL);
+  *(int16_T *)emlrtMxGetData(m13) = u;
+  emlrtAssign(&y, m13);
   return y;
 }
 
@@ -497,10 +497,10 @@ static e_struct_T k_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
   return y;
 }
 
-static h_struct_T l_emlrt_marshallIn(const emlrtStack *sp, const mxArray
+static i_struct_T l_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   *b_turn_pattern, const char_T *identifier)
 {
-  h_struct_T y;
+  i_struct_T y;
   emlrtMsgIdentifier thisId;
   thisId.fIdentifier = (const char *)identifier;
   thisId.fParent = NULL;
@@ -510,10 +510,10 @@ static h_struct_T l_emlrt_marshallIn(const emlrtStack *sp, const mxArray
   return y;
 }
 
-static h_struct_T m_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
+static i_struct_T m_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
   const emlrtMsgIdentifier *parentId)
 {
-  h_struct_T y;
+  i_struct_T y;
   emlrtMsgIdentifier thisId;
   static const char * fieldNames[9] = { "default", "r_45", "l_45", "r_90",
     "l_90", "r_135", "l_135", "r_180", "l_180" };
@@ -600,6 +600,14 @@ static int16_T v_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
 void MEXGlobalSyncInFunction(const emlrtStack *sp)
 {
   const mxArray *tmp;
+  const mxArray *b_tmp;
+  const mxArray *c_tmp;
+  const mxArray *d_tmp;
+  const mxArray *e_tmp;
+  const mxArray *f_tmp;
+  const mxArray *g_tmp;
+  const mxArray *h_tmp;
+  const mxArray *i_tmp;
 
   /* Marshall in global variables */
   tmp = emlrtGetGlobalVariable("matrix_dir");
@@ -608,51 +616,51 @@ void MEXGlobalSyncInFunction(const emlrtStack *sp)
     matrix_dir_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("g_direction");
-  if (tmp != NULL) {
-    g_direction = d_emlrt_marshallIn(sp, tmp, "g_direction");
+  b_tmp = emlrtGetGlobalVariable("g_direction");
+  if (b_tmp != NULL) {
+    g_direction = d_emlrt_marshallIn(sp, b_tmp, "g_direction");
     g_direction_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("g_d_direction");
-  if (tmp != NULL) {
-    g_d_direction = f_emlrt_marshallIn(sp, tmp, "g_d_direction");
+  c_tmp = emlrtGetGlobalVariable("g_d_direction");
+  if (c_tmp != NULL) {
+    g_d_direction = f_emlrt_marshallIn(sp, c_tmp, "g_d_direction");
     g_d_direction_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("l_direction");
-  if (tmp != NULL) {
-    l_direction = h_emlrt_marshallIn(sp, tmp, "l_direction");
+  d_tmp = emlrtGetGlobalVariable("l_direction");
+  if (d_tmp != NULL) {
+    l_direction = h_emlrt_marshallIn(sp, d_tmp, "l_direction");
     l_direction_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("move_dir_property");
-  if (tmp != NULL) {
-    move_dir_property = j_emlrt_marshallIn(sp, tmp, "move_dir_property");
+  e_tmp = emlrtGetGlobalVariable("move_dir_property");
+  if (e_tmp != NULL) {
+    move_dir_property = j_emlrt_marshallIn(sp, e_tmp, "move_dir_property");
     move_dir_property_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("turn_pattern");
-  if (tmp != NULL) {
-    turn_pattern = l_emlrt_marshallIn(sp, tmp, "turn_pattern");
+  f_tmp = emlrtGetGlobalVariable("turn_pattern");
+  if (f_tmp != NULL) {
+    turn_pattern = l_emlrt_marshallIn(sp, f_tmp, "turn_pattern");
     turn_pattern_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("wall_sensor_front_th");
-  if (tmp != NULL) {
-    wall_sensor_front_th = n_emlrt_marshallIn(sp, tmp, "wall_sensor_front_th");
+  g_tmp = emlrtGetGlobalVariable("wall_sensor_front_th");
+  if (g_tmp != NULL) {
+    wall_sensor_front_th = n_emlrt_marshallIn(sp, g_tmp, "wall_sensor_front_th");
     wall_sensor_front_th_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("wall_sensor_right_th");
-  if (tmp != NULL) {
-    wall_sensor_right_th = n_emlrt_marshallIn(sp, tmp, "wall_sensor_right_th");
+  h_tmp = emlrtGetGlobalVariable("wall_sensor_right_th");
+  if (h_tmp != NULL) {
+    wall_sensor_right_th = n_emlrt_marshallIn(sp, h_tmp, "wall_sensor_right_th");
     wall_sensor_right_th_dirty = 0U;
   }
 
-  tmp = emlrtGetGlobalVariable("wall_sensor_left_th");
-  if (tmp != NULL) {
-    wall_sensor_left_th = n_emlrt_marshallIn(sp, tmp, "wall_sensor_left_th");
+  i_tmp = emlrtGetGlobalVariable("wall_sensor_left_th");
+  if (i_tmp != NULL) {
+    wall_sensor_left_th = n_emlrt_marshallIn(sp, i_tmp, "wall_sensor_left_th");
     wall_sensor_left_th_dirty = 0U;
   }
 }

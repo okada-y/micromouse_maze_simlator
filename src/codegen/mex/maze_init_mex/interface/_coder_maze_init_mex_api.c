@@ -42,72 +42,72 @@ static uint8_T (*x_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
 static const mxArray *k_emlrt_marshallOut(const uint8_T u[1024])
 {
   const mxArray *y;
-  const mxArray *m12;
-  static const int32_T iv9[2] = { 0, 0 };
+  const mxArray *m14;
+  static const int32_T iv5[2] = { 0, 0 };
 
-  static const int32_T iv10[2] = { 32, 32 };
+  static const int32_T iv6[2] = { 32, 32 };
 
   y = NULL;
-  m12 = emlrtCreateNumericArray(2, iv9, mxUINT8_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m12, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m12, iv10, 2);
-  emlrtAssign(&y, m12);
+  m14 = emlrtCreateNumericArray(2, iv5, mxUINT8_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m14, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m14, iv6, 2);
+  emlrtAssign(&y, m14);
   return y;
 }
 
 static void l_emlrt_marshallOut(const uint8_T u[1024], const mxArray *y)
 {
-  static const int32_T iv11[2] = { 32, 32 };
+  static const int32_T iv7[2] = { 32, 32 };
 
   emlrtMxSetData((mxArray *)y, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)y, iv11, 2);
+  emlrtSetDimensions((mxArray *)y, iv7, 2);
 }
 
 static const mxArray *m_emlrt_marshallOut(const uint16_T u[1024])
 {
   const mxArray *y;
-  const mxArray *m13;
-  static const int32_T iv12[2] = { 0, 0 };
+  const mxArray *m15;
+  static const int32_T iv8[2] = { 0, 0 };
 
-  static const int32_T iv13[2] = { 32, 32 };
+  static const int32_T iv9[2] = { 32, 32 };
 
   y = NULL;
-  m13 = emlrtCreateNumericArray(2, iv12, mxUINT16_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m13, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m13, iv13, 2);
-  emlrtAssign(&y, m13);
+  m15 = emlrtCreateNumericArray(2, iv8, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m15, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m15, iv9, 2);
+  emlrtAssign(&y, m15);
   return y;
 }
 
 static const mxArray *n_emlrt_marshallOut(const uint16_T u[1056])
 {
   const mxArray *y;
-  const mxArray *m14;
-  static const int32_T iv14[2] = { 0, 0 };
+  const mxArray *m16;
+  static const int32_T iv10[2] = { 0, 0 };
 
-  static const int32_T iv15[2] = { 33, 32 };
+  static const int32_T iv11[2] = { 33, 32 };
 
   y = NULL;
-  m14 = emlrtCreateNumericArray(2, iv14, mxUINT16_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m14, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m14, iv15, 2);
-  emlrtAssign(&y, m14);
+  m16 = emlrtCreateNumericArray(2, iv10, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m16, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m16, iv11, 2);
+  emlrtAssign(&y, m16);
   return y;
 }
 
 static const mxArray *o_emlrt_marshallOut(const uint16_T u[1056])
 {
   const mxArray *y;
-  const mxArray *m15;
-  static const int32_T iv16[2] = { 0, 0 };
+  const mxArray *m17;
+  static const int32_T iv12[2] = { 0, 0 };
 
-  static const int32_T iv17[2] = { 32, 33 };
+  static const int32_T iv13[2] = { 32, 33 };
 
   y = NULL;
-  m15 = emlrtCreateNumericArray(2, iv16, mxUINT16_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m15, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m15, iv17, 2);
-  emlrtAssign(&y, m15);
+  m17 = emlrtCreateNumericArray(2, iv12, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m17, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m17, iv13, 2);
+  emlrtAssign(&y, m17);
   return y;
 }
 
@@ -225,7 +225,7 @@ void maze_init_api(const mxArray * const prhs[2], int32_T nlhs, const mxArray
   }
 }
 
-void maze_solve_api(const mxArray *prhs[7], int32_T nlhs, const mxArray *plhs[5])
+void maze_solve_api(const mxArray *prhs[8], int32_T nlhs, const mxArray *plhs[5])
 {
   uint16_T (*contour_map)[1024];
   uint16_T (*row_num_node)[1056];
@@ -238,7 +238,8 @@ void maze_solve_api(const mxArray *prhs[7], int32_T nlhs, const mxArray *plhs[5]
   uint8_T maze_col_size;
   uint8_T goal_size;
   uint8_T (*maze_goal)[18];
-  uint8_T run_mode;
+  uint8_T run_mode_1;
+  uint8_T run_mode_2;
   emlrtStack st = { NULL,              /* site */
     NULL,                              /* tls */
     NULL                               /* prev */
@@ -259,15 +260,16 @@ void maze_solve_api(const mxArray *prhs[7], int32_T nlhs, const mxArray *plhs[5]
   maze_col_size = p_emlrt_marshallIn(&st, emlrtAliasP(prhs[3]), "maze_col_size");
   goal_size = p_emlrt_marshallIn(&st, emlrtAliasP(prhs[4]), "goal_size");
   maze_goal = s_emlrt_marshallIn(&st, emlrtAlias(prhs[5]), "maze_goal");
-  run_mode = p_emlrt_marshallIn(&st, emlrtAliasP(prhs[6]), "run_mode");
+  run_mode_1 = p_emlrt_marshallIn(&st, emlrtAliasP(prhs[6]), "run_mode_1");
+  run_mode_2 = p_emlrt_marshallIn(&st, emlrtAliasP(prhs[7]), "run_mode_2");
 
   /* Marshall in global variables */
   MEXGlobalSyncInFunction(&st);
 
   /* Invoke the target function */
   maze_solve(&st, *maze_wall, *maze_wall_search, maze_row_size, maze_col_size,
-             goal_size, *maze_goal, run_mode, *contour_map, *row_num_node,
-             *col_num_node);
+             goal_size, *maze_goal, run_mode_1, run_mode_2, *contour_map,
+             *row_num_node, *col_num_node);
 
   /* Marshall out global variables */
   MEXGlobalSyncOutFunction(true);

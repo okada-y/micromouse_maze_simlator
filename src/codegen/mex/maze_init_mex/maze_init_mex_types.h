@@ -65,8 +65,8 @@ typedef struct {
 
 #endif                                 /*typedef_e_struct_T*/
 
-#ifndef typedef_h_struct_T
-#define typedef_h_struct_T
+#ifndef typedef_i_struct_T
+#define typedef_i_struct_T
 
 typedef struct {
   uint8_T b_default;
@@ -78,9 +78,9 @@ typedef struct {
   uint8_T l_135;
   uint8_T r_180;
   uint8_T l_180;
-} h_struct_T;
+} i_struct_T;
 
-#endif                                 /*typedef_h_struct_T*/
+#endif                                 /*typedef_i_struct_T*/
 
 #ifndef typedef_struct_T
 #define typedef_struct_T

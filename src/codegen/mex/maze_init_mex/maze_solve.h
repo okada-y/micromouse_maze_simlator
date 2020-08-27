@@ -27,8 +27,9 @@
 /* Function Declarations */
 extern void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
   maze_wall_search[1024], uint8_T maze_row_size, uint8_T maze_col_size, uint8_T
-  goal_size, const uint8_T maze_goal[18], uint8_T run_mode, uint16_T
-  contour_map[1024], uint16_T row_num_node[1056], uint16_T col_num_node[1056]);
+  goal_size, const uint8_T maze_goal[18], uint8_T run_mode_1, uint8_T run_mode_2,
+  uint16_T contour_map[1024], uint16_T row_num_node[1056], uint16_T
+  col_num_node[1056]);
 
 #endif
 

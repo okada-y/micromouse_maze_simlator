@@ -25,6 +25,7 @@
 #include "maze_init_mex_types.h"
 
 /* Function Declarations */
+extern void b_check_forloop_overflow_error(const emlrtStack *sp);
 extern void check_forloop_overflow_error(const emlrtStack *sp);
 
 #endif

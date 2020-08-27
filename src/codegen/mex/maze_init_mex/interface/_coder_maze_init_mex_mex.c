@@ -25,7 +25,7 @@ static const char * emlrtEntryPoints[2] = { "maze_init", "maze_solve" };
 static void maze_init_mexFunction(int32_T nlhs, mxArray *plhs[2], int32_T nrhs,
   const mxArray *prhs[2]);
 static void maze_solve_mexFunction(int32_T nlhs, mxArray *plhs[5], int32_T nrhs,
-  const mxArray *prhs[7]);
+  const mxArray *prhs[8]);
 
 /* Function Definitions */
 static void maze_init_mexFunction(int32_T nlhs, mxArray *plhs[2], int32_T nrhs,
@@ -65,7 +65,7 @@ static void maze_init_mexFunction(int32_T nlhs, mxArray *plhs[2], int32_T nrhs,
 }
 
 static void maze_solve_mexFunction(int32_T nlhs, mxArray *plhs[5], int32_T nrhs,
-  const mxArray *prhs[7])
+  const mxArray *prhs[8])
 {
   const mxArray *outputs[5];
   int32_T nOutputs;
@@ -77,8 +77,8 @@ static void maze_solve_mexFunction(int32_T nlhs, mxArray *plhs[5], int32_T nrhs,
   st.tls = emlrtRootTLSGlobal;
 
   /* Check for proper number of arguments. */
-  if (nrhs != 7) {
-    emlrtErrMsgIdAndTxt(&st, "EMLRT:runTime:WrongNumberOfInputs", 5, 12, 7, 4,
+  if (nrhs != 8) {
+    emlrtErrMsgIdAndTxt(&st, "EMLRT:runTime:WrongNumberOfInputs", 5, 12, 8, 4,
                         10, "maze_solve");
   }
 
@@ -121,7 +121,7 @@ void mexFunction(int32_T nlhs, mxArray *plhs[], int32_T nrhs, const mxArray
     break;
 
    case 1:
-    maze_solve_mexFunction(nlhs, plhs, nrhs - 1, *(const mxArray *(*)[7])&prhs[1]);
+    maze_solve_mexFunction(nlhs, plhs, nrhs - 1, *(const mxArray *(*)[8])&prhs[1]);
     break;
   }
 

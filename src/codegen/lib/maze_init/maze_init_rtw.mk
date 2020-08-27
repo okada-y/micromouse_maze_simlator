@@ -2,7 +2,7 @@
 ## Makefile generated for MATLAB file/project 'maze_init'. 
 ## 
 ## Makefile     : maze_init_rtw.mk
-## Generated on : Mon Aug 24 20:13:46 2020
+## Generated on : Thu Aug 27 23:24:31 2020
 ## MATLAB Coder version: 4.2 (R2019a)
 ## 
 ## Build Info:
@@ -150,9 +150,9 @@ ECHO                = @echo
 MV                  = @move
 RUN                 =
 
-#--------------------------------------
-# "Faster Runs" Build Configuration
-#--------------------------------------
+#----------------------------------------
+# "Faster Builds" Build Configuration
+#----------------------------------------
 
 ARFLAGS              = ruvs
 ASFLAGS              = -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  \
@@ -167,7 +167,7 @@ CFLAGS               = $(FDATASECTIONS_FLG) \
                        -Wall \
                        -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  \
                        -c \
-                       -O3
+                       -O0
 CPPFLAGS             = -std=c++98 \
                        -fno-rtti \
                        -fno-exceptions \
@@ -175,7 +175,7 @@ CPPFLAGS             = -std=c++98 \
                        -Wall \
                        -MMD -MP -MF"$(@:%.o=%.dep)" -MT"$@"  \
                        -c \
-                       -O3
+                       -O0
 CPP_LDFLAGS          = -Wl,--gc-sections \
                        -Wl,-Map="$(PRODUCT_NAME).map"
 CPP_SHAREDLIB_LDFLAGS  =

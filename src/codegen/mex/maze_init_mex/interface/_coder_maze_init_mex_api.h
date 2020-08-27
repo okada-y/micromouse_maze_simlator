@@ -27,7 +27,7 @@
 /* Function Declarations */
 extern void maze_init_api(const mxArray * const prhs[2], int32_T nlhs, const
   mxArray *plhs[2]);
-extern void maze_solve_api(const mxArray *prhs[7], int32_T nlhs, const mxArray
+extern void maze_solve_api(const mxArray *prhs[8], int32_T nlhs, const mxArray
   *plhs[5]);
 
 #endif

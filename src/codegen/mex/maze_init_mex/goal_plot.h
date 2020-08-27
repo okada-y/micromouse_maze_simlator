@@ -25,9 +25,7 @@
 #include "maze_init_mex_types.h"
 
 /* Function Declarations */
-extern void b_goal_plot(const emlrtStack *sp, const uint8_T maze_goal[2]);
-extern void goal_plot(const emlrtStack *sp, uint8_T goal_size, const uint8_T
-                      maze_goal[18]);
+extern void goal_plot(void);
 
 #endif
 

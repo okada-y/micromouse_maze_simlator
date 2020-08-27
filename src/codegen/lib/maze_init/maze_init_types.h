@@ -5,7 +5,7 @@
  * File: maze_init_types.h
  *
  * MATLAB Coder version            : 4.2
- * C/C++ source code generated on  : 24-Aug-2020 20:13:17
+ * C/C++ source code generated on  : 27-Aug-2020 23:23:48
  */
 
 #ifndef MAZE_INIT_TYPES_H
@@ -64,8 +64,8 @@ typedef struct {
 
 #endif                                 /*typedef_e_struct_T*/
 
-#ifndef typedef_h_struct_T
-#define typedef_h_struct_T
+#ifndef typedef_i_struct_T
+#define typedef_i_struct_T
 
 typedef struct {
   unsigned char b_default;
@@ -77,9 +77,9 @@ typedef struct {
   unsigned char l_135;
   unsigned char r_180;
   unsigned char l_180;
-} h_struct_T;
+} i_struct_T;
 
-#endif                                 /*typedef_h_struct_T*/
+#endif                                 /*typedef_i_struct_T*/
 
 #ifndef typedef_struct_T
 #define typedef_struct_T
