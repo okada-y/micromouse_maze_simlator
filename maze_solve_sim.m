@@ -103,7 +103,7 @@ if sim_mode_flg == sim_mode.unknown
     
     %% モード定義
     run_mode1_flg = run_mode1.search;
-    run_mode2_flg = run_mode_2_search.adachi;
+    run_mode2_flg = run_mode_2_search.short;
     [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode1_flg,run_mode2_flg);
     
     %% 探索情報をもとに最短走行

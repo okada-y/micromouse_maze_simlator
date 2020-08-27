@@ -1238,9 +1238,11 @@ end
         end
         
         if goal_flag == 1
-            %ゴールのとき、停止処理を実施
-            if ~coder.target('MATLAB')
-                coder.ceval('m_goal_movement',start_flg,wall_flg,uint8(move_dir_property.straight));
+            %ゴールかつ走行時、停止処理を実施
+            if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_goal_movement',start_flg,wall_flg,uint8(move_dir_property.straight));
+                end
             end
             break
         end
@@ -1283,20 +1285,21 @@ end
             end
         end
         
-        %探索壁情報に応じて、壁フラグをセット
-        %前
-        if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir),15))
-            wall_flg = bitor(wall_flg,1,'uint8');
+        %走行時、探索壁情報に応じて、壁フラグをセット
+        if (Sh_r_mode)
+            %前
+            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir),15))
+                wall_flg = bitor(wall_flg,1,'uint8');
+            end
+            %右
+            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+1),15))
+                wall_flg = bitor(wall_flg,2,'uint8');
+            end
+            %左
+            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+3),15))
+                wall_flg = bitor(wall_flg,8,'uint8');
+            end
         end
-        %右
-        if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+1),15))
-            wall_flg = bitor(wall_flg,2,'uint8');
-        end
-        %左
-        if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+3),15))
-            wall_flg = bitor(wall_flg,8,'uint8');
-        end
-        
         
         %%現在方向と進行方向に応じた処理
         switch rem((4 + next_dir - temp_dir),4)
