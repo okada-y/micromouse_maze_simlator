@@ -22,6 +22,7 @@ wall_flg = uint8(0);    %壁フラグ(1:前、2:右、（4:後ろ)、8:左)
 % グローバル変数宣言
 global maze_fig;%メインfigure
 global maze_fig_ax;%メインaxes
+% global vidObj;%ビデオ用
 
 %プロット用変数
 global sh_route_line;%最短経路ラインオブジェクト保持用
@@ -341,8 +342,7 @@ end
             %ゴール直後のとき
             goal_after_flg= uint8(0);%ゴール直後フラグをクリア
         end
-        
-        
+                
         if coder.target('MATLAB')
             maze_wall_plot(maze_wall,current_x,current_y,maze_row_size,maze_col_size);
         end
@@ -447,7 +447,8 @@ end
             %探索状況の更新
             maze_search_plot_update(search_surf,maze_wall_search,maze_col_size,maze_row_size);
             %                 pause(0.01)
-            drawnow limitrate nocallbacks
+            writeVideo(vidObj, getframe(gcf));
+            drawnow %limitrate nocallbacks
         else
             %for code generation
         end
@@ -455,7 +456,7 @@ end
     end
     
     
-    %% move_step 一マス前進する関数
+    %% move_step １マスだけ前進する関数
     function [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir)
     %入力 現在位置x,y,現在方向
     %出力 現在位置x,y
@@ -1194,7 +1195,7 @@ end
     goal_flag = uint8(0);  %ゴール判定フラグ
     little = max_length; %進行方向選定用閾値
     tempi = uint8(0);
-    
+    straight_count=uint8(0);
     
     unexp_square = zeros(512,2,'uint8');
     unexp_square_idx = uint8(0);
@@ -1224,11 +1225,14 @@ end
     end
     
     for tempk = 1:1:max_length
-        %現在位置が未探索マスか判定
-        if(maze_wall_search(temp_y,temp_x) ~=15)
-            %未探索マスであれば、記録する。インデックスを増加させる。
-            unexp_square(unexp_square_idx+1,:) = [temp_y,temp_x];
-            unexp_square_idx = unexp_square_idx + uint8(1);
+        %非走行モードのとき、非探索マスを記録する
+        if(~Sh_r_mode)
+            %現在位置が未探索マスか判定
+            if(maze_wall_search(temp_y,temp_x) ~=15)
+                %未探索マスであれば、記録する。インデックスを増加させる。
+                unexp_square(unexp_square_idx+1,:) = [temp_y,temp_x];
+                unexp_square_idx = unexp_square_idx + uint8(1);
+            end
         end
         %現在位置がゴールか判定
         for tempi = 1:1:goal_size
@@ -1239,11 +1243,25 @@ end
         
         if goal_flag == 1
             %ゴールかつ走行時、停止処理を実施
+            if straight_count > 0 %直進カウンタが立っている場合
+                if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
+                    if ~coder.target('MATLAB')
+                        coder.ceval('m_move_front_long',straight_count,start_flg,wall_flg,uint8(move_dir_property.straight));
+                    end
+                    %スタート直後フラグと壁フラグをクリア
+                    start_flg = uint8(0);
+                    wall_flg = uint8(0);
+                end
+                %移動後、ストレートカウンタをクリア
+                straight_count = uint8(0);
+            end
+                %参照マス、参照方向を更新
             if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
                 if ~coder.target('MATLAB')
                     coder.ceval('m_goal_movement',start_flg,wall_flg,uint8(move_dir_property.straight));
                 end
             end
+
             break
         end
         
@@ -1285,41 +1303,57 @@ end
             end
         end
         
-        %走行時、探索壁情報に応じて、壁フラグをセット
-        if (Sh_r_mode)
-            %前
-            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir),15))
-                wall_flg = bitor(wall_flg,1,'uint8');
-            end
-            %右
-            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+1),15))
-                wall_flg = bitor(wall_flg,2,'uint8');
-            end
-            %左
-            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+3),15))
-                wall_flg = bitor(wall_flg,8,'uint8');
-            end
-        end
+%         %走行時、探索壁情報に応じて、壁フラグをセット
+%         if (Sh_r_mode)
+%             %前
+%             if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir),15))
+%                 wall_flg = bitor(wall_flg,1,'uint8');
+%             end
+%             %右
+%             if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+1),15))
+%                 wall_flg = bitor(wall_flg,2,'uint8');
+%             end
+%             %左
+%             if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+3),15))
+%                 wall_flg = bitor(wall_flg,8,'uint8');
+%             end
+%         end
         
         %%現在方向と進行方向に応じた処理
         switch rem((4 + next_dir - temp_dir),4)
             
-            case l_direction.front
-                [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
-                %disp("front")
-                if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
-                    if ~coder.target('MATLAB')
-                        coder.ceval('m_move_front',start_flg,wall_flg,uint8(move_dir_property.straight));
-                    end
-                    %スタート直後フラグと壁フラグをクリア
-                    start_flg = uint8(0);
-                    wall_flg = uint8(0);
-                end
+            case l_direction.front%直進の場合、直進カウンタをインクリメント
+                straight_count = straight_count+1;
+                [wall_flg] = fust_run_wallset(temp_y,temp_x,temp_dir); %現在参照マスの壁情報を記憶
+                [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);  %参照マスを移動
+%                 %disp("front")
+%                 if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
+%                     if ~coder.target('MATLAB')
+%                         coder.ceval('m_move_front',start_flg,wall_flg,uint8(move_dir_property.straight));
+%                     end
+%                     %スタート直後フラグと壁フラグをクリア
+%                     start_flg = uint8(0);
+%                     wall_flg = uint8(0);
+%                 end
                 
             case l_direction.right
+                if straight_count > 0 %直進カウンタが立っている場合
+                    if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
+                        if ~coder.target('MATLAB')
+                            coder.ceval('m_move_front_long',straight_count,start_flg,wall_flg,uint8(move_dir_property.straight));
+                        end
+                        %スタート直後フラグと壁フラグをクリア
+                        start_flg = uint8(0);
+                        wall_flg = uint8(0);
+                    end
+                    %移動後、ストレートカウンタをクリア
+                    straight_count = uint8(0);
+                end
+                [wall_flg] = fust_run_wallset(temp_y,temp_x,temp_dir); %現在参照マスの壁情報を記憶
+                %参照マス、参照方向を更新
                 [temp_dir] = turn_clk_90deg(temp_dir);
                 [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
-                %disp("right")
+                
                 if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
                     if ~coder.target('MATLAB')
                         coder.ceval('m_move_right',start_flg,wall_flg,uint8(move_dir_property.straight));
@@ -1330,9 +1364,23 @@ end
                 end
                 
             case l_direction.back
+                if straight_count > 0 %直進カウンタが立っている場合
+                    if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
+                        if ~coder.target('MATLAB')
+                            coder.ceval('m_move_front_long',straight_count,start_flg,wall_flg,uint8(move_dir_property.straight));
+                        end
+                        %スタート直後フラグと壁フラグをクリア
+                        start_flg = uint8(0);
+                        wall_flg = uint8(0);
+                    end
+                    %移動後、ストレートカウンタをクリア
+                    straight_count = uint8(0);
+                end
+                [wall_flg] = fust_run_wallset(temp_y,temp_x,temp_dir); %現在参照マスの壁情報を記憶
+                %参照マス、参照方向を更新
                 [temp_dir] = turn_180deg(temp_dir);
                 [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
-                %disp("back")
+                
                 if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
                     if ~coder.target('MATLAB')
                         coder.ceval('m_move_back',start_flg,wall_flg,uint8(move_dir_property.straight));
@@ -1344,6 +1392,20 @@ end
                 
                 
             case l_direction.left
+                if straight_count > 0 %直進カウンタが立っている場合
+                    if (Sh_r_mode) %走行モード時、Cの動作関数を呼び出し
+                        if ~coder.target('MATLAB')
+                            coder.ceval('m_move_front_long',straight_count,start_flg,wall_flg,uint8(move_dir_property.straight));
+                        end
+                        %スタート直後フラグと壁フラグをクリア
+                        start_flg = uint8(0);
+                        wall_flg = uint8(0);
+                    end
+                    %移動後、ストレートカウンタをクリア
+                    straight_count =  uint8(0);
+                end
+                [wall_flg] = fust_run_wallset(temp_y,temp_x,temp_dir); %現在参照マスの壁情報を記憶
+                %参照マス、参照方向を更新
                 [temp_dir] = turn_conclk_90deg(temp_dir);
                 [temp_x,temp_y] = move_step(temp_x,temp_y,temp_dir);
                 %disp("left")
@@ -1362,8 +1424,14 @@ end
         if coder.target('MATLAB')
             %for MATLAB
             %軌跡プロット
-            sh_route_line(tempk) = plot([double(previous_x)*9-4.5,double(temp_x)*9-4.5],[double(previous_y)*9-4.5,double(temp_y)*9-4.5]...
+            %直線加速加速領域は色を変える
+            if straight_count == 0
+                sh_route_line(tempk) = plot([double(previous_x)*9-4.5,double(temp_x)*9-4.5],[double(previous_y)*9-4.5,double(temp_y)*9-4.5]...
                 ,'Color','#0000FF','LineWidth',3);
+            else
+                sh_route_line(tempk) = plot([double(previous_x)*9-4.5,double(temp_x)*9-4.5],[double(previous_y)*9-4.5,double(temp_y)*9-4.5]...
+                ,'Color','#FF4500','LineWidth',3);
+            end
         else
             %for code generation
         end
@@ -1371,7 +1439,26 @@ end
         previous_y = temp_y;
     end
     %         pause(0.01)
-    drawnow limitrate nocallbacks
+%     writeVideo(vidObj, getframe(gcf));
+    drawnow %limitrate nocallbacks
+    
+        %最短時の壁情報取得関数
+        function [wall_flg] = fust_run_wallset(temp_y,temp_x,temp_dir)
+            wall_flg = uint8(0);
+            %前
+            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir),15))
+                wall_flg = bitor(wall_flg,1,'uint8');
+            end
+            %右
+            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+1),15))
+                wall_flg = bitor(wall_flg,2,'uint8');
+            end
+            %左
+            if bitand(maze_wall(temp_y,temp_x),rem(bitshift(uint8(1),temp_dir+3),15))
+                wall_flg = bitor(wall_flg,8,'uint8');
+            end
+        end
+    
     end
     
     %% make_map_fustrun 最短走行用等高線MAPを生成

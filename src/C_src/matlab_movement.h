@@ -4,6 +4,9 @@
 //前進
 void m_move_front(unsigned char start_flg,unsigned char wall_flg,unsigned char move_dir_property);
 
+//前進_ロング
+void m_move_front_long(unsigned char straight_count,unsigned char start_flg,unsigned char wall_flg,unsigned char move_dir_property);
+
 //右折
 void m_move_right(unsigned char start_flg,unsigned char wall_flg,unsigned char move_dir_property);
 
