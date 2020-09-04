@@ -8,15 +8,17 @@ addpath(strcat(currentdir,'/src'),'-end')
 %% デバッグモード定義
 global maze_data_get_debug;
 maze_data_get_debug = 0;
+global video_flg;
+global vidObj; %動画作成用のビデオオブジェクト
+%ビデオフラグ
+video_flg = 0;
 
-% %% ビデオ記録用変数の宣言
-% global vidObj; %動画作成用のビデオオブジェクト
-% 
-% %% ビデオ作成の準備
-% vidObj = VideoWriter('result.mp4','MPEG-4');
-% vidObj.FrameRate = 1/0.1;
-% open(vidObj);
-
+%% ビデオ記録用変数の宣言
+if video_flg
+    vidObj = VideoWriter('result.mp4','MPEG-4');
+    vidObj.FrameRate = 1/0.1;
+    open(vidObj);
+end
 %% シミュレーションモード選択
 sim_mode.unknown = uint8(0); %壁情報がない状態から、探索、最短の実行
 sim_mode.known = uint8(1); %壁情報を既知として、最短の実行
@@ -33,9 +35,9 @@ run_mode2.straight = uint8(0);
 run_mode2.diagonal = uint8(1);
 
 %% シミュレーションモードを設定（手入力）
-sim_mode_flg = sim_mode.known;
-run_mode1_flg =  run_mode1.fust_run;
-run_mode2_flg = run_mode2.straight;
+sim_mode_flg = sim_mode.unknown;
+run_mode1_flg =  run_mode1.search;
+run_mode2_flg = run_mode2.short;
 %% 迷路パラメータ設定(手入力)
 % global maze_goal
 maze_goal = uint8(zeros(9,2));
@@ -47,6 +49,7 @@ maze_goal = uint8(zeros(9,2));
 %2018関東　 10 10 4
 %2018全セミ 13 13 4
 %2017全日本 20 21 9
+%2020全日本学生 4 4 4
 
 goal_x =7;%ゴール左下のx座標
 goal_y = 10;%ゴール左下のy座標
@@ -79,7 +82,7 @@ set(maze_fig_ax,'color','none','NextPlot','add')
 maze_fig = gcf;
 
 %figureの出力位置
-maze_fig.Position = [1,41,1920,963];
+maze_fig.Position = [2,42,958,954];
 
 %%
 maze_data_plot(maze_row_size,maze_col_size,maze_row_data,maze_col_data);
@@ -133,7 +136,8 @@ if sim_mode_flg == sim_mode.known
 end
 
 %% ビデオ作成の完了
-close(vidObj);
-
+if video_flg
+    close(vidObj);
+end
 
 

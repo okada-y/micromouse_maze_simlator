@@ -5,7 +5,7 @@
  * File: maze_solve.c
  *
  * MATLAB Coder version            : 4.2
- * C/C++ source code generated on  : 01-Sep-2020 21:38:28
+ * C/C++ source code generated on  : 04-Sep-2020 15:57:17
  */
 
 /* Include Files */
@@ -33,7 +33,7 @@ typedef struct {
 #define typedef_coder_internal_ref_1
 
 typedef struct {
-  unsigned char contents[18];
+  unsigned char contents[1024];
 } coder_internal_ref_1;
 
 #endif                                 /*typedef_coder_internal_ref_1*/
@@ -42,10 +42,19 @@ typedef struct {
 #define typedef_coder_internal_ref_2
 
 typedef struct {
-  unsigned short contents;
+  unsigned char contents[18];
 } coder_internal_ref_2;
 
 #endif                                 /*typedef_coder_internal_ref_2*/
+
+#ifndef typedef_coder_internal_ref_3
+#define typedef_coder_internal_ref_3
+
+typedef struct {
+  unsigned short contents;
+} coder_internal_ref_3;
+
+#endif                                 /*typedef_coder_internal_ref_3*/
 
 #ifndef typedef_h_struct_T
 #define typedef_h_struct_T
@@ -57,14 +66,14 @@ typedef struct {
 
 #endif                                 /*typedef_h_struct_T*/
 
-#ifndef typedef_coder_internal_ref_3
-#define typedef_coder_internal_ref_3
+#ifndef typedef_coder_internal_ref_4
+#define typedef_coder_internal_ref_4
 
 typedef struct {
   h_struct_T contents;
-} coder_internal_ref_3;
+} coder_internal_ref_4;
 
-#endif                                 /*typedef_coder_internal_ref_3*/
+#endif                                 /*typedef_coder_internal_ref_4*/
 
 #ifndef typedef_g_struct_T
 #define typedef_g_struct_T
@@ -76,14 +85,14 @@ typedef struct {
 
 #endif                                 /*typedef_g_struct_T*/
 
-#ifndef typedef_coder_internal_ref_4
-#define typedef_coder_internal_ref_4
+#ifndef typedef_coder_internal_ref_5
+#define typedef_coder_internal_ref_5
 
 typedef struct {
   g_struct_T contents;
-} coder_internal_ref_4;
+} coder_internal_ref_5;
 
-#endif                                 /*typedef_coder_internal_ref_4*/
+#endif                                 /*typedef_coder_internal_ref_5*/
 
 #ifndef typedef_f_struct_T
 #define typedef_f_struct_T
@@ -95,45 +104,38 @@ typedef struct {
 
 #endif                                 /*typedef_f_struct_T*/
 
-#ifndef typedef_coder_internal_ref_5
-#define typedef_coder_internal_ref_5
-
-typedef struct {
-  f_struct_T contents;
-} coder_internal_ref_5;
-
-#endif                                 /*typedef_coder_internal_ref_5*/
-
 #ifndef typedef_coder_internal_ref_6
 #define typedef_coder_internal_ref_6
 
 typedef struct {
-  unsigned char contents[1024];
+  f_struct_T contents;
 } coder_internal_ref_6;
 
 #endif                                 /*typedef_coder_internal_ref_6*/
 
 /* Function Declarations */
-static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
-  *wall_flg, const coder_internal_ref_5 *wall, const unsigned char maze_wall
-  [1024], const unsigned short contour_map[1024], const unsigned char maze_goal
-  [18], unsigned short max_length, unsigned char start_x, unsigned char start_y);
-static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
+static void b_fust_run(const coder_internal_ref_1 *maze_wall, const
+  coder_internal_ref *goal_size, coder_internal_ref *wall_flg, const
+  coder_internal_ref_6 *wall, const unsigned char b_maze_wall[1024], const
+  unsigned short contour_map[1024], const unsigned char maze_goal[18], unsigned
+  short max_length, unsigned char start_x, unsigned char start_y);
+static void b_make_map_find(const coder_internal_ref_6 *wall, const unsigned
   char maze_goal[2], const unsigned char maze_wall[1024], unsigned char
   current_x, unsigned char current_y, unsigned short contour_map[1024]);
-static void b_make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
-  coder_internal_ref_5 *wall, const coder_internal_ref_4 *search, const unsigned
+static void b_make_map_fustrun_diagonal(coder_internal_ref_3 *max_length, const
+  coder_internal_ref_6 *wall, const coder_internal_ref_5 *search, const unsigned
   char maze_goal[2], const unsigned char maze_wall[1024], const unsigned char
   maze_wall_search[1024], unsigned short row_num_node[1056], unsigned short
   col_num_node[1056], unsigned short *start_num);
-static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
-  *wall_flg, const coder_internal_ref_4 *search, const coder_internal_ref_1
-  *maze_goal, const coder_internal_ref_3 *adachi_search_mode, unsigned char
-  *current_x, unsigned char *current_y, unsigned char *current_dir, unsigned
-  char maze_row_size, unsigned char maze_col_size, unsigned char maze_wall[1024],
-  unsigned char maze_wall_search[1024], const unsigned char exploration_goal[2],
-  unsigned char *start_flg, unsigned char stop_flg, unsigned char goal_after_flg,
-  unsigned char adachi_s_mode, unsigned short contour_map[1024]);
+static void b_search_adachi(const coder_internal_ref_6 *wall, coder_internal_ref
+  *wall_flg, const coder_internal_ref_5 *search, const coder_internal_ref_2
+  *maze_goal, const coder_internal_ref_1 *maze_wall, const coder_internal_ref_4 *
+  adachi_search_mode, unsigned char *current_x, unsigned char *current_y,
+  unsigned char *current_dir, unsigned char maze_row_size, unsigned char
+  maze_col_size, unsigned char b_maze_wall[1024], unsigned char
+  maze_wall_search[1024], const unsigned char exploration_goal[2], unsigned char
+  *start_flg, unsigned char stop_flg, unsigned char goal_after_flg, unsigned
+  char adachi_s_mode, unsigned short contour_map[1024]);
 static void decide_goal_node_dir(const unsigned char maze_goal[18], unsigned
   char goal_size, const unsigned short row_num_node[1056], const unsigned short
   col_num_node[1056], unsigned char goal_node[2], unsigned char *goal_matrix_dir,
@@ -142,14 +144,15 @@ static void decide_goal_section(const unsigned char maze_goal[18], const
   unsigned char goal_node[2], unsigned char goal_matrix_dir, unsigned char
   goal_dir, unsigned char goal_section[2], unsigned char goal_node2[2], unsigned
   char *goal_matrix_dir2);
-static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
-                     *wall_flg, const coder_internal_ref_5 *wall, const unsigned
-                     char maze_wall[1024], const unsigned char maze_wall_search
+static void fust_run(const coder_internal_ref_1 *maze_wall, const
+                     coder_internal_ref *goal_size, coder_internal_ref *wall_flg,
+                     const coder_internal_ref_6 *wall, const unsigned char
+                     b_maze_wall[1024], const unsigned char maze_wall_search
                      [1024], const unsigned short contour_map[1024], const
                      unsigned char maze_goal[18], unsigned short max_length,
                      unsigned char unexp_square[1024], unsigned char
                      *unexp_square_idx);
-static unsigned char fust_run_wallset(const coder_internal_ref_6 *maze_wall,
+static unsigned char fust_run_wallset(const coder_internal_ref_1 *maze_wall,
   unsigned char temp_y, unsigned char temp_x, unsigned char temp_dir);
 static void get_next_dir_diagonal(const unsigned short row_num_node[1056], const
   unsigned short col_num_node[1056], unsigned char current_move_dir, const
@@ -164,26 +167,26 @@ static unsigned char get_turn_pattern_num(const double move_dir_buffer[3],
   unsigned char ref_move_mode);
 static double goal_judge(const unsigned char maze_goal[18], unsigned char x,
   unsigned char y);
-static void make_map_find(const coder_internal_ref_5 *wall, const unsigned char
+static void make_map_find(const coder_internal_ref_6 *wall, const unsigned char
   maze_goal[18], unsigned char l_goal_size, const unsigned char maze_wall[1024],
   unsigned char current_x, unsigned char current_y, unsigned short contour_map
   [1024]);
 static void make_map_fustrun(const coder_internal_ref *goal_size, const
-  coder_internal_ref_5 *wall, const coder_internal_ref_4 *search, const unsigned
+  coder_internal_ref_6 *wall, const coder_internal_ref_5 *search, const unsigned
   char maze_goal[18], const unsigned char maze_wall[1024], const unsigned char
   maze_wall_search[1024], unsigned char unknown_wall_flg, unsigned short
   contour_map[1024]);
-static void make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
-  coder_internal_ref_5 *wall, const coder_internal_ref_4 *search, const unsigned
+static void make_map_fustrun_diagonal(coder_internal_ref_3 *max_length, const
+  coder_internal_ref_6 *wall, const coder_internal_ref_5 *search, const unsigned
   char maze_goal[18], unsigned char goal_size, const unsigned char maze_wall
   [1024], const unsigned char maze_wall_search[1024], unsigned short
   row_num_node[1056], unsigned short col_num_node[1056], unsigned short
   *start_num);
-static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
+static void make_new_goal_all(const coder_internal_ref_6 *wall, const unsigned
   char maze_wall[1024], const unsigned char maze_wall_search[1024], unsigned
   char current_x, unsigned char current_y, unsigned short contour_map[1024],
   unsigned char new_goal[2]);
-static void make_new_goal_sh(const coder_internal_ref_5 *wall, const unsigned
+static void make_new_goal_sh(const coder_internal_ref_6 *wall, const unsigned
   char maze_wall[1024], unsigned char current_x, unsigned char current_y, const
   unsigned char unexp_square[1024], unsigned char unexp_square_idx, unsigned
   short contour_map[1024], unsigned char new_goal[2]);
@@ -195,14 +198,15 @@ static void move_step(unsigned char *temp_x, unsigned char *temp_y, unsigned
 static void move_straight(unsigned char current_node[2], unsigned char
   *current_node_property, unsigned char *current_move_dir, unsigned char
   *current_move_mode, unsigned char straight_count);
-static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
-  *wall_flg, const coder_internal_ref_4 *search, const coder_internal_ref_1
-  *maze_goal, const coder_internal_ref_3 *adachi_search_mode, unsigned char
-  *current_x, unsigned char *current_y, unsigned char *current_dir, unsigned
-  char maze_row_size, unsigned char maze_col_size, unsigned char maze_wall[1024],
-  unsigned char maze_wall_search[1024], const unsigned char exploration_goal[18],
-  unsigned char l_goal_size, unsigned char *start_flg, unsigned char
-  adachi_s_mode, unsigned short contour_map[1024]);
+static void search_adachi(const coder_internal_ref_6 *wall, coder_internal_ref
+  *wall_flg, const coder_internal_ref_5 *search, const coder_internal_ref_2
+  *maze_goal, const coder_internal_ref_1 *maze_wall, const coder_internal_ref_4 *
+  adachi_search_mode, unsigned char *current_x, unsigned char *current_y,
+  unsigned char *current_dir, unsigned char maze_row_size, unsigned char
+  maze_col_size, unsigned char b_maze_wall[1024], unsigned char
+  maze_wall_search[1024], const unsigned char exploration_goal[18], unsigned
+  char l_goal_size, unsigned char *start_flg, unsigned char adachi_s_mode,
+  unsigned short contour_map[1024]);
 static unsigned char sh_route_unexp_sq_jud(const unsigned char
   temp_unexp_square[1024], unsigned char temp_unexp_square_idx, unsigned char
   temp_y, unsigned char temp_x);
@@ -227,9 +231,9 @@ static void turn_r_135(unsigned char current_node[2], unsigned char
 static void turn_r_45(unsigned char current_node[2], unsigned char
                       *current_node_property, unsigned char *current_move_dir,
                       unsigned char *current_move_mode);
-static void wall_set(const coder_internal_ref_5 *wall, coder_internal_ref
-                     *wall_flg, const coder_internal_ref_4 *search, const
-                     coder_internal_ref_1 *maze_goal, unsigned char
+static void wall_set(const coder_internal_ref_6 *wall, coder_internal_ref
+                     *wall_flg, const coder_internal_ref_5 *search, const
+                     coder_internal_ref_2 *maze_goal, unsigned char
                      maze_row_size, unsigned char maze_col_size, unsigned char
                      current_x, unsigned char current_y, unsigned char
                      current_dir, unsigned char maze_wall[1024], unsigned char
@@ -240,10 +244,11 @@ static void wall_set(const coder_internal_ref_5 *wall, coder_internal_ref
 /*
  * 入力　壁情報,壁探索情報,等高線MAP,ゴール座標,最大経路長
  * 出力   最短経路上の未探索マスの座標、未探索マスの数
- * Arguments    : const coder_internal_ref *goal_size
+ * Arguments    : const coder_internal_ref_1 *maze_wall
+ *                const coder_internal_ref *goal_size
  *                coder_internal_ref *wall_flg
- *                const coder_internal_ref_5 *wall
- *                const unsigned char maze_wall[1024]
+ *                const coder_internal_ref_6 *wall
+ *                const unsigned char b_maze_wall[1024]
  *                const unsigned short contour_map[1024]
  *                const unsigned char maze_goal[18]
  *                unsigned short max_length
@@ -251,12 +256,12 @@ static void wall_set(const coder_internal_ref_5 *wall, coder_internal_ref
  *                unsigned char start_y
  * Return Type  : void
  */
-static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
-  *wall_flg, const coder_internal_ref_5 *wall, const unsigned char maze_wall
-  [1024], const unsigned short contour_map[1024], const unsigned char maze_goal
-  [18], unsigned short max_length, unsigned char start_x, unsigned char start_y)
+static void b_fust_run(const coder_internal_ref_1 *maze_wall, const
+  coder_internal_ref *goal_size, coder_internal_ref *wall_flg, const
+  coder_internal_ref_6 *wall, const unsigned char b_maze_wall[1024], const
+  unsigned short contour_map[1024], const unsigned char maze_goal[18], unsigned
+  short max_length, unsigned char start_x, unsigned char start_y)
 {
-  coder_internal_ref_6 b_maze_wall;
   unsigned char goal_flag;
   unsigned short little;
   unsigned char straight_count;
@@ -275,7 +280,6 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
   int i75;
   unsigned int qY;
   unsigned char switch_expression;
-  memcpy(&b_maze_wall.contents[0], &maze_wall[0], sizeof(unsigned char) << 10);
 
   /*     %% fust_run 最短経路走行 */
   /* 最短経路表示用ax */
@@ -340,7 +344,7 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
       /* 優先順位　北⇒東⇒南⇒西 */
       /* 北側の壁のありなし */
       i71 = temp_y + ((temp_x - 1) << 5);
-      tempi = b_maze_wall.contents[i71 - 1];
+      tempi = b_maze_wall[i71 - 1];
       if (g_direction.North <= 7) {
         i72 = (unsigned char)(1 << g_direction.North);
       } else {
@@ -450,7 +454,7 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
         }
 
         straight_count = (unsigned char)i71;
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -511,7 +515,7 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
           straight_count = 0U;
         }
 
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -583,7 +587,7 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
           straight_count = 0U;
         }
 
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -650,7 +654,7 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
           straight_count = 0U;
         }
 
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -709,16 +713,12 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
       tempk++;
     }
   }
-
-  /*          pause(0.01) */
-  /*      writeVideo(vidObj, getframe(gcf)); */
-  /* limitrate nocallbacks */
 }
 
 /*
  * 入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数)
  * 出力 等高線map,最大経路長
- * Arguments    : const coder_internal_ref_5 *wall
+ * Arguments    : const coder_internal_ref_6 *wall
  *                const unsigned char maze_goal[2]
  *                const unsigned char maze_wall[1024]
  *                unsigned char current_x
@@ -726,7 +726,7 @@ static void b_fust_run(const coder_internal_ref *goal_size, coder_internal_ref
  *                unsigned short contour_map[1024]
  * Return Type  : void
  */
-static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
+static void b_make_map_find(const coder_internal_ref_6 *wall, const unsigned
   char maze_goal[2], const unsigned char maze_wall[1024], unsigned char
   current_x, unsigned char current_y, unsigned short contour_map[1024])
 {
@@ -734,20 +734,20 @@ static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
   unsigned char contor_renew_square_temp[2048];
   unsigned char contor_renew_square_idx;
   unsigned char contor_renew_square_idx_temp;
-  int i17;
+  int i21;
   unsigned short tempi;
   bool exitg1;
   unsigned char change_flag;
   int tempn;
-  int i18;
-  int i19;
-  int i20;
-  int i21;
   int i22;
   int i23;
   int i24;
-  unsigned int qY;
   int i25;
+  int i26;
+  int i27;
+  int i28;
+  unsigned int qY;
+  int i29;
 
   /*     %%  make_map_find 壁情報から等高線MAPを生成 */
   /*  迷路パラメータ設定 */
@@ -766,8 +766,8 @@ static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
   /* MAPの初期化(すべての要素にmax_lengthを入力) */
   /* 32マス分mapを保持 */
   /* 16bitにすべき */
-  for (i17 = 0; i17 < 1024; i17++) {
-    contour_map[i17] = MAX_uint16_T;
+  for (i21 = 0; i21 < 1024; i21++) {
+    contour_map[i21] = MAX_uint16_T;
   }
 
   /* ゴール座標に0を入力 */
@@ -782,126 +782,126 @@ static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
     change_flag = 0U;
 
     /* 更新された座標に対し、歩数mapを更新 */
-    i17 = contor_renew_square_idx;
-    for (tempn = 0; tempn < i17; tempn++) {
+    i21 = contor_renew_square_idx;
+    for (tempn = 0; tempn < i21; tempn++) {
       /* 北側 */
       /* if (bitand(maze_wall(row(tempn),col(tempn)),bitshift(uint8(1),g_direction.North)) == wall.nowall) */
       if (g_direction.North <= 7) {
-        i18 = (unsigned char)(1 << g_direction.North);
+        i22 = (unsigned char)(1 << g_direction.North);
       } else {
-        i18 = 0;
+        i22 = 0;
       }
 
       if ((maze_wall[(contor_renew_square[tempn] + ((contor_renew_square[tempn +
-              1024] - 1) << 5)) - 1] & i18) == wall->contents.nowall) {
+              1024] - 1) << 5)) - 1] & i22) == wall->contents.nowall) {
         /* 北側のMAPが更新されているか判断、されていなければ書き込み */
-        i19 = (int)(contor_renew_square[tempn] + 1U);
-        i20 = i19;
-        if ((unsigned int)i19 > 255U) {
-          i20 = 255;
+        i23 = (int)(contor_renew_square[tempn] + 1U);
+        i24 = i23;
+        if ((unsigned int)i23 > 255U) {
+          i24 = 255;
         }
 
-        if (contour_map[(i20 + ((contor_renew_square[tempn + 1024] - 1) << 5)) -
+        if (contour_map[(i24 + ((contor_renew_square[tempn + 1024] - 1) << 5)) -
             1] == 65535) {
-          i20 = i19;
-          if ((unsigned int)i19 > 255U) {
-            i20 = 255;
+          i24 = i23;
+          if ((unsigned int)i23 > 255U) {
+            i24 = 255;
           }
 
-          contour_map[(i20 + ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1]
+          contour_map[(i24 + ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1]
             = (unsigned short)(tempi + 1);
           change_flag = 1U;
 
           /* 更新マスを更新 */
-          if ((unsigned int)i19 > 255U) {
-            i19 = 255;
+          if ((unsigned int)i23 > 255U) {
+            i23 = 255;
           }
 
           contor_renew_square_temp[contor_renew_square_idx_temp - 1] = (unsigned
-            char)i19;
+            char)i23;
           contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
             contor_renew_square[tempn + 1024];
 
           /* 更新マス用インデックスを増加 */
-          i19 = (int)(contor_renew_square_idx_temp + 1U);
-          if ((unsigned int)i19 > 255U) {
-            i19 = 255;
+          i23 = (int)(contor_renew_square_idx_temp + 1U);
+          if ((unsigned int)i23 > 255U) {
+            i23 = 255;
           }
 
-          contor_renew_square_idx_temp = (unsigned char)i19;
+          contor_renew_square_idx_temp = (unsigned char)i23;
         }
       }
 
       /* 東側 */
       contor_renew_square_idx = contor_renew_square[tempn + 1024];
-      i19 = (contor_renew_square_idx - 1) << 5;
-      i20 = maze_wall[(contor_renew_square[tempn] + i19) - 1];
+      i23 = (contor_renew_square_idx - 1) << 5;
+      i24 = maze_wall[(contor_renew_square[tempn] + i23) - 1];
       if (g_direction.East <= 7) {
-        i21 = (unsigned char)(1 << g_direction.East);
+        i25 = (unsigned char)(1 << g_direction.East);
       } else {
-        i21 = 0;
+        i25 = 0;
       }
 
-      if ((i20 & i21) == wall->contents.nowall) {
+      if ((i24 & i25) == wall->contents.nowall) {
         /* 東側のMAPが更新されているか判断、されていなければ書き込み */
-        i22 = (int)(contor_renew_square[tempn + 1024] + 1U);
-        i23 = i22;
-        if ((unsigned int)i22 > 255U) {
-          i23 = 255;
+        i26 = (int)(contor_renew_square[tempn + 1024] + 1U);
+        i27 = i26;
+        if ((unsigned int)i26 > 255U) {
+          i27 = 255;
         }
 
-        if (contour_map[(contor_renew_square[tempn] + ((i23 - 1) << 5)) - 1] ==
+        if (contour_map[(contor_renew_square[tempn] + ((i27 - 1) << 5)) - 1] ==
             65535) {
-          i23 = i22;
-          if ((unsigned int)i22 > 255U) {
-            i23 = 255;
+          i27 = i26;
+          if ((unsigned int)i26 > 255U) {
+            i27 = 255;
           }
 
-          contour_map[(contor_renew_square[tempn] + ((i23 - 1) << 5)) - 1] =
+          contour_map[(contor_renew_square[tempn] + ((i27 - 1) << 5)) - 1] =
             (unsigned short)(tempi + 1);
           change_flag = 1U;
 
           /* 更新マスを更新 */
           contor_renew_square_temp[contor_renew_square_idx_temp - 1] =
             contor_renew_square[tempn];
-          if ((unsigned int)i22 > 255U) {
-            i22 = 255;
+          if ((unsigned int)i26 > 255U) {
+            i26 = 255;
           }
 
           contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
-            (unsigned char)i22;
+            (unsigned char)i26;
 
           /* 更新マス用インデックスを増加 */
-          i22 = (int)(contor_renew_square_idx_temp + 1U);
-          if ((unsigned int)i22 > 255U) {
-            i22 = 255;
+          i26 = (int)(contor_renew_square_idx_temp + 1U);
+          if ((unsigned int)i26 > 255U) {
+            i26 = 255;
           }
 
-          contor_renew_square_idx_temp = (unsigned char)i22;
+          contor_renew_square_idx_temp = (unsigned char)i26;
         }
       }
 
       /* 南側 */
       if (g_direction.South <= 7) {
-        i24 = (unsigned char)(1 << g_direction.South);
+        i28 = (unsigned char)(1 << g_direction.South);
       } else {
-        i24 = 0;
+        i28 = 0;
       }
 
-      if ((i20 & i24) == wall->contents.nowall) {
+      if ((i24 & i28) == wall->contents.nowall) {
         /* 南側のMAPが更新されているか判断、されていなければ書き込み */
         qY = contor_renew_square[tempn] - 1U;
         if (qY > contor_renew_square[tempn]) {
           qY = 0U;
         }
 
-        if (contour_map[((int)qY + i19) - 1] == 65535) {
+        if (contour_map[((int)qY + i23) - 1] == 65535) {
           qY = contor_renew_square[tempn] - 1U;
           if (qY > contor_renew_square[tempn]) {
             qY = 0U;
           }
 
-          contour_map[((int)qY + i19) - 1] = (unsigned short)(tempi + 1);
+          contour_map[((int)qY + i23) - 1] = (unsigned short)(tempi + 1);
           change_flag = 1U;
 
           /* 更新マスを更新 */
@@ -916,23 +916,23 @@ static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
             contor_renew_square_idx;
 
           /* 更新マス用インデックスを増加 */
-          i19 = (int)(contor_renew_square_idx_temp + 1U);
-          if ((unsigned int)i19 > 255U) {
-            i19 = 255;
+          i23 = (int)(contor_renew_square_idx_temp + 1U);
+          if ((unsigned int)i23 > 255U) {
+            i23 = 255;
           }
 
-          contor_renew_square_idx_temp = (unsigned char)i19;
+          contor_renew_square_idx_temp = (unsigned char)i23;
         }
       }
 
       /* 西側 */
       if (g_direction.West <= 7) {
-        i25 = (unsigned char)(1 << g_direction.West);
+        i29 = (unsigned char)(1 << g_direction.West);
       } else {
-        i25 = 0;
+        i29 = 0;
       }
 
-      if ((i20 & i25) == wall->contents.nowall) {
+      if ((i24 & i29) == wall->contents.nowall) {
         /* 西側のMAPが更新されているか判断、されていなければ書き込み */
         qY = contor_renew_square_idx - 1U;
         if (qY > contor_renew_square_idx) {
@@ -962,20 +962,20 @@ static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
             (unsigned char)qY;
 
           /* 更新マス用インデックスを増加 */
-          i19 = (int)(contor_renew_square_idx_temp + 1U);
-          if ((unsigned int)i19 > 255U) {
-            i19 = 255;
+          i23 = (int)(contor_renew_square_idx_temp + 1U);
+          if ((unsigned int)i23 > 255U) {
+            i23 = 255;
           }
 
-          contor_renew_square_idx_temp = (unsigned char)i19;
+          contor_renew_square_idx_temp = (unsigned char)i23;
         }
       }
     }
 
     /* ゴール更新マスの更新とインデックスのクリア */
-    for (i17 = 0; i17 < 2048; i17++) {
-      contor_renew_square[i17] = contor_renew_square_temp[i17];
-      contor_renew_square_temp[i17] = 0U;
+    for (i21 = 0; i21 < 2048; i21++) {
+      contor_renew_square[i21] = contor_renew_square_temp[i21];
+      contor_renew_square_temp[i21] = 0U;
     }
 
     contor_renew_square_idx = (unsigned char)(contor_renew_square_idx_temp - 1);
@@ -995,9 +995,9 @@ static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
  * 未知壁の領域は仮想壁をおいて侵入しない。
  * 入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数),迷路探索情報(16進数)
  * 出力 等高線map,最大経路長
- * Arguments    : coder_internal_ref_2 *max_length
- *                const coder_internal_ref_5 *wall
- *                const coder_internal_ref_4 *search
+ * Arguments    : coder_internal_ref_3 *max_length
+ *                const coder_internal_ref_6 *wall
+ *                const coder_internal_ref_5 *search
  *                const unsigned char maze_goal[2]
  *                const unsigned char maze_wall[1024]
  *                const unsigned char maze_wall_search[1024]
@@ -1006,8 +1006,8 @@ static void b_make_map_find(const coder_internal_ref_5 *wall, const unsigned
  *                unsigned short *start_num
  * Return Type  : void
  */
-static void b_make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
-  coder_internal_ref_5 *wall, const coder_internal_ref_4 *search, const unsigned
+static void b_make_map_fustrun_diagonal(coder_internal_ref_3 *max_length, const
+  coder_internal_ref_6 *wall, const coder_internal_ref_5 *search, const unsigned
   char maze_goal[2], const unsigned char maze_wall[1024], const unsigned char
   maze_wall_search[1024], unsigned short row_num_node[1056], unsigned short
   col_num_node[1056], unsigned short *start_num)
@@ -4314,17 +4314,18 @@ static void b_make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
 /*
  * 入力　現在位置x,y,現在方向,迷路行方向サイズ,迷路列方向サイズ,迷路壁情報,迷路壁の探索情報,ゴール座標
  * 出力  現在位置x,y,現在方向,壁情報,探索情報
- * Arguments    : const coder_internal_ref_5 *wall
+ * Arguments    : const coder_internal_ref_6 *wall
  *                coder_internal_ref *wall_flg
- *                const coder_internal_ref_4 *search
- *                const coder_internal_ref_1 *maze_goal
- *                const coder_internal_ref_3 *adachi_search_mode
+ *                const coder_internal_ref_5 *search
+ *                const coder_internal_ref_2 *maze_goal
+ *                const coder_internal_ref_1 *maze_wall
+ *                const coder_internal_ref_4 *adachi_search_mode
  *                unsigned char *current_x
  *                unsigned char *current_y
  *                unsigned char *current_dir
  *                unsigned char maze_row_size
  *                unsigned char maze_col_size
- *                unsigned char maze_wall[1024]
+ *                unsigned char b_maze_wall[1024]
  *                unsigned char maze_wall_search[1024]
  *                const unsigned char exploration_goal[2]
  *                unsigned char *start_flg
@@ -4334,15 +4335,17 @@ static void b_make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
  *                unsigned short contour_map[1024]
  * Return Type  : void
  */
-static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
-  *wall_flg, const coder_internal_ref_4 *search, const coder_internal_ref_1
-  *maze_goal, const coder_internal_ref_3 *adachi_search_mode, unsigned char
-  *current_x, unsigned char *current_y, unsigned char *current_dir, unsigned
-  char maze_row_size, unsigned char maze_col_size, unsigned char maze_wall[1024],
-  unsigned char maze_wall_search[1024], const unsigned char exploration_goal[2],
-  unsigned char *start_flg, unsigned char stop_flg, unsigned char goal_after_flg,
-  unsigned char adachi_s_mode, unsigned short contour_map[1024])
+static void b_search_adachi(const coder_internal_ref_6 *wall, coder_internal_ref
+  *wall_flg, const coder_internal_ref_5 *search, const coder_internal_ref_2
+  *maze_goal, const coder_internal_ref_1 *maze_wall, const coder_internal_ref_4 *
+  adachi_search_mode, unsigned char *current_x, unsigned char *current_y,
+  unsigned char *current_dir, unsigned char maze_row_size, unsigned char
+  maze_col_size, unsigned char b_maze_wall[1024], unsigned char
+  maze_wall_search[1024], const unsigned char exploration_goal[2], unsigned char
+  *start_flg, unsigned char stop_flg, unsigned char goal_after_flg, unsigned
+  char adachi_s_mode, unsigned short contour_map[1024])
 {
+  unsigned char straight_count;
   unsigned char goal_flg;
   unsigned char contour_flg;
   int exitg1;
@@ -4352,6 +4355,7 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
 
   /*     %% search_adachi 足立法での探索 */
   /* local変数宣言 */
+  straight_count = 0U;
   goal_flg = 0U;
 
   /* ゴール判定フラグ */
@@ -4361,7 +4365,7 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
   /*      search_start_x = current_x %探索開始時x */
   /*      search_start_y = current_y %探索開始時y */
   /* 初回のコンターマップ作製 */
-  b_make_map_find(wall, exploration_goal, maze_wall, *current_x, *current_y,
+  b_make_map_find(wall, exploration_goal, b_maze_wall, *current_x, *current_y,
                   contour_map);
   do {
     exitg1 = 0;
@@ -4369,13 +4373,18 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
     /* 壁情報取得 */
     /* ゴール直後は壁情報を更新しない */
     if (goal_after_flg != 1) {
-      next_dir = maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1];
-      wall_set(wall, wall_flg, search, maze_goal, maze_row_size, maze_col_size, *
-               current_x, *current_y, *current_dir, maze_wall, maze_wall_search);
+      /* 既知区間加速時でなければ、壁情報を取得しない */
+      if (straight_count == 0) {
+        next_dir = b_maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1];
+        wall_set(wall, wall_flg, search, maze_goal, maze_row_size, maze_col_size,
+                 *current_x, *current_y, *current_dir, b_maze_wall,
+                 maze_wall_search);
 
-      /* 壁情報が更新されれば、コンター更新のフラグを立てる。 */
-      if (next_dir != maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1]) {
-        contour_flg = 1U;
+        /* 壁情報が更新されれば、コンター更新のフラグを立てる。 */
+        if (next_dir != b_maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1])
+        {
+          contour_flg = 1U;
+        }
       }
     } else {
       /* ゴール直後のとき */
@@ -4387,8 +4396,8 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
     /*  等高線MAP生成 */
     /* 壁情報に変更があった場合のみ */
     if (contour_flg != 0) {
-      b_make_map_find(wall, exploration_goal, maze_wall, *current_x, *current_y,
-                      contour_map);
+      b_make_map_find(wall, exploration_goal, b_maze_wall, *current_x,
+                      *current_y, contour_map);
     }
 
     /* 現在位置がゴールか判定 */
@@ -4414,7 +4423,7 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
     } else {
       /*  進行方向選定 */
       /* 優先順位　北⇒東⇒南⇒西 */
-      next_dir = get_nextdir2(*current_x, *current_y, maze_wall, contour_map);
+      next_dir = get_nextdir2(*current_x, *current_y, b_maze_wall, contour_map);
 
       /*  現在方向と進行方向に応じた処理 */
       q0 = (int)(4U + next_dir);
@@ -4442,24 +4451,83 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
 
       switch (q0) {
        case 0:
+        /* 直進制御時、壁フラグを現在参照位置で更新 */
+        if (straight_count > 0) {
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* 参照位置を次回の参照位置に変更 */
         move_step(current_x, current_y, *current_dir);
 
-        /* disp("front") */
-        m_move_front(*start_flg, wall_flg->contents, move_dir_property.straight);
+        /* 移動先が探索済みであるなら、ストレートカウンタをインクリメント */
+        if (maze_wall_search[(*current_y + ((*current_x - 1) << 5)) - 1] == 15)
+        {
+          q0 = (int)(straight_count + 1U);
+          if ((unsigned int)q0 > 255U) {
+            q0 = 255;
+          }
 
-        /* スタート直後フラグをクリア */
-        *start_flg = 0U;
+          straight_count = (unsigned char)q0;
 
-        /* 壁フラグをクリア */
-        wall_flg->contents = 0U;
+          /* 探索済みでない場合 */
+        } else {
+          /* 直線カウンタがある場合、移動 */
+          /* 現在方向も直進なので、直進カウンタ+1だけ移動する。 */
+          if (straight_count > 0) {
+            q0 = (int)(straight_count + 1U);
+            if ((unsigned int)q0 > 255U) {
+              q0 = 255;
+            }
+
+            m_move_front_long((unsigned char)q0, *start_flg, wall_flg->contents,
+                              move_dir_property.straight);
+            straight_count = 0U;
+
+            /* スタート直後フラグをクリア */
+            *start_flg = 0U;
+
+            /* 壁フラグをクリア */
+            wall_flg->contents = 0U;
+          } else {
+            /* 直進カウンタがない場合 */
+            m_move_front(*start_flg, wall_flg->contents,
+                         move_dir_property.straight);
+
+            /* スタート直後フラグをクリア */
+            *start_flg = 0U;
+
+            /* 壁フラグをクリア */
+            wall_flg->contents = 0U;
+          }
+        }
         break;
 
        case 1:
+        /* 直進カウンタがある場合、移動 */
+        if (straight_count > 0) {
+          /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
+          m_move_front_long(straight_count, *start_flg, wall_flg->contents,
+                            move_dir_property.straight);
+          straight_count = 0U;
+
+          /* スタート直後フラグをクリア */
+          *start_flg = 0U;
+
+          /* 壁フラグをクリア */
+          wall_flg->contents = 0U;
+
+          /* 現在参照位置で壁フラグを更新 */
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* マウスを移動させる（C) */
+        m_move_right(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* 参照位置、方向を更新 */
         turn_clk_90deg(current_dir);
         move_step(current_x, current_y, *current_dir);
-
-        /* disp("right") */
-        m_move_right(*start_flg, wall_flg->contents, move_dir_property.straight);
 
         /* スタート直後フラグをクリア */
         *start_flg = 0U;
@@ -4469,11 +4537,31 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         break;
 
        case 2:
+        /* disp("back") */
+        /* 直進カウンタがある場合、移動 */
+        if (straight_count > 0) {
+          /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
+          m_move_front_long(straight_count, *start_flg, wall_flg->contents,
+                            move_dir_property.straight);
+          straight_count = 0U;
+
+          /* スタート直後フラグをクリア */
+          *start_flg = 0U;
+
+          /* 壁フラグをクリア */
+          wall_flg->contents = 0U;
+
+          /* 現在参照位置で壁フラグを更新 */
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* マウスを移動させる（C） */
+        m_move_back(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* 参照位置、方向を更新 */
         turn_180deg(current_dir);
         move_step(current_x, current_y, *current_dir);
-
-        /* disp("back") */
-        m_move_back(*start_flg, wall_flg->contents, move_dir_property.straight);
 
         /* スタート直後フラグをクリア */
         *start_flg = 0U;
@@ -4483,11 +4571,30 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         break;
 
        case 3:
+        /* 直進カウンタがある場合、移動 */
+        if (straight_count > 0) {
+          /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
+          m_move_front_long(straight_count, *start_flg, wall_flg->contents,
+                            move_dir_property.straight);
+          straight_count = 0U;
+
+          /* スタート直後フラグをクリア */
+          *start_flg = 0U;
+
+          /* 壁フラグをクリア */
+          wall_flg->contents = 0U;
+
+          /* 現在参照位置で壁フラグを更新 */
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* マウスを移動させる（C） */
+        m_move_left(*start_flg, wall_flg->contents, move_dir_property.straight);
+
+        /* 参照位置、方向を更新 */
         turn_conclk_90deg(current_dir);
         move_step(current_x, current_y, *current_dir);
-
-        /* disp("left") */
-        m_move_left(*start_flg, wall_flg->contents, move_dir_property.straight);
 
         /* スタート直後フラグをクリア */
         *start_flg = 0U;
@@ -4500,6 +4607,18 @@ static void b_search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
       /* for code generation */
     }
   } while (exitg1 == 0);
+
+  /* 直進カウンタ分移動 */
+  if (straight_count > 0) {
+    m_move_front_long(straight_count, *start_flg, wall_flg->contents,
+                      move_dir_property.straight);
+
+    /* スタート直後フラグをクリア */
+    *start_flg = 0U;
+
+    /* 壁フラグをクリア */
+    wall_flg->contents = 0U;
+  }
 
   if (stop_flg == 1) {
     /* ゴール時停止フラグが立っているとき */
@@ -6172,10 +6291,11 @@ static void decide_goal_section(const unsigned char maze_goal[18], const
 /*
  * 入力　壁情報,壁探索情報,等高線MAP,ゴール座標,最大経路長
  * 出力   最短経路上の未探索マスの座標、未探索マスの数
- * Arguments    : const coder_internal_ref *goal_size
+ * Arguments    : const coder_internal_ref_1 *maze_wall
+ *                const coder_internal_ref *goal_size
  *                coder_internal_ref *wall_flg
- *                const coder_internal_ref_5 *wall
- *                const unsigned char maze_wall[1024]
+ *                const coder_internal_ref_6 *wall
+ *                const unsigned char b_maze_wall[1024]
  *                const unsigned char maze_wall_search[1024]
  *                const unsigned short contour_map[1024]
  *                const unsigned char maze_goal[18]
@@ -6184,9 +6304,10 @@ static void decide_goal_section(const unsigned char maze_goal[18], const
  *                unsigned char *unexp_square_idx
  * Return Type  : void
  */
-static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
-                     *wall_flg, const coder_internal_ref_5 *wall, const unsigned
-                     char maze_wall[1024], const unsigned char maze_wall_search
+static void fust_run(const coder_internal_ref_1 *maze_wall, const
+                     coder_internal_ref *goal_size, coder_internal_ref *wall_flg,
+                     const coder_internal_ref_6 *wall, const unsigned char
+                     b_maze_wall[1024], const unsigned char maze_wall_search
                      [1024], const unsigned short contour_map[1024], const
                      unsigned char maze_goal[18], unsigned short max_length,
                      unsigned char unexp_square[1024], unsigned char
@@ -6194,22 +6315,21 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
 {
   unsigned char goal_flag;
   unsigned short little;
-  int i53;
-  coder_internal_ref_6 b_maze_wall;
   unsigned char temp_x;
   unsigned char temp_y;
   unsigned char temp_dir;
   unsigned char next_dir;
   int tempk;
   bool exitg1;
-  int i54;
-  int i55;
-  int b_unexp_square_idx;
-  int i56;
   int i57;
-  unsigned short u3;
   int i58;
   int i59;
+  int b_unexp_square_idx;
+  int i60;
+  int i61;
+  unsigned short u3;
+  int i62;
+  int i63;
   unsigned int qY;
   unsigned char switch_expression;
 
@@ -6223,11 +6343,7 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
   little = max_length;
 
   /* 進行方向選定用閾値 */
-  for (i53 = 0; i53 < 1024; i53++) {
-    b_maze_wall.contents[i53] = maze_wall[i53];
-    unexp_square[i53] = 0U;
-  }
-
+  memset(&unexp_square[0], 0, sizeof(unsigned char) << 10);
   *unexp_square_idx = 0U;
 
   /*          %マウス位置表示用オブジェクト */
@@ -6251,29 +6367,29 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
   while ((!exitg1) && (tempk <= max_length - 1)) {
     /* 非走行モードのとき、非探索マスを記録する */
     /* 現在位置が未探索マスか判定 */
-    i53 = temp_y + ((temp_x - 1) << 5);
-    i54 = i53 - 1;
-    if (maze_wall_search[i54] != 15) {
+    i57 = temp_y + ((temp_x - 1) << 5);
+    i58 = i57 - 1;
+    if (maze_wall_search[i58] != 15) {
       /* 未探索マスであれば、記録する。インデックスを増加させる。 */
-      i55 = (int)(*unexp_square_idx + 1U);
-      b_unexp_square_idx = i55;
-      if ((unsigned int)i55 > 255U) {
+      i59 = (int)(*unexp_square_idx + 1U);
+      b_unexp_square_idx = i59;
+      if ((unsigned int)i59 > 255U) {
         b_unexp_square_idx = 255;
       }
 
       b_unexp_square_idx--;
       unexp_square[b_unexp_square_idx] = temp_y;
       unexp_square[512 + b_unexp_square_idx] = temp_x;
-      if ((unsigned int)i55 > 255U) {
-        i55 = 255;
+      if ((unsigned int)i59 > 255U) {
+        i59 = 255;
       }
 
-      *unexp_square_idx = (unsigned char)i55;
+      *unexp_square_idx = (unsigned char)i59;
     }
 
     /* 現在位置がゴールか判定 */
-    i55 = goal_size->contents;
-    for (b_unexp_square_idx = 0; b_unexp_square_idx < i55; b_unexp_square_idx++)
+    i59 = goal_size->contents;
+    for (b_unexp_square_idx = 0; b_unexp_square_idx < i59; b_unexp_square_idx++)
     {
       if ((temp_x == maze_goal[b_unexp_square_idx]) && (temp_y ==
            maze_goal[b_unexp_square_idx + 9])) {
@@ -6290,13 +6406,13 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
       /* 優先順位　北⇒東⇒南⇒西 */
       /* 北側の壁のありなし */
       if (g_direction.North <= 7) {
-        i56 = (unsigned char)(1 << g_direction.North);
+        i60 = (unsigned char)(1 << g_direction.North);
       } else {
-        i56 = 0;
+        i60 = 0;
       }
 
-      if (((b_maze_wall.contents[i54] & i56) == wall->contents.nowall) &&
-          (contour_map[i53] < little)) {
+      if (((b_maze_wall[i58] & i60) == wall->contents.nowall) &&
+          (contour_map[i57] < little)) {
         /* 北側の等高線mapが閾値より低ければ、 */
         /* 閾値を北側の等高map値に変更 */
         little = contour_map[temp_y + ((temp_x - 1) << 5)];
@@ -6307,12 +6423,12 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
 
       /* 東側 */
       if (g_direction.East <= 7) {
-        i57 = (unsigned char)(1 << g_direction.East);
+        i61 = (unsigned char)(1 << g_direction.East);
       } else {
-        i57 = 0;
+        i61 = 0;
       }
 
-      if ((b_maze_wall.contents[(temp_y + ((temp_x - 1) << 5)) - 1] & i57) ==
+      if ((b_maze_wall[(temp_y + ((temp_x - 1) << 5)) - 1] & i61) ==
           wall->contents.nowall) {
         u3 = contour_map[(temp_y + (temp_x << 5)) - 1];
         if (u3 < little) {
@@ -6323,14 +6439,14 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
 
       /* 南側 */
       if (g_direction.South <= 7) {
-        i58 = (unsigned char)(1 << g_direction.South);
+        i62 = (unsigned char)(1 << g_direction.South);
       } else {
-        i58 = 0;
+        i62 = 0;
       }
 
-      if ((b_maze_wall.contents[(temp_y + ((temp_x - 1) << 5)) - 1] & i58) ==
+      if ((b_maze_wall[(temp_y + ((temp_x - 1) << 5)) - 1] & i62) ==
           wall->contents.nowall) {
-        u3 = contour_map[i53 - 2];
+        u3 = contour_map[i57 - 2];
         if (u3 < little) {
           little = u3;
           next_dir = g_direction.South;
@@ -6339,12 +6455,12 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
 
       /* 西側 */
       if (g_direction.West <= 7) {
-        i59 = (unsigned char)(1 << g_direction.West);
+        i63 = (unsigned char)(1 << g_direction.West);
       } else {
-        i59 = 0;
+        i63 = 0;
       }
 
-      if ((b_maze_wall.contents[(temp_y + ((temp_x - 1) << 5)) - 1] & i59) ==
+      if ((b_maze_wall[(temp_y + ((temp_x - 1) << 5)) - 1] & i63) ==
           wall->contents.nowall) {
         u3 = contour_map[(temp_y + ((temp_x - 2) << 5)) - 1];
         if (u3 < little) {
@@ -6395,7 +6511,7 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
       switch (b_unexp_square_idx) {
        case 0:
         /* 直進の場合、直進カウンタをインクリメント */
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -6443,7 +6559,7 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
         break;
 
        case 1:
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -6451,17 +6567,17 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
         /* 入力 現在方向 */
         /* 出力 現在方向 */
         /*     %% turn_clk_90deg 時計周りに90度ターンする関数 */
-        i53 = (int)(4U + temp_dir);
-        if ((unsigned int)i53 > 255U) {
-          i53 = 255;
+        i57 = (int)(4U + temp_dir);
+        if ((unsigned int)i57 > 255U) {
+          i57 = 255;
         }
 
-        i53++;
-        if ((unsigned int)i53 > 255U) {
-          i53 = 255;
+        i57++;
+        if ((unsigned int)i57 > 255U) {
+          i57 = 255;
         }
 
-        temp_dir = (unsigned char)(i53 % 4);
+        temp_dir = (unsigned char)(i57 % 4);
 
         /* 入力 現在位置x,y,現在方向 */
         /* 出力 現在位置x,y */
@@ -6496,7 +6612,7 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
         break;
 
        case 2:
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -6504,12 +6620,12 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
         /* 入力 現在方向 */
         /* 出力 現在方向 */
         /*     %% turn_180deg 180度ターンする関数 */
-        i53 = (int)(4U + temp_dir);
-        if ((unsigned int)i53 > 255U) {
-          i53 = 255;
+        i57 = (int)(4U + temp_dir);
+        if ((unsigned int)i57 > 255U) {
+          i57 = 255;
         }
 
-        temp_dir = (unsigned char)((i53 - 2) % 4);
+        temp_dir = (unsigned char)((i57 - 2) % 4);
 
         /* 入力 現在位置x,y,現在方向 */
         /* 出力 現在位置x,y */
@@ -6544,7 +6660,7 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
         break;
 
        case 3:
-        wall_flg->contents = fust_run_wallset(&b_maze_wall, temp_y, temp_x,
+        wall_flg->contents = fust_run_wallset(maze_wall, temp_y, temp_x,
           temp_dir);
 
         /* 現在参照マスの壁情報を記憶 */
@@ -6552,12 +6668,12 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
         /* 入力　現在方向 */
         /* 出力　現在方向 */
         /*     %% turn_conclk_90deg 反時計周りに90度回る関数 */
-        i53 = (int)(4U + temp_dir);
-        if ((unsigned int)i53 > 255U) {
-          i53 = 255;
+        i57 = (int)(4U + temp_dir);
+        if ((unsigned int)i57 > 255U) {
+          i57 = 255;
         }
 
-        temp_dir = (unsigned char)((i53 - 1) % 4);
+        temp_dir = (unsigned char)((i57 - 1) % 4);
 
         /* 入力 現在位置x,y,現在方向 */
         /* 出力 現在位置x,y */
@@ -6598,73 +6714,69 @@ static void fust_run(const coder_internal_ref *goal_size, coder_internal_ref
       tempk++;
     }
   }
-
-  /*          pause(0.01) */
-  /*      writeVideo(vidObj, getframe(gcf)); */
-  /* limitrate nocallbacks */
 }
 
 /*
- * Arguments    : const coder_internal_ref_6 *maze_wall
+ * Arguments    : const coder_internal_ref_1 *maze_wall
  *                unsigned char temp_y
  *                unsigned char temp_x
  *                unsigned char temp_dir
  * Return Type  : unsigned char
  */
-static unsigned char fust_run_wallset(const coder_internal_ref_6 *maze_wall,
+static unsigned char fust_run_wallset(const coder_internal_ref_1 *maze_wall,
   unsigned char temp_y, unsigned char temp_x, unsigned char temp_dir)
 {
   unsigned char wall_flg;
-  int i60;
+  int i17;
   int b_temp_dir;
-  int i61;
-  int i62;
-  int i63;
+  int i18;
+  int i19;
+  int i20;
 
-  /* 最短時の壁情報取得関数 */
+  /*     %% 既知壁の壁情報取得関数 */
   wall_flg = 0U;
 
   /* 前 */
-  i60 = maze_wall->contents[(temp_y + ((temp_x - 1) << 5)) - 1];
+  i17 = maze_wall->contents[(temp_y + ((temp_x - 1) << 5)) - 1];
   if (temp_dir <= 7) {
     b_temp_dir = (unsigned char)(1 << temp_dir);
   } else {
     b_temp_dir = 0;
   }
 
-  if ((i60 & (b_temp_dir % 15)) != 0) {
+  if ((i17 & (b_temp_dir % 15)) != 0) {
     wall_flg = 1U;
   }
 
   /* 右 */
-  i61 = (int)(temp_dir + 1U);
-  if ((unsigned int)i61 > 255U) {
-    i61 = 255;
+  i18 = (int)(temp_dir + 1U);
+  if ((unsigned int)i18 > 255U) {
+    i18 = 255;
   }
 
-  if ((unsigned char)i61 <= 7) {
-    i62 = (unsigned char)(1 << (unsigned char)i61);
+  if ((unsigned char)i18 <= 7) {
+    i19 = (unsigned char)(1 << (unsigned char)i18);
   } else {
-    i62 = 0;
+    i19 = 0;
   }
 
-  if ((i60 & (i62 % 15)) != 0) {
+  if ((i17 & (i19 % 15)) != 0) {
     wall_flg = (unsigned char)(wall_flg | 2);
   }
 
   /* 左 */
-  i61 = (int)(temp_dir + 3U);
-  if ((unsigned int)i61 > 255U) {
-    i61 = 255;
+  i18 = (int)(temp_dir + 3U);
+  if ((unsigned int)i18 > 255U) {
+    i18 = 255;
   }
 
-  if ((unsigned char)i61 <= 7) {
-    i63 = (unsigned char)(1 << (unsigned char)i61);
+  if ((unsigned char)i18 <= 7) {
+    i20 = (unsigned char)(1 << (unsigned char)i18);
   } else {
-    i63 = 0;
+    i20 = 0;
   }
 
-  if ((i60 & (i63 % 15)) != 0) {
+  if ((i17 & (i20 % 15)) != 0) {
     wall_flg = (unsigned char)(wall_flg | 8);
   }
 
@@ -7409,7 +7521,7 @@ static double goal_judge(const unsigned char maze_goal[18], unsigned char x,
 /*
  * 入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数)
  * 出力 等高線map,最大経路長
- * Arguments    : const coder_internal_ref_5 *wall
+ * Arguments    : const coder_internal_ref_6 *wall
  *                const unsigned char maze_goal[18]
  *                unsigned char l_goal_size
  *                const unsigned char maze_wall[1024]
@@ -7418,7 +7530,7 @@ static double goal_judge(const unsigned char maze_goal[18], unsigned char x,
  *                unsigned short contour_map[1024]
  * Return Type  : void
  */
-static void make_map_find(const coder_internal_ref_5 *wall, const unsigned char
+static void make_map_find(const coder_internal_ref_6 *wall, const unsigned char
   maze_goal[18], unsigned char l_goal_size, const unsigned char maze_wall[1024],
   unsigned char current_x, unsigned char current_y, unsigned short contour_map
   [1024])
@@ -7698,8 +7810,8 @@ static void make_map_find(const coder_internal_ref_5 *wall, const unsigned char
  * 入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数),迷路探索情報(16進数)
  * 出力 等高線map,最大経路長
  * Arguments    : const coder_internal_ref *goal_size
- *                const coder_internal_ref_5 *wall
- *                const coder_internal_ref_4 *search
+ *                const coder_internal_ref_6 *wall
+ *                const coder_internal_ref_5 *search
  *                const unsigned char maze_goal[18]
  *                const unsigned char maze_wall[1024]
  *                const unsigned char maze_wall_search[1024]
@@ -7708,7 +7820,7 @@ static void make_map_find(const coder_internal_ref_5 *wall, const unsigned char
  * Return Type  : void
  */
 static void make_map_fustrun(const coder_internal_ref *goal_size, const
-  coder_internal_ref_5 *wall, const coder_internal_ref_4 *search, const unsigned
+  coder_internal_ref_6 *wall, const coder_internal_ref_5 *search, const unsigned
   char maze_goal[18], const unsigned char maze_wall[1024], const unsigned char
   maze_wall_search[1024], unsigned char unknown_wall_flg, unsigned short
   contour_map[1024])
@@ -7717,18 +7829,14 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
   unsigned char contor_renew_square_temp[2048];
   unsigned char contor_renew_square_idx;
   unsigned char contor_renew_square_idx_temp;
-  int i33;
+  int i37;
   unsigned char move_dir_map[1024];
   int tempn;
   unsigned short tempi;
   bool exitg1;
   int contour_map_tmp;
-  int i34;
-  unsigned char change_flag;
-  int i35;
-  int i36;
-  int i37;
   int i38;
+  unsigned char change_flag;
   int i39;
   int i40;
   int i41;
@@ -7739,12 +7847,16 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
   int i46;
   int i47;
   int i48;
-  unsigned int u2;
-  unsigned int qY;
   int i49;
   int i50;
   int i51;
   int i52;
+  unsigned int u2;
+  unsigned int qY;
+  int i53;
+  int i54;
+  int i55;
+  int i56;
 
   /*     %% make_map_fustrun 最短走行用等高線MAPを生成 */
   /* コンター更新マス保管用 */
@@ -7765,61 +7877,61 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
   /* MAPの初期化(すべての要素にmax_lengthを入力) */
   /* 32マス分mapを保持 */
   /* 進行方向補完用変数定義 */
-  for (i33 = 0; i33 < 1024; i33++) {
-    contour_map[i33] = MAX_uint16_T;
-    move_dir_map[i33] = 0U;
+  for (i37 = 0; i37 < 1024; i37++) {
+    contour_map[i37] = MAX_uint16_T;
+    move_dir_map[i37] = 0U;
   }
 
   /* ゴール座標に */
   /*  歩数マップ：0を入力 */
   /*  進行方向 : 1+2+4+8(東西南北すべて)=15 */
   /*  を入力 */
-  i33 = goal_size->contents;
-  for (tempn = 0; tempn < i33; tempn++) {
+  i37 = goal_size->contents;
+  for (tempn = 0; tempn < i37; tempn++) {
     contor_renew_square_idx = maze_goal[tempn + 9];
     contour_map_tmp = (contor_renew_square_idx + ((maze_goal[tempn] - 1) << 5))
       - 1;
     contour_map[contour_map_tmp] = 0U;
     if (g_direction.North <= 7) {
-      i34 = (unsigned char)(1 << g_direction.North);
+      i38 = (unsigned char)(1 << g_direction.North);
     } else {
-      i34 = 0;
+      i38 = 0;
     }
 
     if (g_direction.East <= 7) {
-      i35 = (unsigned char)(1 << g_direction.East);
+      i39 = (unsigned char)(1 << g_direction.East);
     } else {
-      i35 = 0;
+      i39 = 0;
     }
 
-    i36 = (int)((unsigned int)i34 + i35);
-    if ((unsigned int)i36 > 255U) {
-      i36 = 255;
+    i40 = (int)((unsigned int)i38 + i39);
+    if ((unsigned int)i40 > 255U) {
+      i40 = 255;
     }
 
     if (g_direction.South <= 7) {
-      i37 = (unsigned char)(1 << g_direction.South);
+      i41 = (unsigned char)(1 << g_direction.South);
     } else {
-      i37 = 0;
+      i41 = 0;
     }
 
-    i36 = (int)((unsigned int)i36 + i37);
-    if ((unsigned int)i36 > 255U) {
-      i36 = 255;
+    i40 = (int)((unsigned int)i40 + i41);
+    if ((unsigned int)i40 > 255U) {
+      i40 = 255;
     }
 
     if (g_direction.West <= 7) {
-      i40 = (unsigned char)(1 << g_direction.West);
+      i44 = (unsigned char)(1 << g_direction.West);
     } else {
-      i40 = 0;
+      i44 = 0;
     }
 
-    i36 = (int)((unsigned int)i36 + i40);
-    if ((unsigned int)i36 > 255U) {
-      i36 = 255;
+    i40 = (int)((unsigned int)i40 + i44);
+    if ((unsigned int)i40 > 255U) {
+      i40 = 255;
     }
 
-    move_dir_map[contour_map_tmp] = (unsigned char)i36;
+    move_dir_map[contour_map_tmp] = (unsigned char)i40;
 
     /* 初回の更新座標 = ゴール座標　を入力 */
     contor_renew_square[tempn] = contor_renew_square_idx;
@@ -7835,38 +7947,38 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
 
     /* 更新フラグのクリア */
     /* 検索した座標に対し、歩数mapを更新 */
-    i33 = contor_renew_square_idx;
-    for (tempn = 0; tempn < i33; tempn++) {
+    i37 = contor_renew_square_idx;
+    for (tempn = 0; tempn < i37; tempn++) {
       /* 北側 */
       /* 壁が無い & (探索済み || ~未知壁フラグ)であるとき */
       if (g_direction.North <= 7) {
-        i38 = (unsigned char)(1 << g_direction.North);
+        i42 = (unsigned char)(1 << g_direction.North);
       } else {
-        i38 = 0;
+        i42 = 0;
       }
 
       if (((maze_wall[(contor_renew_square[tempn] + ((contor_renew_square[tempn
-               + 1024] - 1) << 5)) - 1] & i38) != 0) == wall->contents.nowall) {
+               + 1024] - 1) << 5)) - 1] & i42) != 0) == wall->contents.nowall) {
         if (g_direction.North <= 7) {
-          i39 = (unsigned char)(1 << g_direction.North);
+          i43 = (unsigned char)(1 << g_direction.North);
         } else {
-          i39 = 0;
+          i43 = 0;
         }
 
         if ((((maze_wall_search[(contor_renew_square[tempn] +
-                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i39) != 0)
+                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i43) != 0)
              == search->contents.known) || (unknown_wall_flg == 0)) {
           /* かつ進行方向が北向きである時 */
           contor_renew_square_idx = contor_renew_square[tempn + 1024];
-          i36 = (contor_renew_square_idx - 1) << 5;
-          contour_map_tmp = (contor_renew_square[tempn] + i36) - 1;
+          i40 = (contor_renew_square_idx - 1) << 5;
+          contour_map_tmp = (contor_renew_square[tempn] + i40) - 1;
           if (g_direction.North <= 7) {
-            i43 = (unsigned char)(1 << g_direction.North);
+            i47 = (unsigned char)(1 << g_direction.North);
           } else {
-            i43 = 0;
+            i47 = 0;
           }
 
-          if ((move_dir_map[contour_map_tmp] & i43) != 0) {
+          if ((move_dir_map[contour_map_tmp] & i47) != 0) {
             /* かつ北のマスが更新予定値よりも大きな値の場合 */
             contour_map_tmp = (int)(contor_renew_square[tempn] + 1U);
             if ((unsigned int)contour_map_tmp > 255U) {
@@ -7881,7 +7993,7 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
               qY = 65535U;
             }
 
-            if (contour_map[(contour_map_tmp + i36) - 1] > (int)qY) {
+            if (contour_map[(contour_map_tmp + i40) - 1] > (int)qY) {
               /* 歩数MAP更新 */
               contour_map_tmp = (int)(contor_renew_square[tempn] + 1U);
               if ((unsigned int)contour_map_tmp > 255U) {
@@ -7892,7 +8004,7 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 u2 = 65535U;
               }
 
-              contour_map[(contour_map_tmp + i36) - 1] = (unsigned short)u2;
+              contour_map[(contour_map_tmp + i40) - 1] = (unsigned short)u2;
 
               /* 移動方向MAP更新 */
               contour_map_tmp = (int)(contor_renew_square[tempn] + 1U);
@@ -7901,42 +8013,42 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
               }
 
               if (g_direction.North <= 7) {
-                move_dir_map[(contour_map_tmp + i36) - 1] = (unsigned char)(1 <<
+                move_dir_map[(contour_map_tmp + i40) - 1] = (unsigned char)(1 <<
                   g_direction.North);
               } else {
-                move_dir_map[(contour_map_tmp + i36) - 1] = 0U;
+                move_dir_map[(contour_map_tmp + i40) - 1] = 0U;
               }
 
               /* 更新フラグを立てる */
               change_flag = 1U;
 
               /* 更新マスを更新 */
-              i36 = (int)(contor_renew_square[tempn] + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square[tempn] + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
               contor_renew_square_temp[contor_renew_square_idx_temp - 1] =
-                (unsigned char)i36;
+                (unsigned char)i40;
               contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
                 contor_renew_square_idx;
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
 
             /* かつ進行方向が北向きでないとき */
           } else {
             /* かつ北のマスの歩数MAP値が、更新予定値より大きい場合 */
-            i46 = (int)(contor_renew_square[tempn] + 1U);
-            i47 = i46;
-            if ((unsigned int)i46 > 255U) {
-              i47 = 255;
+            i50 = (int)(contor_renew_square[tempn] + 1U);
+            i51 = i50;
+            if ((unsigned int)i50 > 255U) {
+              i51 = 255;
             }
 
             u2 = contour_map[contour_map_tmp] + 5U;
@@ -7945,10 +8057,10 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
               qY = 65535U;
             }
 
-            if (contour_map[(i47 + i36) - 1] > (int)qY) {
+            if (contour_map[(i51 + i40) - 1] > (int)qY) {
               /* 歩数MAP更新(重みづけあり) */
-              contour_map_tmp = i46;
-              if ((unsigned int)i46 > 255U) {
+              contour_map_tmp = i50;
+              if ((unsigned int)i50 > 255U) {
                 contour_map_tmp = 255;
               }
 
@@ -7956,41 +8068,41 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 u2 = 65535U;
               }
 
-              contour_map[(contour_map_tmp + i36) - 1] = (unsigned short)u2;
+              contour_map[(contour_map_tmp + i40) - 1] = (unsigned short)u2;
 
               /* 移動方向MAP更新 */
-              contour_map_tmp = i46;
-              if ((unsigned int)i46 > 255U) {
+              contour_map_tmp = i50;
+              if ((unsigned int)i50 > 255U) {
                 contour_map_tmp = 255;
               }
 
               if (g_direction.North <= 7) {
-                move_dir_map[(contour_map_tmp + i36) - 1] = (unsigned char)(1 <<
+                move_dir_map[(contour_map_tmp + i40) - 1] = (unsigned char)(1 <<
                   g_direction.North);
               } else {
-                move_dir_map[(contour_map_tmp + i36) - 1] = 0U;
+                move_dir_map[(contour_map_tmp + i40) - 1] = 0U;
               }
 
               /* 更新フラグを立てる */
               change_flag = 1U;
 
               /* 更新マスを更新 */
-              if ((unsigned int)i46 > 255U) {
-                i46 = 255;
+              if ((unsigned int)i50 > 255U) {
+                i50 = 255;
               }
 
               contor_renew_square_temp[contor_renew_square_idx_temp - 1] =
-                (unsigned char)i46;
+                (unsigned char)i50;
               contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
                 contor_renew_square_idx;
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
           }
         }
@@ -7999,36 +8111,36 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
       /* 東側 */
       /* 壁が無い & (探索済み|| ~未知壁フラグ)であるとき */
       if (g_direction.East <= 7) {
-        i41 = (unsigned char)(1 << g_direction.East);
+        i45 = (unsigned char)(1 << g_direction.East);
       } else {
-        i41 = 0;
+        i45 = 0;
       }
 
       if (((maze_wall[(contor_renew_square[tempn] + ((contor_renew_square[tempn
-               + 1024] - 1) << 5)) - 1] & i41) != 0) == wall->contents.nowall) {
+               + 1024] - 1) << 5)) - 1] & i45) != 0) == wall->contents.nowall) {
         if (g_direction.East <= 7) {
-          i42 = (unsigned char)(1 << g_direction.East);
+          i46 = (unsigned char)(1 << g_direction.East);
         } else {
-          i42 = 0;
+          i46 = 0;
         }
 
         if ((((maze_wall_search[(contor_renew_square[tempn] +
-                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i42) != 0)
+                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i46) != 0)
              == search->contents.known) || (unknown_wall_flg == 0)) {
           /* かつ進行方向が東向きである時 */
           if (g_direction.East <= 7) {
-            i45 = (unsigned char)(1 << g_direction.East);
+            i49 = (unsigned char)(1 << g_direction.East);
           } else {
-            i45 = 0;
+            i49 = 0;
           }
 
           if ((move_dir_map[(contor_renew_square[tempn] +
                              ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1]
-               & i45) != 0) {
+               & i49) != 0) {
             /* かつ東のマスが更新予定値よりも大きな値の場合 */
-            i36 = (int)(contor_renew_square[tempn + 1024] + 1U);
-            if ((unsigned int)i36 > 255U) {
-              i36 = 255;
+            i40 = (int)(contor_renew_square[tempn + 1024] + 1U);
+            if ((unsigned int)i40 > 255U) {
+              i40 = 255;
             }
 
             u2 = contour_map[(contor_renew_square[tempn] +
@@ -8038,14 +8150,14 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
               u2 = 65535U;
             }
 
-            if (contour_map[(contor_renew_square[tempn] + ((i36 - 1) << 5)) - 1]
+            if (contour_map[(contor_renew_square[tempn] + ((i40 - 1) << 5)) - 1]
                 > (int)u2) {
               /*                                  %更新確認用のMAP更新 */
               /*                                  contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+uint16(1); */
               /* 歩数MAP更新 */
-              i36 = (int)(contor_renew_square[tempn + 1024] + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square[tempn + 1024] + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
               u2 = contour_map[(contor_renew_square[tempn] +
@@ -8055,20 +8167,20 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 u2 = 65535U;
               }
 
-              contour_map[(contor_renew_square[tempn] + ((i36 - 1) << 5)) - 1] =
+              contour_map[(contor_renew_square[tempn] + ((i40 - 1) << 5)) - 1] =
                 (unsigned short)u2;
 
               /* 移動方向MAP更新 */
-              i36 = (int)(contor_renew_square[tempn + 1024] + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square[tempn + 1024] + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
               if (g_direction.East <= 7) {
-                move_dir_map[(contor_renew_square[tempn] + ((i36 - 1) << 5)) - 1]
+                move_dir_map[(contor_renew_square[tempn] + ((i40 - 1) << 5)) - 1]
                   = (unsigned char)(1 << g_direction.East);
               } else {
-                move_dir_map[(contor_renew_square[tempn] + ((i36 - 1) << 5)) - 1]
+                move_dir_map[(contor_renew_square[tempn] + ((i40 - 1) << 5)) - 1]
                   = 0U;
               }
 
@@ -8078,29 +8190,29 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
               /* 更新マスを更新 */
               contor_renew_square_temp[contor_renew_square_idx_temp - 1] =
                 contor_renew_square[tempn];
-              i36 = (int)(contor_renew_square[tempn + 1024] + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square[tempn + 1024] + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
               contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
-                (unsigned char)i36;
+                (unsigned char)i40;
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
 
             /* かつ進行方向が東向きでないとき */
           } else {
             /* かつ東のマスの歩数MAP値が、更新予定値より大きい場合 */
-            i36 = (int)(contor_renew_square[tempn + 1024] + 1U);
-            contour_map_tmp = i36;
-            if ((unsigned int)i36 > 255U) {
+            i40 = (int)(contor_renew_square[tempn + 1024] + 1U);
+            contour_map_tmp = i40;
+            if ((unsigned int)i40 > 255U) {
               contour_map_tmp = 255;
             }
 
@@ -8116,8 +8228,8 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
               /*                                  %更新確認用のMAP更新 */
               /*                                  contour_refine_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)+1) = contour_refine_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+uint16(1); */
               /* 歩数MAP更新(重みづけあり) */
-              contour_map_tmp = i36;
-              if ((unsigned int)i36 > 255U) {
+              contour_map_tmp = i40;
+              if ((unsigned int)i40 > 255U) {
                 contour_map_tmp = 255;
               }
 
@@ -8132,8 +8244,8 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 5)) - 1] = (unsigned short)u2;
 
               /* 移動方向MAP更新 */
-              contour_map_tmp = i36;
-              if ((unsigned int)i36 > 255U) {
+              contour_map_tmp = i40;
+              if ((unsigned int)i40 > 255U) {
                 contour_map_tmp = 255;
               }
 
@@ -8151,20 +8263,20 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
               /* 更新マスを更新 */
               contor_renew_square_temp[contor_renew_square_idx_temp - 1] =
                 contor_renew_square[tempn];
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
               contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
-                (unsigned char)i36;
+                (unsigned char)i40;
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
           }
         }
@@ -8173,32 +8285,32 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
       /* 南側 */
       /* 壁が無い &  (探索済み|| ~未知壁フラグ)であるとき */
       if (g_direction.South <= 7) {
-        i44 = (unsigned char)(1 << g_direction.South);
+        i48 = (unsigned char)(1 << g_direction.South);
       } else {
-        i44 = 0;
+        i48 = 0;
       }
 
       if (((maze_wall[(contor_renew_square[tempn] + ((contor_renew_square[tempn
-               + 1024] - 1) << 5)) - 1] & i44) != 0) == wall->contents.nowall) {
+               + 1024] - 1) << 5)) - 1] & i48) != 0) == wall->contents.nowall) {
         if (g_direction.South <= 7) {
-          i48 = (unsigned char)(1 << g_direction.South);
+          i52 = (unsigned char)(1 << g_direction.South);
         } else {
-          i48 = 0;
+          i52 = 0;
         }
 
         if ((((maze_wall_search[(contor_renew_square[tempn] +
-                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i48) != 0)
+                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i52) != 0)
              == search->contents.known) || (unknown_wall_flg == 0)) {
           /* かつ進行方向が南向きである時 */
           if (g_direction.South <= 7) {
-            i50 = (unsigned char)(1 << g_direction.South);
+            i54 = (unsigned char)(1 << g_direction.South);
           } else {
-            i50 = 0;
+            i54 = 0;
           }
 
           if ((move_dir_map[(contor_renew_square[tempn] +
                              ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1]
-               & i50) != 0) {
+               & i54) != 0) {
             /* かつ南のマスが更新予定値よりも大きな値の場合 */
             qY = contor_renew_square[tempn] - 1U;
             if (qY > contor_renew_square[tempn]) {
@@ -8261,12 +8373,12 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 contor_renew_square[tempn + 1024];
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
 
             /* かつ進行方向が南向きでないとき */
@@ -8331,12 +8443,12 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 contor_renew_square[tempn + 1024];
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
           }
         }
@@ -8345,32 +8457,32 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
       /* 西側 */
       /* 壁が無い &  (探索済み|| ~未知壁フラグ)であるとき */
       if (g_direction.West <= 7) {
-        i49 = (unsigned char)(1 << g_direction.West);
+        i53 = (unsigned char)(1 << g_direction.West);
       } else {
-        i49 = 0;
+        i53 = 0;
       }
 
       if (((maze_wall[(contor_renew_square[tempn] + ((contor_renew_square[tempn
-               + 1024] - 1) << 5)) - 1] & i49) != 0) == wall->contents.nowall) {
+               + 1024] - 1) << 5)) - 1] & i53) != 0) == wall->contents.nowall) {
         if (g_direction.West <= 7) {
-          i51 = (unsigned char)(1 << g_direction.West);
+          i55 = (unsigned char)(1 << g_direction.West);
         } else {
-          i51 = 0;
+          i55 = 0;
         }
 
         if ((((maze_wall_search[(contor_renew_square[tempn] +
-                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i51) != 0)
+                ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & i55) != 0)
              == search->contents.known) || (unknown_wall_flg == 0)) {
           /* かつ進行方向が西向きである時 */
           if (g_direction.West <= 7) {
-            i52 = (unsigned char)(1 << g_direction.West);
+            i56 = (unsigned char)(1 << g_direction.West);
           } else {
-            i52 = 0;
+            i56 = 0;
           }
 
           if ((move_dir_map[(contor_renew_square[tempn] +
                              ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1]
-               & i52) != 0) {
+               & i56) != 0) {
             /* かつ北のマスが更新予定値よりも大きな値の場合 */
             contour_map_tmp = contor_renew_square[tempn + 1024];
             qY = contour_map_tmp - 1U;
@@ -8435,12 +8547,12 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 (unsigned char)qY;
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
 
             /* かつ進行方向が西向きでないとき */
@@ -8509,12 +8621,12 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
                 (unsigned char)qY;
 
               /* 更新マス用インデックスを増加 */
-              i36 = (int)(contor_renew_square_idx_temp + 1U);
-              if ((unsigned int)i36 > 255U) {
-                i36 = 255;
+              i40 = (int)(contor_renew_square_idx_temp + 1U);
+              if ((unsigned int)i40 > 255U) {
+                i40 = 255;
               }
 
-              contor_renew_square_idx_temp = (unsigned char)i36;
+              contor_renew_square_idx_temp = (unsigned char)i40;
             }
           }
         }
@@ -8522,9 +8634,9 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
     }
 
     /* ゴール更新マスの更新とインデックスのクリア */
-    for (i33 = 0; i33 < 2048; i33++) {
-      contor_renew_square[i33] = contor_renew_square_temp[i33];
-      contor_renew_square_temp[i33] = 0U;
+    for (i37 = 0; i37 < 2048; i37++) {
+      contor_renew_square[i37] = contor_renew_square_temp[i37];
+      contor_renew_square_temp[i37] = 0U;
     }
 
     contor_renew_square_idx = (unsigned char)(contor_renew_square_idx_temp - 1);
@@ -8543,9 +8655,9 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
  * 未知壁の領域は仮想壁をおいて侵入しない。
  * 入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数),迷路探索情報(16進数)
  * 出力 等高線map,最大経路長
- * Arguments    : coder_internal_ref_2 *max_length
- *                const coder_internal_ref_5 *wall
- *                const coder_internal_ref_4 *search
+ * Arguments    : coder_internal_ref_3 *max_length
+ *                const coder_internal_ref_6 *wall
+ *                const coder_internal_ref_5 *search
  *                const unsigned char maze_goal[18]
  *                unsigned char goal_size
  *                const unsigned char maze_wall[1024]
@@ -8555,8 +8667,8 @@ static void make_map_fustrun(const coder_internal_ref *goal_size, const
  *                unsigned short *start_num
  * Return Type  : void
  */
-static void make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
-  coder_internal_ref_5 *wall, const coder_internal_ref_4 *search, const unsigned
+static void make_map_fustrun_diagonal(coder_internal_ref_3 *max_length, const
+  coder_internal_ref_6 *wall, const coder_internal_ref_5 *search, const unsigned
   char maze_goal[18], unsigned char goal_size, const unsigned char maze_wall
   [1024], const unsigned char maze_wall_search[1024], unsigned short
   row_num_node[1056], unsigned short col_num_node[1056], unsigned short
@@ -11967,7 +12079,7 @@ static void make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
 
 /*
  * 迷路パラメータ設定
- * Arguments    : const coder_internal_ref_5 *wall
+ * Arguments    : const coder_internal_ref_6 *wall
  *                const unsigned char maze_wall[1024]
  *                const unsigned char maze_wall_search[1024]
  *                unsigned char current_x
@@ -11976,7 +12088,7 @@ static void make_map_fustrun_diagonal(coder_internal_ref_2 *max_length, const
  *                unsigned char new_goal[2]
  * Return Type  : void
  */
-static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
+static void make_new_goal_all(const coder_internal_ref_6 *wall, const unsigned
   char maze_wall[1024], const unsigned char maze_wall_search[1024], unsigned
   char current_x, unsigned char current_y, unsigned short contour_map[1024],
   unsigned char new_goal[2])
@@ -11991,16 +12103,16 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
   unsigned char change_flag;
   int tempn;
   bool exitg2;
-  int i26;
+  int i30;
   bool guard1 = false;
   bool guard2 = false;
   bool guard3 = false;
-  int i27;
-  int i28;
-  int i29;
-  int i30;
   int i31;
   int i32;
+  int i33;
+  int i34;
+  int i35;
+  int i36;
   unsigned int u1;
   unsigned int qY;
 
@@ -12052,27 +12164,27 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
       q0 = maze_wall[(contor_renew_square[tempn] + ((contor_renew_square[tempn +
         1024] - 1) << 5)) - 1];
       if (g_direction.North <= 7) {
-        i26 = (unsigned char)(1 << g_direction.North);
+        i30 = (unsigned char)(1 << g_direction.North);
       } else {
-        i26 = 0;
+        i30 = 0;
       }
 
       guard1 = false;
       guard2 = false;
       guard3 = false;
-      if ((q0 & i26) == wall->contents.nowall) {
+      if ((q0 & i30) == wall->contents.nowall) {
         /* 北側のMAPが更新されているか判断、されていなければ書き込み */
-        i27 = (int)(contor_renew_square[tempn] + 1U);
-        if ((unsigned int)i27 > 255U) {
-          i27 = 255;
+        i31 = (int)(contor_renew_square[tempn] + 1U);
+        if ((unsigned int)i31 > 255U) {
+          i31 = 255;
         }
 
-        i28 = (contor_renew_square[tempn + 1024] - 1) << 5;
-        if (contour_map[(i27 + i28) - 1] == 65535) {
-          i27 = (int)(contor_renew_square[tempn] + 1U);
-          i30 = i27;
-          if ((unsigned int)i27 > 255U) {
-            i30 = 255;
+        i32 = (contor_renew_square[tempn + 1024] - 1) << 5;
+        if (contour_map[(i31 + i32) - 1] == 65535) {
+          i31 = (int)(contor_renew_square[tempn] + 1U);
+          i34 = i31;
+          if ((unsigned int)i31 > 255U) {
+            i34 = 255;
           }
 
           u1 = tempi + 2U;
@@ -12080,41 +12192,41 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
             u1 = 65535U;
           }
 
-          contour_map[(i30 + i28) - 1] = (unsigned short)(65535 - (int)u1);
+          contour_map[(i34 + i32) - 1] = (unsigned short)(65535 - (int)u1);
           change_flag = 1U;
 
           /* 更新マスを更新 */
-          i30 = i27;
-          if ((unsigned int)i27 > 255U) {
-            i30 = 255;
+          i34 = i31;
+          if ((unsigned int)i31 > 255U) {
+            i34 = 255;
           }
 
           contor_renew_square_temp[contor_renew_square_idx_temp - 1] = (unsigned
-            char)i30;
+            char)i34;
           contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
             contor_renew_square[tempn + 1024];
 
           /* 更新マス用インデックスを増加 */
-          i30 = (int)(contor_renew_square_idx_temp + 1U);
-          if ((unsigned int)i30 > 255U) {
-            i30 = 255;
+          i34 = (int)(contor_renew_square_idx_temp + 1U);
+          if ((unsigned int)i34 > 255U) {
+            i34 = 255;
           }
 
-          contor_renew_square_idx_temp = (unsigned char)i30;
+          contor_renew_square_idx_temp = (unsigned char)i34;
 
           /* 更新した地点が未探索領域であれば、そこを新規ゴール点とし、コンター展開を終了する。 */
-          i30 = i27;
-          if ((unsigned int)i27 > 255U) {
-            i30 = 255;
+          i34 = i31;
+          if ((unsigned int)i31 > 255U) {
+            i34 = 255;
           }
 
-          if (maze_wall_search[(i30 + i28) - 1] != 15) {
+          if (maze_wall_search[(i34 + i32) - 1] != 15) {
             new_goal[0] = contor_renew_square[tempn + 1024];
-            if ((unsigned int)i27 > 255U) {
-              i27 = 255;
+            if ((unsigned int)i31 > 255U) {
+              i31 = 255;
             }
 
-            new_goal[1] = (unsigned char)i27;
+            new_goal[1] = (unsigned char)i31;
             exitg2 = true;
           } else {
             guard3 = true;
@@ -12129,24 +12241,24 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
       if (guard3) {
         /* 東側 */
         if (g_direction.East <= 7) {
-          i29 = (unsigned char)(1 << g_direction.East);
+          i33 = (unsigned char)(1 << g_direction.East);
         } else {
-          i29 = 0;
+          i33 = 0;
         }
 
-        if ((q0 & i29) == wall->contents.nowall) {
+        if ((q0 & i33) == wall->contents.nowall) {
           /* 東側のMAPが更新されているか判断、されていなければ書き込み */
           q0 = (int)(contor_renew_square[tempn + 1024] + 1U);
-          i27 = q0;
+          i31 = q0;
           if ((unsigned int)q0 > 255U) {
-            i27 = 255;
+            i31 = 255;
           }
 
-          if (contour_map[(contor_renew_square[tempn] + ((i27 - 1) << 5)) - 1] ==
+          if (contour_map[(contor_renew_square[tempn] + ((i31 - 1) << 5)) - 1] ==
               65535) {
-            i27 = q0;
+            i31 = q0;
             if ((unsigned int)q0 > 255U) {
-              i27 = 255;
+              i31 = 255;
             }
 
             u1 = tempi + 2U;
@@ -12154,36 +12266,36 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
               u1 = 65535U;
             }
 
-            contour_map[(contor_renew_square[tempn] + ((i27 - 1) << 5)) - 1] =
+            contour_map[(contor_renew_square[tempn] + ((i31 - 1) << 5)) - 1] =
               (unsigned short)(65535 - (int)u1);
             change_flag = 1U;
 
             /* 更新マスを更新 */
             contor_renew_square_temp[contor_renew_square_idx_temp - 1] =
               contor_renew_square[tempn];
-            i27 = q0;
+            i31 = q0;
             if ((unsigned int)q0 > 255U) {
-              i27 = 255;
+              i31 = 255;
             }
 
             contor_renew_square_temp[contor_renew_square_idx_temp + 1023] =
-              (unsigned char)i27;
+              (unsigned char)i31;
 
             /* 更新マス用インデックスを増加 */
-            i27 = (int)(contor_renew_square_idx_temp + 1U);
-            if ((unsigned int)i27 > 255U) {
-              i27 = 255;
+            i31 = (int)(contor_renew_square_idx_temp + 1U);
+            if ((unsigned int)i31 > 255U) {
+              i31 = 255;
             }
 
-            contor_renew_square_idx_temp = (unsigned char)i27;
+            contor_renew_square_idx_temp = (unsigned char)i31;
 
             /* 更新した地点が未探索領域であれば、そこを新規ゴール点とし、コンター展開を終了する。 */
-            i27 = q0;
+            i31 = q0;
             if ((unsigned int)q0 > 255U) {
-              i27 = 255;
+              i31 = 255;
             }
 
-            if (maze_wall_search[(contor_renew_square[tempn] + ((i27 - 1) << 5))
+            if (maze_wall_search[(contor_renew_square[tempn] + ((i31 - 1) << 5))
                 - 1] != 15) {
               if ((unsigned int)q0 > 255U) {
                 q0 = 255;
@@ -12208,12 +12320,12 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
         q0 = maze_wall[(contor_renew_square[tempn] + ((contor_renew_square[tempn
           + 1024] - 1) << 5)) - 1];
         if (g_direction.South <= 7) {
-          i31 = (unsigned char)(1 << g_direction.South);
+          i35 = (unsigned char)(1 << g_direction.South);
         } else {
-          i31 = 0;
+          i35 = 0;
         }
 
-        if ((q0 & i31) == wall->contents.nowall) {
+        if ((q0 & i35) == wall->contents.nowall) {
           /* 南側のMAPが更新されているか判断、されていなければ書き込み */
           qY = contor_renew_square[tempn] - 1U;
           if (qY > contor_renew_square[tempn]) {
@@ -12248,12 +12360,12 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
               contor_renew_square[tempn + 1024];
 
             /* 更新マス用インデックスを増加 */
-            i27 = (int)(contor_renew_square_idx_temp + 1U);
-            if ((unsigned int)i27 > 255U) {
-              i27 = 255;
+            i31 = (int)(contor_renew_square_idx_temp + 1U);
+            if ((unsigned int)i31 > 255U) {
+              i31 = 255;
             }
 
-            contor_renew_square_idx_temp = (unsigned char)i27;
+            contor_renew_square_idx_temp = (unsigned char)i31;
 
             /* 更新した地点が未探索領域であれば、そこを新規ゴール点とし、コンター展開を終了する。 */
             qY = contor_renew_square[tempn] - 1U;
@@ -12285,12 +12397,12 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
       if (guard1) {
         /* 西側 */
         if (g_direction.West <= 7) {
-          i32 = (unsigned char)(1 << g_direction.West);
+          i36 = (unsigned char)(1 << g_direction.West);
         } else {
-          i32 = 0;
+          i36 = 0;
         }
 
-        if ((q0 & i32) == wall->contents.nowall) {
+        if ((q0 & i36) == wall->contents.nowall) {
           /* 西側のMAPが更新されているか判断、されていなければ書き込み */
           q0 = contor_renew_square[tempn + 1024];
           qY = q0 - 1U;
@@ -12386,7 +12498,7 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
 
 /*
  * 迷路パラメータ設定
- * Arguments    : const coder_internal_ref_5 *wall
+ * Arguments    : const coder_internal_ref_6 *wall
  *                const unsigned char maze_wall[1024]
  *                unsigned char current_x
  *                unsigned char current_y
@@ -12396,7 +12508,7 @@ static void make_new_goal_all(const coder_internal_ref_5 *wall, const unsigned
  *                unsigned char new_goal[2]
  * Return Type  : void
  */
-static void make_new_goal_sh(const coder_internal_ref_5 *wall, const unsigned
+static void make_new_goal_sh(const coder_internal_ref_6 *wall, const unsigned
   char maze_wall[1024], unsigned char current_x, unsigned char current_y, const
   unsigned char unexp_square[1024], unsigned char unexp_square_idx, unsigned
   short contour_map[1024], unsigned char new_goal[2])
@@ -13688,17 +13800,18 @@ static void move_straight(unsigned char current_node[2], unsigned char
 /*
  * 入力　現在位置x,y,現在方向,迷路行方向サイズ,迷路列方向サイズ,迷路壁情報,迷路壁の探索情報,ゴール座標
  * 出力  現在位置x,y,現在方向,壁情報,探索情報
- * Arguments    : const coder_internal_ref_5 *wall
+ * Arguments    : const coder_internal_ref_6 *wall
  *                coder_internal_ref *wall_flg
- *                const coder_internal_ref_4 *search
- *                const coder_internal_ref_1 *maze_goal
- *                const coder_internal_ref_3 *adachi_search_mode
+ *                const coder_internal_ref_5 *search
+ *                const coder_internal_ref_2 *maze_goal
+ *                const coder_internal_ref_1 *maze_wall
+ *                const coder_internal_ref_4 *adachi_search_mode
  *                unsigned char *current_x
  *                unsigned char *current_y
  *                unsigned char *current_dir
  *                unsigned char maze_row_size
  *                unsigned char maze_col_size
- *                unsigned char maze_wall[1024]
+ *                unsigned char b_maze_wall[1024]
  *                unsigned char maze_wall_search[1024]
  *                const unsigned char exploration_goal[18]
  *                unsigned char l_goal_size
@@ -13707,15 +13820,17 @@ static void move_straight(unsigned char current_node[2], unsigned char
  *                unsigned short contour_map[1024]
  * Return Type  : void
  */
-static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
-  *wall_flg, const coder_internal_ref_4 *search, const coder_internal_ref_1
-  *maze_goal, const coder_internal_ref_3 *adachi_search_mode, unsigned char
-  *current_x, unsigned char *current_y, unsigned char *current_dir, unsigned
-  char maze_row_size, unsigned char maze_col_size, unsigned char maze_wall[1024],
-  unsigned char maze_wall_search[1024], const unsigned char exploration_goal[18],
-  unsigned char l_goal_size, unsigned char *start_flg, unsigned char
-  adachi_s_mode, unsigned short contour_map[1024])
+static void search_adachi(const coder_internal_ref_6 *wall, coder_internal_ref
+  *wall_flg, const coder_internal_ref_5 *search, const coder_internal_ref_2
+  *maze_goal, const coder_internal_ref_1 *maze_wall, const coder_internal_ref_4 *
+  adachi_search_mode, unsigned char *current_x, unsigned char *current_y,
+  unsigned char *current_dir, unsigned char maze_row_size, unsigned char
+  maze_col_size, unsigned char b_maze_wall[1024], unsigned char
+  maze_wall_search[1024], const unsigned char exploration_goal[18], unsigned
+  char l_goal_size, unsigned char *start_flg, unsigned char adachi_s_mode,
+  unsigned short contour_map[1024])
 {
+  unsigned char straight_count;
   unsigned char goal_flg;
   unsigned char contour_flg;
   int i226;
@@ -13728,6 +13843,7 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
 
   /*     %% search_adachi 足立法での探索 */
   /* local変数宣言 */
+  straight_count = 0U;
   goal_flg = 0U;
 
   /* ゴール判定フラグ */
@@ -13737,7 +13853,7 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
   /*      search_start_x = current_x %探索開始時x */
   /*      search_start_y = current_y %探索開始時y */
   /* 初回のコンターマップ作製 */
-  make_map_find(wall, exploration_goal, l_goal_size, maze_wall, *current_x,
+  make_map_find(wall, exploration_goal, l_goal_size, b_maze_wall, *current_x,
                 *current_y, contour_map);
   i226 = l_goal_size;
   do {
@@ -13745,20 +13861,24 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
 
     /* 壁情報取得 */
     /* ゴール直後は壁情報を更新しない */
-    next_dir = maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1];
-    wall_set(wall, wall_flg, search, maze_goal, maze_row_size, maze_col_size,
-             *current_x, *current_y, *current_dir, maze_wall, maze_wall_search);
+    /* 既知区間加速時でなければ、壁情報を取得しない */
+    if (straight_count == 0) {
+      next_dir = b_maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1];
+      wall_set(wall, wall_flg, search, maze_goal, maze_row_size, maze_col_size, *
+               current_x, *current_y, *current_dir, b_maze_wall,
+               maze_wall_search);
 
-    /* 壁情報が更新されれば、コンター更新のフラグを立てる。 */
-    if (next_dir != maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1]) {
-      contour_flg = 1U;
+      /* 壁情報が更新されれば、コンター更新のフラグを立てる。 */
+      if (next_dir != b_maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1]) {
+        contour_flg = 1U;
+      }
     }
 
     /*  等高線MAP生成 */
     /* 壁情報に変更があった場合のみ */
     if (contour_flg != 0) {
-      make_map_find(wall, exploration_goal, l_goal_size, maze_wall, *current_x, *
-                    current_y, contour_map);
+      make_map_find(wall, exploration_goal, l_goal_size, b_maze_wall, *current_x,
+                    *current_y, contour_map);
     }
 
     /* 現在位置がゴールか判定 */
@@ -13792,7 +13912,7 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
     } else {
       /*  進行方向選定 */
       /* 優先順位　北⇒東⇒南⇒西 */
-      next_dir = get_nextdir2(*current_x, *current_y, maze_wall, contour_map);
+      next_dir = get_nextdir2(*current_x, *current_y, b_maze_wall, contour_map);
 
       /*  現在方向と進行方向に応じた処理 */
       i = (int)(4U + next_dir);
@@ -13820,24 +13940,80 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
 
       switch (i) {
        case 0:
+        /* 直進制御時、壁フラグを現在参照位置で更新 */
+        if (straight_count > 0) {
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* 参照位置を次回の参照位置に変更 */
         move_step(current_x, current_y, *current_dir);
 
-        /* disp("front") */
-        m_move_front(0, wall_flg->contents, move_dir_property.straight);
+        /* 移動先が探索済みであるなら、ストレートカウンタをインクリメント */
+        if (maze_wall_search[(*current_y + ((*current_x - 1) << 5)) - 1] == 15)
+        {
+          i = (int)(straight_count + 1U);
+          if ((unsigned int)i > 255U) {
+            i = 255;
+          }
 
-        /* スタート直後フラグをクリア */
-        *start_flg = 0U;
+          straight_count = (unsigned char)i;
 
-        /* 壁フラグをクリア */
-        wall_flg->contents = 0U;
+          /* 探索済みでない場合 */
+        } else {
+          /* 直線カウンタがある場合、移動 */
+          /* 現在方向も直進なので、直進カウンタ+1だけ移動する。 */
+          if (straight_count > 0) {
+            i = (int)(straight_count + 1U);
+            if ((unsigned int)i > 255U) {
+              i = 255;
+            }
+
+            m_move_front_long((unsigned char)i, 0, wall_flg->contents,
+                              move_dir_property.straight);
+            straight_count = 0U;
+
+            /* スタート直後フラグをクリア */
+            *start_flg = 0U;
+
+            /* 壁フラグをクリア */
+            wall_flg->contents = 0U;
+          } else {
+            /* 直進カウンタがない場合 */
+            m_move_front(0, wall_flg->contents, move_dir_property.straight);
+
+            /* スタート直後フラグをクリア */
+            *start_flg = 0U;
+
+            /* 壁フラグをクリア */
+            wall_flg->contents = 0U;
+          }
+        }
         break;
 
        case 1:
+        /* 直進カウンタがある場合、移動 */
+        if (straight_count > 0) {
+          /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
+          m_move_front_long(straight_count, 0, wall_flg->contents,
+                            move_dir_property.straight);
+          straight_count = 0U;
+
+          /* スタート直後フラグをクリア */
+          /* 壁フラグをクリア */
+          wall_flg->contents = 0U;
+
+          /* 現在参照位置で壁フラグを更新 */
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* マウスを移動させる（C) */
+        m_move_right(0, wall_flg->contents, move_dir_property.straight);
+
+        /* 参照位置、方向を更新 */
         turn_clk_90deg(current_dir);
         move_step(current_x, current_y, *current_dir);
-
-        /* disp("right") */
-        m_move_right(0, wall_flg->contents, move_dir_property.straight);
 
         /* スタート直後フラグをクリア */
         *start_flg = 0U;
@@ -13847,11 +14023,29 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         break;
 
        case 2:
+        /* disp("back") */
+        /* 直進カウンタがある場合、移動 */
+        if (straight_count > 0) {
+          /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
+          m_move_front_long(straight_count, 0, wall_flg->contents,
+                            move_dir_property.straight);
+          straight_count = 0U;
+
+          /* スタート直後フラグをクリア */
+          /* 壁フラグをクリア */
+          wall_flg->contents = 0U;
+
+          /* 現在参照位置で壁フラグを更新 */
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* マウスを移動させる（C） */
+        m_move_back(0, wall_flg->contents, move_dir_property.straight);
+
+        /* 参照位置、方向を更新 */
         turn_180deg(current_dir);
         move_step(current_x, current_y, *current_dir);
-
-        /* disp("back") */
-        m_move_back(0, wall_flg->contents, move_dir_property.straight);
 
         /* スタート直後フラグをクリア */
         *start_flg = 0U;
@@ -13861,11 +14055,28 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
         break;
 
        case 3:
+        /* 直進カウンタがある場合、移動 */
+        if (straight_count > 0) {
+          /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
+          m_move_front_long(straight_count, 0, wall_flg->contents,
+                            move_dir_property.straight);
+          straight_count = 0U;
+
+          /* スタート直後フラグをクリア */
+          /* 壁フラグをクリア */
+          wall_flg->contents = 0U;
+
+          /* 現在参照位置で壁フラグを更新 */
+          wall_flg->contents = fust_run_wallset(maze_wall, *current_y,
+            *current_x, *current_dir);
+        }
+
+        /* マウスを移動させる（C） */
+        m_move_left(0, wall_flg->contents, move_dir_property.straight);
+
+        /* 参照位置、方向を更新 */
         turn_conclk_90deg(current_dir);
         move_step(current_x, current_y, *current_dir);
-
-        /* disp("left") */
-        m_move_left(0, wall_flg->contents, move_dir_property.straight);
 
         /* スタート直後フラグをクリア */
         *start_flg = 0U;
@@ -13878,6 +14089,18 @@ static void search_adachi(const coder_internal_ref_5 *wall, coder_internal_ref
       /* for code generation */
     }
   } while (exitg1 == 0);
+
+  /* 直進カウンタ分移動 */
+  if (straight_count > 0) {
+    m_move_front_long(straight_count, 0, wall_flg->contents,
+                      move_dir_property.straight);
+
+    /* スタート直後フラグをクリア */
+    *start_flg = 0U;
+
+    /* 壁フラグをクリア */
+    wall_flg->contents = 0U;
+  }
 
   /* ゴール時停止フラグが立っているとき */
   /* 停止動作を実施 */
@@ -14779,10 +15002,10 @@ static void turn_r_45(unsigned char current_node[2], unsigned char
  * 入力:画像から得た迷路情報,迷路行方向壁枚数,迷路列方向壁枚数,
  *      現在地座標x,y,現在進行方向,迷路壁情報,迷路壁探索情報
  * 出力:迷路壁情報,迷路壁探索情報
- * Arguments    : const coder_internal_ref_5 *wall
+ * Arguments    : const coder_internal_ref_6 *wall
  *                coder_internal_ref *wall_flg
- *                const coder_internal_ref_4 *search
- *                const coder_internal_ref_1 *maze_goal
+ *                const coder_internal_ref_5 *search
+ *                const coder_internal_ref_2 *maze_goal
  *                unsigned char maze_row_size
  *                unsigned char maze_col_size
  *                unsigned char current_x
@@ -14792,9 +15015,9 @@ static void turn_r_45(unsigned char current_node[2], unsigned char
  *                unsigned char maze_wall_search[1024]
  * Return Type  : void
  */
-static void wall_set(const coder_internal_ref_5 *wall, coder_internal_ref
-                     *wall_flg, const coder_internal_ref_4 *search, const
-                     coder_internal_ref_1 *maze_goal, unsigned char
+static void wall_set(const coder_internal_ref_6 *wall, coder_internal_ref
+                     *wall_flg, const coder_internal_ref_5 *search, const
+                     coder_internal_ref_2 *maze_goal, unsigned char
                      maze_row_size, unsigned char maze_col_size, unsigned char
                      current_x, unsigned char current_y, unsigned char
                      current_dir, unsigned char maze_wall[1024], unsigned char
@@ -16548,13 +16771,14 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
 {
   coder_internal_ref b_goal_size;
   int N;
-  coder_internal_ref_1 b_maze_goal;
+  coder_internal_ref_1 b_maze_wall;
+  coder_internal_ref_2 b_maze_goal;
   coder_internal_ref wall_flg;
   unsigned char new_goal[2];
-  coder_internal_ref_5 wall;
-  coder_internal_ref_4 search;
-  coder_internal_ref_3 adachi_search_mode;
-  coder_internal_ref_2 max_length;
+  coder_internal_ref_6 wall;
+  coder_internal_ref_5 search;
+  coder_internal_ref_4 adachi_search_mode;
+  coder_internal_ref_3 max_length;
   unsigned short start_num;
   unsigned char current_x;
   unsigned char search_flag;
@@ -16567,14 +16791,16 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
   unsigned short unusedExpr[1024];
   int exitg1;
   bool exitg2;
-  unsigned short b_unusedExpr[1024];
   unsigned char unexp_square[1024];
+  unsigned short b_unusedExpr[1024];
   unsigned short c_unusedExpr[1024];
   unsigned short d_unusedExpr[1024];
   b_goal_size.contents = goal_size;
   for (N = 0; N < 18; N++) {
     b_maze_goal.contents[N] = maze_goal[N];
   }
+
+  memcpy(&b_maze_wall.contents[0], &maze_wall[0], sizeof(unsigned char) << 10);
 
   /* C言語関数インクルード */
   /* ローカル変数定義 */
@@ -16587,7 +16813,8 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
   /*  グローバル変数宣言 */
   /* メインfigure */
   /* メインaxes */
-  /*  global vidObj;%ビデオ用 */
+  /* ビデオ用 */
+  /* ビデオ用 */
   /* プロット用変数 */
   /* 最短経路ラインオブジェクト保持用 */
   /* ゴールラインオブジェクト保持用 */
@@ -16682,10 +16909,11 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
     /* 足立法による探索 */
     current_dir = g_direction.North;
     search_flag = 0U;
-    search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &adachi_search_mode,
-                  &current_x, &current_y, &current_dir, maze_row_size,
-                  maze_col_size, maze_wall, maze_wall_search, maze_goal,
-                  goal_size, &search_flag, 0U, unusedExpr);
+    search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &b_maze_wall,
+                  &adachi_search_mode, &current_x, &current_y, &current_dir,
+                  maze_row_size, maze_col_size, maze_wall, maze_wall_search,
+                  maze_goal, goal_size, &search_flag, 0U, unusedExpr);
+    memcpy(&b_maze_wall.contents[0], &maze_wall[0], sizeof(unsigned char) << 10);
 
     /* ひとまづゴール(停止) */
     /* 各フラグを定義 */
@@ -16714,11 +16942,15 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
       }
 
       if (search_flag == 1) {
-        b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal,
+        memcpy(&unexp_square[0], &b_maze_wall.contents[0], sizeof(unsigned char)
+               << 10);
+        b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &b_maze_wall,
                         &adachi_search_mode, &current_x, &current_y,
-                        &current_dir, maze_row_size, maze_col_size, maze_wall,
+                        &current_dir, maze_row_size, maze_col_size, unexp_square,
                         maze_wall_search, new_goal, &start_flg, 0U, 1U, 1U,
                         b_unusedExpr);
+        memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(unsigned char)
+               << 10);
 
         /* ゴール直後フラグをたてる */
       } else {
@@ -16735,18 +16967,22 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
      case 1:
       do {
         exitg1 = 0;
-        make_new_goal_all(&wall, maze_wall, maze_wall_search, current_x,
-                          current_y, contour_map, new_goal);
+        make_new_goal_all(&wall, b_maze_wall.contents, maze_wall_search,
+                          current_x, current_y, contour_map, new_goal);
         if (new_goal[0] == 0) {
           exitg1 = 1;
         } else {
           /* ゴールをプロット */
           /* 既存のコンターを使用し、探索。 */
-          b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal,
+          memcpy(&unexp_square[0], &b_maze_wall.contents[0], sizeof(unsigned
+                  char) << 10);
+          b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &b_maze_wall,
                           &adachi_search_mode, &current_x, &current_y,
-                          &current_dir, maze_row_size, maze_col_size, maze_wall,
-                          maze_wall_search, new_goal, &start_flg, 0U, 1U, 1U,
-                          c_unusedExpr);
+                          &current_dir, maze_row_size, maze_col_size,
+                          unexp_square, maze_wall_search, new_goal, &start_flg,
+                          0U, 1U, 1U, c_unusedExpr);
+          memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(unsigned
+                  char) << 10);
 
           /* ゴール直後フラグをたてる */
         }
@@ -16769,12 +17005,12 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
 
         /* 未探索壁はないものとして、ゴールからスタートまで、コンターマップを展開（直線の重みあり） */
         make_map_fustrun(&b_goal_size, &wall, &search, b_maze_goal.contents,
-                         maze_wall, maze_wall_search, 0U, contour_map);
+                         b_maze_wall.contents, maze_wall_search, 0U, contour_map);
 
         /* マップをもとに、最短経路を導出。経路上の未探索マスとその数を出力 */
-        fust_run(&b_goal_size, &wall_flg, &wall, maze_wall, maze_wall_search,
-                 contour_map, b_maze_goal.contents, MAX_uint16_T, unexp_square,
-                 &search_flag);
+        fust_run(&b_maze_wall, &b_goal_size, &wall_flg, &wall,
+                 b_maze_wall.contents, maze_wall_search, contour_map,
+                 b_maze_goal.contents, MAX_uint16_T, unexp_square, &search_flag);
 
         /* 未探索マスがなければ、ブレイク */
         if (search_flag == 0) {
@@ -16782,16 +17018,20 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
         } else {
           /* 未探索マスがある場合、探索する。 */
           /* 現在地点からコンターを展開し、該当の未探索が更新されれば、そこを新規ゴールとして出力 */
-          make_new_goal_sh(&wall, maze_wall, current_x, current_y, unexp_square,
-                           search_flag, contour_map, new_goal);
+          make_new_goal_sh(&wall, b_maze_wall.contents, current_x, current_y,
+                           unexp_square, search_flag, contour_map, new_goal);
 
           /* ゴールをプロット */
           /* 新規ゴールに向け、探索 */
-          b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal,
+          memcpy(&unexp_square[0], &b_maze_wall.contents[0], sizeof(unsigned
+                  char) << 10);
+          b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &b_maze_wall,
                           &adachi_search_mode, &current_x, &current_y,
-                          &current_dir, maze_row_size, maze_col_size, maze_wall,
-                          maze_wall_search, new_goal, &start_flg, 0U, 1U, 1U,
-                          d_unusedExpr);
+                          &current_dir, maze_row_size, maze_col_size,
+                          unexp_square, maze_wall_search, new_goal, &start_flg,
+                          0U, 1U, 1U, d_unusedExpr);
+          memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(unsigned
+                  char) << 10);
 
           /* ゴール直後フラグをたてる */
         }
@@ -16822,12 +17062,16 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
     /* スタートをゴールに設定 */
     /* ゴールをプロット */
     /* 足立法で帰宅 */
+    memcpy(&unexp_square[0], &b_maze_wall.contents[0], sizeof(unsigned char) <<
+           10);
     goal_section[0] = 1U;
     goal_section[1] = 1U;
-    b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &adachi_search_mode,
-                    &current_x, &current_y, &current_dir, maze_row_size,
-                    maze_col_size, maze_wall, maze_wall_search, goal_section,
-                    &start_flg, 1U, 1U, 0U, contour_map);
+    b_search_adachi(&wall, &wall_flg, &search, &b_maze_goal, &b_maze_wall,
+                    &adachi_search_mode, &current_x, &current_y, &current_dir,
+                    maze_row_size, maze_col_size, unexp_square, maze_wall_search,
+                    goal_section, &start_flg, 1U, 1U, 0U, contour_map);
+    memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(unsigned char) <<
+           10);
 
     /* for code generation */
     /* 終了時、ゴールプロットを消す。 */
@@ -16863,8 +17107,8 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
 
         /* 停止直後フラグをクリア */
         /* 最短距離走行 */
-        b_fust_run(&b_goal_size, &wall_flg, &wall, maze_wall, contour_map,
-                   maze_goal, MAX_uint16_T, current_x, current_y);
+        b_fust_run(&b_maze_wall, &b_goal_size, &wall_flg, &wall, maze_wall,
+                   contour_map, maze_goal, MAX_uint16_T, current_x, current_y);
 
         /*  斜めでの最短走行 */
       } else {
@@ -16899,6 +17143,8 @@ void maze_solve(unsigned char maze_wall[1024], unsigned char maze_wall_search
       }
     }
   }
+
+  memcpy(&maze_wall[0], &b_maze_wall.contents[0], sizeof(unsigned char) << 10);
 }
 
 /*

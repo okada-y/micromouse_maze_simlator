@@ -42,72 +42,72 @@ static uint8_T (*x_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
 static const mxArray *k_emlrt_marshallOut(const uint8_T u[1024])
 {
   const mxArray *y;
-  const mxArray *m14;
-  static const int32_T iv5[2] = { 0, 0 };
+  const mxArray *m10;
+  static const int32_T iv1[2] = { 0, 0 };
 
-  static const int32_T iv6[2] = { 32, 32 };
+  static const int32_T iv2[2] = { 32, 32 };
 
   y = NULL;
-  m14 = emlrtCreateNumericArray(2, iv5, mxUINT8_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m14, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m14, iv6, 2);
-  emlrtAssign(&y, m14);
+  m10 = emlrtCreateNumericArray(2, iv1, mxUINT8_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m10, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m10, iv2, 2);
+  emlrtAssign(&y, m10);
   return y;
 }
 
 static void l_emlrt_marshallOut(const uint8_T u[1024], const mxArray *y)
 {
-  static const int32_T iv7[2] = { 32, 32 };
+  static const int32_T iv3[2] = { 32, 32 };
 
   emlrtMxSetData((mxArray *)y, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)y, iv7, 2);
+  emlrtSetDimensions((mxArray *)y, iv3, 2);
 }
 
 static const mxArray *m_emlrt_marshallOut(const uint16_T u[1024])
 {
   const mxArray *y;
-  const mxArray *m15;
-  static const int32_T iv8[2] = { 0, 0 };
+  const mxArray *m11;
+  static const int32_T iv4[2] = { 0, 0 };
 
-  static const int32_T iv9[2] = { 32, 32 };
+  static const int32_T iv5[2] = { 32, 32 };
 
   y = NULL;
-  m15 = emlrtCreateNumericArray(2, iv8, mxUINT16_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m15, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m15, iv9, 2);
-  emlrtAssign(&y, m15);
+  m11 = emlrtCreateNumericArray(2, iv4, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m11, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m11, iv5, 2);
+  emlrtAssign(&y, m11);
   return y;
 }
 
 static const mxArray *n_emlrt_marshallOut(const uint16_T u[1056])
 {
   const mxArray *y;
-  const mxArray *m16;
-  static const int32_T iv10[2] = { 0, 0 };
+  const mxArray *m12;
+  static const int32_T iv6[2] = { 0, 0 };
 
-  static const int32_T iv11[2] = { 33, 32 };
+  static const int32_T iv7[2] = { 33, 32 };
 
   y = NULL;
-  m16 = emlrtCreateNumericArray(2, iv10, mxUINT16_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m16, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m16, iv11, 2);
-  emlrtAssign(&y, m16);
+  m12 = emlrtCreateNumericArray(2, iv6, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m12, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m12, iv7, 2);
+  emlrtAssign(&y, m12);
   return y;
 }
 
 static const mxArray *o_emlrt_marshallOut(const uint16_T u[1056])
 {
   const mxArray *y;
-  const mxArray *m17;
-  static const int32_T iv12[2] = { 0, 0 };
+  const mxArray *m13;
+  static const int32_T iv8[2] = { 0, 0 };
 
-  static const int32_T iv13[2] = { 32, 33 };
+  static const int32_T iv9[2] = { 32, 33 };
 
   y = NULL;
-  m17 = emlrtCreateNumericArray(2, iv12, mxUINT16_CLASS, mxREAL);
-  emlrtMxSetData((mxArray *)m17, (void *)&u[0]);
-  emlrtSetDimensions((mxArray *)m17, iv13, 2);
-  emlrtAssign(&y, m17);
+  m13 = emlrtCreateNumericArray(2, iv8, mxUINT16_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m13, (void *)&u[0]);
+  emlrtSetDimensions((mxArray *)m13, iv9, 2);
+  emlrtAssign(&y, m13);
   return y;
 }
 
