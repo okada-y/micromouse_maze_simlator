@@ -87,7 +87,7 @@ extern emlrtRSInfo ie_emlrtRSI;
 extern emlrtRSInfo je_emlrtRSI;
 extern emlrtRSInfo ke_emlrtRSI;
 extern emlrtRSInfo le_emlrtRSI;
-extern emlrtRSInfo me_emlrtRSI;
+extern emlrtRSInfo ne_emlrtRSI;
 extern emlrtRSInfo oe_emlrtRSI;
 extern emlrtRSInfo pe_emlrtRSI;
 extern emlrtRSInfo qe_emlrtRSI;
@@ -95,7 +95,6 @@ extern emlrtRSInfo re_emlrtRSI;
 extern emlrtRSInfo se_emlrtRSI;
 extern emlrtRSInfo te_emlrtRSI;
 extern emlrtRSInfo ue_emlrtRSI;
-extern emlrtRSInfo ve_emlrtRSI;
 
 #endif
 

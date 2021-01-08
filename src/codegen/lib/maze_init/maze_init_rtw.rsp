@@ -1,4 +1,3 @@
-isequal.o
 matlab_IR_sensor.o
 matlab_movement.o
 maze_init.o

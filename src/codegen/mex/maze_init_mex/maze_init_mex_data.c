@@ -63,232 +63,227 @@ emlrtRSInfo eb_emlrtRSI = { 7,         /* lineNo */
   "C:\\Program Files\\MATLAB\\R2019a\\toolbox\\eml\\eml\\+coder\\+internal\\ref.m"/* pathName */
 };
 
-emlrtRSInfo yb_emlrtRSI = { 908,       /* lineNo */
+emlrtRSInfo yb_emlrtRSI = { 918,       /* lineNo */
   "maze_solve/make_new_goal_all",      /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo pc_emlrtRSI = { 1030,      /* lineNo */
+emlrtRSInfo pc_emlrtRSI = { 1040,      /* lineNo */
   "maze_solve/make_new_goal_sh",       /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ad_emlrtRSI = { 2827,      /* lineNo */
+emlrtRSInfo ad_emlrtRSI = { 2843,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo bd_emlrtRSI = { 2840,      /* lineNo */
+emlrtRSInfo bd_emlrtRSI = { 2856,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo cd_emlrtRSI = { 2844,      /* lineNo */
+emlrtRSInfo cd_emlrtRSI = { 2860,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo dd_emlrtRSI = { 2848,      /* lineNo */
+emlrtRSInfo dd_emlrtRSI = { 2864,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ed_emlrtRSI = { 2858,      /* lineNo */
+emlrtRSInfo ed_emlrtRSI = { 2874,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo fd_emlrtRSI = { 2862,      /* lineNo */
+emlrtRSInfo fd_emlrtRSI = { 2878,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo gd_emlrtRSI = { 2866,      /* lineNo */
+emlrtRSInfo gd_emlrtRSI = { 2882,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo hd_emlrtRSI = { 2879,      /* lineNo */
+emlrtRSInfo hd_emlrtRSI = { 2895,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo id_emlrtRSI = { 2891,      /* lineNo */
+emlrtRSInfo id_emlrtRSI = { 2907,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo jd_emlrtRSI = { 2895,      /* lineNo */
+emlrtRSInfo jd_emlrtRSI = { 2911,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo kd_emlrtRSI = { 2899,      /* lineNo */
+emlrtRSInfo kd_emlrtRSI = { 2915,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ld_emlrtRSI = { 2909,      /* lineNo */
+emlrtRSInfo ld_emlrtRSI = { 2925,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo md_emlrtRSI = { 2913,      /* lineNo */
+emlrtRSInfo md_emlrtRSI = { 2929,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo nd_emlrtRSI = { 2917,      /* lineNo */
+emlrtRSInfo nd_emlrtRSI = { 2933,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo od_emlrtRSI = { 2929,      /* lineNo */
+emlrtRSInfo od_emlrtRSI = { 2945,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo pd_emlrtRSI = { 2941,      /* lineNo */
+emlrtRSInfo pd_emlrtRSI = { 2957,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo qd_emlrtRSI = { 2945,      /* lineNo */
+emlrtRSInfo qd_emlrtRSI = { 2961,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo rd_emlrtRSI = { 2949,      /* lineNo */
+emlrtRSInfo rd_emlrtRSI = { 2965,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo sd_emlrtRSI = { 2959,      /* lineNo */
+emlrtRSInfo sd_emlrtRSI = { 2975,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo td_emlrtRSI = { 2963,      /* lineNo */
+emlrtRSInfo td_emlrtRSI = { 2979,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ud_emlrtRSI = { 2967,      /* lineNo */
+emlrtRSInfo ud_emlrtRSI = { 2983,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo vd_emlrtRSI = { 2980,      /* lineNo */
+emlrtRSInfo vd_emlrtRSI = { 2996,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo wd_emlrtRSI = { 2992,      /* lineNo */
+emlrtRSInfo wd_emlrtRSI = { 3008,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo xd_emlrtRSI = { 2996,      /* lineNo */
+emlrtRSInfo xd_emlrtRSI = { 3012,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo yd_emlrtRSI = { 3000,      /* lineNo */
+emlrtRSInfo yd_emlrtRSI = { 3016,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ae_emlrtRSI = { 3010,      /* lineNo */
+emlrtRSInfo ae_emlrtRSI = { 3026,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo be_emlrtRSI = { 3014,      /* lineNo */
+emlrtRSInfo be_emlrtRSI = { 3030,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ce_emlrtRSI = { 3018,      /* lineNo */
+emlrtRSInfo ce_emlrtRSI = { 3034,      /* lineNo */
   "maze_solve/decide_goal_section",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo fe_emlrtRSI = { 3099,      /* lineNo */
+emlrtRSInfo fe_emlrtRSI = { 3124,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ge_emlrtRSI = { 3115,      /* lineNo */
+emlrtRSInfo ge_emlrtRSI = { 3147,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo he_emlrtRSI = { 3126,      /* lineNo */
+emlrtRSInfo he_emlrtRSI = { 3158,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ie_emlrtRSI = { 3143,      /* lineNo */
+emlrtRSInfo ie_emlrtRSI = { 3179,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo je_emlrtRSI = { 3150,      /* lineNo */
+emlrtRSInfo je_emlrtRSI = { 3190,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ke_emlrtRSI = { 3168,      /* lineNo */
+emlrtRSInfo ke_emlrtRSI = { 3233,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo le_emlrtRSI = { 3189,      /* lineNo */
+emlrtRSInfo le_emlrtRSI = { 3249,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo me_emlrtRSI = { 3205,      /* lineNo */
+emlrtRSInfo ne_emlrtRSI = { 3280,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo oe_emlrtRSI = { 3232,      /* lineNo */
+emlrtRSInfo oe_emlrtRSI = { 3291,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo pe_emlrtRSI = { 3239,      /* lineNo */
+emlrtRSInfo pe_emlrtRSI = { 3311,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo qe_emlrtRSI = { 3250,      /* lineNo */
+emlrtRSInfo qe_emlrtRSI = { 3330,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo re_emlrtRSI = { 3261,      /* lineNo */
+emlrtRSInfo re_emlrtRSI = { 3341,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo se_emlrtRSI = { 3268,      /* lineNo */
+emlrtRSInfo se_emlrtRSI = { 3352,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo te_emlrtRSI = { 3275,      /* lineNo */
+emlrtRSInfo te_emlrtRSI = { 3363,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-emlrtRSInfo ue_emlrtRSI = { 3282,      /* lineNo */
-  "maze_solve/make_route_diagonal",    /* fcnName */
-  "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
-};
-
-emlrtRSInfo ve_emlrtRSI = { 3289,      /* lineNo */
+emlrtRSInfo ue_emlrtRSI = { 3374,      /* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };

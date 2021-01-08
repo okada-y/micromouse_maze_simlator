@@ -403,7 +403,16 @@ end
         
         % 進行方向選定
         %優先順位　北⇒東⇒南⇒西
-        [next_dir] = get_nextdir2(current_x,current_y,maze_wall,contour_map,max_l);
+        [next_dir,error_flg] = get_nextdir2(current_x,current_y,maze_wall,contour_map,max_l);
+        
+        %進行方向が見つからなかったときのエラー処理
+        if error_flg == 1
+            if ~coder.target('MATLAB')
+                coder.ceval(' m_error_movement',error_flg);
+            else
+                error("move dir cant detect")
+            end
+        end 
         
         % 現在方向と進行方向に応じた処理
         switch rem((4 + next_dir - current_dir),4)
@@ -554,6 +563,7 @@ end
                     drawnow
                 else
                     drawnow limitrate nocallbacks
+%                                 pause(0.05)
                 end
             end
         else
@@ -1240,13 +1250,15 @@ end
     end
     
     %% get_nextdir2 等高線mapから次に向かう方向を選択
-    function [next_dir] = get_nextdir2(current_x,current_y,maze_wall,contour_map,max_length)
+    function [next_dir,error_flg] = get_nextdir2(current_x,current_y,maze_wall,contour_map,max_length)
     % 入力 現在地x,y,壁情報,等高線map,最大経路長
-    % 出力 次の進行方角
+    % 出力 次の進行方角,エラーフラグ
     
+    %エラーフラグセット(方向が定まる場合リセット)
+    error_flg = uint8(1);
+   
     %出力の初期化
     next_dir = uint8(0);
-    
     little = max_length;
     
     %%進行方向選定
@@ -1260,6 +1272,7 @@ end
             little = contour_map(current_y+1,current_x);
             %北側を進行方向に変更y
             next_dir = g_direction.North;
+            error_flg = uint8(0);
         end
     end
     
@@ -1268,6 +1281,7 @@ end
         if contour_map(current_y,current_x+1) < little
             little = contour_map(current_y,current_x+1);
             next_dir = g_direction.East;
+            error_flg = uint8(0);
         end
     end
     
@@ -1277,6 +1291,7 @@ end
         if contour_map(current_y-1,current_x) < little
             little = contour_map(current_y-1,current_x);
             next_dir = g_direction.South;
+            error_flg = uint8(0);
         end
     end
     
@@ -1285,6 +1300,7 @@ end
         if contour_map(current_y,current_x-1) < little
             % little = contour_map(current_y,current_x-1);
             next_dir = g_direction.West;
+            error_flg = uint8(0);
         end
     end
     end
@@ -1830,7 +1846,7 @@ end
     % ルートの重み設定
     weight_straight = uint16(6);
     weight_straight_harf = uint16(3);
-    weight_diagonal = uint16(4);
+    weight_diagonal = uint16(10);
     weight_turn = uint16(18);
     
     %MAPの初期化(すべてのノードにmax_lengthを入力)
@@ -3088,7 +3104,7 @@ end
             if (isequal(ref_node,goal_node2) && (ref_node_property == goal_node_property))...
                     || (ref_node_property == matrix_dir.section && goal_section(2)==ref_node(1) && goal_section(1)==ref_node(2))
                 %現在位置がノードである時、ゴール進入時のパターンを決定する。
-                if (isequal(ref_node,goal_node2) && (ref_node_property == goal_node_property))
+%                 if (isequal(ref_node,goal_node2) && (ref_node_property == goal_node_property))
                     %ゴールの場合、ゴール進入時のパターンを決定する。
                     [next_move_dir,next_node,next_node_property]...
                         =get_next_dir_diagonal(row_num_node,col_num_node,ref_move_dir,ref_node,ref_node_property,goal_node2,goal_node_property,goal_section);
@@ -3096,9 +3112,21 @@ end
                     if ref_move_dir == next_move_dir
                         %ゴール分カウンタを増加
                         straight_count = straight_count+uint8(1);
+                        %軌跡をプロット
+                        if coder.target('MATLAB')
+                            straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                        end
+                        %直進走行
+                        if ~coder.target('MATLAB')
+                            coder.ceval('m_move_front_long',straight_count,start_flg,wall_flg,current_move_mode);
+                        end
+                        
                         %現在ノードから直進カウンタ分移動する関数。
                         [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
                             = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                        
+
+                        
                         %                         disp("ゴール直線侵入")
                         %                         disp(current_node)
                         %ターンの場合（斜め侵入）
@@ -3111,6 +3139,10 @@ end
                             %軌跡をプロット
                             if coder.target('MATLAB')
                                 straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                            end
+                            %直進走行
+                            if ~coder.target('MATLAB')
+                                coder.ceval('m_move_front_long',straight_count,start_flg,wall_flg,current_move_mode);
                             end
                             %現在ノードから直進カウンタ分移動する関数。
                             [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
@@ -3141,12 +3173,20 @@ end
                             if coder.target('MATLAB')
                                 disp("right45deg")
                             end
+                            %右45度ターン移動
+                            if ~coder.target('MATLAB')
+                                coder.ceval('m_turn_45_r',start_flg,wall_flg,current_move_mode);
+                            end
                             [current_node,current_node_property,current_move_dir,current_move_mode] ...
                                 = turn_r_45(current_node,current_node_property,current_move_dir,current_move_mode);
                             
                         elseif turn_pattern_num == turn_pattern.l_45
                             if coder.target('MATLAB')
                                 disp("left45deg")
+                            end
+                            %左45度ターン移動
+                            if ~coder.target('MATLAB')
+                                coder.ceval('m_turn_45_l',start_flg,wall_flg,current_move_mode);
                             end
                             [current_node,current_node_property,current_move_dir,current_move_mode] ...
                                 = turn_l_45(current_node,current_node_property,current_move_dir,current_move_mode);
@@ -3157,19 +3197,19 @@ end
                         end
                     end
                     %参照位置がセクションであるとき
-                else
-                    %直進カウンタがあれば、移動する。
-                    %                     disp("ゴール時直進（セクション）")
-                    if straight_count > 0
-                        %軌跡をプロット
-                        if coder.target('MATLAB')
-                            straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
-                        end
-                        %現在ノードから直進カウンタ分移動する関数。
-                        [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
-                            = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
-                    end
-                end
+%                 else %セクションでここに入ることはない。はず。
+%                     %直進カウンタがあれば、移動する。
+%                     %                     disp("ゴール時直進（セクション）")
+%                     if straight_count > 0
+%                         %軌跡をプロット
+%                         if coder.target('MATLAB')
+%                             straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+%                         end
+%                         %現在ノードから直進カウンタ分移動する関数。
+%                         [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
+%                             = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+%                     end
+%                 end
                 %ゴール処理がおわったらフラグを立てる
                 %                 disp("ゴール後")
                 %                 disp(straight_count)
@@ -3185,6 +3225,10 @@ end
                 %軌跡をプロット
                 if coder.target('MATLAB')
                     straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count);
+                end
+                %直進走行
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_move_front_long',straight_count,start_flg,wall_flg,current_move_mode);
                 end
                 %現在ノードから直進カウンタ分移動する関数。
                 [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]...
@@ -3230,12 +3274,20 @@ end
                 if coder.target('MATLAB')
                     disp("right45deg")
                 end
+                %右45度ターン移動
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_turn_45_r',start_flg,wall_flg,current_move_mode);
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_45(current_node,current_node_property,current_move_dir,current_move_mode);
                 
             elseif turn_pattern_num == turn_pattern.l_45
                 if coder.target('MATLAB')
                     disp("left45deg")
+                end
+                %左45度ターン移動
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_turn_45_l',start_flg,wall_flg,current_move_mode);
                 end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_45(current_node,current_node_property,current_move_dir,current_move_mode);
@@ -3248,6 +3300,15 @@ end
                         disp("rightV90deg")
                     end
                 end
+                %右90度ターン移動
+                if ~coder.target('MATLAB')
+                    if current_move_mode == move_dir_property.straight
+                        coder.ceval('m_turn_90_r',start_flg,wall_flg,current_move_mode);
+                    elseif current_move_mode == move_dir_property.diagonal
+                        coder.ceval('m_turn_V90_r',start_flg,wall_flg,current_move_mode);
+                    end
+                end
+                
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_90(current_node,current_node_property,current_move_dir,current_move_mode);
                 
@@ -3259,12 +3320,24 @@ end
                         disp("leftV90deg")
                     end
                 end
+                %左90度ターン移動
+                if ~coder.target('MATLAB')
+                    if current_move_mode == move_dir_property.straight
+                        coder.ceval('m_turn_90_l',start_flg,wall_flg,current_move_mode);
+                    elseif current_move_mode == move_dir_property.diagonal
+                        coder.ceval('m_turn_V90_l',start_flg,wall_flg,current_move_mode);
+                    end
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_90(current_node,current_node_property,current_move_dir,current_move_mode);
                 
             elseif turn_pattern_num == turn_pattern.r_135
                 if coder.target('MATLAB')
                     disp("right135deg")
+                end
+                %右135度ターン移動
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_turn_135_r',start_flg,wall_flg,current_move_mode);
                 end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_135(current_node,current_node_property,current_move_dir,current_move_mode);
@@ -3273,6 +3346,10 @@ end
                 if coder.target('MATLAB')
                     disp("left135deg")
                 end
+                %左135度ターン移動
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_turn_135_l',start_flg,wall_flg,current_move_mode);
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_135(current_node,current_node_property,current_move_dir,current_move_mode);
                 
@@ -3280,12 +3357,20 @@ end
                 if coder.target('MATLAB')
                     disp("right180deg")
                 end
+                %右180度ターン移動
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_turn_180_r',start_flg,wall_flg,current_move_mode);
+                end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_r_180(current_node,current_node_property,current_move_dir,current_move_mode);
                 
             elseif turn_pattern_num == turn_pattern.l_180
                 if coder.target('MATLAB')
                     disp("left180deg")
+                end
+                %左180度ターン移動
+                if ~coder.target('MATLAB')
+                    coder.ceval('m_turn_180_l',start_flg,wall_flg,current_move_mode);
                 end
                 [current_node,current_node_property,current_move_dir,current_move_mode] ...
                     = turn_l_180(current_node,current_node_property,current_move_dir,current_move_mode);
@@ -3308,6 +3393,14 @@ end
         
         %ゴールフラグが立っていれば終了
         if goal_flag == 1
+            if ~coder.target('MATLAB')
+                coder.ceval('m_goal_movement',start_flg,wall_flg,current_move_mode);
+            else
+                if video_flg
+                    writeVideo(vidObj, getframe(gcf));
+                    drawnow
+                end
+            end
             break;
         end
         

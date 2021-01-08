@@ -118,19 +118,19 @@ typedef struct {
 #endif                                 /*typedef_coder_internal_ref_6*/
 
 /* Variable Definitions */
-static emlrtRTEInfo emlrtRTEI = { 2657,/* lineNo */
+static emlrtRTEInfo emlrtRTEI = { 2673,/* lineNo */
   13,                                  /* colNo */
   "maze_solve/decide_goal_node_dir",   /* fName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pName */
 };
 
-static emlrtRTEInfo b_emlrtRTEI = { 2658,/* lineNo */
+static emlrtRTEInfo b_emlrtRTEI = { 2674,/* lineNo */
   13,                                  /* colNo */
   "maze_solve/decide_goal_node_dir",   /* fName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pName */
 };
 
-static emlrtRTEInfo c_emlrtRTEI = { 2659,/* lineNo */
+static emlrtRTEInfo c_emlrtRTEI = { 2675,/* lineNo */
   13,                                  /* colNo */
   "maze_solve/decide_goal_node_dir",   /* fName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pName */
@@ -271,12 +271,12 @@ static emlrtRSInfo db_emlrtRSI = { 306,/* lineNo */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo fb_emlrtRSI = { 1156,/* lineNo */
+static emlrtRSInfo fb_emlrtRSI = { 1166,/* lineNo */
   "maze_solve/make_map_find",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo gb_emlrtRSI = { 1170,/* lineNo */
+static emlrtRSInfo gb_emlrtRSI = { 1180,/* lineNo */
   "maze_solve/make_map_find",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
@@ -306,207 +306,207 @@ static emlrtRSInfo lb_emlrtRSI = { 371,/* lineNo */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo mb_emlrtRSI = { 405,/* lineNo */
+static emlrtRSInfo mb_emlrtRSI = { 406,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo nb_emlrtRSI = { 412,/* lineNo */
+static emlrtRSInfo nb_emlrtRSI = { 422,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo ob_emlrtRSI = { 415,/* lineNo */
+static emlrtRSInfo ob_emlrtRSI = { 425,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo pb_emlrtRSI = { 459,/* lineNo */
+static emlrtRSInfo pb_emlrtRSI = { 469,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo qb_emlrtRSI = { 467,/* lineNo */
+static emlrtRSInfo qb_emlrtRSI = { 477,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo rb_emlrtRSI = { 468,/* lineNo */
+static emlrtRSInfo rb_emlrtRSI = { 478,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo sb_emlrtRSI = { 488,/* lineNo */
+static emlrtRSInfo sb_emlrtRSI = { 498,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo tb_emlrtRSI = { 495,/* lineNo */
+static emlrtRSInfo tb_emlrtRSI = { 505,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo ub_emlrtRSI = { 496,/* lineNo */
+static emlrtRSInfo ub_emlrtRSI = { 506,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo vb_emlrtRSI = { 515,/* lineNo */
+static emlrtRSInfo vb_emlrtRSI = { 525,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo wb_emlrtRSI = { 522,/* lineNo */
+static emlrtRSInfo wb_emlrtRSI = { 532,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo xb_emlrtRSI = { 523,/* lineNo */
+static emlrtRSInfo xb_emlrtRSI = { 533,/* lineNo */
   "maze_solve/search_adachi",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo ac_emlrtRSI = { 1609,/* lineNo */
+static emlrtRSInfo ac_emlrtRSI = { 1625,/* lineNo */
   "maze_solve/make_map_fustrun",       /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo bc_emlrtRSI = { 1624,/* lineNo */
+static emlrtRSInfo bc_emlrtRSI = { 1640,/* lineNo */
   "maze_solve/make_map_fustrun",       /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo cc_emlrtRSI = { 1333,/* lineNo */
+static emlrtRSInfo cc_emlrtRSI = { 1349,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo dc_emlrtRSI = { 1344,/* lineNo */
+static emlrtRSInfo dc_emlrtRSI = { 1360,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo ec_emlrtRSI = { 1433,/* lineNo */
+static emlrtRSInfo ec_emlrtRSI = { 1449,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo fc_emlrtRSI = { 1434,/* lineNo */
+static emlrtRSInfo fc_emlrtRSI = { 1450,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo gc_emlrtRSI = { 1458,/* lineNo */
+static emlrtRSInfo gc_emlrtRSI = { 1474,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo hc_emlrtRSI = { 1460,/* lineNo */
+static emlrtRSInfo hc_emlrtRSI = { 1476,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo ic_emlrtRSI = { 1461,/* lineNo */
+static emlrtRSInfo ic_emlrtRSI = { 1477,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo jc_emlrtRSI = { 1485,/* lineNo */
+static emlrtRSInfo jc_emlrtRSI = { 1501,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo kc_emlrtRSI = { 1487,/* lineNo */
+static emlrtRSInfo kc_emlrtRSI = { 1503,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo lc_emlrtRSI = { 1488,/* lineNo */
+static emlrtRSInfo lc_emlrtRSI = { 1504,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo mc_emlrtRSI = { 1513,/* lineNo */
+static emlrtRSInfo mc_emlrtRSI = { 1529,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo nc_emlrtRSI = { 1515,/* lineNo */
+static emlrtRSInfo nc_emlrtRSI = { 1531,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo oc_emlrtRSI = { 1516,/* lineNo */
+static emlrtRSInfo oc_emlrtRSI = { 1532,/* lineNo */
   "maze_solve/fust_run",               /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo qc_emlrtRSI = { 1042,/* lineNo */
+static emlrtRSInfo qc_emlrtRSI = { 1052,/* lineNo */
   "maze_solve/make_new_goal_sh",       /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo rc_emlrtRSI = { 1060,/* lineNo */
+static emlrtRSInfo rc_emlrtRSI = { 1070,/* lineNo */
   "maze_solve/make_new_goal_sh",       /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo sc_emlrtRSI = { 1078,/* lineNo */
+static emlrtRSInfo sc_emlrtRSI = { 1088,/* lineNo */
   "maze_solve/make_new_goal_sh",       /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo tc_emlrtRSI = { 1096,/* lineNo */
+static emlrtRSInfo tc_emlrtRSI = { 1106,/* lineNo */
   "maze_solve/make_new_goal_sh",       /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo uc_emlrtRSI = { 1122,/* lineNo */
+static emlrtRSInfo uc_emlrtRSI = { 1132,/* lineNo */
   "maze_solve/make_new_goal_sh/sh_route_unexp_sq_jud",/* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo vc_emlrtRSI = { 1911,/* lineNo */
+static emlrtRSInfo vc_emlrtRSI = { 1927,/* lineNo */
   "maze_solve/make_map_fustrun_diagonal",/* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo wc_emlrtRSI = { 1974,/* lineNo */
+static emlrtRSInfo wc_emlrtRSI = { 1990,/* lineNo */
   "maze_solve/make_map_fustrun_diagonal",/* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo xc_emlrtRSI = { 2271,/* lineNo */
+static emlrtRSInfo xc_emlrtRSI = { 2287,/* lineNo */
   "maze_solve/make_map_fustrun_diagonal",/* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo yc_emlrtRSI = { 2592,/* lineNo */
+static emlrtRSInfo yc_emlrtRSI = { 2608,/* lineNo */
   "maze_solve/decide_goal_node_dir",   /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo de_emlrtRSI = { 3069,/* lineNo */
+static emlrtRSInfo de_emlrtRSI = { 3085,/* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo ee_emlrtRSI = { 3092,/* lineNo */
+static emlrtRSInfo ee_emlrtRSI = { 3108,/* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo ne_emlrtRSI = { 3216,/* lineNo */
+static emlrtRSInfo me_emlrtRSI = { 3260,/* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtRSInfo we_emlrtRSI = { 3315,/* lineNo */
+static emlrtRSInfo ve_emlrtRSI = { 3403,/* lineNo */
   "maze_solve/make_route_diagonal",    /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
 
-static emlrtMCInfo emlrtMCI = { 1235,  /* lineNo */
+static emlrtMCInfo emlrtMCI = { 1245,  /* lineNo */
   13,                                  /* colNo */
   "maze_solve/make_map_find",          /* fName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pName */
@@ -514,7 +514,7 @@ static emlrtMCInfo emlrtMCI = { 1235,  /* lineNo */
 
 static emlrtBCInfo i_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1215,                                /* lineNo */
+  1225,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -524,7 +524,7 @@ static emlrtBCInfo i_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo j_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1215,                                /* lineNo */
+  1225,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -534,7 +534,7 @@ static emlrtBCInfo j_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo k_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1201,                                /* lineNo */
+  1211,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -544,7 +544,7 @@ static emlrtBCInfo k_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo l_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1201,                                /* lineNo */
+  1211,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -554,7 +554,7 @@ static emlrtBCInfo l_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo m_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1187,                                /* lineNo */
+  1197,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -564,7 +564,7 @@ static emlrtBCInfo m_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo n_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1187,                                /* lineNo */
+  1197,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -574,7 +574,7 @@ static emlrtBCInfo n_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo o_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1173,                                /* lineNo */
+  1183,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -584,7 +584,7 @@ static emlrtBCInfo o_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo p_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1173,                                /* lineNo */
+  1183,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -594,7 +594,7 @@ static emlrtBCInfo p_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo q_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1157,                                /* lineNo */
+  1167,                                /* lineNo */
   9,                                   /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -604,7 +604,7 @@ static emlrtBCInfo q_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo r_emlrtBCI = { 1,   /* iFirst */
   9,                                   /* iLast */
-  1157,                                /* lineNo */
+  1167,                                /* lineNo */
   9,                                   /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -614,7 +614,7 @@ static emlrtBCInfo r_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo s_emlrtBCI = { 1,   /* iFirst */
   9,                                   /* iLast */
-  1159,                                /* lineNo */
+  1169,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -624,7 +624,7 @@ static emlrtBCInfo s_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo t_emlrtBCI = { 1,   /* iFirst */
   9,                                   /* iLast */
-  1159,                                /* lineNo */
+  1169,                                /* lineNo */
   58,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -634,7 +634,7 @@ static emlrtBCInfo t_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo u_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1234,                                /* lineNo */
+  1244,                                /* lineNo */
   40,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -644,7 +644,7 @@ static emlrtBCInfo u_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo v_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1176,                                /* lineNo */
+  1186,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -654,7 +654,7 @@ static emlrtBCInfo v_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo w_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1177,                                /* lineNo */
+  1187,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -664,7 +664,7 @@ static emlrtBCInfo w_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo x_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1190,                                /* lineNo */
+  1200,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -674,7 +674,7 @@ static emlrtBCInfo x_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo y_emlrtBCI = { 1,   /* iFirst */
   32,                                  /* iLast */
-  1191,                                /* lineNo */
+  1201,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -684,7 +684,7 @@ static emlrtBCInfo y_emlrtBCI = { 1,   /* iFirst */
 
 static emlrtBCInfo ab_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1204,                                /* lineNo */
+  1214,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -694,7 +694,7 @@ static emlrtBCInfo ab_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1205,                                /* lineNo */
+  1215,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -704,7 +704,7 @@ static emlrtBCInfo bb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1218,                                /* lineNo */
+  1228,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -714,7 +714,7 @@ static emlrtBCInfo cb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo db_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1219,                                /* lineNo */
+  1229,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_find",          /* fName */
@@ -724,7 +724,7 @@ static emlrtBCInfo db_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo eb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1255,                                /* lineNo */
+  1267,                                /* lineNo */
   25,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -734,7 +734,7 @@ static emlrtBCInfo eb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1255,                                /* lineNo */
+  1267,                                /* lineNo */
   35,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -744,7 +744,7 @@ static emlrtBCInfo fb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1257,                                /* lineNo */
+  1269,                                /* lineNo */
   12,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -754,7 +754,7 @@ static emlrtBCInfo gb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1259,                                /* lineNo */
+  1271,                                /* lineNo */
   22,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -764,7 +764,7 @@ static emlrtBCInfo hb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ib_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1267,                                /* lineNo */
+  1280,                                /* lineNo */
   12,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -774,7 +774,7 @@ static emlrtBCInfo ib_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1268,                                /* lineNo */
+  1281,                                /* lineNo */
   22,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -784,7 +784,7 @@ static emlrtBCInfo jb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1276,                                /* lineNo */
+  1290,                                /* lineNo */
   12,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -794,7 +794,7 @@ static emlrtBCInfo kb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1277,                                /* lineNo */
+  1291,                                /* lineNo */
   22,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -804,7 +804,7 @@ static emlrtBCInfo lb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1284,                                /* lineNo */
+  1299,                                /* lineNo */
   12,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/get_nextdir2",           /* fName */
@@ -814,7 +814,7 @@ static emlrtBCInfo mb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1562,                                /* lineNo */
+  1578,                                /* lineNo */
   36,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/fust_run_wallset",       /* fName */
@@ -824,7 +824,7 @@ static emlrtBCInfo nb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ob_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1562,                                /* lineNo */
+  1578,                                /* lineNo */
   29,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/fust_run_wallset",       /* fName */
@@ -834,7 +834,7 @@ static emlrtBCInfo ob_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  964,                                 /* lineNo */
+  974,                                 /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -844,7 +844,7 @@ static emlrtBCInfo pb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  964,                                 /* lineNo */
+  974,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -854,7 +854,7 @@ static emlrtBCInfo qb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  946,                                 /* lineNo */
+  956,                                 /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -864,7 +864,7 @@ static emlrtBCInfo rb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  946,                                 /* lineNo */
+  956,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -874,7 +874,7 @@ static emlrtBCInfo sb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  928,                                 /* lineNo */
+  938,                                 /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -884,7 +884,7 @@ static emlrtBCInfo tb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ub_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  928,                                 /* lineNo */
+  938,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -894,7 +894,7 @@ static emlrtBCInfo ub_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  896,                                 /* lineNo */
+  906,                                 /* lineNo */
   27,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -904,7 +904,7 @@ static emlrtBCInfo vb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  896,                                 /* lineNo */
+  906,                                 /* lineNo */
   17,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -914,7 +914,7 @@ static emlrtBCInfo wb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  910,                                 /* lineNo */
+  920,                                 /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -924,7 +924,7 @@ static emlrtBCInfo xb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yb_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  910,                                 /* lineNo */
+  920,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -934,7 +934,7 @@ static emlrtBCInfo yb_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ac_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  912,                                 /* lineNo */
+  922,                                 /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -944,7 +944,7 @@ static emlrtBCInfo ac_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  913,                                 /* lineNo */
+  923,                                 /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -954,7 +954,7 @@ static emlrtBCInfo bc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  930,                                 /* lineNo */
+  940,                                 /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -964,7 +964,7 @@ static emlrtBCInfo cc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  920,                                 /* lineNo */
+  930,                                 /* lineNo */
   24,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -974,7 +974,7 @@ static emlrtBCInfo dc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ec_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  931,                                 /* lineNo */
+  941,                                 /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -984,7 +984,7 @@ static emlrtBCInfo ec_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  948,                                 /* lineNo */
+  958,                                 /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -994,7 +994,7 @@ static emlrtBCInfo fc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  938,                                 /* lineNo */
+  948,                                 /* lineNo */
   24,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -1004,7 +1004,7 @@ static emlrtBCInfo gc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  949,                                 /* lineNo */
+  959,                                 /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -1014,7 +1014,7 @@ static emlrtBCInfo hc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ic_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  966,                                 /* lineNo */
+  976,                                 /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -1024,7 +1024,7 @@ static emlrtBCInfo ic_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  956,                                 /* lineNo */
+  966,                                 /* lineNo */
   24,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -1034,7 +1034,7 @@ static emlrtBCInfo jc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  967,                                 /* lineNo */
+  977,                                 /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -1044,7 +1044,7 @@ static emlrtBCInfo kc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  974,                                 /* lineNo */
+  984,                                 /* lineNo */
   24,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_new_goal_all",      /* fName */
@@ -1054,7 +1054,7 @@ static emlrtBCInfo lc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1760,                                /* lineNo */
+  1776,                                /* lineNo */
   77,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1064,7 +1064,7 @@ static emlrtBCInfo mc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1760,                                /* lineNo */
+  1776,                                /* lineNo */
   48,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1074,7 +1074,7 @@ static emlrtBCInfo nc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1757,                                /* lineNo */
+  1773,                                /* lineNo */
   86,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1084,7 +1084,7 @@ static emlrtBCInfo oc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1757,                                /* lineNo */
+  1773,                                /* lineNo */
   57,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1094,7 +1094,7 @@ static emlrtBCInfo pc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1756,                                /* lineNo */
+  1772,                                /* lineNo */
   70,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1104,7 +1104,7 @@ static emlrtBCInfo qc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1756,                                /* lineNo */
+  1772,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1114,7 +1114,7 @@ static emlrtBCInfo rc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1718,                                /* lineNo */
+  1734,                                /* lineNo */
   77,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1124,7 +1124,7 @@ static emlrtBCInfo sc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1718,                                /* lineNo */
+  1734,                                /* lineNo */
   48,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1134,7 +1134,7 @@ static emlrtBCInfo tc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1715,                                /* lineNo */
+  1731,                                /* lineNo */
   86,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1144,7 +1144,7 @@ static emlrtBCInfo uc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1715,                                /* lineNo */
+  1731,                                /* lineNo */
   57,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1154,7 +1154,7 @@ static emlrtBCInfo vc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1714,                                /* lineNo */
+  1730,                                /* lineNo */
   70,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1164,7 +1164,7 @@ static emlrtBCInfo wc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1714,                                /* lineNo */
+  1730,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1174,7 +1174,7 @@ static emlrtBCInfo xc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yc_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1674,                                /* lineNo */
+  1690,                                /* lineNo */
   77,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1184,7 +1184,7 @@ static emlrtBCInfo yc_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ad_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1674,                                /* lineNo */
+  1690,                                /* lineNo */
   48,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1194,7 +1194,7 @@ static emlrtBCInfo ad_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1671,                                /* lineNo */
+  1687,                                /* lineNo */
   86,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1204,7 +1204,7 @@ static emlrtBCInfo bd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1671,                                /* lineNo */
+  1687,                                /* lineNo */
   57,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1214,7 +1214,7 @@ static emlrtBCInfo cd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1670,                                /* lineNo */
+  1686,                                /* lineNo */
   70,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1224,7 +1224,7 @@ static emlrtBCInfo dd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ed_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1670,                                /* lineNo */
+  1686,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1234,7 +1234,7 @@ static emlrtBCInfo ed_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1633,                                /* lineNo */
+  1649,                                /* lineNo */
   77,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1244,7 +1244,7 @@ static emlrtBCInfo fd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1633,                                /* lineNo */
+  1649,                                /* lineNo */
   48,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1254,7 +1254,7 @@ static emlrtBCInfo gd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1630,                                /* lineNo */
+  1646,                                /* lineNo */
   87,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1264,7 +1264,7 @@ static emlrtBCInfo hd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo id_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1630,                                /* lineNo */
+  1646,                                /* lineNo */
   58,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1274,7 +1274,7 @@ static emlrtBCInfo id_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1629,                                /* lineNo */
+  1645,                                /* lineNo */
   70,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1284,7 +1284,7 @@ static emlrtBCInfo jd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1629,                                /* lineNo */
+  1645,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1294,7 +1294,7 @@ static emlrtBCInfo kd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ld_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1610,                                /* lineNo */
+  1626,                                /* lineNo */
   9,                                   /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1304,7 +1304,7 @@ static emlrtBCInfo ld_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo md_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1610,                                /* lineNo */
+  1626,                                /* lineNo */
   9,                                   /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1314,7 +1314,7 @@ static emlrtBCInfo md_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1611,                                /* lineNo */
+  1627,                                /* lineNo */
   9,                                   /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1324,7 +1324,7 @@ static emlrtBCInfo nd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo od_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1611,                                /* lineNo */
+  1627,                                /* lineNo */
   9,                                   /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1334,7 +1334,7 @@ static emlrtBCInfo od_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pd_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1616,                                /* lineNo */
+  1632,                                /* lineNo */
   41,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1344,7 +1344,7 @@ static emlrtBCInfo pd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qd_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1616,                                /* lineNo */
+  1632,                                /* lineNo */
   60,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1354,7 +1354,7 @@ static emlrtBCInfo qd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1651,                                /* lineNo */
+  1667,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1364,7 +1364,7 @@ static emlrtBCInfo rd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1651,                                /* lineNo */
+  1667,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1374,7 +1374,7 @@ static emlrtBCInfo sd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo td_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1635,                                /* lineNo */
+  1651,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1384,7 +1384,7 @@ static emlrtBCInfo td_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ud_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1635,                                /* lineNo */
+  1651,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1394,7 +1394,7 @@ static emlrtBCInfo ud_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1653,                                /* lineNo */
+  1669,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1404,7 +1404,7 @@ static emlrtBCInfo vd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1653,                                /* lineNo */
+  1669,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1414,7 +1414,7 @@ static emlrtBCInfo wd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1637,                                /* lineNo */
+  1653,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1424,7 +1424,7 @@ static emlrtBCInfo xd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yd_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1637,                                /* lineNo */
+  1653,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1434,7 +1434,7 @@ static emlrtBCInfo yd_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ae_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1655,                                /* lineNo */
+  1671,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1444,7 +1444,7 @@ static emlrtBCInfo ae_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo be_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1639,                                /* lineNo */
+  1655,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1454,7 +1454,7 @@ static emlrtBCInfo be_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ce_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1694,                                /* lineNo */
+  1710,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1464,7 +1464,7 @@ static emlrtBCInfo ce_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo de_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1694,                                /* lineNo */
+  1710,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1474,7 +1474,7 @@ static emlrtBCInfo de_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ee_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1676,                                /* lineNo */
+  1692,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1484,7 +1484,7 @@ static emlrtBCInfo ee_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fe_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1676,                                /* lineNo */
+  1692,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1494,7 +1494,7 @@ static emlrtBCInfo fe_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ge_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1698,                                /* lineNo */
+  1714,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1504,7 +1504,7 @@ static emlrtBCInfo ge_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo he_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1698,                                /* lineNo */
+  1714,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1514,7 +1514,7 @@ static emlrtBCInfo he_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ie_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1680,                                /* lineNo */
+  1696,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1524,7 +1524,7 @@ static emlrtBCInfo ie_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo je_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1680,                                /* lineNo */
+  1696,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1534,7 +1534,7 @@ static emlrtBCInfo je_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ke_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1700,                                /* lineNo */
+  1716,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1544,7 +1544,7 @@ static emlrtBCInfo ke_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo le_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1682,                                /* lineNo */
+  1698,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1554,7 +1554,7 @@ static emlrtBCInfo le_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo me_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1738,                                /* lineNo */
+  1754,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1564,7 +1564,7 @@ static emlrtBCInfo me_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ne_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1738,                                /* lineNo */
+  1754,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1574,7 +1574,7 @@ static emlrtBCInfo ne_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oe_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1720,                                /* lineNo */
+  1736,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1584,7 +1584,7 @@ static emlrtBCInfo oe_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pe_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1720,                                /* lineNo */
+  1736,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1594,7 +1594,7 @@ static emlrtBCInfo pe_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qe_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1740,                                /* lineNo */
+  1756,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1604,7 +1604,7 @@ static emlrtBCInfo qe_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo re_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1740,                                /* lineNo */
+  1756,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1614,7 +1614,7 @@ static emlrtBCInfo re_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo se_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1724,                                /* lineNo */
+  1740,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1624,7 +1624,7 @@ static emlrtBCInfo se_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo te_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1724,                                /* lineNo */
+  1740,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1634,7 +1634,7 @@ static emlrtBCInfo te_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ue_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1742,                                /* lineNo */
+  1758,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1644,7 +1644,7 @@ static emlrtBCInfo ue_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ve_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1726,                                /* lineNo */
+  1742,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1654,7 +1654,7 @@ static emlrtBCInfo ve_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo we_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1779,                                /* lineNo */
+  1795,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1664,7 +1664,7 @@ static emlrtBCInfo we_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xe_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1779,                                /* lineNo */
+  1795,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1674,7 +1674,7 @@ static emlrtBCInfo xe_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ye_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1762,                                /* lineNo */
+  1778,                                /* lineNo */
   24,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1684,7 +1684,7 @@ static emlrtBCInfo ye_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo af_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1762,                                /* lineNo */
+  1778,                                /* lineNo */
   99,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1694,7 +1694,7 @@ static emlrtBCInfo af_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1781,                                /* lineNo */
+  1797,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1704,7 +1704,7 @@ static emlrtBCInfo bf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1781,                                /* lineNo */
+  1797,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1714,7 +1714,7 @@ static emlrtBCInfo cf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo df_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1764,                                /* lineNo */
+  1780,                                /* lineNo */
   100,                                 /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1724,7 +1724,7 @@ static emlrtBCInfo df_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ef_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1764,                                /* lineNo */
+  1780,                                /* lineNo */
   25,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1734,7 +1734,7 @@ static emlrtBCInfo ef_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ff_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1783,                                /* lineNo */
+  1799,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1744,7 +1744,7 @@ static emlrtBCInfo ff_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1766,                                /* lineNo */
+  1782,                                /* lineNo */
   25,                                  /* colNo */
   "move_dir_map",                      /* aName */
   "maze_solve/make_map_fustrun",       /* fName */
@@ -1754,7 +1754,7 @@ static emlrtBCInfo gf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1378,                                /* lineNo */
+  1394,                                /* lineNo */
   36,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1764,7 +1764,7 @@ static emlrtBCInfo hf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo if_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1378,                                /* lineNo */
+  1394,                                /* lineNo */
   29,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1774,7 +1774,7 @@ static emlrtBCInfo if_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1337,                                /* lineNo */
+  1353,                                /* lineNo */
   16,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1784,7 +1784,7 @@ static emlrtBCInfo jf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kf_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1345,                                /* lineNo */
+  1361,                                /* lineNo */
   27,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1794,7 +1794,7 @@ static emlrtBCInfo kf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lf_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1345,                                /* lineNo */
+  1361,                                /* lineNo */
   61,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1804,7 +1804,7 @@ static emlrtBCInfo lf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1380,                                /* lineNo */
+  1396,                                /* lineNo */
   16,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1814,7 +1814,7 @@ static emlrtBCInfo mf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1382,                                /* lineNo */
+  1398,                                /* lineNo */
   26,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1824,7 +1824,7 @@ static emlrtBCInfo nf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo of_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1390,                                /* lineNo */
+  1406,                                /* lineNo */
   16,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1834,7 +1834,7 @@ static emlrtBCInfo of_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1391,                                /* lineNo */
+  1407,                                /* lineNo */
   26,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1844,7 +1844,7 @@ static emlrtBCInfo pf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1398,                                /* lineNo */
+  1414,                                /* lineNo */
   16,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1854,7 +1854,7 @@ static emlrtBCInfo qf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1399,                                /* lineNo */
+  1415,                                /* lineNo */
   26,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1864,7 +1864,7 @@ static emlrtBCInfo rf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1406,                                /* lineNo */
+  1422,                                /* lineNo */
   16,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1874,7 +1874,7 @@ static emlrtBCInfo sf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1407,                                /* lineNo */
+  1423,                                /* lineNo */
   26,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/fust_run",               /* fName */
@@ -1884,7 +1884,7 @@ static emlrtBCInfo tf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1086,                                /* lineNo */
+  1096,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1894,7 +1894,7 @@ static emlrtBCInfo uf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1086,                                /* lineNo */
+  1096,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1904,7 +1904,7 @@ static emlrtBCInfo vf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1068,                                /* lineNo */
+  1078,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1914,7 +1914,7 @@ static emlrtBCInfo wf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1068,                                /* lineNo */
+  1078,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1924,7 +1924,7 @@ static emlrtBCInfo xf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yf_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1050,                                /* lineNo */
+  1060,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1934,7 +1934,7 @@ static emlrtBCInfo yf_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ag_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1050,                                /* lineNo */
+  1060,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1944,7 +1944,7 @@ static emlrtBCInfo ag_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1018,                                /* lineNo */
+  1028,                                /* lineNo */
   27,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1954,7 +1954,7 @@ static emlrtBCInfo bg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1018,                                /* lineNo */
+  1028,                                /* lineNo */
   17,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1964,7 +1964,7 @@ static emlrtBCInfo cg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1032,                                /* lineNo */
+  1042,                                /* lineNo */
   63,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1974,7 +1974,7 @@ static emlrtBCInfo dg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo eg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1032,                                /* lineNo */
+  1042,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1984,7 +1984,7 @@ static emlrtBCInfo eg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1034,                                /* lineNo */
+  1044,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -1994,7 +1994,7 @@ static emlrtBCInfo fg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1035,                                /* lineNo */
+  1045,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -2004,7 +2004,7 @@ static emlrtBCInfo gg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1052,                                /* lineNo */
+  1062,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -2014,7 +2014,7 @@ static emlrtBCInfo hg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ig_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1053,                                /* lineNo */
+  1063,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -2024,7 +2024,7 @@ static emlrtBCInfo ig_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1070,                                /* lineNo */
+  1080,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -2034,7 +2034,7 @@ static emlrtBCInfo jg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1071,                                /* lineNo */
+  1081,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -2044,7 +2044,7 @@ static emlrtBCInfo kg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1088,                                /* lineNo */
+  1098,                                /* lineNo */
   20,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -2054,7 +2054,7 @@ static emlrtBCInfo lg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1089,                                /* lineNo */
+  1099,                                /* lineNo */
   21,                                  /* colNo */
   "contour_map",                       /* aName */
   "maze_solve/make_new_goal_sh",       /* fName */
@@ -2064,7 +2064,7 @@ static emlrtBCInfo mg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ng_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2516,                                /* lineNo */
+  2532,                                /* lineNo */
   75,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2074,7 +2074,7 @@ static emlrtBCInfo ng_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo og_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2516,                                /* lineNo */
+  2532,                                /* lineNo */
   48,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2084,7 +2084,7 @@ static emlrtBCInfo og_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pg_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2470,                                /* lineNo */
+  2486,                                /* lineNo */
   75,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2094,7 +2094,7 @@ static emlrtBCInfo pg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2470,                                /* lineNo */
+  2486,                                /* lineNo */
   48,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2104,7 +2104,7 @@ static emlrtBCInfo qg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rg_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2424,                                /* lineNo */
+  2440,                                /* lineNo */
   75,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2114,7 +2114,7 @@ static emlrtBCInfo rg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2424,                                /* lineNo */
+  2440,                                /* lineNo */
   48,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2124,7 +2124,7 @@ static emlrtBCInfo sg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2412,                                /* lineNo */
+  2428,                                /* lineNo */
   141,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2134,7 +2134,7 @@ static emlrtBCInfo tg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ug_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2412,                                /* lineNo */
+  2428,                                /* lineNo */
   114,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2144,7 +2144,7 @@ static emlrtBCInfo ug_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2391,                                /* lineNo */
+  2407,                                /* lineNo */
   141,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2154,7 +2154,7 @@ static emlrtBCInfo vg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wg_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2391,                                /* lineNo */
+  2407,                                /* lineNo */
   114,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2164,7 +2164,7 @@ static emlrtBCInfo wg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xg_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2375,                                /* lineNo */
+  2391,                                /* lineNo */
   75,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2174,7 +2174,7 @@ static emlrtBCInfo xg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yg_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2375,                                /* lineNo */
+  2391,                                /* lineNo */
   48,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2184,7 +2184,7 @@ static emlrtBCInfo yg_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ah_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2373,                                /* lineNo */
+  2389,                                /* lineNo */
   83,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2194,7 +2194,7 @@ static emlrtBCInfo ah_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2373,                                /* lineNo */
+  2389,                                /* lineNo */
   56,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2204,7 +2204,7 @@ static emlrtBCInfo bh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ch_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2372,                                /* lineNo */
+  2388,                                /* lineNo */
   68,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2214,7 +2214,7 @@ static emlrtBCInfo ch_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2372,                                /* lineNo */
+  2388,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2224,7 +2224,7 @@ static emlrtBCInfo dh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo eh_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2327,                                /* lineNo */
+  2343,                                /* lineNo */
   75,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2234,7 +2234,7 @@ static emlrtBCInfo eh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2327,                                /* lineNo */
+  2343,                                /* lineNo */
   48,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2244,7 +2244,7 @@ static emlrtBCInfo fh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2325,                                /* lineNo */
+  2341,                                /* lineNo */
   83,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2254,7 +2254,7 @@ static emlrtBCInfo gh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2325,                                /* lineNo */
+  2341,                                /* lineNo */
   56,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2264,7 +2264,7 @@ static emlrtBCInfo hh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ih_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2324,                                /* lineNo */
+  2340,                                /* lineNo */
   68,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2274,7 +2274,7 @@ static emlrtBCInfo ih_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2324,                                /* lineNo */
+  2340,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2284,7 +2284,7 @@ static emlrtBCInfo jh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kh_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2280,                                /* lineNo */
+  2296,                                /* lineNo */
   75,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2294,7 +2294,7 @@ static emlrtBCInfo kh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2280,                                /* lineNo */
+  2296,                                /* lineNo */
   48,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2304,7 +2304,7 @@ static emlrtBCInfo lh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2278,                                /* lineNo */
+  2294,                                /* lineNo */
   83,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2314,7 +2314,7 @@ static emlrtBCInfo mh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2278,                                /* lineNo */
+  2294,                                /* lineNo */
   56,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2324,7 +2324,7 @@ static emlrtBCInfo nh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2277,                                /* lineNo */
+  2293,                                /* lineNo */
   68,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2334,7 +2334,7 @@ static emlrtBCInfo oh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ph_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2277,                                /* lineNo */
+  2293,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2344,7 +2344,7 @@ static emlrtBCInfo ph_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qh_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2262,                                /* lineNo */
+  2278,                                /* lineNo */
   141,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2354,7 +2354,7 @@ static emlrtBCInfo qh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2262,                                /* lineNo */
+  2278,                                /* lineNo */
   114,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2364,7 +2364,7 @@ static emlrtBCInfo rh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sh_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2241,                                /* lineNo */
+  2257,                                /* lineNo */
   141,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2374,7 +2374,7 @@ static emlrtBCInfo sh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo th_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2241,                                /* lineNo */
+  2257,                                /* lineNo */
   114,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2384,7 +2384,7 @@ static emlrtBCInfo th_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2224,                                /* lineNo */
+  2240,                                /* lineNo */
   75,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2394,7 +2394,7 @@ static emlrtBCInfo uh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vh_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2224,                                /* lineNo */
+  2240,                                /* lineNo */
   48,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2404,7 +2404,7 @@ static emlrtBCInfo vh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2222,                                /* lineNo */
+  2238,                                /* lineNo */
   83,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2414,7 +2414,7 @@ static emlrtBCInfo wh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2222,                                /* lineNo */
+  2238,                                /* lineNo */
   56,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2424,7 +2424,7 @@ static emlrtBCInfo xh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yh_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2221,                                /* lineNo */
+  2237,                                /* lineNo */
   68,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2434,7 +2434,7 @@ static emlrtBCInfo yh_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ai_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2221,                                /* lineNo */
+  2237,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2444,7 +2444,7 @@ static emlrtBCInfo ai_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2176,                                /* lineNo */
+  2192,                                /* lineNo */
   75,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2454,7 +2454,7 @@ static emlrtBCInfo bi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ci_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2176,                                /* lineNo */
+  2192,                                /* lineNo */
   48,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2464,7 +2464,7 @@ static emlrtBCInfo ci_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo di_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2126,                                /* lineNo */
+  2142,                                /* lineNo */
   75,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2474,7 +2474,7 @@ static emlrtBCInfo di_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ei_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2126,                                /* lineNo */
+  2142,                                /* lineNo */
   48,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2484,7 +2484,7 @@ static emlrtBCInfo ei_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2078,                                /* lineNo */
+  2094,                                /* lineNo */
   75,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2494,7 +2494,7 @@ static emlrtBCInfo fi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gi_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2078,                                /* lineNo */
+  2094,                                /* lineNo */
   48,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2504,7 +2504,7 @@ static emlrtBCInfo gi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2028,                                /* lineNo */
+  2044,                                /* lineNo */
   75,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2514,7 +2514,7 @@ static emlrtBCInfo hi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ii_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2028,                                /* lineNo */
+  2044,                                /* lineNo */
   48,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2524,7 +2524,7 @@ static emlrtBCInfo ii_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ji_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2026,                                /* lineNo */
+  2042,                                /* lineNo */
   83,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2534,7 +2534,7 @@ static emlrtBCInfo ji_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ki_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2026,                                /* lineNo */
+  2042,                                /* lineNo */
   56,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2544,7 +2544,7 @@ static emlrtBCInfo ki_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo li_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2025,                                /* lineNo */
+  2041,                                /* lineNo */
   68,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2554,7 +2554,7 @@ static emlrtBCInfo li_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2025,                                /* lineNo */
+  2041,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2564,7 +2564,7 @@ static emlrtBCInfo mi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ni_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1980,                                /* lineNo */
+  1996,                                /* lineNo */
   75,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2574,7 +2574,7 @@ static emlrtBCInfo ni_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oi_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1980,                                /* lineNo */
+  1996,                                /* lineNo */
   48,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2584,7 +2584,7 @@ static emlrtBCInfo oi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1978,                                /* lineNo */
+  1994,                                /* lineNo */
   83,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2594,7 +2594,7 @@ static emlrtBCInfo pi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1978,                                /* lineNo */
+  1994,                                /* lineNo */
   56,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2604,7 +2604,7 @@ static emlrtBCInfo qi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ri_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1977,                                /* lineNo */
+  1993,                                /* lineNo */
   68,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2614,7 +2614,7 @@ static emlrtBCInfo ri_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo si_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1977,                                /* lineNo */
+  1993,                                /* lineNo */
   41,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2624,7 +2624,7 @@ static emlrtBCInfo si_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ti_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1950,                                /* lineNo */
+  1966,                                /* lineNo */
   49,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2634,7 +2634,7 @@ static emlrtBCInfo ti_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ui_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1950,                                /* lineNo */
+  1966,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2644,7 +2644,7 @@ static emlrtBCInfo ui_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1938,                                /* lineNo */
+  1954,                                /* lineNo */
   49,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2654,7 +2654,7 @@ static emlrtBCInfo vi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1938,                                /* lineNo */
+  1954,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2664,7 +2664,7 @@ static emlrtBCInfo wi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1926,                                /* lineNo */
+  1942,                                /* lineNo */
   49,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2674,7 +2674,7 @@ static emlrtBCInfo xi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yi_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1926,                                /* lineNo */
+  1942,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2684,7 +2684,7 @@ static emlrtBCInfo yi_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo aj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1914,                                /* lineNo */
+  1930,                                /* lineNo */
   49,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2694,7 +2694,7 @@ static emlrtBCInfo aj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1914,                                /* lineNo */
+  1930,                                /* lineNo */
   34,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2704,7 +2704,7 @@ static emlrtBCInfo bj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cj_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1898,                                /* lineNo */
+  1914,                                /* lineNo */
   56,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2714,7 +2714,7 @@ static emlrtBCInfo cj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1898,                                /* lineNo */
+  1914,                                /* lineNo */
   38,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2724,7 +2724,7 @@ static emlrtBCInfo dj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ej_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1893,                                /* lineNo */
+  1909,                                /* lineNo */
   48,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2734,7 +2734,7 @@ static emlrtBCInfo ej_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1893,                                /* lineNo */
+  1909,                                /* lineNo */
   30,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2744,7 +2744,7 @@ static emlrtBCInfo fj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1885,                                /* lineNo */
+  1901,                                /* lineNo */
   56,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2754,7 +2754,7 @@ static emlrtBCInfo gj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hj_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1885,                                /* lineNo */
+  1901,                                /* lineNo */
   38,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2764,7 +2764,7 @@ static emlrtBCInfo hj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ij_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1880,                                /* lineNo */
+  1896,                                /* lineNo */
   48,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2774,7 +2774,7 @@ static emlrtBCInfo ij_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1880,                                /* lineNo */
+  1896,                                /* lineNo */
   30,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2784,7 +2784,7 @@ static emlrtBCInfo jj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kj_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1872,                                /* lineNo */
+  1888,                                /* lineNo */
   56,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2794,7 +2794,7 @@ static emlrtBCInfo kj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1872,                                /* lineNo */
+  1888,                                /* lineNo */
   38,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2804,7 +2804,7 @@ static emlrtBCInfo lj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1867,                                /* lineNo */
+  1883,                                /* lineNo */
   48,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2814,7 +2814,7 @@ static emlrtBCInfo mj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1867,                                /* lineNo */
+  1883,                                /* lineNo */
   30,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2824,7 +2824,7 @@ static emlrtBCInfo nj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1859,                                /* lineNo */
+  1875,                                /* lineNo */
   58,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2834,7 +2834,7 @@ static emlrtBCInfo oj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pj_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1859,                                /* lineNo */
+  1875,                                /* lineNo */
   38,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2844,7 +2844,7 @@ static emlrtBCInfo pj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1854,                                /* lineNo */
+  1870,                                /* lineNo */
   48,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2854,7 +2854,7 @@ static emlrtBCInfo qj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1854,                                /* lineNo */
+  1870,                                /* lineNo */
   30,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2864,7 +2864,7 @@ static emlrtBCInfo rj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sj_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1856,                                /* lineNo */
+  1872,                                /* lineNo */
   13,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2874,7 +2874,7 @@ static emlrtBCInfo sj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1856,                                /* lineNo */
+  1872,                                /* lineNo */
   13,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2884,7 +2884,7 @@ static emlrtBCInfo tj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uj_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1858,                                /* lineNo */
+  1874,                                /* lineNo */
   13,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2894,7 +2894,7 @@ static emlrtBCInfo uj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1858,                                /* lineNo */
+  1874,                                /* lineNo */
   13,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2904,7 +2904,7 @@ static emlrtBCInfo vj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wj_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1869,                                /* lineNo */
+  1885,                                /* lineNo */
   13,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2914,7 +2914,7 @@ static emlrtBCInfo wj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xj_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1869,                                /* lineNo */
+  1885,                                /* lineNo */
   13,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2924,7 +2924,7 @@ static emlrtBCInfo xj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yj_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1914,                                /* lineNo */
+  1930,                                /* lineNo */
   34,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2934,7 +2934,7 @@ static emlrtBCInfo yj_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ak_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1914,                                /* lineNo */
+  1930,                                /* lineNo */
   49,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2944,7 +2944,7 @@ static emlrtBCInfo ak_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bk_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1871,                                /* lineNo */
+  1887,                                /* lineNo */
   13,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2954,7 +2954,7 @@ static emlrtBCInfo bk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ck_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1871,                                /* lineNo */
+  1887,                                /* lineNo */
   13,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2964,7 +2964,7 @@ static emlrtBCInfo ck_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dk_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1916,                                /* lineNo */
+  1932,                                /* lineNo */
   17,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2974,7 +2974,7 @@ static emlrtBCInfo dk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ek_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1916,                                /* lineNo */
+  1932,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2984,7 +2984,7 @@ static emlrtBCInfo ek_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fk_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1916,                                /* lineNo */
+  1932,                                /* lineNo */
   17,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -2994,7 +2994,7 @@ static emlrtBCInfo fk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gk_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1918,                                /* lineNo */
+  1934,                                /* lineNo */
   17,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3004,7 +3004,7 @@ static emlrtBCInfo gk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hk_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1918,                                /* lineNo */
+  1934,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3014,7 +3014,7 @@ static emlrtBCInfo hk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ik_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1918,                                /* lineNo */
+  1934,                                /* lineNo */
   17,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3024,7 +3024,7 @@ static emlrtBCInfo ik_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jk_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1882,                                /* lineNo */
+  1898,                                /* lineNo */
   13,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3034,7 +3034,7 @@ static emlrtBCInfo jk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kk_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1882,                                /* lineNo */
+  1898,                                /* lineNo */
   13,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3044,7 +3044,7 @@ static emlrtBCInfo kk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lk_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1926,                                /* lineNo */
+  1942,                                /* lineNo */
   34,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3054,7 +3054,7 @@ static emlrtBCInfo lk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mk_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1926,                                /* lineNo */
+  1942,                                /* lineNo */
   49,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3064,7 +3064,7 @@ static emlrtBCInfo mk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nk_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1920,                                /* lineNo */
+  1936,                                /* lineNo */
   71,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3074,7 +3074,7 @@ static emlrtBCInfo nk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ok_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1920,                                /* lineNo */
+  1936,                                /* lineNo */
   88,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3084,7 +3084,7 @@ static emlrtBCInfo ok_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pk_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1928,                                /* lineNo */
+  1944,                                /* lineNo */
   17,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3094,7 +3094,7 @@ static emlrtBCInfo pk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qk_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1928,                                /* lineNo */
+  1944,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3104,7 +3104,7 @@ static emlrtBCInfo qk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rk_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1928,                                /* lineNo */
+  1944,                                /* lineNo */
   17,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3114,7 +3114,7 @@ static emlrtBCInfo rk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sk_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1884,                                /* lineNo */
+  1900,                                /* lineNo */
   13,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3124,7 +3124,7 @@ static emlrtBCInfo sk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tk_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1884,                                /* lineNo */
+  1900,                                /* lineNo */
   13,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3134,7 +3134,7 @@ static emlrtBCInfo tk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uk_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1930,                                /* lineNo */
+  1946,                                /* lineNo */
   17,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3144,7 +3144,7 @@ static emlrtBCInfo uk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vk_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1930,                                /* lineNo */
+  1946,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3154,7 +3154,7 @@ static emlrtBCInfo vk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wk_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1930,                                /* lineNo */
+  1946,                                /* lineNo */
   17,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3164,7 +3164,7 @@ static emlrtBCInfo wk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xk_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1895,                                /* lineNo */
+  1911,                                /* lineNo */
   13,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3174,7 +3174,7 @@ static emlrtBCInfo xk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yk_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1895,                                /* lineNo */
+  1911,                                /* lineNo */
   13,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3184,7 +3184,7 @@ static emlrtBCInfo yk_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo al_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1938,                                /* lineNo */
+  1954,                                /* lineNo */
   34,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3194,7 +3194,7 @@ static emlrtBCInfo al_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1938,                                /* lineNo */
+  1954,                                /* lineNo */
   49,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3204,7 +3204,7 @@ static emlrtBCInfo bl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1932,                                /* lineNo */
+  1948,                                /* lineNo */
   71,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3214,7 +3214,7 @@ static emlrtBCInfo cl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1932,                                /* lineNo */
+  1948,                                /* lineNo */
   86,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3224,7 +3224,7 @@ static emlrtBCInfo dl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo el_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1940,                                /* lineNo */
+  1956,                                /* lineNo */
   17,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3234,7 +3234,7 @@ static emlrtBCInfo el_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1940,                                /* lineNo */
+  1956,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3244,7 +3244,7 @@ static emlrtBCInfo fl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gl_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1940,                                /* lineNo */
+  1956,                                /* lineNo */
   17,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3254,7 +3254,7 @@ static emlrtBCInfo gl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hl_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1897,                                /* lineNo */
+  1913,                                /* lineNo */
   13,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3264,7 +3264,7 @@ static emlrtBCInfo hl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo il_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1897,                                /* lineNo */
+  1913,                                /* lineNo */
   13,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3274,7 +3274,7 @@ static emlrtBCInfo il_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jl_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1942,                                /* lineNo */
+  1958,                                /* lineNo */
   17,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3284,7 +3284,7 @@ static emlrtBCInfo jl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1942,                                /* lineNo */
+  1958,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3294,7 +3294,7 @@ static emlrtBCInfo kl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ll_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1942,                                /* lineNo */
+  1958,                                /* lineNo */
   17,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3304,7 +3304,7 @@ static emlrtBCInfo ll_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ml_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1950,                                /* lineNo */
+  1966,                                /* lineNo */
   34,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3314,7 +3314,7 @@ static emlrtBCInfo ml_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1950,                                /* lineNo */
+  1966,                                /* lineNo */
   49,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3324,7 +3324,7 @@ static emlrtBCInfo nl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ol_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1944,                                /* lineNo */
+  1960,                                /* lineNo */
   71,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3334,7 +3334,7 @@ static emlrtBCInfo ol_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1944,                                /* lineNo */
+  1960,                                /* lineNo */
   86,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3344,7 +3344,7 @@ static emlrtBCInfo pl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ql_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1952,                                /* lineNo */
+  1968,                                /* lineNo */
   17,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3354,7 +3354,7 @@ static emlrtBCInfo ql_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1952,                                /* lineNo */
+  1968,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3364,7 +3364,7 @@ static emlrtBCInfo rl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sl_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1952,                                /* lineNo */
+  1968,                                /* lineNo */
   17,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3374,7 +3374,7 @@ static emlrtBCInfo sl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tl_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1954,                                /* lineNo */
+  1970,                                /* lineNo */
   17,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3384,7 +3384,7 @@ static emlrtBCInfo tl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ul_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1954,                                /* lineNo */
+  1970,                                /* lineNo */
   17,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3394,7 +3394,7 @@ static emlrtBCInfo ul_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vl_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1954,                                /* lineNo */
+  1970,                                /* lineNo */
   17,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3404,7 +3404,7 @@ static emlrtBCInfo vl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1956,                                /* lineNo */
+  1972,                                /* lineNo */
   71,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3414,7 +3414,7 @@ static emlrtBCInfo wl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xl_emlrtBCI = { 1,  /* iFirst */
   9,                                   /* iLast */
-  1956,                                /* lineNo */
+  1972,                                /* lineNo */
   86,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3424,7 +3424,7 @@ static emlrtBCInfo xl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yl_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2003,                                /* lineNo */
+  2019,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3434,7 +3434,7 @@ static emlrtBCInfo yl_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo am_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2003,                                /* lineNo */
+  2019,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3444,7 +3444,7 @@ static emlrtBCInfo am_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2003,                                /* lineNo */
+  2019,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3454,7 +3454,7 @@ static emlrtBCInfo bm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cm_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2003,                                /* lineNo */
+  2019,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3464,7 +3464,7 @@ static emlrtBCInfo cm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1982,                                /* lineNo */
+  1998,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3474,7 +3474,7 @@ static emlrtBCInfo dm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo em_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1982,                                /* lineNo */
+  1998,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3484,7 +3484,7 @@ static emlrtBCInfo em_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1982,                                /* lineNo */
+  1998,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3494,7 +3494,7 @@ static emlrtBCInfo fm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gm_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1982,                                /* lineNo */
+  1998,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3504,7 +3504,7 @@ static emlrtBCInfo gm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2016,                                /* lineNo */
+  2032,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3514,7 +3514,7 @@ static emlrtBCInfo hm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo im_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2016,                                /* lineNo */
+  2032,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3524,7 +3524,7 @@ static emlrtBCInfo im_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2016,                                /* lineNo */
+  2032,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3534,7 +3534,7 @@ static emlrtBCInfo jm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo km_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2016,                                /* lineNo */
+  2032,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3544,7 +3544,7 @@ static emlrtBCInfo km_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1995,                                /* lineNo */
+  2011,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3554,7 +3554,7 @@ static emlrtBCInfo lm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mm_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1995,                                /* lineNo */
+  2011,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3564,7 +3564,7 @@ static emlrtBCInfo mm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1995,                                /* lineNo */
+  2011,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3574,7 +3574,7 @@ static emlrtBCInfo nm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo om_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1995,                                /* lineNo */
+  2011,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3584,7 +3584,7 @@ static emlrtBCInfo om_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2005,                                /* lineNo */
+  2021,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3594,7 +3594,7 @@ static emlrtBCInfo pm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qm_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2005,                                /* lineNo */
+  2021,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3604,7 +3604,7 @@ static emlrtBCInfo qm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2005,                                /* lineNo */
+  2021,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3614,7 +3614,7 @@ static emlrtBCInfo rm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sm_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2005,                                /* lineNo */
+  2021,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3624,7 +3624,7 @@ static emlrtBCInfo sm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1984,                                /* lineNo */
+  2000,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3634,7 +3634,7 @@ static emlrtBCInfo tm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo um_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1984,                                /* lineNo */
+  2000,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3644,7 +3644,7 @@ static emlrtBCInfo um_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vm_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1984,                                /* lineNo */
+  2000,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3654,7 +3654,7 @@ static emlrtBCInfo vm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wm_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1984,                                /* lineNo */
+  2000,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3664,7 +3664,7 @@ static emlrtBCInfo wm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xm_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2075,                                /* lineNo */
+  2091,                                /* lineNo */
   31,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3674,7 +3674,7 @@ static emlrtBCInfo xm_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ym_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2007,                                /* lineNo */
+  2023,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3684,7 +3684,7 @@ static emlrtBCInfo ym_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo an_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2007,                                /* lineNo */
+  2023,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3694,7 +3694,7 @@ static emlrtBCInfo an_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1986,                                /* lineNo */
+  2002,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3704,7 +3704,7 @@ static emlrtBCInfo bn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1986,                                /* lineNo */
+  2002,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3714,7 +3714,7 @@ static emlrtBCInfo cn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2018,                                /* lineNo */
+  2034,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3724,7 +3724,7 @@ static emlrtBCInfo dn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo en_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2018,                                /* lineNo */
+  2034,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3734,7 +3734,7 @@ static emlrtBCInfo en_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1997,                                /* lineNo */
+  2013,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3744,7 +3744,7 @@ static emlrtBCInfo fn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1997,                                /* lineNo */
+  2013,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3754,7 +3754,7 @@ static emlrtBCInfo gn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2018,                                /* lineNo */
+  2034,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3764,7 +3764,7 @@ static emlrtBCInfo hn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo in_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2018,                                /* lineNo */
+  2034,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3774,7 +3774,7 @@ static emlrtBCInfo in_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  1997,                                /* lineNo */
+  2013,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3784,7 +3784,7 @@ static emlrtBCInfo jn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  1997,                                /* lineNo */
+  2013,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3794,7 +3794,7 @@ static emlrtBCInfo kn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ln_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2302,                                /* lineNo */
+  2318,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3804,7 +3804,7 @@ static emlrtBCInfo ln_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2302,                                /* lineNo */
+  2318,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3814,7 +3814,7 @@ static emlrtBCInfo mn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2302,                                /* lineNo */
+  2318,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3824,7 +3824,7 @@ static emlrtBCInfo nn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo on_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2302,                                /* lineNo */
+  2318,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3834,7 +3834,7 @@ static emlrtBCInfo on_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2282,                                /* lineNo */
+  2298,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3844,7 +3844,7 @@ static emlrtBCInfo pn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2282,                                /* lineNo */
+  2298,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3854,7 +3854,7 @@ static emlrtBCInfo qn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2282,                                /* lineNo */
+  2298,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3864,7 +3864,7 @@ static emlrtBCInfo rn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2282,                                /* lineNo */
+  2298,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3874,7 +3874,7 @@ static emlrtBCInfo sn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2315,                                /* lineNo */
+  2331,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3884,7 +3884,7 @@ static emlrtBCInfo tn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo un_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2315,                                /* lineNo */
+  2331,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3894,7 +3894,7 @@ static emlrtBCInfo un_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2315,                                /* lineNo */
+  2331,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3904,7 +3904,7 @@ static emlrtBCInfo vn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2315,                                /* lineNo */
+  2331,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3914,7 +3914,7 @@ static emlrtBCInfo wn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xn_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2294,                                /* lineNo */
+  2310,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3924,7 +3924,7 @@ static emlrtBCInfo xn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yn_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2294,                                /* lineNo */
+  2310,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3934,7 +3934,7 @@ static emlrtBCInfo yn_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ao_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2294,                                /* lineNo */
+  2310,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3944,7 +3944,7 @@ static emlrtBCInfo ao_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2294,                                /* lineNo */
+  2310,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3954,7 +3954,7 @@ static emlrtBCInfo bo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo co_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2076,                                /* lineNo */
+  2092,                                /* lineNo */
   39,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3964,7 +3964,7 @@ static emlrtBCInfo co_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo do_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2051,                                /* lineNo */
+  2067,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3974,7 +3974,7 @@ static emlrtBCInfo do_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo eo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2051,                                /* lineNo */
+  2067,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3984,7 +3984,7 @@ static emlrtBCInfo eo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2051,                                /* lineNo */
+  2067,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -3994,7 +3994,7 @@ static emlrtBCInfo fo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo go_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2051,                                /* lineNo */
+  2067,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4004,7 +4004,7 @@ static emlrtBCInfo go_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ho_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2030,                                /* lineNo */
+  2046,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4014,7 +4014,7 @@ static emlrtBCInfo ho_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo io_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2030,                                /* lineNo */
+  2046,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4024,7 +4024,7 @@ static emlrtBCInfo io_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2030,                                /* lineNo */
+  2046,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4034,7 +4034,7 @@ static emlrtBCInfo jo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ko_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2030,                                /* lineNo */
+  2046,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4044,7 +4044,7 @@ static emlrtBCInfo ko_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lo_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2304,                                /* lineNo */
+  2320,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4054,7 +4054,7 @@ static emlrtBCInfo lo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2304,                                /* lineNo */
+  2320,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4064,7 +4064,7 @@ static emlrtBCInfo mo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo no_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2304,                                /* lineNo */
+  2320,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4074,7 +4074,7 @@ static emlrtBCInfo no_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oo_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2304,                                /* lineNo */
+  2320,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4084,7 +4084,7 @@ static emlrtBCInfo oo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo po_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2284,                                /* lineNo */
+  2300,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4094,7 +4094,7 @@ static emlrtBCInfo po_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2284,                                /* lineNo */
+  2300,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4104,7 +4104,7 @@ static emlrtBCInfo qo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ro_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2284,                                /* lineNo */
+  2300,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4114,7 +4114,7 @@ static emlrtBCInfo ro_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo so_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2284,                                /* lineNo */
+  2300,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4124,7 +4124,7 @@ static emlrtBCInfo so_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo to_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2064,                                /* lineNo */
+  2080,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4134,7 +4134,7 @@ static emlrtBCInfo to_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2064,                                /* lineNo */
+  2080,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4144,7 +4144,7 @@ static emlrtBCInfo uo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2064,                                /* lineNo */
+  2080,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4154,7 +4154,7 @@ static emlrtBCInfo vo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wo_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2064,                                /* lineNo */
+  2080,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4164,7 +4164,7 @@ static emlrtBCInfo wo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xo_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2043,                                /* lineNo */
+  2059,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4174,7 +4174,7 @@ static emlrtBCInfo xo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yo_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2043,                                /* lineNo */
+  2059,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4184,7 +4184,7 @@ static emlrtBCInfo yo_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ap_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2043,                                /* lineNo */
+  2059,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4194,7 +4194,7 @@ static emlrtBCInfo ap_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2043,                                /* lineNo */
+  2059,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4204,7 +4204,7 @@ static emlrtBCInfo bp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2053,                                /* lineNo */
+  2069,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4214,7 +4214,7 @@ static emlrtBCInfo cp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2053,                                /* lineNo */
+  2069,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4224,7 +4224,7 @@ static emlrtBCInfo dp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ep_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2053,                                /* lineNo */
+  2069,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4234,7 +4234,7 @@ static emlrtBCInfo ep_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2053,                                /* lineNo */
+  2069,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4244,7 +4244,7 @@ static emlrtBCInfo fp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2032,                                /* lineNo */
+  2048,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4254,7 +4254,7 @@ static emlrtBCInfo gp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2032,                                /* lineNo */
+  2048,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4264,7 +4264,7 @@ static emlrtBCInfo hp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ip_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2032,                                /* lineNo */
+  2048,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4274,7 +4274,7 @@ static emlrtBCInfo ip_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2032,                                /* lineNo */
+  2048,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4284,7 +4284,7 @@ static emlrtBCInfo jp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2306,                                /* lineNo */
+  2322,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4294,7 +4294,7 @@ static emlrtBCInfo kp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2306,                                /* lineNo */
+  2322,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4304,7 +4304,7 @@ static emlrtBCInfo lp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2286,                                /* lineNo */
+  2302,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4314,7 +4314,7 @@ static emlrtBCInfo mp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo np_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2286,                                /* lineNo */
+  2302,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4324,7 +4324,7 @@ static emlrtBCInfo np_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo op_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2317,                                /* lineNo */
+  2333,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4334,7 +4334,7 @@ static emlrtBCInfo op_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2317,                                /* lineNo */
+  2333,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4344,7 +4344,7 @@ static emlrtBCInfo pp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2296,                                /* lineNo */
+  2312,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4354,7 +4354,7 @@ static emlrtBCInfo qp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2296,                                /* lineNo */
+  2312,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4364,7 +4364,7 @@ static emlrtBCInfo rp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2123,                                /* lineNo */
+  2139,                                /* lineNo */
   31,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4374,7 +4374,7 @@ static emlrtBCInfo sp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2317,                                /* lineNo */
+  2333,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4384,7 +4384,7 @@ static emlrtBCInfo tp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo up_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2317,                                /* lineNo */
+  2333,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4394,7 +4394,7 @@ static emlrtBCInfo up_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2296,                                /* lineNo */
+  2312,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4404,7 +4404,7 @@ static emlrtBCInfo vp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2296,                                /* lineNo */
+  2312,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4414,7 +4414,7 @@ static emlrtBCInfo wp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xp_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2055,                                /* lineNo */
+  2071,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4424,7 +4424,7 @@ static emlrtBCInfo xp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yp_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2055,                                /* lineNo */
+  2071,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4434,7 +4434,7 @@ static emlrtBCInfo yp_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo aq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2034,                                /* lineNo */
+  2050,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4444,7 +4444,7 @@ static emlrtBCInfo aq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2034,                                /* lineNo */
+  2050,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4454,7 +4454,7 @@ static emlrtBCInfo bq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2066,                                /* lineNo */
+  2082,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4464,7 +4464,7 @@ static emlrtBCInfo cq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2066,                                /* lineNo */
+  2082,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4474,7 +4474,7 @@ static emlrtBCInfo dq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo eq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2045,                                /* lineNo */
+  2061,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4484,7 +4484,7 @@ static emlrtBCInfo eq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2045,                                /* lineNo */
+  2061,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4494,7 +4494,7 @@ static emlrtBCInfo fq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2066,                                /* lineNo */
+  2082,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4504,7 +4504,7 @@ static emlrtBCInfo gq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2066,                                /* lineNo */
+  2082,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4514,7 +4514,7 @@ static emlrtBCInfo hq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo iq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2045,                                /* lineNo */
+  2061,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4524,7 +4524,7 @@ static emlrtBCInfo iq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2045,                                /* lineNo */
+  2061,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4534,7 +4534,7 @@ static emlrtBCInfo jq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2350,                                /* lineNo */
+  2366,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4544,7 +4544,7 @@ static emlrtBCInfo kq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2350,                                /* lineNo */
+  2366,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4554,7 +4554,7 @@ static emlrtBCInfo lq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2350,                                /* lineNo */
+  2366,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4564,7 +4564,7 @@ static emlrtBCInfo mq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2350,                                /* lineNo */
+  2366,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4574,7 +4574,7 @@ static emlrtBCInfo nq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2329,                                /* lineNo */
+  2345,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4584,7 +4584,7 @@ static emlrtBCInfo oq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2329,                                /* lineNo */
+  2345,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4594,7 +4594,7 @@ static emlrtBCInfo pq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2329,                                /* lineNo */
+  2345,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4604,7 +4604,7 @@ static emlrtBCInfo qq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2329,                                /* lineNo */
+  2345,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4614,7 +4614,7 @@ static emlrtBCInfo rq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2124,                                /* lineNo */
+  2140,                                /* lineNo */
   39,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4624,7 +4624,7 @@ static emlrtBCInfo sq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2362,                                /* lineNo */
+  2378,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4634,7 +4634,7 @@ static emlrtBCInfo tq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2362,                                /* lineNo */
+  2378,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4644,7 +4644,7 @@ static emlrtBCInfo uq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2362,                                /* lineNo */
+  2378,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4654,7 +4654,7 @@ static emlrtBCInfo vq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2362,                                /* lineNo */
+  2378,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4664,7 +4664,7 @@ static emlrtBCInfo wq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xq_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2342,                                /* lineNo */
+  2358,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4674,7 +4674,7 @@ static emlrtBCInfo xq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yq_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2342,                                /* lineNo */
+  2358,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4684,7 +4684,7 @@ static emlrtBCInfo yq_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ar_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2342,                                /* lineNo */
+  2358,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4694,7 +4694,7 @@ static emlrtBCInfo ar_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo br_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2342,                                /* lineNo */
+  2358,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4704,7 +4704,7 @@ static emlrtBCInfo br_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2101,                                /* lineNo */
+  2117,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4714,7 +4714,7 @@ static emlrtBCInfo cr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2101,                                /* lineNo */
+  2117,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4724,7 +4724,7 @@ static emlrtBCInfo dr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo er_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2101,                                /* lineNo */
+  2117,                                /* lineNo */
   98,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4734,7 +4734,7 @@ static emlrtBCInfo er_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2101,                                /* lineNo */
+  2117,                                /* lineNo */
   98,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4744,7 +4744,7 @@ static emlrtBCInfo fr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2080,                                /* lineNo */
+  2096,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4754,7 +4754,7 @@ static emlrtBCInfo gr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2080,                                /* lineNo */
+  2096,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4764,7 +4764,7 @@ static emlrtBCInfo hr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ir_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2080,                                /* lineNo */
+  2096,                                /* lineNo */
   98,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4774,7 +4774,7 @@ static emlrtBCInfo ir_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2080,                                /* lineNo */
+  2096,                                /* lineNo */
   98,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4784,7 +4784,7 @@ static emlrtBCInfo jr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2114,                                /* lineNo */
+  2130,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4794,7 +4794,7 @@ static emlrtBCInfo kr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2114,                                /* lineNo */
+  2130,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4804,7 +4804,7 @@ static emlrtBCInfo lr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2114,                                /* lineNo */
+  2130,                                /* lineNo */
   103,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4814,7 +4814,7 @@ static emlrtBCInfo mr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2114,                                /* lineNo */
+  2130,                                /* lineNo */
   103,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4824,7 +4824,7 @@ static emlrtBCInfo nr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo or_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2093,                                /* lineNo */
+  2109,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4834,7 +4834,7 @@ static emlrtBCInfo or_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2093,                                /* lineNo */
+  2109,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4844,7 +4844,7 @@ static emlrtBCInfo pr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2093,                                /* lineNo */
+  2109,                                /* lineNo */
   103,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4854,7 +4854,7 @@ static emlrtBCInfo qr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2093,                                /* lineNo */
+  2109,                                /* lineNo */
   103,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4864,7 +4864,7 @@ static emlrtBCInfo rr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2352,                                /* lineNo */
+  2368,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4874,7 +4874,7 @@ static emlrtBCInfo sr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2352,                                /* lineNo */
+  2368,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4884,7 +4884,7 @@ static emlrtBCInfo tr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ur_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2352,                                /* lineNo */
+  2368,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4894,7 +4894,7 @@ static emlrtBCInfo ur_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2352,                                /* lineNo */
+  2368,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4904,7 +4904,7 @@ static emlrtBCInfo vr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2331,                                /* lineNo */
+  2347,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4914,7 +4914,7 @@ static emlrtBCInfo wr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xr_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2331,                                /* lineNo */
+  2347,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4924,7 +4924,7 @@ static emlrtBCInfo xr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yr_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2331,                                /* lineNo */
+  2347,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4934,7 +4934,7 @@ static emlrtBCInfo yr_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo as_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2331,                                /* lineNo */
+  2347,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4944,7 +4944,7 @@ static emlrtBCInfo as_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bs_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2103,                                /* lineNo */
+  2119,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4954,7 +4954,7 @@ static emlrtBCInfo bs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cs_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2103,                                /* lineNo */
+  2119,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4964,7 +4964,7 @@ static emlrtBCInfo cs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ds_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2103,                                /* lineNo */
+  2119,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4974,7 +4974,7 @@ static emlrtBCInfo ds_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo es_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2103,                                /* lineNo */
+  2119,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4984,7 +4984,7 @@ static emlrtBCInfo es_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fs_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2082,                                /* lineNo */
+  2098,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -4994,7 +4994,7 @@ static emlrtBCInfo fs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gs_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2082,                                /* lineNo */
+  2098,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5004,7 +5004,7 @@ static emlrtBCInfo gs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hs_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2082,                                /* lineNo */
+  2098,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5014,7 +5014,7 @@ static emlrtBCInfo hs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo is_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2082,                                /* lineNo */
+  2098,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5024,7 +5024,7 @@ static emlrtBCInfo is_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo js_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2421,                                /* lineNo */
+  2437,                                /* lineNo */
   31,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5034,7 +5034,7 @@ static emlrtBCInfo js_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ks_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2354,                                /* lineNo */
+  2370,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5044,7 +5044,7 @@ static emlrtBCInfo ks_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ls_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2354,                                /* lineNo */
+  2370,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5054,7 +5054,7 @@ static emlrtBCInfo ls_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ms_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2333,                                /* lineNo */
+  2349,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5064,7 +5064,7 @@ static emlrtBCInfo ms_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ns_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2333,                                /* lineNo */
+  2349,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5074,7 +5074,7 @@ static emlrtBCInfo ns_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo os_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2173,                                /* lineNo */
+  2189,                                /* lineNo */
   31,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5084,7 +5084,7 @@ static emlrtBCInfo os_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ps_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2364,                                /* lineNo */
+  2380,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5094,7 +5094,7 @@ static emlrtBCInfo ps_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qs_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2364,                                /* lineNo */
+  2380,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5104,7 +5104,7 @@ static emlrtBCInfo qs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rs_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2344,                                /* lineNo */
+  2360,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5114,7 +5114,7 @@ static emlrtBCInfo rs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ss_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2344,                                /* lineNo */
+  2360,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5124,7 +5124,7 @@ static emlrtBCInfo ss_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ts_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2105,                                /* lineNo */
+  2121,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5134,7 +5134,7 @@ static emlrtBCInfo ts_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo us_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2105,                                /* lineNo */
+  2121,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5144,7 +5144,7 @@ static emlrtBCInfo us_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vs_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2084,                                /* lineNo */
+  2100,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5154,7 +5154,7 @@ static emlrtBCInfo vs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ws_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2084,                                /* lineNo */
+  2100,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5164,7 +5164,7 @@ static emlrtBCInfo ws_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xs_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2364,                                /* lineNo */
+  2380,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5174,7 +5174,7 @@ static emlrtBCInfo xs_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ys_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2364,                                /* lineNo */
+  2380,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5184,7 +5184,7 @@ static emlrtBCInfo ys_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo at_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2344,                                /* lineNo */
+  2360,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5194,7 +5194,7 @@ static emlrtBCInfo at_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2344,                                /* lineNo */
+  2360,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5204,7 +5204,7 @@ static emlrtBCInfo bt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ct_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2116,                                /* lineNo */
+  2132,                                /* lineNo */
   105,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5214,7 +5214,7 @@ static emlrtBCInfo ct_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2116,                                /* lineNo */
+  2132,                                /* lineNo */
   105,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5224,7 +5224,7 @@ static emlrtBCInfo dt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo et_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2095,                                /* lineNo */
+  2111,                                /* lineNo */
   105,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5234,7 +5234,7 @@ static emlrtBCInfo et_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ft_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2095,                                /* lineNo */
+  2111,                                /* lineNo */
   105,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5244,7 +5244,7 @@ static emlrtBCInfo ft_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gt_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2116,                                /* lineNo */
+  2132,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5254,7 +5254,7 @@ static emlrtBCInfo gt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ht_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2116,                                /* lineNo */
+  2132,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5264,7 +5264,7 @@ static emlrtBCInfo ht_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo it_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2095,                                /* lineNo */
+  2111,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5274,7 +5274,7 @@ static emlrtBCInfo it_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2095,                                /* lineNo */
+  2111,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5284,7 +5284,7 @@ static emlrtBCInfo jt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kt_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2422,                                /* lineNo */
+  2438,                                /* lineNo */
   39,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5294,7 +5294,7 @@ static emlrtBCInfo kt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lt_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2174,                                /* lineNo */
+  2190,                                /* lineNo */
   39,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5304,7 +5304,7 @@ static emlrtBCInfo lt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2398,                                /* lineNo */
+  2414,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5314,7 +5314,7 @@ static emlrtBCInfo mt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nt_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2398,                                /* lineNo */
+  2414,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5324,7 +5324,7 @@ static emlrtBCInfo nt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ot_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2398,                                /* lineNo */
+  2414,                                /* lineNo */
   94,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5334,7 +5334,7 @@ static emlrtBCInfo ot_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2398,                                /* lineNo */
+  2414,                                /* lineNo */
   94,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5344,7 +5344,7 @@ static emlrtBCInfo pt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2377,                                /* lineNo */
+  2393,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5354,7 +5354,7 @@ static emlrtBCInfo qt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rt_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2377,                                /* lineNo */
+  2393,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5364,7 +5364,7 @@ static emlrtBCInfo rt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo st_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2377,                                /* lineNo */
+  2393,                                /* lineNo */
   94,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5374,7 +5374,7 @@ static emlrtBCInfo st_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2377,                                /* lineNo */
+  2393,                                /* lineNo */
   94,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5384,7 +5384,7 @@ static emlrtBCInfo tt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ut_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2150,                                /* lineNo */
+  2166,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5394,7 +5394,7 @@ static emlrtBCInfo ut_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vt_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2150,                                /* lineNo */
+  2166,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5404,7 +5404,7 @@ static emlrtBCInfo vt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2150,                                /* lineNo */
+  2166,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5414,7 +5414,7 @@ static emlrtBCInfo wt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xt_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2150,                                /* lineNo */
+  2166,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5424,7 +5424,7 @@ static emlrtBCInfo xt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yt_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2128,                                /* lineNo */
+  2144,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5434,7 +5434,7 @@ static emlrtBCInfo yt_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo au_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2128,                                /* lineNo */
+  2144,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5444,7 +5444,7 @@ static emlrtBCInfo au_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2128,                                /* lineNo */
+  2144,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5454,7 +5454,7 @@ static emlrtBCInfo bu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2128,                                /* lineNo */
+  2144,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5464,7 +5464,7 @@ static emlrtBCInfo cu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo du_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2410,                                /* lineNo */
+  2426,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5474,7 +5474,7 @@ static emlrtBCInfo du_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo eu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2410,                                /* lineNo */
+  2426,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5484,7 +5484,7 @@ static emlrtBCInfo eu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2410,                                /* lineNo */
+  2426,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5494,7 +5494,7 @@ static emlrtBCInfo fu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2410,                                /* lineNo */
+  2426,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5504,7 +5504,7 @@ static emlrtBCInfo gu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2389,                                /* lineNo */
+  2405,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5514,7 +5514,7 @@ static emlrtBCInfo hu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo iu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2389,                                /* lineNo */
+  2405,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5524,7 +5524,7 @@ static emlrtBCInfo iu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ju_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2389,                                /* lineNo */
+  2405,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5534,7 +5534,7 @@ static emlrtBCInfo ju_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ku_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2389,                                /* lineNo */
+  2405,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5544,7 +5544,7 @@ static emlrtBCInfo ku_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2164,                                /* lineNo */
+  2180,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5554,7 +5554,7 @@ static emlrtBCInfo lu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2164,                                /* lineNo */
+  2180,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5564,7 +5564,7 @@ static emlrtBCInfo mu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2164,                                /* lineNo */
+  2180,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5574,7 +5574,7 @@ static emlrtBCInfo nu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ou_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2164,                                /* lineNo */
+  2180,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5584,7 +5584,7 @@ static emlrtBCInfo ou_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2142,                                /* lineNo */
+  2158,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5594,7 +5594,7 @@ static emlrtBCInfo pu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2142,                                /* lineNo */
+  2158,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5604,7 +5604,7 @@ static emlrtBCInfo qu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ru_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2142,                                /* lineNo */
+  2158,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5614,7 +5614,7 @@ static emlrtBCInfo ru_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo su_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2142,                                /* lineNo */
+  2158,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5624,7 +5624,7 @@ static emlrtBCInfo su_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2400,                                /* lineNo */
+  2416,                                /* lineNo */
   95,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5634,7 +5634,7 @@ static emlrtBCInfo tu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2400,                                /* lineNo */
+  2416,                                /* lineNo */
   95,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5644,7 +5644,7 @@ static emlrtBCInfo uu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2400,                                /* lineNo */
+  2416,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5654,7 +5654,7 @@ static emlrtBCInfo vu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2400,                                /* lineNo */
+  2416,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5664,7 +5664,7 @@ static emlrtBCInfo wu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xu_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2379,                                /* lineNo */
+  2395,                                /* lineNo */
   95,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5674,7 +5674,7 @@ static emlrtBCInfo xu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yu_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2379,                                /* lineNo */
+  2395,                                /* lineNo */
   95,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5684,7 +5684,7 @@ static emlrtBCInfo yu_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo av_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2379,                                /* lineNo */
+  2395,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5694,7 +5694,7 @@ static emlrtBCInfo av_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2379,                                /* lineNo */
+  2395,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5704,7 +5704,7 @@ static emlrtBCInfo bv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2153,                                /* lineNo */
+  2169,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5714,7 +5714,7 @@ static emlrtBCInfo cv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2153,                                /* lineNo */
+  2169,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5724,7 +5724,7 @@ static emlrtBCInfo dv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ev_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2153,                                /* lineNo */
+  2169,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5734,7 +5734,7 @@ static emlrtBCInfo ev_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2153,                                /* lineNo */
+  2169,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5744,7 +5744,7 @@ static emlrtBCInfo fv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2130,                                /* lineNo */
+  2146,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5754,7 +5754,7 @@ static emlrtBCInfo gv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2130,                                /* lineNo */
+  2146,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5764,7 +5764,7 @@ static emlrtBCInfo hv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo iv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2130,                                /* lineNo */
+  2146,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5774,7 +5774,7 @@ static emlrtBCInfo iv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2130,                                /* lineNo */
+  2146,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5784,7 +5784,7 @@ static emlrtBCInfo jv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2467,                                /* lineNo */
+  2483,                                /* lineNo */
   31,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5794,7 +5794,7 @@ static emlrtBCInfo kv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2402,                                /* lineNo */
+  2418,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5804,7 +5804,7 @@ static emlrtBCInfo lv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2402,                                /* lineNo */
+  2418,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5814,7 +5814,7 @@ static emlrtBCInfo mv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2381,                                /* lineNo */
+  2397,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5824,7 +5824,7 @@ static emlrtBCInfo nv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ov_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2381,                                /* lineNo */
+  2397,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5834,7 +5834,7 @@ static emlrtBCInfo ov_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2155,                                /* lineNo */
+  2171,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5844,7 +5844,7 @@ static emlrtBCInfo pv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2155,                                /* lineNo */
+  2171,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5854,7 +5854,7 @@ static emlrtBCInfo qv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2132,                                /* lineNo */
+  2148,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5864,7 +5864,7 @@ static emlrtBCInfo rv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2132,                                /* lineNo */
+  2148,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5874,7 +5874,7 @@ static emlrtBCInfo sv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2166,                                /* lineNo */
+  2182,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5884,7 +5884,7 @@ static emlrtBCInfo tv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2166,                                /* lineNo */
+  2182,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5894,7 +5894,7 @@ static emlrtBCInfo uv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2144,                                /* lineNo */
+  2160,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5904,7 +5904,7 @@ static emlrtBCInfo vv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2144,                                /* lineNo */
+  2160,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5914,7 +5914,7 @@ static emlrtBCInfo wv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xv_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2166,                                /* lineNo */
+  2182,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5924,7 +5924,7 @@ static emlrtBCInfo xv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yv_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2166,                                /* lineNo */
+  2182,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5934,7 +5934,7 @@ static emlrtBCInfo yv_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo aw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2144,                                /* lineNo */
+  2160,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5944,7 +5944,7 @@ static emlrtBCInfo aw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2144,                                /* lineNo */
+  2160,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5954,7 +5954,7 @@ static emlrtBCInfo bw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2412,                                /* lineNo */
+  2428,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5964,7 +5964,7 @@ static emlrtBCInfo cw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2412,                                /* lineNo */
+  2428,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5974,7 +5974,7 @@ static emlrtBCInfo dw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ew_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2391,                                /* lineNo */
+  2407,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5984,7 +5984,7 @@ static emlrtBCInfo ew_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2391,                                /* lineNo */
+  2407,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -5994,7 +5994,7 @@ static emlrtBCInfo fw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2468,                                /* lineNo */
+  2484,                                /* lineNo */
   39,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6004,7 +6004,7 @@ static emlrtBCInfo gw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2446,                                /* lineNo */
+  2462,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6014,7 +6014,7 @@ static emlrtBCInfo hw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo iw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2446,                                /* lineNo */
+  2462,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6024,7 +6024,7 @@ static emlrtBCInfo iw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2446,                                /* lineNo */
+  2462,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6034,7 +6034,7 @@ static emlrtBCInfo jw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2446,                                /* lineNo */
+  2462,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6044,7 +6044,7 @@ static emlrtBCInfo kw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2426,                                /* lineNo */
+  2442,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6054,7 +6054,7 @@ static emlrtBCInfo lw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2426,                                /* lineNo */
+  2442,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6064,7 +6064,7 @@ static emlrtBCInfo mw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2426,                                /* lineNo */
+  2442,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6074,7 +6074,7 @@ static emlrtBCInfo nw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ow_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2426,                                /* lineNo */
+  2442,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6084,7 +6084,7 @@ static emlrtBCInfo ow_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo pw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2199,                                /* lineNo */
+  2215,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6094,7 +6094,7 @@ static emlrtBCInfo pw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2199,                                /* lineNo */
+  2215,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6104,7 +6104,7 @@ static emlrtBCInfo qw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2199,                                /* lineNo */
+  2215,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6114,7 +6114,7 @@ static emlrtBCInfo rw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2199,                                /* lineNo */
+  2215,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6124,7 +6124,7 @@ static emlrtBCInfo sw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2178,                                /* lineNo */
+  2194,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6134,7 +6134,7 @@ static emlrtBCInfo tw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2178,                                /* lineNo */
+  2194,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6144,7 +6144,7 @@ static emlrtBCInfo uw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2178,                                /* lineNo */
+  2194,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6154,7 +6154,7 @@ static emlrtBCInfo vw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ww_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2178,                                /* lineNo */
+  2194,                                /* lineNo */
   96,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6164,7 +6164,7 @@ static emlrtBCInfo ww_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xw_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2458,                                /* lineNo */
+  2474,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6174,7 +6174,7 @@ static emlrtBCInfo xw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yw_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2458,                                /* lineNo */
+  2474,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6184,7 +6184,7 @@ static emlrtBCInfo yw_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ax_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2458,                                /* lineNo */
+  2474,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6194,7 +6194,7 @@ static emlrtBCInfo ax_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo bx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2458,                                /* lineNo */
+  2474,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6204,7 +6204,7 @@ static emlrtBCInfo bx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2438,                                /* lineNo */
+  2454,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6214,7 +6214,7 @@ static emlrtBCInfo cx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2438,                                /* lineNo */
+  2454,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6224,7 +6224,7 @@ static emlrtBCInfo dx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ex_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2438,                                /* lineNo */
+  2454,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6234,7 +6234,7 @@ static emlrtBCInfo ex_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2438,                                /* lineNo */
+  2454,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6244,7 +6244,7 @@ static emlrtBCInfo fx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2212,                                /* lineNo */
+  2228,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6254,7 +6254,7 @@ static emlrtBCInfo gx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2212,                                /* lineNo */
+  2228,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6264,7 +6264,7 @@ static emlrtBCInfo hx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ix_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2212,                                /* lineNo */
+  2228,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6274,7 +6274,7 @@ static emlrtBCInfo ix_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2212,                                /* lineNo */
+  2228,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6284,7 +6284,7 @@ static emlrtBCInfo jx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo kx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2191,                                /* lineNo */
+  2207,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6294,7 +6294,7 @@ static emlrtBCInfo kx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo lx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2191,                                /* lineNo */
+  2207,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6304,7 +6304,7 @@ static emlrtBCInfo lx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo mx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2191,                                /* lineNo */
+  2207,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6314,7 +6314,7 @@ static emlrtBCInfo mx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo nx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2191,                                /* lineNo */
+  2207,                                /* lineNo */
   101,                                 /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6324,7 +6324,7 @@ static emlrtBCInfo nx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ox_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2448,                                /* lineNo */
+  2464,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6334,7 +6334,7 @@ static emlrtBCInfo ox_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo px_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2448,                                /* lineNo */
+  2464,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6344,7 +6344,7 @@ static emlrtBCInfo px_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2448,                                /* lineNo */
+  2464,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6354,7 +6354,7 @@ static emlrtBCInfo qx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo rx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2448,                                /* lineNo */
+  2464,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6364,7 +6364,7 @@ static emlrtBCInfo rx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2428,                                /* lineNo */
+  2444,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6374,7 +6374,7 @@ static emlrtBCInfo sx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo tx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2428,                                /* lineNo */
+  2444,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6384,7 +6384,7 @@ static emlrtBCInfo tx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ux_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2428,                                /* lineNo */
+  2444,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6394,7 +6394,7 @@ static emlrtBCInfo ux_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2428,                                /* lineNo */
+  2444,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6404,7 +6404,7 @@ static emlrtBCInfo vx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wx_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2201,                                /* lineNo */
+  2217,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6414,7 +6414,7 @@ static emlrtBCInfo wx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2201,                                /* lineNo */
+  2217,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6424,7 +6424,7 @@ static emlrtBCInfo xx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yx_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2201,                                /* lineNo */
+  2217,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6434,7 +6434,7 @@ static emlrtBCInfo yx_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ay_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2201,                                /* lineNo */
+  2217,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6444,7 +6444,7 @@ static emlrtBCInfo ay_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo by_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2180,                                /* lineNo */
+  2196,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6454,7 +6454,7 @@ static emlrtBCInfo by_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo cy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2180,                                /* lineNo */
+  2196,                                /* lineNo */
   97,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6464,7 +6464,7 @@ static emlrtBCInfo cy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo dy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2180,                                /* lineNo */
+  2196,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6474,7 +6474,7 @@ static emlrtBCInfo dy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ey_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2180,                                /* lineNo */
+  2196,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6484,7 +6484,7 @@ static emlrtBCInfo ey_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo fy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2513,                                /* lineNo */
+  2529,                                /* lineNo */
   31,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6494,7 +6494,7 @@ static emlrtBCInfo fy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo gy_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2450,                                /* lineNo */
+  2466,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6504,7 +6504,7 @@ static emlrtBCInfo gy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo hy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2450,                                /* lineNo */
+  2466,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6514,7 +6514,7 @@ static emlrtBCInfo hy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo iy_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2430,                                /* lineNo */
+  2446,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6524,7 +6524,7 @@ static emlrtBCInfo iy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo jy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2430,                                /* lineNo */
+  2446,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6534,7 +6534,7 @@ static emlrtBCInfo jy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ky_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2203,                                /* lineNo */
+  2219,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6544,7 +6544,7 @@ static emlrtBCInfo ky_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ly_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2203,                                /* lineNo */
+  2219,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6554,7 +6554,7 @@ static emlrtBCInfo ly_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo my_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2182,                                /* lineNo */
+  2198,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6564,7 +6564,7 @@ static emlrtBCInfo my_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ny_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2182,                                /* lineNo */
+  2198,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6574,7 +6574,7 @@ static emlrtBCInfo ny_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo oy_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2460,                                /* lineNo */
+  2476,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6584,7 +6584,7 @@ static emlrtBCInfo oy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo py_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2460,                                /* lineNo */
+  2476,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6594,7 +6594,7 @@ static emlrtBCInfo py_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo qy_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2440,                                /* lineNo */
+  2456,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6604,7 +6604,7 @@ static emlrtBCInfo qy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ry_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2440,                                /* lineNo */
+  2456,                                /* lineNo */
   103,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6614,7 +6614,7 @@ static emlrtBCInfo ry_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo sy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2214,                                /* lineNo */
+  2230,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6624,7 +6624,7 @@ static emlrtBCInfo sy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo ty_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2214,                                /* lineNo */
+  2230,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6634,7 +6634,7 @@ static emlrtBCInfo ty_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo uy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2193,                                /* lineNo */
+  2209,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6644,7 +6644,7 @@ static emlrtBCInfo uy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo vy_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2193,                                /* lineNo */
+  2209,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6654,7 +6654,7 @@ static emlrtBCInfo vy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo wy_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2460,                                /* lineNo */
+  2476,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6664,7 +6664,7 @@ static emlrtBCInfo wy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo xy_emlrtBCI = { 1,  /* iFirst */
   32,                                  /* iLast */
-  2460,                                /* lineNo */
+  2476,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6674,7 +6674,7 @@ static emlrtBCInfo xy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo yy_emlrtBCI = { 1,  /* iFirst */
   33,                                  /* iLast */
-  2440,                                /* lineNo */
+  2456,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6684,7 +6684,7 @@ static emlrtBCInfo yy_emlrtBCI = { 1,  /* iFirst */
 
 static emlrtBCInfo aab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2440,                                /* lineNo */
+  2456,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6694,7 +6694,7 @@ static emlrtBCInfo aab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2214,                                /* lineNo */
+  2230,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6704,7 +6704,7 @@ static emlrtBCInfo bab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2214,                                /* lineNo */
+  2230,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6714,7 +6714,7 @@ static emlrtBCInfo cab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2193,                                /* lineNo */
+  2209,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6724,7 +6724,7 @@ static emlrtBCInfo dab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo eab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2193,                                /* lineNo */
+  2209,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6734,7 +6734,7 @@ static emlrtBCInfo eab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2514,                                /* lineNo */
+  2530,                                /* lineNo */
   39,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6744,7 +6744,7 @@ static emlrtBCInfo fab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2492,                                /* lineNo */
+  2508,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6754,7 +6754,7 @@ static emlrtBCInfo gab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2492,                                /* lineNo */
+  2508,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6764,7 +6764,7 @@ static emlrtBCInfo hab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo iab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2492,                                /* lineNo */
+  2508,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6774,7 +6774,7 @@ static emlrtBCInfo iab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2492,                                /* lineNo */
+  2508,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6784,7 +6784,7 @@ static emlrtBCInfo jab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2472,                                /* lineNo */
+  2488,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6794,7 +6794,7 @@ static emlrtBCInfo kab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2472,                                /* lineNo */
+  2488,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6804,7 +6804,7 @@ static emlrtBCInfo lab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2472,                                /* lineNo */
+  2488,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6814,7 +6814,7 @@ static emlrtBCInfo mab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2472,                                /* lineNo */
+  2488,                                /* lineNo */
   96,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6824,7 +6824,7 @@ static emlrtBCInfo nab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo oab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2504,                                /* lineNo */
+  2520,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6834,7 +6834,7 @@ static emlrtBCInfo oab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2504,                                /* lineNo */
+  2520,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6844,7 +6844,7 @@ static emlrtBCInfo pab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2504,                                /* lineNo */
+  2520,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6854,7 +6854,7 @@ static emlrtBCInfo qab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2504,                                /* lineNo */
+  2520,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6864,7 +6864,7 @@ static emlrtBCInfo rab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo sab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2484,                                /* lineNo */
+  2500,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6874,7 +6874,7 @@ static emlrtBCInfo sab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2484,                                /* lineNo */
+  2500,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6884,7 +6884,7 @@ static emlrtBCInfo tab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo uab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2484,                                /* lineNo */
+  2500,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6894,7 +6894,7 @@ static emlrtBCInfo uab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2484,                                /* lineNo */
+  2500,                                /* lineNo */
   101,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6904,7 +6904,7 @@ static emlrtBCInfo vab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wab_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2247,                                /* lineNo */
+  2263,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6914,7 +6914,7 @@ static emlrtBCInfo wab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2247,                                /* lineNo */
+  2263,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6924,7 +6924,7 @@ static emlrtBCInfo xab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo yab_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2247,                                /* lineNo */
+  2263,                                /* lineNo */
   94,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6934,7 +6934,7 @@ static emlrtBCInfo yab_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo abb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2247,                                /* lineNo */
+  2263,                                /* lineNo */
   94,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6944,7 +6944,7 @@ static emlrtBCInfo abb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2226,                                /* lineNo */
+  2242,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6954,7 +6954,7 @@ static emlrtBCInfo bbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2226,                                /* lineNo */
+  2242,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6964,7 +6964,7 @@ static emlrtBCInfo cbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2226,                                /* lineNo */
+  2242,                                /* lineNo */
   94,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6974,7 +6974,7 @@ static emlrtBCInfo dbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ebb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2226,                                /* lineNo */
+  2242,                                /* lineNo */
   94,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6984,7 +6984,7 @@ static emlrtBCInfo ebb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2494,                                /* lineNo */
+  2510,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -6994,7 +6994,7 @@ static emlrtBCInfo fbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2494,                                /* lineNo */
+  2510,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7004,7 +7004,7 @@ static emlrtBCInfo gbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2494,                                /* lineNo */
+  2510,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7014,7 +7014,7 @@ static emlrtBCInfo hbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ibb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2494,                                /* lineNo */
+  2510,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7024,7 +7024,7 @@ static emlrtBCInfo ibb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2474,                                /* lineNo */
+  2490,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7034,7 +7034,7 @@ static emlrtBCInfo jbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2474,                                /* lineNo */
+  2490,                                /* lineNo */
   97,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7044,7 +7044,7 @@ static emlrtBCInfo kbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2474,                                /* lineNo */
+  2490,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7054,7 +7054,7 @@ static emlrtBCInfo lbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2474,                                /* lineNo */
+  2490,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7064,7 +7064,7 @@ static emlrtBCInfo mbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2260,                                /* lineNo */
+  2276,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7074,7 +7074,7 @@ static emlrtBCInfo nbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo obb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2260,                                /* lineNo */
+  2276,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7084,7 +7084,7 @@ static emlrtBCInfo obb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2260,                                /* lineNo */
+  2276,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7094,7 +7094,7 @@ static emlrtBCInfo pbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2260,                                /* lineNo */
+  2276,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7104,7 +7104,7 @@ static emlrtBCInfo qbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2239,                                /* lineNo */
+  2255,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7114,7 +7114,7 @@ static emlrtBCInfo rbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo sbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2239,                                /* lineNo */
+  2255,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7124,7 +7124,7 @@ static emlrtBCInfo sbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2239,                                /* lineNo */
+  2255,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7134,7 +7134,7 @@ static emlrtBCInfo tbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ubb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2239,                                /* lineNo */
+  2255,                                /* lineNo */
   99,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7144,7 +7144,7 @@ static emlrtBCInfo ubb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vbb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2249,                                /* lineNo */
+  2265,                                /* lineNo */
   95,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7154,7 +7154,7 @@ static emlrtBCInfo vbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2249,                                /* lineNo */
+  2265,                                /* lineNo */
   95,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7164,7 +7164,7 @@ static emlrtBCInfo wbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xbb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2249,                                /* lineNo */
+  2265,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7174,7 +7174,7 @@ static emlrtBCInfo xbb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ybb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2249,                                /* lineNo */
+  2265,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7184,7 +7184,7 @@ static emlrtBCInfo ybb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo acb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2228,                                /* lineNo */
+  2244,                                /* lineNo */
   95,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7194,7 +7194,7 @@ static emlrtBCInfo acb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bcb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2228,                                /* lineNo */
+  2244,                                /* lineNo */
   95,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7204,7 +7204,7 @@ static emlrtBCInfo bcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ccb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2228,                                /* lineNo */
+  2244,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7214,7 +7214,7 @@ static emlrtBCInfo ccb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2228,                                /* lineNo */
+  2244,                                /* lineNo */
   25,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7224,7 +7224,7 @@ static emlrtBCInfo dcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ecb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2496,                                /* lineNo */
+  2512,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7234,7 +7234,7 @@ static emlrtBCInfo ecb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2496,                                /* lineNo */
+  2512,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7244,7 +7244,7 @@ static emlrtBCInfo fcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gcb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2476,                                /* lineNo */
+  2492,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7254,7 +7254,7 @@ static emlrtBCInfo gcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2476,                                /* lineNo */
+  2492,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7264,7 +7264,7 @@ static emlrtBCInfo hcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo icb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2506,                                /* lineNo */
+  2522,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7274,7 +7274,7 @@ static emlrtBCInfo icb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2506,                                /* lineNo */
+  2522,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7284,7 +7284,7 @@ static emlrtBCInfo jcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kcb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2486,                                /* lineNo */
+  2502,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7294,7 +7294,7 @@ static emlrtBCInfo kcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2486,                                /* lineNo */
+  2502,                                /* lineNo */
   103,                                 /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7304,7 +7304,7 @@ static emlrtBCInfo lcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mcb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2506,                                /* lineNo */
+  2522,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7314,7 +7314,7 @@ static emlrtBCInfo mcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ncb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2506,                                /* lineNo */
+  2522,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7324,7 +7324,7 @@ static emlrtBCInfo ncb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ocb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2486,                                /* lineNo */
+  2502,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7334,7 +7334,7 @@ static emlrtBCInfo ocb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2486,                                /* lineNo */
+  2502,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7344,7 +7344,7 @@ static emlrtBCInfo pcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qcb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2251,                                /* lineNo */
+  2267,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7354,7 +7354,7 @@ static emlrtBCInfo qcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2251,                                /* lineNo */
+  2267,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7364,7 +7364,7 @@ static emlrtBCInfo rcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo scb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2230,                                /* lineNo */
+  2246,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7374,7 +7374,7 @@ static emlrtBCInfo scb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2230,                                /* lineNo */
+  2246,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7384,7 +7384,7 @@ static emlrtBCInfo tcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ucb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2539,                                /* lineNo */
+  2555,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7394,7 +7394,7 @@ static emlrtBCInfo ucb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vcb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2539,                                /* lineNo */
+  2555,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7404,7 +7404,7 @@ static emlrtBCInfo vcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wcb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2539,                                /* lineNo */
+  2555,                                /* lineNo */
   98,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7414,7 +7414,7 @@ static emlrtBCInfo wcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xcb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2539,                                /* lineNo */
+  2555,                                /* lineNo */
   98,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7424,7 +7424,7 @@ static emlrtBCInfo xcb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ycb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2518,                                /* lineNo */
+  2534,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7434,7 +7434,7 @@ static emlrtBCInfo ycb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo adb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2518,                                /* lineNo */
+  2534,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7444,7 +7444,7 @@ static emlrtBCInfo adb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2518,                                /* lineNo */
+  2534,                                /* lineNo */
   98,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7454,7 +7454,7 @@ static emlrtBCInfo bdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2518,                                /* lineNo */
+  2534,                                /* lineNo */
   98,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7464,7 +7464,7 @@ static emlrtBCInfo cdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ddb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2262,                                /* lineNo */
+  2278,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7474,7 +7474,7 @@ static emlrtBCInfo ddb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo edb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2262,                                /* lineNo */
+  2278,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7484,7 +7484,7 @@ static emlrtBCInfo edb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2241,                                /* lineNo */
+  2257,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7494,7 +7494,7 @@ static emlrtBCInfo fdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2241,                                /* lineNo */
+  2257,                                /* lineNo */
   25,                                  /* colNo */
   "col_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7504,7 +7504,7 @@ static emlrtBCInfo gdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2551,                                /* lineNo */
+  2567,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7514,7 +7514,7 @@ static emlrtBCInfo hdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo idb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2551,                                /* lineNo */
+  2567,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7524,7 +7524,7 @@ static emlrtBCInfo idb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2551,                                /* lineNo */
+  2567,                                /* lineNo */
   103,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7534,7 +7534,7 @@ static emlrtBCInfo jdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2551,                                /* lineNo */
+  2567,                                /* lineNo */
   103,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7544,7 +7544,7 @@ static emlrtBCInfo kdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ldb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2531,                                /* lineNo */
+  2547,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7554,7 +7554,7 @@ static emlrtBCInfo ldb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2531,                                /* lineNo */
+  2547,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7564,7 +7564,7 @@ static emlrtBCInfo mdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ndb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2531,                                /* lineNo */
+  2547,                                /* lineNo */
   103,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7574,7 +7574,7 @@ static emlrtBCInfo ndb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo odb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2531,                                /* lineNo */
+  2547,                                /* lineNo */
   103,                                 /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7584,7 +7584,7 @@ static emlrtBCInfo odb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2541,                                /* lineNo */
+  2557,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7594,7 +7594,7 @@ static emlrtBCInfo pdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2541,                                /* lineNo */
+  2557,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7604,7 +7604,7 @@ static emlrtBCInfo qdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2541,                                /* lineNo */
+  2557,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7614,7 +7614,7 @@ static emlrtBCInfo rdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo sdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2541,                                /* lineNo */
+  2557,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7624,7 +7624,7 @@ static emlrtBCInfo sdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2520,                                /* lineNo */
+  2536,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7634,7 +7634,7 @@ static emlrtBCInfo tdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo udb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2520,                                /* lineNo */
+  2536,                                /* lineNo */
   99,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7644,7 +7644,7 @@ static emlrtBCInfo udb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2520,                                /* lineNo */
+  2536,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7654,7 +7654,7 @@ static emlrtBCInfo vdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wdb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2520,                                /* lineNo */
+  2536,                                /* lineNo */
   25,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7664,7 +7664,7 @@ static emlrtBCInfo wdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xdb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2543,                                /* lineNo */
+  2559,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7674,7 +7674,7 @@ static emlrtBCInfo xdb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ydb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2543,                                /* lineNo */
+  2559,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7684,7 +7684,7 @@ static emlrtBCInfo ydb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo aeb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2522,                                /* lineNo */
+  2538,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7694,7 +7694,7 @@ static emlrtBCInfo aeb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo beb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2522,                                /* lineNo */
+  2538,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7704,7 +7704,7 @@ static emlrtBCInfo beb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ceb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2553,                                /* lineNo */
+  2569,                                /* lineNo */
   105,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7714,7 +7714,7 @@ static emlrtBCInfo ceb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo deb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2553,                                /* lineNo */
+  2569,                                /* lineNo */
   105,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7724,7 +7724,7 @@ static emlrtBCInfo deb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo eeb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2533,                                /* lineNo */
+  2549,                                /* lineNo */
   105,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7734,7 +7734,7 @@ static emlrtBCInfo eeb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo feb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2533,                                /* lineNo */
+  2549,                                /* lineNo */
   105,                                 /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7744,7 +7744,7 @@ static emlrtBCInfo feb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo geb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2553,                                /* lineNo */
+  2569,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7754,7 +7754,7 @@ static emlrtBCInfo geb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo heb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2553,                                /* lineNo */
+  2569,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7764,7 +7764,7 @@ static emlrtBCInfo heb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ieb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2533,                                /* lineNo */
+  2549,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7774,7 +7774,7 @@ static emlrtBCInfo ieb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jeb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2533,                                /* lineNo */
+  2549,                                /* lineNo */
   25,                                  /* colNo */
   "row_dir_node",                      /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -7784,7 +7784,7 @@ static emlrtBCInfo jeb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo keb_emlrtBCI = { 1, /* iFirst */
   9,                                   /* iLast */
-  2621,                                /* lineNo */
+  2637,                                /* lineNo */
   21,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7794,7 +7794,7 @@ static emlrtBCInfo keb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo leb_emlrtBCI = { 1, /* iFirst */
   9,                                   /* iLast */
-  2595,                                /* lineNo */
+  2611,                                /* lineNo */
   21,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7804,7 +7804,7 @@ static emlrtBCInfo leb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo meb_emlrtBCI = { 1, /* iFirst */
   9,                                   /* iLast */
-  2621,                                /* lineNo */
+  2637,                                /* lineNo */
   58,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7814,7 +7814,7 @@ static emlrtBCInfo meb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo neb_emlrtBCI = { 1, /* iFirst */
   9,                                   /* iLast */
-  2596,                                /* lineNo */
+  2612,                                /* lineNo */
   26,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7824,7 +7824,7 @@ static emlrtBCInfo neb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo oeb_emlrtBCI = { 1, /* iFirst */
   9,                                   /* iLast */
-  2622,                                /* lineNo */
+  2638,                                /* lineNo */
   26,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7834,7 +7834,7 @@ static emlrtBCInfo oeb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo peb_emlrtBCI = { 1, /* iFirst */
   9,                                   /* iLast */
-  2596,                                /* lineNo */
+  2612,                                /* lineNo */
   63,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7844,7 +7844,7 @@ static emlrtBCInfo peb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qeb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2626,                                /* lineNo */
+  2642,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7854,7 +7854,7 @@ static emlrtBCInfo qeb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo reb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2626,                                /* lineNo */
+  2642,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7864,7 +7864,7 @@ static emlrtBCInfo reb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo seb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2600,                                /* lineNo */
+  2616,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7874,7 +7874,7 @@ static emlrtBCInfo seb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo teb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2600,                                /* lineNo */
+  2616,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7884,7 +7884,7 @@ static emlrtBCInfo teb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ueb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2630,                                /* lineNo */
+  2646,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7894,7 +7894,7 @@ static emlrtBCInfo ueb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo veb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2630,                                /* lineNo */
+  2646,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7904,7 +7904,7 @@ static emlrtBCInfo veb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo web_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2604,                                /* lineNo */
+  2620,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7914,7 +7914,7 @@ static emlrtBCInfo web_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xeb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2604,                                /* lineNo */
+  2620,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7924,7 +7924,7 @@ static emlrtBCInfo xeb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo yeb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2674,                                /* lineNo */
+  2690,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7934,7 +7934,7 @@ static emlrtBCInfo yeb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo afb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2674,                                /* lineNo */
+  2690,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7944,7 +7944,7 @@ static emlrtBCInfo afb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2743,                                /* lineNo */
+  2759,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7954,7 +7954,7 @@ static emlrtBCInfo bfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2743,                                /* lineNo */
+  2759,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7964,7 +7964,7 @@ static emlrtBCInfo cfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2684,                                /* lineNo */
+  2700,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7974,7 +7974,7 @@ static emlrtBCInfo dfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo efb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2684,                                /* lineNo */
+  2700,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7984,7 +7984,7 @@ static emlrtBCInfo efb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ffb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2753,                                /* lineNo */
+  2769,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -7994,7 +7994,7 @@ static emlrtBCInfo ffb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2753,                                /* lineNo */
+  2769,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8004,7 +8004,7 @@ static emlrtBCInfo gfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2634,                                /* lineNo */
+  2650,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8014,7 +8014,7 @@ static emlrtBCInfo hfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ifb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2634,                                /* lineNo */
+  2650,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8024,7 +8024,7 @@ static emlrtBCInfo ifb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2608,                                /* lineNo */
+  2624,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8034,7 +8034,7 @@ static emlrtBCInfo jfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2608,                                /* lineNo */
+  2624,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8044,7 +8044,7 @@ static emlrtBCInfo kfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2763,                                /* lineNo */
+  2779,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8054,7 +8054,7 @@ static emlrtBCInfo lfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2763,                                /* lineNo */
+  2779,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8064,7 +8064,7 @@ static emlrtBCInfo mfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2696,                                /* lineNo */
+  2712,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8074,7 +8074,7 @@ static emlrtBCInfo nfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ofb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2696,                                /* lineNo */
+  2712,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8084,7 +8084,7 @@ static emlrtBCInfo ofb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2676,                                /* lineNo */
+  2692,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8094,7 +8094,7 @@ static emlrtBCInfo pfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2745,                                /* lineNo */
+  2761,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8104,7 +8104,7 @@ static emlrtBCInfo qfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2706,                                /* lineNo */
+  2722,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8114,7 +8114,7 @@ static emlrtBCInfo rfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo sfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2706,                                /* lineNo */
+  2722,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8124,7 +8124,7 @@ static emlrtBCInfo sfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2686,                                /* lineNo */
+  2702,                                /* lineNo */
   39,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8134,7 +8134,7 @@ static emlrtBCInfo tfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ufb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2775,                                /* lineNo */
+  2791,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8144,7 +8144,7 @@ static emlrtBCInfo ufb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2775,                                /* lineNo */
+  2791,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8154,7 +8154,7 @@ static emlrtBCInfo vfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2755,                                /* lineNo */
+  2771,                                /* lineNo */
   39,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8164,7 +8164,7 @@ static emlrtBCInfo wfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xfb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2716,                                /* lineNo */
+  2732,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8174,7 +8174,7 @@ static emlrtBCInfo xfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo yfb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2716,                                /* lineNo */
+  2732,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8184,7 +8184,7 @@ static emlrtBCInfo yfb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo agb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2785,                                /* lineNo */
+  2801,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8194,7 +8194,7 @@ static emlrtBCInfo agb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bgb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2785,                                /* lineNo */
+  2801,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8204,7 +8204,7 @@ static emlrtBCInfo bgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cgb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2698,                                /* lineNo */
+  2714,                                /* lineNo */
   39,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8214,7 +8214,7 @@ static emlrtBCInfo cgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dgb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2698,                                /* lineNo */
+  2714,                                /* lineNo */
   39,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8224,7 +8224,7 @@ static emlrtBCInfo dgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo egb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2638,                                /* lineNo */
+  2654,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8234,7 +8234,7 @@ static emlrtBCInfo egb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fgb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2638,                                /* lineNo */
+  2654,                                /* lineNo */
   32,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8244,7 +8244,7 @@ static emlrtBCInfo fgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ggb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2612,                                /* lineNo */
+  2628,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8254,7 +8254,7 @@ static emlrtBCInfo ggb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hgb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2612,                                /* lineNo */
+  2628,                                /* lineNo */
   32,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8264,7 +8264,7 @@ static emlrtBCInfo hgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo igb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2795,                                /* lineNo */
+  2811,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8274,7 +8274,7 @@ static emlrtBCInfo igb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jgb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2795,                                /* lineNo */
+  2811,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8284,7 +8284,7 @@ static emlrtBCInfo jgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kgb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2728,                                /* lineNo */
+  2744,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8294,7 +8294,7 @@ static emlrtBCInfo kgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lgb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2728,                                /* lineNo */
+  2744,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8304,7 +8304,7 @@ static emlrtBCInfo lgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mgb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2708,                                /* lineNo */
+  2724,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8314,7 +8314,7 @@ static emlrtBCInfo mgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ngb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2777,                                /* lineNo */
+  2793,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8324,7 +8324,7 @@ static emlrtBCInfo ngb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ogb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2718,                                /* lineNo */
+  2734,                                /* lineNo */
   39,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8334,7 +8334,7 @@ static emlrtBCInfo ogb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pgb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2787,                                /* lineNo */
+  2803,                                /* lineNo */
   39,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8344,7 +8344,7 @@ static emlrtBCInfo pgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qgb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  2797,                                /* lineNo */
+  2813,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8354,7 +8354,7 @@ static emlrtBCInfo qgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rgb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  2797,                                /* lineNo */
+  2813,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/decide_goal_node_dir",   /* fName */
@@ -8364,7 +8364,7 @@ static emlrtBCInfo rgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo sgb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1952,                                /* lineNo */
+  1968,                                /* lineNo */
   55,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8374,7 +8374,7 @@ static emlrtBCInfo sgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tgb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1952,                                /* lineNo */
+  1968,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8384,7 +8384,7 @@ static emlrtBCInfo tgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ugb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1928,                                /* lineNo */
+  1944,                                /* lineNo */
   55,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8394,7 +8394,7 @@ static emlrtBCInfo ugb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vgb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1928,                                /* lineNo */
+  1944,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8404,7 +8404,7 @@ static emlrtBCInfo vgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wgb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1940,                                /* lineNo */
+  1956,                                /* lineNo */
   55,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8414,7 +8414,7 @@ static emlrtBCInfo wgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xgb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1940,                                /* lineNo */
+  1956,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8424,7 +8424,7 @@ static emlrtBCInfo xgb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ygb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1916,                                /* lineNo */
+  1932,                                /* lineNo */
   57,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8434,7 +8434,7 @@ static emlrtBCInfo ygb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ahb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1916,                                /* lineNo */
+  1932,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8444,7 +8444,7 @@ static emlrtBCInfo ahb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1956,                                /* lineNo */
+  1972,                                /* lineNo */
   96,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8454,7 +8454,7 @@ static emlrtBCInfo bhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo chb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1956,                                /* lineNo */
+  1972,                                /* lineNo */
   81,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8464,7 +8464,7 @@ static emlrtBCInfo chb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1954,                                /* lineNo */
+  1970,                                /* lineNo */
   55,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8474,7 +8474,7 @@ static emlrtBCInfo dhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ehb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1954,                                /* lineNo */
+  1970,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8484,7 +8484,7 @@ static emlrtBCInfo ehb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1950,                                /* lineNo */
+  1966,                                /* lineNo */
   59,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8494,7 +8494,7 @@ static emlrtBCInfo fhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ghb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1950,                                /* lineNo */
+  1966,                                /* lineNo */
   44,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8504,7 +8504,7 @@ static emlrtBCInfo ghb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1944,                                /* lineNo */
+  1960,                                /* lineNo */
   96,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8514,7 +8514,7 @@ static emlrtBCInfo hhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ihb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1944,                                /* lineNo */
+  1960,                                /* lineNo */
   81,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8524,7 +8524,7 @@ static emlrtBCInfo ihb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1942,                                /* lineNo */
+  1958,                                /* lineNo */
   55,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8534,7 +8534,7 @@ static emlrtBCInfo jhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo khb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1942,                                /* lineNo */
+  1958,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8544,7 +8544,7 @@ static emlrtBCInfo khb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1938,                                /* lineNo */
+  1954,                                /* lineNo */
   59,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8554,7 +8554,7 @@ static emlrtBCInfo lhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1938,                                /* lineNo */
+  1954,                                /* lineNo */
   44,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8564,7 +8564,7 @@ static emlrtBCInfo mhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1932,                                /* lineNo */
+  1948,                                /* lineNo */
   96,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8574,7 +8574,7 @@ static emlrtBCInfo nhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ohb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1932,                                /* lineNo */
+  1948,                                /* lineNo */
   81,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8584,7 +8584,7 @@ static emlrtBCInfo ohb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo phb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1930,                                /* lineNo */
+  1946,                                /* lineNo */
   55,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8594,7 +8594,7 @@ static emlrtBCInfo phb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1930,                                /* lineNo */
+  1946,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8604,7 +8604,7 @@ static emlrtBCInfo qhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1926,                                /* lineNo */
+  1942,                                /* lineNo */
   59,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8614,7 +8614,7 @@ static emlrtBCInfo rhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo shb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1926,                                /* lineNo */
+  1942,                                /* lineNo */
   44,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8624,7 +8624,7 @@ static emlrtBCInfo shb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo thb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1920,                                /* lineNo */
+  1936,                                /* lineNo */
   98,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8634,7 +8634,7 @@ static emlrtBCInfo thb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo uhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1920,                                /* lineNo */
+  1936,                                /* lineNo */
   81,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8644,7 +8644,7 @@ static emlrtBCInfo uhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1918,                                /* lineNo */
+  1934,                                /* lineNo */
   57,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8654,7 +8654,7 @@ static emlrtBCInfo vhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo whb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1918,                                /* lineNo */
+  1934,                                /* lineNo */
   40,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8664,7 +8664,7 @@ static emlrtBCInfo whb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1914,                                /* lineNo */
+  1930,                                /* lineNo */
   59,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8674,7 +8674,7 @@ static emlrtBCInfo xhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo yhb_emlrtBCI = { 1, /* iFirst */
   1,                                   /* iLast */
-  1914,                                /* lineNo */
+  1930,                                /* lineNo */
   44,                                  /* colNo */
   "maze_goal",                         /* aName */
   "maze_solve/make_map_fustrun_diagonal",/* fName */
@@ -8684,7 +8684,7 @@ static emlrtBCInfo yhb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo aib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3431,                                /* lineNo */
+  3519,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8694,7 +8694,7 @@ static emlrtBCInfo aib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3431,                                /* lineNo */
+  3519,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8704,7 +8704,7 @@ static emlrtBCInfo bib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3500,                                /* lineNo */
+  3588,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8714,7 +8714,7 @@ static emlrtBCInfo cib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3500,                                /* lineNo */
+  3588,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8724,7 +8724,7 @@ static emlrtBCInfo dib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo eib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3441,                                /* lineNo */
+  3529,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8734,7 +8734,7 @@ static emlrtBCInfo eib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3441,                                /* lineNo */
+  3529,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8744,7 +8744,7 @@ static emlrtBCInfo fib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3510,                                /* lineNo */
+  3598,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8754,7 +8754,7 @@ static emlrtBCInfo gib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3510,                                /* lineNo */
+  3598,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8764,7 +8764,7 @@ static emlrtBCInfo hib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo iib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3520,                                /* lineNo */
+  3608,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8774,7 +8774,7 @@ static emlrtBCInfo iib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3520,                                /* lineNo */
+  3608,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8784,7 +8784,7 @@ static emlrtBCInfo jib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3453,                                /* lineNo */
+  3541,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8794,7 +8794,7 @@ static emlrtBCInfo kib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3453,                                /* lineNo */
+  3541,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8804,7 +8804,7 @@ static emlrtBCInfo lib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3433,                                /* lineNo */
+  3521,                                /* lineNo */
   35,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8814,7 +8814,7 @@ static emlrtBCInfo mib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3502,                                /* lineNo */
+  3590,                                /* lineNo */
   35,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8824,7 +8824,7 @@ static emlrtBCInfo nib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo oib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3463,                                /* lineNo */
+  3551,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8834,7 +8834,7 @@ static emlrtBCInfo oib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3463,                                /* lineNo */
+  3551,                                /* lineNo */
   24,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8844,7 +8844,7 @@ static emlrtBCInfo pib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3443,                                /* lineNo */
+  3531,                                /* lineNo */
   35,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8854,7 +8854,7 @@ static emlrtBCInfo qib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3512,                                /* lineNo */
+  3600,                                /* lineNo */
   35,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8864,7 +8864,7 @@ static emlrtBCInfo rib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo sib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3473,                                /* lineNo */
+  3561,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8874,7 +8874,7 @@ static emlrtBCInfo sib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3473,                                /* lineNo */
+  3561,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8884,7 +8884,7 @@ static emlrtBCInfo tib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo uib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3533,                                /* lineNo */
+  3621,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8894,7 +8894,7 @@ static emlrtBCInfo uib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3533,                                /* lineNo */
+  3621,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8904,7 +8904,7 @@ static emlrtBCInfo vib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3455,                                /* lineNo */
+  3543,                                /* lineNo */
   35,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8914,7 +8914,7 @@ static emlrtBCInfo wib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xib_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3455,                                /* lineNo */
+  3543,                                /* lineNo */
   35,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8924,7 +8924,7 @@ static emlrtBCInfo xib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo yib_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3545,                                /* lineNo */
+  3633,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8934,7 +8934,7 @@ static emlrtBCInfo yib_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ajb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3545,                                /* lineNo */
+  3633,                                /* lineNo */
   28,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8944,7 +8944,7 @@ static emlrtBCInfo ajb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bjb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3485,                                /* lineNo */
+  3573,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8954,7 +8954,7 @@ static emlrtBCInfo bjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cjb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3485,                                /* lineNo */
+  3573,                                /* lineNo */
   24,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8964,7 +8964,7 @@ static emlrtBCInfo cjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo djb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3465,                                /* lineNo */
+  3553,                                /* lineNo */
   35,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8974,7 +8974,7 @@ static emlrtBCInfo djb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ejb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3557,                                /* lineNo */
+  3645,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8984,7 +8984,7 @@ static emlrtBCInfo ejb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fjb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3557,                                /* lineNo */
+  3645,                                /* lineNo */
   28,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -8994,7 +8994,7 @@ static emlrtBCInfo fjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gjb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3475,                                /* lineNo */
+  3563,                                /* lineNo */
   35,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -9004,7 +9004,7 @@ static emlrtBCInfo gjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hjb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3535,                                /* lineNo */
+  3623,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -9014,7 +9014,7 @@ static emlrtBCInfo hjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ijb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3547,                                /* lineNo */
+  3635,                                /* lineNo */
   39,                                  /* colNo */
   "col_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -9024,7 +9024,7 @@ static emlrtBCInfo ijb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jjb_emlrtBCI = { 1, /* iFirst */
   33,                                  /* iLast */
-  3559,                                /* lineNo */
+  3647,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -9034,7 +9034,7 @@ static emlrtBCInfo jjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kjb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  3559,                                /* lineNo */
+  3647,                                /* lineNo */
   39,                                  /* colNo */
   "row_num_node",                      /* aName */
   "maze_solve/get_next_dir_diagonal",  /* fName */
@@ -9154,7 +9154,7 @@ static emlrtBCInfo vjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wjb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  418,                                 /* lineNo */
+  428,                                 /* lineNo */
   20,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/search_adachi",          /* fName */
@@ -9164,7 +9164,7 @@ static emlrtBCInfo wjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xjb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  666,                                 /* lineNo */
+  676,                                 /* lineNo */
   33,                                  /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9174,7 +9174,7 @@ static emlrtBCInfo xjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo yjb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  689,                                 /* lineNo */
+  699,                                 /* lineNo */
   33,                                  /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9184,7 +9184,7 @@ static emlrtBCInfo yjb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo akb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  713,                                 /* lineNo */
+  723,                                 /* lineNo */
   33,                                  /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9194,7 +9194,7 @@ static emlrtBCInfo akb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bkb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  673,                                 /* lineNo */
+  683,                                 /* lineNo */
   26,                                  /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9204,7 +9204,7 @@ static emlrtBCInfo bkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ckb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  695,                                 /* lineNo */
+  705,                                 /* lineNo */
   26,                                  /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9214,7 +9214,7 @@ static emlrtBCInfo ckb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dkb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  719,                                 /* lineNo */
+  729,                                 /* lineNo */
   26,                                  /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9224,7 +9224,7 @@ static emlrtBCInfo dkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ekb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  742,                                 /* lineNo */
+  752,                                 /* lineNo */
   19,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9234,7 +9234,7 @@ static emlrtBCInfo ekb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  747,                                 /* lineNo */
+  757,                                 /* lineNo */
   29,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9244,7 +9244,7 @@ static emlrtBCInfo fkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  743,                                 /* lineNo */
+  753,                                 /* lineNo */
   26,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9254,7 +9254,7 @@ static emlrtBCInfo gkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  748,                                 /* lineNo */
+  758,                                 /* lineNo */
   36,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9264,7 +9264,7 @@ static emlrtBCInfo hkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ikb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  778,                                 /* lineNo */
+  788,                                 /* lineNo */
   37,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9274,7 +9274,7 @@ static emlrtBCInfo ikb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  779,                                 /* lineNo */
+  789,                                 /* lineNo */
   44,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9284,7 +9284,7 @@ static emlrtBCInfo jkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  788,                                 /* lineNo */
+  798,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9294,7 +9294,7 @@ static emlrtBCInfo kkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  805,                                 /* lineNo */
+  815,                                 /* lineNo */
   37,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9304,7 +9304,7 @@ static emlrtBCInfo lkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  781,                                 /* lineNo */
+  791,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9314,7 +9314,7 @@ static emlrtBCInfo mkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  781,                                 /* lineNo */
+  791,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9324,7 +9324,7 @@ static emlrtBCInfo nkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo okb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  789,                                 /* lineNo */
+  799,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9334,7 +9334,7 @@ static emlrtBCInfo okb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  806,                                 /* lineNo */
+  816,                                 /* lineNo */
   44,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9344,7 +9344,7 @@ static emlrtBCInfo pkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  782,                                 /* lineNo */
+  792,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9354,7 +9354,7 @@ static emlrtBCInfo qkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  782,                                 /* lineNo */
+  792,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9364,7 +9364,7 @@ static emlrtBCInfo rkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo skb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  816,                                 /* lineNo */
+  826,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9374,7 +9374,7 @@ static emlrtBCInfo skb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  791,                                 /* lineNo */
+  801,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9384,7 +9384,7 @@ static emlrtBCInfo tkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ukb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  791,                                 /* lineNo */
+  801,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9394,7 +9394,7 @@ static emlrtBCInfo ukb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  831,                                 /* lineNo */
+  841,                                 /* lineNo */
   37,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9404,7 +9404,7 @@ static emlrtBCInfo vkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  808,                                 /* lineNo */
+  818,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9414,7 +9414,7 @@ static emlrtBCInfo wkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xkb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  808,                                 /* lineNo */
+  818,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9424,7 +9424,7 @@ static emlrtBCInfo xkb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ykb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  817,                                 /* lineNo */
+  827,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9434,7 +9434,7 @@ static emlrtBCInfo ykb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo alb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  792,                                 /* lineNo */
+  802,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9444,7 +9444,7 @@ static emlrtBCInfo alb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo blb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  792,                                 /* lineNo */
+  802,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9454,7 +9454,7 @@ static emlrtBCInfo blb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo clb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  832,                                 /* lineNo */
+  842,                                 /* lineNo */
   44,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9464,7 +9464,7 @@ static emlrtBCInfo clb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  809,                                 /* lineNo */
+  819,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9474,7 +9474,7 @@ static emlrtBCInfo dlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo elb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  809,                                 /* lineNo */
+  819,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9484,7 +9484,7 @@ static emlrtBCInfo elb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo flb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  841,                                 /* lineNo */
+  851,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9494,7 +9494,7 @@ static emlrtBCInfo flb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo glb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  819,                                 /* lineNo */
+  829,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9504,7 +9504,7 @@ static emlrtBCInfo glb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  819,                                 /* lineNo */
+  829,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9514,7 +9514,7 @@ static emlrtBCInfo hlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ilb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  856,                                 /* lineNo */
+  866,                                 /* lineNo */
   37,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9524,7 +9524,7 @@ static emlrtBCInfo ilb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  834,                                 /* lineNo */
+  844,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9534,7 +9534,7 @@ static emlrtBCInfo jlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo klb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  834,                                 /* lineNo */
+  844,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9544,7 +9544,7 @@ static emlrtBCInfo klb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo llb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  842,                                 /* lineNo */
+  852,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9554,7 +9554,7 @@ static emlrtBCInfo llb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  820,                                 /* lineNo */
+  830,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9564,7 +9564,7 @@ static emlrtBCInfo mlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  820,                                 /* lineNo */
+  830,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9574,7 +9574,7 @@ static emlrtBCInfo nlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo olb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  857,                                 /* lineNo */
+  867,                                 /* lineNo */
   44,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9584,7 +9584,7 @@ static emlrtBCInfo olb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo plb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  835,                                 /* lineNo */
+  845,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9594,7 +9594,7 @@ static emlrtBCInfo plb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  835,                                 /* lineNo */
+  845,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9604,7 +9604,7 @@ static emlrtBCInfo qlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  866,                                 /* lineNo */
+  876,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9614,7 +9614,7 @@ static emlrtBCInfo rlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo slb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  844,                                 /* lineNo */
+  854,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9624,7 +9624,7 @@ static emlrtBCInfo slb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  844,                                 /* lineNo */
+  854,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9634,7 +9634,7 @@ static emlrtBCInfo tlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ulb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  859,                                 /* lineNo */
+  869,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9644,7 +9644,7 @@ static emlrtBCInfo ulb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  859,                                 /* lineNo */
+  869,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9654,7 +9654,7 @@ static emlrtBCInfo vlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  867,                                 /* lineNo */
+  877,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9664,7 +9664,7 @@ static emlrtBCInfo wlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xlb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  845,                                 /* lineNo */
+  855,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9674,7 +9674,7 @@ static emlrtBCInfo xlb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ylb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  845,                                 /* lineNo */
+  855,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9684,7 +9684,7 @@ static emlrtBCInfo ylb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo amb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  860,                                 /* lineNo */
+  870,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9694,7 +9694,7 @@ static emlrtBCInfo amb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bmb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  860,                                 /* lineNo */
+  870,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9704,7 +9704,7 @@ static emlrtBCInfo bmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cmb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  869,                                 /* lineNo */
+  879,                                 /* lineNo */
   27,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9714,7 +9714,7 @@ static emlrtBCInfo cmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dmb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  869,                                 /* lineNo */
+  879,                                 /* lineNo */
   39,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9724,7 +9724,7 @@ static emlrtBCInfo dmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo emb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  870,                                 /* lineNo */
+  880,                                 /* lineNo */
   34,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9734,7 +9734,7 @@ static emlrtBCInfo emb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fmb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  870,                                 /* lineNo */
+  880,                                 /* lineNo */
   46,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9744,7 +9744,7 @@ static emlrtBCInfo fmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  725,                                 /* lineNo */
+  735,                                 /* lineNo */
   114,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9754,7 +9754,7 @@ static emlrtBCInfo gmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  726,                                 /* lineNo */
+  736,                                 /* lineNo */
   128,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9764,7 +9764,7 @@ static emlrtBCInfo hmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo imb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  729,                                 /* lineNo */
+  739,                                 /* lineNo */
   113,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9774,7 +9774,7 @@ static emlrtBCInfo imb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  730,                                 /* lineNo */
+  740,                                 /* lineNo */
   127,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9784,7 +9784,7 @@ static emlrtBCInfo jmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  733,                                 /* lineNo */
+  743,                                 /* lineNo */
   114,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9794,7 +9794,7 @@ static emlrtBCInfo kmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  734,                                 /* lineNo */
+  744,                                 /* lineNo */
   128,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9804,7 +9804,7 @@ static emlrtBCInfo lmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  736,                                 /* lineNo */
+  746,                                 /* lineNo */
   113,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9814,7 +9814,7 @@ static emlrtBCInfo mmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  737,                                 /* lineNo */
+  747,                                 /* lineNo */
   127,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9824,7 +9824,7 @@ static emlrtBCInfo nmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo omb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  742,                                 /* lineNo */
+  752,                                 /* lineNo */
   50,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9834,7 +9834,7 @@ static emlrtBCInfo omb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  742,                                 /* lineNo */
+  752,                                 /* lineNo */
   122,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9844,7 +9844,7 @@ static emlrtBCInfo pmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qmb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  747,                                 /* lineNo */
+  757,                                 /* lineNo */
   50,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9854,7 +9854,7 @@ static emlrtBCInfo qmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  747,                                 /* lineNo */
+  757,                                 /* lineNo */
   121,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9864,7 +9864,7 @@ static emlrtBCInfo rmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo smb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  753,                                 /* lineNo */
+  763,                                 /* lineNo */
   122,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9874,7 +9874,7 @@ static emlrtBCInfo smb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tmb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  743,                                 /* lineNo */
+  753,                                 /* lineNo */
   57,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9884,7 +9884,7 @@ static emlrtBCInfo tmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo umb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  743,                                 /* lineNo */
+  753,                                 /* lineNo */
   136,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9894,7 +9894,7 @@ static emlrtBCInfo umb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  759,                                 /* lineNo */
+  769,                                 /* lineNo */
   121,                                 /* colNo */
   "wall_write",                        /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9904,7 +9904,7 @@ static emlrtBCInfo vmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wmb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  748,                                 /* lineNo */
+  758,                                 /* lineNo */
   57,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9914,7 +9914,7 @@ static emlrtBCInfo wmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xmb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  748,                                 /* lineNo */
+  758,                                 /* lineNo */
   135,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9924,7 +9924,7 @@ static emlrtBCInfo xmb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ymb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  754,                                 /* lineNo */
+  764,                                 /* lineNo */
   136,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9934,7 +9934,7 @@ static emlrtBCInfo ymb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo anb_emlrtBCI = { 1, /* iFirst */
   4,                                   /* iLast */
-  760,                                 /* lineNo */
+  770,                                 /* lineNo */
   135,                                 /* colNo */
   "serch_write",                       /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9944,7 +9944,7 @@ static emlrtBCInfo anb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  775,                                 /* lineNo */
+  785,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9954,7 +9954,7 @@ static emlrtBCInfo bnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  776,                                 /* lineNo */
+  786,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9964,7 +9964,7 @@ static emlrtBCInfo cnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  785,                                 /* lineNo */
+  795,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9974,7 +9974,7 @@ static emlrtBCInfo dnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo enb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  802,                                 /* lineNo */
+  812,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9984,7 +9984,7 @@ static emlrtBCInfo enb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  786,                                 /* lineNo */
+  796,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -9994,7 +9994,7 @@ static emlrtBCInfo fnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  803,                                 /* lineNo */
+  813,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10004,7 +10004,7 @@ static emlrtBCInfo gnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  778,                                 /* lineNo */
+  788,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10014,7 +10014,7 @@ static emlrtBCInfo hnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo inb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  813,                                 /* lineNo */
+  823,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10024,7 +10024,7 @@ static emlrtBCInfo inb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo jnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  779,                                 /* lineNo */
+  789,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10034,7 +10034,7 @@ static emlrtBCInfo jnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo knb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  828,                                 /* lineNo */
+  838,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10044,7 +10044,7 @@ static emlrtBCInfo knb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  814,                                 /* lineNo */
+  824,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10054,7 +10054,7 @@ static emlrtBCInfo lnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  788,                                 /* lineNo */
+  798,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10064,7 +10064,7 @@ static emlrtBCInfo mnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  829,                                 /* lineNo */
+  839,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10074,7 +10074,7 @@ static emlrtBCInfo nnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo onb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  781,                                 /* lineNo */
+  791,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10084,7 +10084,7 @@ static emlrtBCInfo onb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  805,                                 /* lineNo */
+  815,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10094,7 +10094,7 @@ static emlrtBCInfo pnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  789,                                 /* lineNo */
+  799,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10104,7 +10104,7 @@ static emlrtBCInfo qnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  838,                                 /* lineNo */
+  848,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10114,7 +10114,7 @@ static emlrtBCInfo rnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo snb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  782,                                 /* lineNo */
+  792,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10124,7 +10124,7 @@ static emlrtBCInfo snb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  806,                                 /* lineNo */
+  816,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10134,7 +10134,7 @@ static emlrtBCInfo tnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo unb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  853,                                 /* lineNo */
+  863,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10144,7 +10144,7 @@ static emlrtBCInfo unb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  839,                                 /* lineNo */
+  849,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10154,7 +10154,7 @@ static emlrtBCInfo vnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  791,                                 /* lineNo */
+  801,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10164,7 +10164,7 @@ static emlrtBCInfo wnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xnb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  816,                                 /* lineNo */
+  826,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10174,7 +10174,7 @@ static emlrtBCInfo xnb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo ynb_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  854,                                 /* lineNo */
+  864,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10184,7 +10184,7 @@ static emlrtBCInfo ynb_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo aob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  808,                                 /* lineNo */
+  818,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10194,7 +10194,7 @@ static emlrtBCInfo aob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo bob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  831,                                 /* lineNo */
+  841,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10204,7 +10204,7 @@ static emlrtBCInfo bob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo cob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  792,                                 /* lineNo */
+  802,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10214,7 +10214,7 @@ static emlrtBCInfo cob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo dob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  817,                                 /* lineNo */
+  827,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10224,7 +10224,7 @@ static emlrtBCInfo dob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo eob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  863,                                 /* lineNo */
+  873,                                 /* lineNo */
   23,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10234,7 +10234,7 @@ static emlrtBCInfo eob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo fob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  809,                                 /* lineNo */
+  819,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10244,7 +10244,7 @@ static emlrtBCInfo fob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo gob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  832,                                 /* lineNo */
+  842,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10254,7 +10254,7 @@ static emlrtBCInfo gob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo hob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  864,                                 /* lineNo */
+  874,                                 /* lineNo */
   32,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10264,7 +10264,7 @@ static emlrtBCInfo hob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo iob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  819,                                 /* lineNo */
+  829,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10274,7 +10274,7 @@ static emlrtBCInfo iob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo job_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  841,                                 /* lineNo */
+  851,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10284,7 +10284,7 @@ static emlrtBCInfo job_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo kob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  834,                                 /* lineNo */
+  844,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10294,7 +10294,7 @@ static emlrtBCInfo kob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo lob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  856,                                 /* lineNo */
+  866,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10304,7 +10304,7 @@ static emlrtBCInfo lob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo mob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  820,                                 /* lineNo */
+  830,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10314,7 +10314,7 @@ static emlrtBCInfo mob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo nob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  842,                                 /* lineNo */
+  852,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10324,7 +10324,7 @@ static emlrtBCInfo nob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo oob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  835,                                 /* lineNo */
+  845,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10334,7 +10334,7 @@ static emlrtBCInfo oob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo pob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  857,                                 /* lineNo */
+  867,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10344,7 +10344,7 @@ static emlrtBCInfo pob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo qob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  844,                                 /* lineNo */
+  854,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10354,7 +10354,7 @@ static emlrtBCInfo qob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo rob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  866,                                 /* lineNo */
+  876,                                 /* lineNo */
   58,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10364,7 +10364,7 @@ static emlrtBCInfo rob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo sob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  859,                                 /* lineNo */
+  869,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10374,7 +10374,7 @@ static emlrtBCInfo sob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo tob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  845,                                 /* lineNo */
+  855,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10384,7 +10384,7 @@ static emlrtBCInfo tob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo uob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  867,                                 /* lineNo */
+  877,                                 /* lineNo */
   65,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10394,7 +10394,7 @@ static emlrtBCInfo uob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo vob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  860,                                 /* lineNo */
+  870,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10404,7 +10404,7 @@ static emlrtBCInfo vob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo wob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  869,                                 /* lineNo */
+  879,                                 /* lineNo */
   60,                                  /* colNo */
   "maze_wall",                         /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10414,7 +10414,7 @@ static emlrtBCInfo wob_emlrtBCI = { 1, /* iFirst */
 
 static emlrtBCInfo xob_emlrtBCI = { 1, /* iFirst */
   32,                                  /* iLast */
-  870,                                 /* lineNo */
+  880,                                 /* lineNo */
   67,                                  /* colNo */
   "maze_wall_search",                  /* aName */
   "maze_solve/wall_set",               /* fName */
@@ -10422,7 +10422,7 @@ static emlrtBCInfo xob_emlrtBCI = { 1, /* iFirst */
   0                                    /* checkKind */
 };
 
-static emlrtRSInfo xe_emlrtRSI = { 1235,/* lineNo */
+static emlrtRSInfo we_emlrtRSI = { 1245,/* lineNo */
   "maze_solve/make_map_find",          /* fcnName */
   "C:\\work\\matlab\\maze_sim_git\\src\\maze_solve.m"/* pathName */
 };
@@ -10434,7 +10434,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
   const coder_internal_ref_6 *wall, const uint8_T b_maze_wall[1024], const
   uint8_T maze_wall_search[1024], const uint16_T contour_map[1024], const
   uint8_T maze_goal[18], uint16_T max_length, uint8_T Sh_r_mode, uint8_T start_x,
-  uint8_T start_y);
+  uint8_T start_y, uint8_T start_flg);
 static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
   *wall, const uint8_T maze_goal[2], const uint8_T maze_wall[1024], uint8_T
   current_x, uint8_T current_y, uint16_T contour_map[1024]);
@@ -10476,8 +10476,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
   const uint8_T goal_node2[2], uint8_T goal_matrix_dir2, const uint8_T
   goal_section[2], uint8_T *next_dir, uint8_T next_node[2], uint8_T
   *next_node_property);
-static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
-  current_y, const uint8_T maze_wall[1024], const uint16_T contour_map[1024]);
+static void get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
+  current_y, const uint8_T maze_wall[1024], const uint16_T contour_map[1024],
+  uint8_T *next_dir, uint8_T *error_flg);
 static uint8_T get_turn_pattern_num(const real_T move_dir_buffer[3], uint8_T
   ref_move_mode);
 static real_T goal_judge(const uint8_T maze_goal[18], uint8_T x, uint8_T y);
@@ -10502,9 +10503,10 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
   *wall, const uint8_T maze_wall[1024], uint8_T current_x, uint8_T current_y,
   const uint8_T unexp_square[1024], uint8_T unexp_square_idx, uint16_T
   contour_map[1024], uint8_T new_goal[2]);
-static void make_route_diagonal(const emlrtStack *sp, const uint16_T
-  row_num_node[1056], const uint16_T col_num_node[1056], const uint8_T
-  goal_section[2], const uint8_T goal_node2[2], uint8_T goal_node_property);
+static void make_route_diagonal(const emlrtStack *sp, const coder_internal_ref
+  *start_flg, const coder_internal_ref *wall_flg, const uint16_T row_num_node
+  [1056], const uint16_T col_num_node[1056], const uint8_T goal_section[2],
+  const uint8_T goal_node2[2], uint8_T goal_node_property);
 static void move_step(uint8_T *temp_x, uint8_T *temp_y, uint8_T temp_dir);
 static void move_straight(uint8_T current_node[2], uint8_T
   *current_node_property, uint8_T *current_move_dir, uint8_T *current_move_mode,
@@ -10568,7 +10570,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
   const coder_internal_ref_6 *wall, const uint8_T b_maze_wall[1024], const
   uint8_T maze_wall_search[1024], const uint16_T contour_map[1024], const
   uint8_T maze_goal[18], uint16_T max_length, uint8_T Sh_r_mode, uint8_T start_x,
-  uint8_T start_y)
+  uint8_T start_y, uint8_T start_flg)
 {
   uint8_T goal_flag;
   uint16_T little;
@@ -10593,7 +10595,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
   b_st.prev = &st;
   b_st.tls = st.tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 12U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 143U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 144U);
 
   /*     %% fust_run 最短経路走行 */
   /* 入力　壁情報,壁探索情報,等高線MAP,ゴール座標,最大経路長 */
@@ -10625,7 +10627,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
   /* 探索開始時x */
   /* 探索開始時y */
   /* 実行時、既存の最短ルート表示を削除する(MATLABのみ) */
-  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 122, false);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 124, false);
   st.site = &cc_emlrtRSI;
   overflow = ((1 <= max_length) && (max_length > 65534));
   if (overflow) {
@@ -10640,9 +10642,9 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 11, 1);
 
       /* 非走行モードのとき、非探索マスを記録する */
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 123, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 31, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 48, Sh_r_mode != 0)))) {
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 125, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 32, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 49, Sh_r_mode != 0)))) {
         /* 現在位置が未探索マスか判定 */
         if ((temp_y < 1) || (temp_y > 32)) {
           emlrtDynamicBoundsCheckR2012b(temp_y, 1, 32, &jf_emlrtBCI, sp);
@@ -10652,9 +10654,9 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           emlrtDynamicBoundsCheckR2012b(temp_x, 1, 32, &jf_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 124, maze_wall_search
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 126, maze_wall_search
                        [(temp_y + ((temp_x - 1) << 5)) - 1] != 15)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 145U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 146U);
 
           /* 未探索マスであれば、記録する。インデックスを増加させる。 */
         }
@@ -10678,18 +10680,18 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 49, temp_x ==
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 50, temp_x ==
                          maze_goal[i29 - 1])) {
           i29 = 1 + tempi;
           if (i29 > 9) {
             emlrtDynamicBoundsCheckR2012b(i29, 1, 9, &lf_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 50, temp_y ==
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 51, temp_y ==
                            maze_goal[i29 + 8])) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 32, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 125, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 146U);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 33, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 147U);
             goal_flag = 1U;
           } else {
             guard1 = true;
@@ -10699,8 +10701,8 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 32, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 125, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 33, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T, false);
         }
 
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -10709,41 +10711,43 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 12, 0);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 126, goal_flag == 1)) {
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 128, goal_flag == 1)) {
         /* ゴールかつ走行時、停止処理を実施 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T,
-                       straight_count > 0)) {
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 129, straight_count > 0))
+        {
           /* 直進カウンタが立っている場合 */
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 128, Sh_r_mode != 0)) {
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 130, Sh_r_mode != 0)) {
             /* 走行モード時、Cの動作関数を呼び出し */
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 51, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 33, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 129, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 147U);
-            m_move_front_long(straight_count, 0, wall_flg->contents,
-                              move_dir_property.straight);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 52, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 34, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 131, true);
             covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 148U);
+            m_move_front_long(straight_count, start_flg, wall_flg->contents,
+                              move_dir_property.straight);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 149U);
 
             /* スタート直後フラグと壁フラグをクリア */
+            start_flg = 0U;
             wall_flg->contents = 0U;
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 149U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 150U);
 
           /* 移動後、ストレートカウンタをクリア */
         }
 
         /* 参照マス、参照方向を更新 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 130, Sh_r_mode != 0)) {
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 132, Sh_r_mode != 0)) {
           /* 走行モード時、Cの動作関数を呼び出し */
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 52, false);
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 34, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 131, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 150U);
-          m_goal_movement(0, wall_flg->contents, move_dir_property.straight);
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 53, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 35, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 133, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 151U);
+          m_goal_movement(start_flg, wall_flg->contents,
+                          move_dir_property.straight);
         }
 
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 151U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 152U);
         exitg1 = 1;
       } else {
         /*         %%進行方向選定 */
@@ -10763,7 +10767,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           emlrtDynamicBoundsCheckR2012b(temp_x, 1, 32, &hf_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 132, (b_maze_wall[(temp_y
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 134, (b_maze_wall[(temp_y
                + ((temp_x - 1) << 5)) - 1] & b) == wall->contents.nowall)) {
           /* 北側の等高線mapが閾値より低ければ、 */
           q0 = temp_y + 1;
@@ -10771,9 +10775,9 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
             emlrtDynamicBoundsCheckR2012b(33, 1, 32, &mf_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 133, contour_map[(q0 +
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 135, contour_map[(q0 +
                 ((temp_x - 1) << 5)) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 152U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 153U);
 
             /* 閾値を北側の等高map値に変更 */
             if (q0 > 32) {
@@ -10794,16 +10798,16 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           b = 0U;
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 134, (b_maze_wall[(temp_y
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 136, (b_maze_wall[(temp_y
                + ((temp_x - 1) << 5)) - 1] & b) == wall->contents.nowall)) {
           q0 = temp_x + 1;
           if (q0 > 32) {
             emlrtDynamicBoundsCheckR2012b(33, 1, 32, &of_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 135, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 137, contour_map
                          [(temp_y + ((q0 - 1) << 5)) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 153U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 154U);
             if (q0 > 32) {
               emlrtDynamicBoundsCheckR2012b(33, 1, 32, &pf_emlrtBCI, sp);
             }
@@ -10820,16 +10824,16 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           b = 0U;
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 136, (b_maze_wall[(temp_y
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 138, (b_maze_wall[(temp_y
                + ((temp_x - 1) << 5)) - 1] & b) == wall->contents.nowall)) {
           q0 = temp_y - 1;
           if (q0 < 1) {
             emlrtDynamicBoundsCheckR2012b(0, 1, 32, &qf_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 137, contour_map[(q0 +
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 139, contour_map[(q0 +
                 ((temp_x - 1) << 5)) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 154U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 155U);
             if (q0 < 1) {
               emlrtDynamicBoundsCheckR2012b(0, 1, 32, &rf_emlrtBCI, sp);
             }
@@ -10846,16 +10850,16 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           b = 0U;
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 138, (b_maze_wall[(temp_y
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 140, (b_maze_wall[(temp_y
                + ((temp_x - 1) << 5)) - 1] & b) == wall->contents.nowall)) {
           q0 = temp_x - 1;
           if (q0 < 1) {
             emlrtDynamicBoundsCheckR2012b(0, 1, 32, &sf_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 139, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 141, contour_map
                          [(temp_y + ((q0 - 1) << 5)) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 155U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 156U);
             q0 = temp_x - 1;
             if (q0 < 1) {
               emlrtDynamicBoundsCheckR2012b(0, 1, 32, &tf_emlrtBCI, sp);
@@ -10908,7 +10912,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
         switch (q0) {
          case 0:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 1);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 156U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 157U);
 
           /* 直進の場合、直進カウンタをインクリメント */
           q0 = (int32_T)(straight_count + 1U);
@@ -10939,31 +10943,32 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
 
          case 1:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 2);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 140, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 142, straight_count > 0))
           {
             /* 直進カウンタが立っている場合 */
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 141, Sh_r_mode != 0))
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 143, Sh_r_mode != 0))
             {
               /* 走行モード時、Cの動作関数を呼び出し */
-              covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 53, false);
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 35, true);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 142, true);
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 157U);
-              m_move_front_long(straight_count, 0, wall_flg->contents,
-                                move_dir_property.straight);
+              covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 54, false);
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 36, true);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 144, true);
               covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 158U);
+              m_move_front_long(straight_count, start_flg, wall_flg->contents,
+                                move_dir_property.straight);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 159U);
 
               /* スタート直後フラグと壁フラグをクリア */
+              start_flg = 0U;
               wall_flg->contents = 0U;
             }
 
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 159U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 160U);
 
             /* 移動後、ストレートカウンタをクリア */
             straight_count = 0U;
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 160U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 161U);
           st.site = &gc_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, temp_y, temp_x,
             temp_dir);
@@ -10972,7 +10977,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           /* 参照マス、参照方向を更新 */
           st.site = &hc_emlrtRSI;
           covrtLogFcn(&emlrtCoverageInstance, 1U, 4U);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 75U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 76U);
 
           /*     %% turn_clk_90deg 時計周りに90度ターンする関数 */
           /* 入力 現在方向 */
@@ -10990,47 +10995,50 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           temp_dir = (uint8_T)(q0 % 4);
           st.site = &ic_emlrtRSI;
           move_step(&temp_x, &temp_y, temp_dir);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 143, Sh_r_mode != 0)) {
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 145, Sh_r_mode != 0)) {
             /* 走行モード時、Cの動作関数を呼び出し */
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 54, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 36, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 144, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 161U);
-            m_move_right(0, wall_flg->contents, move_dir_property.straight);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 55, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 37, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 146, true);
             covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 162U);
+            m_move_right(start_flg, wall_flg->contents,
+                         move_dir_property.straight);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 163U);
 
             /* スタート直後フラグと壁フラグをクリア */
+            start_flg = 0U;
             wall_flg->contents = 0U;
           }
           break;
 
          case 2:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 3);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 145, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 147, straight_count > 0))
           {
             /* 直進カウンタが立っている場合 */
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 146, Sh_r_mode != 0))
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 148, Sh_r_mode != 0))
             {
               /* 走行モード時、Cの動作関数を呼び出し */
-              covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 55, false);
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 37, true);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 147, true);
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 163U);
-              m_move_front_long(straight_count, 0, wall_flg->contents,
-                                move_dir_property.straight);
+              covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 56, false);
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 38, true);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 149, true);
               covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 164U);
+              m_move_front_long(straight_count, start_flg, wall_flg->contents,
+                                move_dir_property.straight);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 165U);
 
               /* スタート直後フラグと壁フラグをクリア */
+              start_flg = 0U;
               wall_flg->contents = 0U;
             }
 
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 165U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 166U);
 
             /* 移動後、ストレートカウンタをクリア */
             straight_count = 0U;
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 166U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 167U);
           st.site = &jc_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, temp_y, temp_x,
             temp_dir);
@@ -11039,7 +11047,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           /* 参照マス、参照方向を更新 */
           st.site = &kc_emlrtRSI;
           covrtLogFcn(&emlrtCoverageInstance, 1U, 3U);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 74U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 75U);
 
           /*     %% turn_180deg 180度ターンする関数 */
           /* 入力 現在方向 */
@@ -11052,47 +11060,50 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           temp_dir = (uint8_T)((q0 - 2) % 4);
           st.site = &lc_emlrtRSI;
           move_step(&temp_x, &temp_y, temp_dir);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 148, Sh_r_mode != 0)) {
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 150, Sh_r_mode != 0)) {
             /* 走行モード時、Cの動作関数を呼び出し */
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 56, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 38, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 149, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 167U);
-            m_move_back(0, wall_flg->contents, move_dir_property.straight);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 57, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 39, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 151, true);
             covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 168U);
+            m_move_back(start_flg, wall_flg->contents,
+                        move_dir_property.straight);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 169U);
 
             /* スタート直後フラグと壁フラグをクリア */
+            start_flg = 0U;
             wall_flg->contents = 0U;
           }
           break;
 
          case 3:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 4);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 150, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 152, straight_count > 0))
           {
             /* 直進カウンタが立っている場合 */
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 151, Sh_r_mode != 0))
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 153, Sh_r_mode != 0))
             {
               /* 走行モード時、Cの動作関数を呼び出し */
-              covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 57, false);
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 39, true);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 152, true);
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 169U);
-              m_move_front_long(straight_count, 0, wall_flg->contents,
-                                move_dir_property.straight);
+              covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 58, false);
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 40, true);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 154, true);
               covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 170U);
+              m_move_front_long(straight_count, start_flg, wall_flg->contents,
+                                move_dir_property.straight);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 171U);
 
               /* スタート直後フラグと壁フラグをクリア */
+              start_flg = 0U;
               wall_flg->contents = 0U;
             }
 
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 171U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 172U);
 
             /* 移動後、ストレートカウンタをクリア */
             straight_count = 0U;
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 172U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 173U);
           st.site = &mc_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, temp_y, temp_x,
             temp_dir);
@@ -11101,7 +11112,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           /* 参照マス、参照方向を更新 */
           st.site = &nc_emlrtRSI;
           covrtLogFcn(&emlrtCoverageInstance, 1U, 5U);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 76U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 77U);
 
           /*     %% turn_conclk_90deg 反時計周りに90度回る関数 */
           /* 入力　現在方向 */
@@ -11116,16 +11127,18 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           move_step(&temp_x, &temp_y, temp_dir);
 
           /* disp("left") */
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 153, Sh_r_mode != 0)) {
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 155, Sh_r_mode != 0)) {
             /* 走行モード時、Cの動作関数を呼び出し */
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 58, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 40, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 154, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 173U);
-            m_move_left(0, wall_flg->contents, move_dir_property.straight);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 59, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 41, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 156, true);
             covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 174U);
+            m_move_left(start_flg, wall_flg->contents,
+                        move_dir_property.straight);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 175U);
 
             /* スタート直後フラグと壁フラグをクリア */
+            start_flg = 0U;
             wall_flg->contents = 0U;
           }
           break;
@@ -11135,10 +11148,10 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
           break;
         }
 
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 155, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 157, false);
 
         /* for code generation */
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 177U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 178U);
         tempk++;
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
           emlrtBreakCheckR2012b(sp);
@@ -11150,7 +11163,7 @@ static void b_fust_run(const emlrtStack *sp, const coder_internal_ref_1
     }
   } while (exitg1 == 0);
 
-  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 157, false);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 159, false);
 }
 
 static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
@@ -11179,7 +11192,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
   st.prev = sp;
   st.tls = sp->tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 10U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 129U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 130U);
 
   /*     %%  make_map_find 壁情報から等高線MAPを生成 */
   /* 入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数) */
@@ -11208,7 +11221,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
   contor_renew_square[0] = maze_goal[1];
   contor_renew_square[1024] = maze_goal[0];
   covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 8, 1);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 130U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 131U);
   if ((maze_goal[1] < 1) || (maze_goal[1] > 32)) {
     emlrtDynamicBoundsCheckR2012b(maze_goal[1], 1, 32, &q_emlrtBCI, sp);
   }
@@ -11231,7 +11244,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
     exitg1 = 0;
     if (tempi < 65535) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 9, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 131U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 132U);
 
       /* 歩数カウントは0~max_length */
       /* map更新確認用フラグ */
@@ -11284,7 +11297,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
 
         i13 = maze_wall[(contor_renew_square[tempn] + ((contor_renew_square_idx
           - 1) << 5)) - 1];
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 105, (i13 & b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 107, (i13 & b) ==
                        wall->contents.nowall)) {
           /* 北側のMAPが更新されているか判断、されていなければ書き込み */
           i14 = (int32_T)(contor_renew_square[tempn] + 1U);
@@ -11302,9 +11315,9 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
               &v_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 106, contour_map[(i15 +
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 108, contour_map[(i15 +
                 ((contor_renew_square_idx - 1) << 5)) - 1] == 65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 132U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 133U);
             i15 = i14;
             if ((uint32_T)i14 > 255U) {
               i15 = 255;
@@ -11356,7 +11369,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
             &m_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 107, (i13 & b_b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 109, (i13 & b_b) ==
                        wall->contents.nowall)) {
           /* 東側のMAPが更新されているか判断、されていなければ書き込み */
           if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn] >
@@ -11375,10 +11388,10 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
             emlrtDynamicBoundsCheckR2012b(i15, 1, 32, &x_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 108, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 110, contour_map
                          [(contor_renew_square[tempn] + ((i15 - 1) << 5)) - 1] ==
                          65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 133U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 134U);
             if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn] >
                  32)) {
               emlrtDynamicBoundsCheckR2012b(contor_renew_square[tempn], 1, 32,
@@ -11430,7 +11443,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
             &k_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 109, (i13 & c_b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 111, (i13 & c_b) ==
                        wall->contents.nowall)) {
           /* 南側のMAPが更新されているか判断、されていなければ書き込み */
           qY = contor_renew_square[tempn] - 1U;
@@ -11447,10 +11460,10 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
               &ab_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 110, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 112, contour_map
                          [((int32_T)qY + ((contor_renew_square_idx - 1) << 5)) -
                          1] == 65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 134U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 135U);
             qY = contor_renew_square[tempn] - 1U;
             if (qY > contor_renew_square[tempn]) {
               qY = 0U;
@@ -11503,7 +11516,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
             &i_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 111, (i13 & d_b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 113, (i13 & d_b) ==
                        wall->contents.nowall)) {
           /* 西側のMAPが更新されているか判断、されていなければ書き込み */
           if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn] >
@@ -11521,10 +11534,10 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
             emlrtDynamicBoundsCheckR2012b((int32_T)qY, 1, 32, &cb_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 112, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 114, contour_map
                          [(contor_renew_square[tempn] + (((int32_T)qY - 1) << 5))
                          - 1] == 65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 135U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 136U);
             if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn] >
                  32)) {
               emlrtDynamicBoundsCheckR2012b(contor_renew_square[tempn], 1, 32,
@@ -11571,7 +11584,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 10, 0);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 136U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 137U);
 
       /* ゴール更新マスの更新とインデックスのクリア */
       for (i12 = 0; i12 < 2048; i12++) {
@@ -11583,7 +11596,7 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
       contor_renew_square_idx_temp = 1U;
 
       /* 更新がない、もしくは現在位置が更新されていれば終了 */
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 46, change_flag == 0)) {
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 47, change_flag == 0)) {
         guard1 = true;
         exitg1 = 1;
       } else {
@@ -11595,13 +11608,13 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
           emlrtDynamicBoundsCheckR2012b(current_x, 1, 32, &u_emlrtBCI, sp);
         }
 
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 47, contour_map
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 48, contour_map
                          [(current_y + ((current_x - 1) << 5)) - 1] != 65535)) {
           guard1 = true;
           exitg1 = 1;
         } else {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 30, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 113, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 31, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 115, false);
           tempi++;
           if (*emlrtBreakCheckR2012bFlagVar != 0) {
             emlrtBreakCheckR2012b(sp);
@@ -11617,10 +11630,10 @@ static void b_make_map_find(const emlrtStack *sp, const coder_internal_ref_6
   } while (exitg1 == 0);
 
   if (guard1) {
-    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 30, true);
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 113, true);
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 137U);
-    st.site = &xe_emlrtRSI;
+    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 31, true);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 115, true);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 138U);
+    st.site = &we_emlrtRSI;
     disp(&st, emlrt_marshallOut(tempi), &emlrtMCI);
   }
 }
@@ -11671,7 +11684,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
   uint32_T c_qY;
   int32_T i44;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 15U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 196U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 197U);
 
   /*     %% make_map_fustrun_diagonal 最短走行用等高線MAPを生成 */
   /* 未知壁の領域は仮想壁をおいて侵入しない。 */
@@ -11721,8 +11734,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
 
   /* ゴールセクションが確定している場合 */
   *start_num = MAX_uint16_T;
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 179, goal_size == 1.0)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 197U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 181, goal_size == 1.0)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 198U);
 
     /* ゴールマスから、東西南北にマップを展開 */
     /* 北壁 */
@@ -11742,11 +11755,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
 
     i41 = maze_goal[0] - 1;
     i42 = (maze_goal[1] + (i41 << 5)) - 1;
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 180, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 46, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 73, (maze_wall[i42] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 182, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 47, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 74, (maze_wall[i42] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 198U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 199U);
 
       /* 歩数更新 */
       i43 = (int32_T)(maze_goal[1] + 1U);
@@ -11776,11 +11789,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
       b = 0U;
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 181, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 47, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 74, (maze_wall[i42] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 183, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 48, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 75, (maze_wall[i42] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 199U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 200U);
 
       /* 歩数更新 */
       i41 = (int32_T)(maze_goal[0] + 1U);
@@ -11809,11 +11822,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
       b = 0U;
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 182, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 48, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 75, (maze_wall[i42] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 184, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 49, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 76, (maze_wall[i42] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 200U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 201U);
 
       /* 歩数更新 */
       row_num_node_tmp = (maze_goal[1] + 33 * (maze_goal[0] - 1)) - 1;
@@ -11843,11 +11856,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
       b = 0U;
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 183, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 49, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 76, (maze_wall[i42] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 185, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 50, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 77, (maze_wall[i42] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 201U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 202U);
 
       /* 歩数更新 */
       col_num_node[i42] = 3U;
@@ -11926,10 +11939,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
 
       u6 = maze_goal[1 + n];
       i42 = maze_wall[(u6 + ((maze_goal[n] - 1) << 5)) - 1];
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 184, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 50, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 77, (i42 & b) != 0)))) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 202U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 186, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 51, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 78, (i42 & b) != 0)))) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 203U);
 
         /* 歩数更新 */
         i43 = 1 + n;
@@ -11991,11 +12004,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         emlrtDynamicBoundsCheckR2012b(i43, 1, 1, &rhb_emlrtBCI, sp);
       }
 
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 185, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 51, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 78, (i42 & change_flag)
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 187, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 52, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 79, (i42 & change_flag)
                        != 0)))) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 203U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 204U);
 
         /* 歩数更新 */
         i43 = 1 + n;
@@ -12057,11 +12070,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         emlrtDynamicBoundsCheckR2012b(i43, 1, 1, &lhb_emlrtBCI, sp);
       }
 
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 186, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 52, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 79, (i42 & b_b) != 0))))
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 188, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 53, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 80, (i42 & b_b) != 0))))
       {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 204U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 205U);
 
         /* 歩数更新 */
         i43 = 1 + n;
@@ -12123,11 +12136,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         emlrtDynamicBoundsCheckR2012b(i43, 1, 1, &fhb_emlrtBCI, sp);
       }
 
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 187, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 53, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 80, (i42 & c_b) != 0))))
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 189, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 54, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 81, (i42 & c_b) != 0))))
       {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 205U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 206U);
 
         /* 歩数更新 */
         i42 = 1 + n;
@@ -12202,7 +12215,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
     exitg1 = 0;
     if (i <= (uint16_T)qY) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 17, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 206U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 207U);
 
       /* 更新確認用の歩数カウントは0~max_length */
       change_flag = 0U;
@@ -12265,7 +12278,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 81, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 82, ((maze_wall
                [(contor_renew_node_row[n] + ((i42 - 1) << 5)) - 1] & d_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.North <= 7) {
@@ -12285,11 +12298,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &pi_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 82,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 83,
                            ((maze_wall_search[(contor_renew_node_row[n] + ((i42
                     - 1) << 5)) - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 54, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 188, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 190, true);
 
             /* かつ進行方向が北向きである時 */
             if (g_d_direction.North <= 7) {
@@ -12309,7 +12322,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &ni_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 189, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 191, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ北のノードが更新予定値よりも大きな値の場合 */
@@ -12345,9 +12358,9 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 190, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 192, row_num_node
                              [(i42 + 33 * (i43 - 1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 207U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 208U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -12477,10 +12490,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 191,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 193,
                                row_num_node[(i42 + 33 * (i43 - 1)) - 1] ==
                                (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 208U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 209U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North <= 7) {
@@ -12559,10 +12572,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 192, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 194, row_num_node
                              [(i43 + 33 * (row_num_node_tmp - 1)) - 1] >
                              (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 209U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 210U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -12693,10 +12706,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 193,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 195,
                                row_num_node[(i43 + 33 * (row_num_node_tmp - 1))
                                - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 210U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 211U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North <= 7) {
@@ -12746,8 +12759,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 54, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 188, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 190, false);
         }
 
         /* 北東側 */
@@ -12763,7 +12776,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 83, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 84, ((maze_wall
                [(contor_renew_node_row[n] + ((contor_renew_node_row[n + 1024] -
                   1) << 5)) - 1] & e_b) != 0) == wall->contents.nowall)) {
           if (g_direction.East <= 7) {
@@ -12783,11 +12796,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(u6, 1, 32, &ji_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 84,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 85,
                            ((maze_wall_search[(contor_renew_node_row[n] + ((u6 -
                     1) << 5)) - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 194, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 196, true);
 
             /* かつ進行方向が北東向きである時 */
             if (g_d_direction.North_East <= 7) {
@@ -12806,7 +12819,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(u6, 1, 32, &hi_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 195, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 197, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ北東のノードが更新予定値よりも大きな値の場合 */
@@ -12836,15 +12849,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (u6 - 1)) - 1]
-                + 4U;
+                + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 196, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 198, col_num_node
                              [(contor_renew_node_row[n] + ((i42 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 211U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 212U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -12873,7 +12886,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (u6 - 1)) -
-                  1] + 4U;
+                  1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -12970,15 +12983,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (u6 - 1)) -
-                  1] + 4U;
+                  1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 197,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 199,
                                col_num_node[(contor_renew_node_row[n] + ((i42 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 212U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 213U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -13058,10 +13071,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 198, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 200, col_num_node
                              [(contor_renew_node_row[n] + ((i43 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 213U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 214U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -13191,10 +13204,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 199,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 201,
                                col_num_node[(contor_renew_node_row[n] + ((i43 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 214U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 215U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -13246,8 +13259,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 194, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 196, false);
         }
 
         /* 東側は柱 */
@@ -13268,7 +13281,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 85, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 86, ((maze_wall
                [((int32_T)c_qY + ((i42 - 1) << 5)) - 1] & f_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.East <= 7) {
@@ -13291,11 +13304,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &co_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 86,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 87,
                            ((maze_wall_search[((int32_T)c_qY + ((i42 - 1) << 5))
                              - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 200, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 202, true);
 
             /* かつ進行方向が南東向きである時 */
             if (g_d_direction.South_East <= 7) {
@@ -13315,7 +13328,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &fi_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 201, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 203, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ南東のノードが更新予定値よりも大きな値の場合 */
@@ -13350,15 +13363,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i43 - 1)) -
-                1] + 4U;
+                1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 202, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 204, col_num_node
                              [((int32_T)c_qY + ((i42 - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 215U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 216U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -13392,7 +13405,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i42 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -13506,15 +13519,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i43 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 203,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 205,
                                col_num_node[((int32_T)c_qY + ((i42 - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 216U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 217U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -13606,10 +13619,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 204, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 206, col_num_node
                              [((int32_T)c_qY + ((i42 - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 217U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 218U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -13762,10 +13775,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 205,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 207,
                                col_num_node[((int32_T)c_qY + ((i42 - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 218U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 219U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -13826,8 +13839,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 200, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 202, false);
         }
 
         /* 南側 */
@@ -13847,7 +13860,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 87, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 88, ((maze_wall
                [((int32_T)c_qY + ((i42 - 1) << 5)) - 1] & g_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.South <= 7) {
@@ -13870,11 +13883,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &sq_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 88,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 89,
                            ((maze_wall_search[((int32_T)c_qY + ((i42 - 1) << 5))
                              - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 206, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 208, true);
 
             /* かつ進行方向が南向きである時 */
             if (g_d_direction.South <= 7) {
@@ -13894,7 +13907,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &di_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 207, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 209, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ南のノードが更新予定値よりも大きな値の場合 */
@@ -13930,10 +13943,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 208, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 210, row_num_node
                              [((int32_T)c_qY + 33 * (i42 - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 219U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 220U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -14065,10 +14078,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 209,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 211,
                                row_num_node[((int32_T)c_qY + 33 * (i42 - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 220U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 221U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South <= 7) {
@@ -14147,10 +14160,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 210, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 212, row_num_node
                              [((int32_T)c_qY + 33 * (i42 - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 221U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 222U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -14282,10 +14295,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 211,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 213,
                                row_num_node[((int32_T)c_qY + 33 * (i42 - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 222U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 223U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South <= 7) {
@@ -14337,8 +14350,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 206, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 208, false);
         }
 
         /* 南西側 */
@@ -14358,7 +14371,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 89, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 90, ((maze_wall
                [((int32_T)c_qY + ((i42 - 1) << 5)) - 1] & i_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.West <= 7) {
@@ -14381,11 +14394,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &lt_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 90,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 91,
                            ((maze_wall_search[((int32_T)c_qY + ((i42 - 1) << 5))
                              - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 212, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 214, true);
 
             /* かつ進行方向が南西向きである時 */
             if (g_d_direction.South_West <= 7) {
@@ -14405,7 +14418,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &bi_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 213, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 215, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ南西のノードが更新予定値よりも大きな値の場合 */
@@ -14436,15 +14449,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i43 - 1)) -
-                1] + 4U;
+                1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 214, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 216, col_num_node
                              [((int32_T)c_qY + ((i42 - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 223U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 224U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -14474,7 +14487,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i42 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -14571,15 +14584,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i43 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 215,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 217,
                                col_num_node[((int32_T)c_qY + ((i42 - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 224U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 225U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -14659,10 +14672,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 216, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 218, col_num_node
                              [((int32_T)c_qY + ((i42 - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 225U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 226U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -14794,10 +14807,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 217,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 219,
                                col_num_node[((int32_T)c_qY + ((i42 - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 226U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 227U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -14850,8 +14863,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 212, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 214, false);
         }
 
         /* 北西側 */
@@ -14867,7 +14880,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 91, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 92, ((maze_wall
                [(contor_renew_node_row[n] + ((contor_renew_node_row[n + 1024] -
                   1) << 5)) - 1] & k_b) != 0) == wall->contents.nowall)) {
           if (g_direction.West <= 7) {
@@ -14887,12 +14900,12 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &wh_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 92,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 93,
                            ((maze_wall_search[(contor_renew_node_row[n] +
                   ((contor_renew_node_row[n + 1024] - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 218, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 220, true);
 
             /* かつ進行方向が北西向きである時 */
             if (g_d_direction.North_West <= 7) {
@@ -14912,7 +14925,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &uh_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 219, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 221, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ北西のノードが更新予定値よりも大きな値の場合 */
@@ -14939,15 +14952,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i43 - 1)) -
-                1] + 4U;
+                1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 220, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 222, col_num_node
                              [(contor_renew_node_row[n] + ((i42 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 227U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 228U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -14973,7 +14986,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i42 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -15054,15 +15067,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i43 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 221,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 223,
                                col_num_node[(contor_renew_node_row[n] + ((i42 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 228U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 229U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -15130,10 +15143,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 222, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 224, col_num_node
                              [(contor_renew_node_row[n] + ((i42 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 229U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 230U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -15245,10 +15258,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 223,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 225,
                                col_num_node[(contor_renew_node_row[n] + ((i42 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 230U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 231U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -15293,8 +15306,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 218, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 220, false);
         }
 
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -15362,7 +15375,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 93, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 94, ((maze_wall
                [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024] -
                   1) << 5)) - 1] & h_b) != 0) == wall->contents.nowall)) {
           if (g_direction.North <= 7) {
@@ -15382,11 +15395,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &mh_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 94,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 95,
                            ((maze_wall_search[(contor_renew_node_col[n] + ((i42
                     - 1) << 5)) - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 224, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 226, true);
 
             /* かつ進行方向が北東向きである時 */
             if (g_d_direction.North_East <= 7) {
@@ -15406,7 +15419,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 33, &kh_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 225, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 227, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ北東のノードが更新予定値よりも大きな値の場合 */
@@ -15437,14 +15450,14 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((row_num_node_tmp
-                - 1) << 5)) - 1] + 4U;
+                - 1) << 5)) - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 226, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 228, row_num_node
                              [(i42 + 33 * (i43 - 1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 231U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 232U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -15474,7 +15487,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i42 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -15569,15 +15582,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] +
-                                     ((row_num_node_tmp - 1) << 5)) - 1] + 4U;
+                                     ((row_num_node_tmp - 1) << 5)) - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 227,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 229,
                                row_num_node[(i42 + 33 * (i43 - 1)) - 1] ==
                                (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 232U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 233U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -15656,10 +15669,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 228, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 230, row_num_node
                              [(i43 + 33 * (row_num_node_tmp - 1)) - 1] >
                              (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 233U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 234U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -15790,10 +15803,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 229,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 231,
                                row_num_node[(i43 + 33 * (row_num_node_tmp - 1))
                                - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 234U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 235U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -15843,8 +15856,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 224, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 226, false);
         }
 
         /* 東側 */
@@ -15860,7 +15873,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 95, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 96, ((maze_wall
                [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024] -
                   1) << 5)) - 1] & j_b) != 0) == wall->contents.nowall)) {
           if (g_direction.East <= 7) {
@@ -15880,11 +15893,11 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(u6, 1, 32, &gh_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 96,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 97,
                            ((maze_wall_search[(contor_renew_node_col[n] + ((u6 -
                     1) << 5)) - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 230, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 232, true);
 
             /* かつ進行方向が東向きである時 */
             if (g_d_direction.East <= 7) {
@@ -15903,7 +15916,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(u6, 1, 33, &eh_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 231, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 233, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ東のノードが更新予定値よりも大きな値の場合 */
@@ -15938,10 +15951,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 232, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 234, col_num_node
                              [(contor_renew_node_col[n] + ((i42 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 235U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 236U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -16072,10 +16085,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 233,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 235,
                                col_num_node[(contor_renew_node_col[n] + ((i42 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 236U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 237U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.East <= 7) {
@@ -16155,10 +16168,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 234, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 236, col_num_node
                              [(contor_renew_node_col[n] + ((i43 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 237U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 238U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -16288,10 +16301,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 235,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 237,
                                col_num_node[(contor_renew_node_col[n] + ((i43 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 238U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 239U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.East <= 7) {
@@ -16343,8 +16356,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 230, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 232, false);
         }
 
         /* 南東側 */
@@ -16360,7 +16373,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 97, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 98, ((maze_wall
                [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024] -
                   1) << 5)) - 1] & l_b) != 0) == wall->contents.nowall)) {
           if (g_direction.South <= 7) {
@@ -16380,12 +16393,12 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b(i42, 1, 32, &ah_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 98,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 99,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   ((contor_renew_node_col[n + 1024] - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 236, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 238, true);
 
             /* かつ進行方向が南東向きである時 */
             if (g_d_direction.South_East <= 7) {
@@ -16405,7 +16418,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 33, &xg_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 237, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 239, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ南東のノードが更新予定値よりも大きな値の場合 */
@@ -16432,15 +16445,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((i43 - 1) << 5))
-                - 1] + 4U;
+                - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 238, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 240, row_num_node
                              [(contor_renew_node_col[n] + 33 * (i42 - 1)) - 1] >
                              (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 239U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 240U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -16466,7 +16479,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i42 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -16547,15 +16560,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i43 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 239,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 241,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       (i42 - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 240U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 241U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -16623,10 +16636,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 240, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 242, row_num_node
                              [(contor_renew_node_col[n] + 33 * (i42 - 1)) - 1] >
                              (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 241U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 242U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -16738,10 +16751,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 241,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 243,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       (i42 - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 242U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 243U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -16786,8 +16799,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 236, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 238, false);
         }
 
         /* 南側は柱 */
@@ -16809,7 +16822,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 99, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 100, ((maze_wall
                [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) << 5)) - 1] &
                m_b) != 0) == wall->contents.nowall)) {
           if (g_direction.South <= 7) {
@@ -16834,12 +16847,12 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b((int32_T)c_qY, 1, 32, &kt_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 100,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 101,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   (((int32_T)c_qY - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 242, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 244, true);
 
             /* かつ進行方向が南西向きである時 */
             if (g_d_direction.South_West <= 7) {
@@ -16859,7 +16872,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 33, &rg_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 243, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 245, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ南西のノードが更新予定値よりも大きな値の場合 */
@@ -16892,15 +16905,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((i42 - 1) << 5))
-                - 1] + 4U;
+                - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 244, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 246, row_num_node
                              [(contor_renew_node_col[n] + 33 * ((int32_T)c_qY -
                      1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 243U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 244U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -16932,7 +16945,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i42 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -17037,15 +17050,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i42 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 245,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 247,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       ((int32_T)c_qY - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 244U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 245U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -17131,10 +17144,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 246, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 248, row_num_node
                              [(contor_renew_node_col[n] + 33 * ((int32_T)c_qY -
                      1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 245U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 246U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -17276,10 +17289,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 247,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 249,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       ((int32_T)c_qY - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 246U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 247U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -17336,8 +17349,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 242, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 244, false);
         }
 
         /* 西側 */
@@ -17358,7 +17371,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 101, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 102, ((maze_wall
                [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) << 5)) - 1] &
                n_b) != 0) == wall->contents.nowall)) {
           if (g_direction.West <= 7) {
@@ -17383,12 +17396,12 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
             emlrtDynamicBoundsCheckR2012b((int32_T)c_qY, 1, 32, &gw_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 102,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 103,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   (((int32_T)c_qY - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 248, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 250, true);
 
             /* かつ進行方向が西向きである時 */
             if (g_d_direction.West <= 7) {
@@ -17408,7 +17421,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 33, &pg_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 249, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 251, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ西のノードが更新予定値よりも大きな値の場合 */
@@ -17446,10 +17459,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 250, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 252, col_num_node
                              [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) <<
                      5)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 247U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 248U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -17591,10 +17604,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 251,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 253,
                                col_num_node[(contor_renew_node_col[n] +
                       (((int32_T)c_qY - 1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 248U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 249U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.West <= 7) {
@@ -17680,10 +17693,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 252, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 254, col_num_node
                              [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) <<
                      5)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 249U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 250U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -17825,10 +17838,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 253,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_uint8_T,
                                col_num_node[(contor_renew_node_col[n] +
                       (((int32_T)c_qY - 1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 250U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 251U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.West <= 7) {
@@ -17885,8 +17898,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 248, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 250, false);
         }
 
         /* 北西側 */
@@ -17907,7 +17920,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 103, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 104, ((maze_wall
                [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) << 5)) - 1] &
                o_b) != 0) == wall->contents.nowall)) {
           if (g_direction.North <= 7) {
@@ -17933,12 +17946,12 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 104,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 105,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   (((int32_T)c_qY - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 254, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 66, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 256, true);
 
             /* かつ進行方向が北西向きである時 */
             if (g_d_direction.North_West <= 7) {
@@ -17958,10 +17971,9 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               emlrtDynamicBoundsCheckR2012b(i42, 1, 33, &ng_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_uint8_T,
-                           (col_dir_node[(contor_renew_node_col[n] +
-                   ((contor_renew_node_col[n + 1024] - 1) << 5)) - 1] & b) != 0))
-            {
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 257, (col_dir_node
+                  [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
+                     - 1) << 5)) - 1] & b) != 0)) {
               /* かつ北西のノードが更新予定値よりも大きな値の場合 */
               i42 = (int32_T)(contor_renew_node_col[n] + 1U);
               if ((uint32_T)i42 > 255U) {
@@ -17995,15 +18007,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((i43 - 1) << 5))
-                - 1] + 4U;
+                - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 256, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 258, row_num_node
                              [(i42 + 33 * ((int32_T)c_qY - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 251U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 252U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -18038,7 +18050,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i42 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -18156,15 +18168,15 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i43 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 257,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 259,
                                row_num_node[(i42 + 33 * ((int32_T)c_qY - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 252U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 253U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -18258,10 +18270,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 258, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 260, row_num_node
                              [(i42 + 33 * ((int32_T)c_qY - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 253U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 254U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -18419,10 +18431,10 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 259,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 261,
                                row_num_node[(i42 + 33 * ((int32_T)c_qY - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 254U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, MAX_uint8_T);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -18484,8 +18496,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 254, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 66, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 256, false);
         }
 
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -18494,7 +18506,7 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 19, 0);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, MAX_uint8_T);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 256U);
 
       /* ゴール更新ノードの更新とインデックスのクリア */
       contor_renew_node_col_idx = contor_renew_node_col_idx_temp;
@@ -18510,8 +18522,8 @@ static void b_make_map_fustrun_diagonal(const emlrtStack *sp,
       contor_renew_node_row_idx_temp = 1U;
 
       /* 更新がなければ終了(スタート地点の歩数マップを更新) */
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 260, change_flag == 0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 256U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 262, change_flag == 0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 257U);
         b_qY = row_num_node[1] + 3U;
         if (b_qY > 65535U) {
           b_qY = 65535U;
@@ -18545,7 +18557,8 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
   uint8_T goal_flg;
   uint8_T contour_flg;
   int32_T exitg1;
-  uint8_T next_dir;
+  uint8_T temp_maze_wall_tmp;
+  uint8_T error_flg;
   int32_T q0;
   uint32_T qY;
   emlrtStack st;
@@ -18589,14 +18602,15 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
           emlrtDynamicBoundsCheckR2012b(*current_x, 1, 32, &rjb_emlrtBCI, sp);
         }
 
-        next_dir = b_maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1];
+        temp_maze_wall_tmp = b_maze_wall[(*current_y + ((*current_x - 1) << 5))
+          - 1];
         st.site = &ib_emlrtRSI;
         wall_set(&st, wall, wall_flg, search, maze_goal, maze_row_size,
                  maze_col_size, *current_x, *current_y, *current_dir,
                  b_maze_wall, maze_wall_search);
 
         /* 壁情報が更新されれば、コンター更新のフラグを立てる。 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 18, next_dir !=
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 18, temp_maze_wall_tmp !=
                        b_maze_wall[(*current_y + ((*current_x - 1) << 5)) - 1]))
         {
           covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 34U);
@@ -18684,11 +18698,20 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
       /*  進行方向選定 */
       /* 優先順位　北⇒東⇒南⇒西 */
       st.site = &mb_emlrtRSI;
-      next_dir = get_nextdir2(&st, *current_x, *current_y, b_maze_wall,
-        contour_map);
+      get_nextdir2(&st, *current_x, *current_y, b_maze_wall, contour_map,
+                   &temp_maze_wall_tmp, &error_flg);
+
+      /* 進行方向が見つからなかったときのエラー処理 */
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 29, error_flg == 1)) {
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 8, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 7, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 30, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 46U);
+        m_error_movement(1);
+      }
 
       /*  現在方向と進行方向に応じた処理 */
-      q0 = (int32_T)(4U + next_dir);
+      q0 = (int32_T)(4U + temp_maze_wall_tmp);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
       }
@@ -18698,14 +18721,14 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         qY = 0U;
       }
 
-      next_dir = b_rem((uint8_T)qY);
-      if (l_direction.front == next_dir) {
+      temp_maze_wall_tmp = b_rem((uint8_T)qY);
+      if (l_direction.front == temp_maze_wall_tmp) {
         q0 = 0;
-      } else if (l_direction.right == next_dir) {
+      } else if (l_direction.right == temp_maze_wall_tmp) {
         q0 = 1;
-      } else if (l_direction.back == next_dir) {
+      } else if (l_direction.back == temp_maze_wall_tmp) {
         q0 = 2;
-      } else if (l_direction.left == next_dir) {
+      } else if (l_direction.left == temp_maze_wall_tmp) {
         q0 = 3;
       } else {
         q0 = -1;
@@ -18716,15 +18739,15 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 1, 1);
 
         /* 直進制御時、壁フラグを現在参照位置で更新 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 29, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 31, straight_count > 0))
         {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 46U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 47U);
           st.site = &nb_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, *current_y,
             *current_x, *current_dir);
         }
 
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 47U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 48U);
 
         /* 参照位置を次回の参照位置に変更 */
         move_step(current_x, current_y, *current_dir);
@@ -18738,9 +18761,9 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
           emlrtDynamicBoundsCheckR2012b(*current_x, 1, 32, &wjb_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 30, maze_wall_search
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 32, maze_wall_search
                        [(*current_y + ((*current_x - 1) << 5)) - 1] == 15)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 48U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 49U);
           q0 = (int32_T)(straight_count + 1U);
           if ((uint32_T)q0 > 255U) {
             q0 = 255;
@@ -18752,12 +18775,12 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         } else {
           /* 直線カウンタがある場合、移動 */
           /* 現在方向も直進なので、直進カウンタ+1だけ移動する。 */
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 31, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 33, straight_count > 0))
           {
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 8, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 7, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 32, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 49U);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 9, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 8, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 34, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 50U);
             q0 = (int32_T)(straight_count + 1U);
             if ((uint32_T)q0 > 255U) {
               q0 = 255;
@@ -18765,7 +18788,7 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
 
             m_move_front_long((uint8_T)q0, *start_flg, wall_flg->contents,
                               move_dir_property.straight);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 50U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 51U);
             straight_count = 0U;
 
             /* スタート直後フラグをクリア */
@@ -18775,13 +18798,13 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
             wall_flg->contents = 0U;
           } else {
             /* 直進カウンタがない場合 */
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 9, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 8, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 33, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 51U);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 10, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 9, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 35, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 52U);
             m_move_front(*start_flg, wall_flg->contents,
                          move_dir_property.straight);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 52U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 53U);
 
             /* スタート直後フラグをクリア */
             *start_flg = 0U;
@@ -18796,17 +18819,17 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 1, 2);
 
         /* 直進カウンタがある場合、移動 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 34, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 36, straight_count > 0))
         {
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 10, false);
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 9, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 35, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 53U);
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 11, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 10, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 37, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 54U);
 
           /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
           m_move_front_long(straight_count, *start_flg, wall_flg->contents,
                             move_dir_property.straight);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 54U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 55U);
           straight_count = 0U;
 
           /* スタート直後フラグをクリア */
@@ -18822,12 +18845,12 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         }
 
         /* マウスを移動させる（C) */
-        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 11, false);
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 10, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 36, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 55U);
-        m_move_right(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 12, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 11, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 38, true);
         covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 56U);
+        m_move_right(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 57U);
 
         /* 参照位置、方向を更新 */
         turn_clk_90deg(current_dir);
@@ -18845,17 +18868,17 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
 
         /* disp("back") */
         /* 直進カウンタがある場合、移動 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 37, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 39, straight_count > 0))
         {
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 12, false);
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 11, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 38, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 57U);
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 13, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 12, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 40, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 58U);
 
           /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
           m_move_front_long(straight_count, *start_flg, wall_flg->contents,
                             move_dir_property.straight);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 58U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 59U);
           straight_count = 0U;
 
           /* スタート直後フラグをクリア */
@@ -18871,12 +18894,12 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         }
 
         /* マウスを移動させる（C） */
-        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 13, false);
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 12, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 39, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 59U);
-        m_move_back(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 14, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 13, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 41, true);
         covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 60U);
+        m_move_back(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 61U);
 
         /* 参照位置、方向を更新 */
         turn_180deg(current_dir);
@@ -18893,17 +18916,17 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 1, 4);
 
         /* 直進カウンタがある場合、移動 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 40, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 42, straight_count > 0))
         {
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 14, false);
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 13, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 41, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 61U);
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 15, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 14, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 43, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 62U);
 
           /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
           m_move_front_long(straight_count, *start_flg, wall_flg->contents,
                             move_dir_property.straight);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 62U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 63U);
           straight_count = 0U;
 
           /* スタート直後フラグをクリア */
@@ -18919,12 +18942,12 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         }
 
         /* マウスを移動させる（C） */
-        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 15, false);
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 14, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 42, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 63U);
-        m_move_left(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 16, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 15, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 44, true);
         covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 64U);
+        m_move_left(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 65U);
 
         /* 参照位置、方向を更新 */
         turn_conclk_90deg(current_dir);
@@ -18942,7 +18965,7 @@ static void b_search_adachi(const emlrtStack *sp, const coder_internal_ref_6
         break;
       }
 
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 43, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 45, false);
 
       /* for code generation */
       if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -19024,7 +19047,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
   b_st.prev = &st;
   b_st.tls = st.tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 16U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 257U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 258U);
 
   /*     %% decide_goal_node_dir ゴールノード、および方向の確定 */
   /*  斜めのコンターマップから、ゴールとなるノードと、ゴール時の進入角度を確定する。 */
@@ -19051,7 +19074,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
   do {
     exitg1 = 0;
     covrtLogWhile(&emlrtCoverageInstance, 1U, 0U, 4, true);
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 258U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 259U);
     goal_flag = 0U;
     st.site = &yc_emlrtRSI;
     if (overflow) {
@@ -19063,7 +19086,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 20, 1);
 
       /* 現在のノードが行方向の時 */
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 261, *goal_matrix_dir ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 263, *goal_matrix_dir ==
                      matrix_dir.Row)) {
         /*  %x */
         i36 = 1 + i;
@@ -19073,14 +19096,14 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
 
         guard1 = false;
         guard2 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 105, maze_goal[i36 - 1]
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 106, maze_goal[i36 - 1]
                          == goal_node[1])) {
           i36 = 1 + i;
           if (i36 > 9) {
             emlrtDynamicBoundsCheckR2012b(i36, 1, 9, &neb_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 106, maze_goal[i36 +
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 107, maze_goal[i36 +
                            8] == goal_node[0])) {
             guard2 = true;
           } else {
@@ -19094,7 +19117,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               i36 = 255;
             }
 
-            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 107, i36 ==
+            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 108, i36 ==
                              goal_node[0])) {
               guard2 = true;
             } else {
@@ -19106,8 +19129,8 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
         }
 
         if (guard2) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 66, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 262, true);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 67, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 264, true);
 
           /* y座標の一致 */
           /* 進行方向先に壁があれば(マップ値が65535であれば)、進行方向を変更する（斜め侵入時） */
@@ -19116,7 +19139,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
           guard4 = false;
           guard5 = false;
           guard6 = false;
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 108, *goal_dir ==
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 109, *goal_dir ==
                            g_d_direction.North_East)) {
             if ((goal_node[0] < 1) || (goal_node[0] > 32)) {
               emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 32, &seb_emlrtBCI,
@@ -19132,12 +19155,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               emlrtDynamicBoundsCheckR2012b(i36, 1, 33, &teb_emlrtBCI, sp);
             }
 
-            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 109, col_num_node
+            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 110, col_num_node
                              [(goal_node[0] + ((i36 - 1) << 5)) - 1] == 65535))
             {
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 67, true);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 263, true);
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 259U);
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 68, true);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 265, true);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 260U);
               *goal_dir = g_d_direction.North;
 
               /* 南東 */
@@ -19149,9 +19172,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
           }
 
           if (guard6) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 67, false);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 263, false);
-            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 110, *goal_dir ==
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 68, false);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 265, false);
+            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 111, *goal_dir ==
                              g_d_direction.South_East)) {
               qY = goal_node[0] - 1U;
               if (qY > goal_node[0]) {
@@ -19172,12 +19195,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 emlrtDynamicBoundsCheckR2012b(i36, 1, 33, &xeb_emlrtBCI, sp);
               }
 
-              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 111,
+              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 112,
                                col_num_node[((int32_T)qY + ((i36 - 1) << 5)) - 1]
                                == 65535)) {
-                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 68, true);
-                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 264, true);
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 260U);
+                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 69, true);
+                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 266, true);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 261U);
                 *goal_dir = g_d_direction.South;
 
                 /* 南西 */
@@ -19190,9 +19213,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
           }
 
           if (guard5) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 68, false);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 264, false);
-            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 112, *goal_dir ==
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 69, false);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 266, false);
+            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 113, *goal_dir ==
                              g_d_direction.South_West)) {
               qY = goal_node[0] - 1U;
               if (qY > goal_node[0]) {
@@ -19209,12 +19232,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                   sp);
               }
 
-              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 113,
+              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 114,
                                col_num_node[((int32_T)qY + ((goal_node[1] - 1) <<
                      5)) - 1] == 65535)) {
-                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 69, true);
-                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 265, true);
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 261U);
+                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 70, true);
+                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 267, true);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 262U);
                 *goal_dir = g_d_direction.South;
 
                 /* 北西 */
@@ -19227,9 +19250,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
           }
 
           if (guard4) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 69, false);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 265, false);
-            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 114, *goal_dir ==
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 70, false);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 267, false);
+            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 115, *goal_dir ==
                              g_d_direction.North_West)) {
               if ((goal_node[0] < 1) || (goal_node[0] > 32)) {
                 emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 32, &ggb_emlrtBCI,
@@ -19241,12 +19264,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                   sp);
               }
 
-              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 115,
+              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 116,
                                col_num_node[(goal_node[0] + ((goal_node[1] - 1) <<
                      5)) - 1] == 65535)) {
-                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 70, true);
-                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 266, true);
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 262U);
+                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 71, true);
+                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 268, true);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 263U);
                 *goal_dir = g_d_direction.North;
               } else {
                 guard3 = true;
@@ -19257,19 +19280,19 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
           }
 
           if (guard3) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 70, false);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 266, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 71, false);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 268, false);
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 263U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 264U);
 
           /* フラグ */
           goal_flag = 1U;
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 66, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 262, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 67, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 264, false);
         }
 
         /* 現在のノードが列方向の時 */
@@ -19282,7 +19305,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
 
         guard1 = false;
         guard2 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 116, maze_goal[i36 - 1]
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 117, maze_goal[i36 - 1]
                          == goal_node[1])) {
           guard2 = true;
         } else {
@@ -19296,7 +19319,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
             i36 = 255;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 117, i36 ==
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 118, i36 ==
                            goal_node[1])) {
             guard2 = true;
           } else {
@@ -19310,10 +19333,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
             emlrtDynamicBoundsCheckR2012b(i36, 1, 9, &oeb_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 118, maze_goal[i36 +
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 119, maze_goal[i36 +
                            8] == goal_node[0])) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 71, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 267, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 72, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 269, true);
 
             /* y座標の一致 */
             /* 進行方向先に壁があれば(マップ値が65535であれば)、進行方向を変更する（斜め侵入時） */
@@ -19322,7 +19345,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
             guard4 = false;
             guard5 = false;
             guard6 = false;
-            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 119, *goal_dir ==
+            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 120, *goal_dir ==
                              g_d_direction.North_East)) {
               i36 = (int32_T)(goal_node[0] + 1U);
               if ((uint32_T)i36 > 255U) {
@@ -19338,12 +19361,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                   sp);
               }
 
-              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 120,
+              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 121,
                                row_num_node[(i36 + 33 * (goal_node[1] - 1)) - 1]
                                == 65535)) {
-                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 72, true);
-                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 268, true);
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 264U);
+                covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 73, true);
+                covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 270, true);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 265U);
                 *goal_dir = g_d_direction.East;
 
                 /* 南東 */
@@ -19355,9 +19378,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
             }
 
             if (guard6) {
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 72, false);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 268, false);
-              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 121, *goal_dir ==
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 73, false);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 270, false);
+              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 122, *goal_dir ==
                                g_d_direction.South_East)) {
                 if ((goal_node[0] < 1) || (goal_node[0] > 33)) {
                   emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 33,
@@ -19369,12 +19392,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                     &veb_emlrtBCI, sp);
                 }
 
-                if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 122,
+                if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 123,
                                  row_num_node[(goal_node[0] + 33 * (goal_node[1]
                        - 1)) - 1] == 65535)) {
-                  covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 73, true);
-                  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 269, true);
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 265U);
+                  covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 74, true);
+                  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 271, true);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 266U);
                   *goal_dir = g_d_direction.East;
 
                   /* 南西 */
@@ -19387,9 +19410,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
             }
 
             if (guard5) {
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 73, false);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 269, false);
-              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 123, *goal_dir ==
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 74, false);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 271, false);
+              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 124, *goal_dir ==
                                g_d_direction.South_West)) {
                 if ((goal_node[0] < 1) || (goal_node[0] > 33)) {
                   emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 33,
@@ -19406,12 +19429,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                     &ifb_emlrtBCI, sp);
                 }
 
-                if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 124,
+                if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 125,
                                  row_num_node[(goal_node[0] + 33 * ((int32_T)qY
                        - 1)) - 1] == 65535)) {
-                  covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 74, true);
-                  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 270, true);
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 266U);
+                  covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 75, true);
+                  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 272, true);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 267U);
                   *goal_dir = g_d_direction.West;
 
                   /* 北西 */
@@ -19424,9 +19447,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
             }
 
             if (guard4) {
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 74, false);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 270, false);
-              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 125, *goal_dir ==
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 75, false);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 272, false);
+              if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 126, *goal_dir ==
                                g_d_direction.North_West)) {
                 i36 = (int32_T)(goal_node[0] + 1U);
                 if ((uint32_T)i36 > 255U) {
@@ -19447,12 +19470,12 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                     &fgb_emlrtBCI, sp);
                 }
 
-                if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 126,
+                if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T,
                                  row_num_node[(i36 + 33 * ((int32_T)qY - 1)) - 1]
                                  == 65535)) {
-                  covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 75, true);
-                  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 271, true);
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 267U);
+                  covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 76, true);
+                  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 273, true);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 268U);
                   *goal_dir = g_d_direction.West;
                 } else {
                   guard3 = true;
@@ -19463,11 +19486,11 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
             }
 
             if (guard3) {
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 75, false);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 271, false);
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 76, false);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 273, false);
             }
 
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 268U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 269U);
 
             /* フラグ */
             goal_flag = 1U;
@@ -19477,8 +19500,8 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 71, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 267, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 72, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 269, false);
         }
       }
 
@@ -19498,13 +19521,13 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
     /* ゴールノード判定の時 */
     /* 現在のノードをゴールノードとし、 */
     /* 現在の方向をゴール時の方向とする。 */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 272, goal_flag == 1)) {
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 274, goal_flag == 1)) {
       exitg1 = 1;
     } else {
       /* 現在のノードの方向から優先的に進行方向を確定 */
       for (i = 0; i < 8; i++) {
         covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 21, 1);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 270U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 271U);
         i36 = *goal_dir + i;
         if (i36 > 255) {
           i36 = 255;
@@ -19513,9 +19536,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
         goal_flag = c_rem((uint8_T)i36);
 
         /* 現在のノードが行方向の時 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 273, *goal_matrix_dir ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 275, *goal_matrix_dir ==
                        matrix_dir.Row)) {
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 274, goal_flag ==
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 276, goal_flag ==
                          g_d_direction.North)) {
             i36 = (int32_T)(goal_node[0] + 1U);
             if ((uint32_T)i36 > 255U) {
@@ -19531,9 +19554,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 275, row_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 277, row_num_node
                            [(i36 + 33 * (goal_node[1] - 1)) - 1] < map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 271U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 272U);
 
               /* 最小値を更新 */
               i36 = (int32_T)(goal_node[0] + 1U);
@@ -19560,7 +19583,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               next_node_idx_0 = (uint8_T)i36;
               next_node_idx_1 = goal_node[1];
             }
-          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 276, goal_flag ==
+          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 278, goal_flag ==
                                 g_d_direction.North_East)) {
             if ((goal_node[0] < 1) || (goal_node[0] > 32)) {
               emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 32, &dfb_emlrtBCI,
@@ -19576,9 +19599,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               emlrtDynamicBoundsCheckR2012b(i36, 1, 33, &efb_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 277, col_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 279, col_num_node
                            [(goal_node[0] + ((i36 - 1) << 5)) - 1] < map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 272U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 273U);
 
               /* 最小値を更新 */
               i36 = (int32_T)(goal_node[1] + 1U);
@@ -19605,9 +19628,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
 
               next_node_idx_1 = (uint8_T)i36;
             }
-          } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 278, goal_flag ==
+          } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 280, goal_flag ==
                       g_d_direction.East)) {
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 279, goal_flag ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 281, goal_flag ==
                            g_d_direction.South_East)) {
               qY = goal_node[0] - 1U;
               if (qY > goal_node[0]) {
@@ -19628,10 +19651,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 emlrtDynamicBoundsCheckR2012b(i36, 1, 33, &ofb_emlrtBCI, sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 280, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 282, col_num_node
                              [((int32_T)qY + ((i36 - 1) << 5)) - 1] < map_min))
               {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 273U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 274U);
 
                 /* 最小値を更新 */
                 qY = goal_node[0] - 1U;
@@ -19673,7 +19696,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
 
                 next_node_idx_1 = (uint8_T)i36;
               }
-            } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 281, goal_flag
+            } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 283, goal_flag
                                   == g_d_direction.South)) {
               qY = goal_node[0] - 1U;
               if (qY > goal_node[0]) {
@@ -19690,10 +19713,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 282, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 284, row_num_node
                              [((int32_T)qY + 33 * (goal_node[1] - 1)) - 1] <
                              map_min)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 274U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 275U);
 
                 /* 最小値を更新 */
                 qY = goal_node[0] - 1U;
@@ -19722,7 +19745,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 next_node_idx_0 = (uint8_T)qY;
                 next_node_idx_1 = goal_node[1];
               }
-            } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 283, goal_flag
+            } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 285, goal_flag
                                   == g_d_direction.South_West)) {
               qY = goal_node[0] - 1U;
               if (qY > goal_node[0]) {
@@ -19739,10 +19762,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 284, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 286, col_num_node
                              [((int32_T)qY + ((goal_node[1] - 1) << 5)) - 1] <
                              map_min)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 275U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 276U);
 
                 /* 最小値を更新 */
                 qY = goal_node[0] - 1U;
@@ -19771,9 +19794,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 next_node_idx_0 = (uint8_T)qY;
                 next_node_idx_1 = goal_node[1];
               }
-            } else if ((!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 285,
+            } else if ((!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 287,
                                     goal_flag == g_d_direction.West)) &&
-                       covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 286, goal_flag
+                       covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 288, goal_flag
                                   == g_d_direction.North_West)) {
               if ((goal_node[0] < 1) || (goal_node[0] > 32)) {
                 emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 32, &kgb_emlrtBCI,
@@ -19786,9 +19809,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               }
 
               u5 = col_num_node[(goal_node[0] + ((goal_node[1] - 1) << 5)) - 1];
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 287, u5 < map_min))
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 289, u5 < map_min))
               {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 276U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 277U);
 
                 /* 最小値を更新 */
                 map_min = u5;
@@ -19809,9 +19832,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
           }
 
           /* 現在のノードが列方向の時 */
-        } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 288, goal_flag ==
+        } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 290, goal_flag ==
                     g_d_direction.North)) {
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 289, goal_flag ==
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 291, goal_flag ==
                          g_d_direction.North_East)) {
             i36 = (int32_T)(goal_node[0] + 1U);
             if ((uint32_T)i36 > 255U) {
@@ -19827,9 +19850,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 290, row_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 292, row_num_node
                            [(i36 + 33 * (goal_node[1] - 1)) - 1] < map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 277U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 278U);
 
               /* 最小値を更新 */
               i36 = (int32_T)(goal_node[0] + 1U);
@@ -19856,7 +19879,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               next_node_idx_0 = (uint8_T)i36;
               next_node_idx_1 = goal_node[1];
             }
-          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 291, goal_flag ==
+          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 293, goal_flag ==
                                 g_d_direction.East)) {
             if ((goal_node[0] < 1) || (goal_node[0] > 32)) {
               emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 32, &ffb_emlrtBCI,
@@ -19872,9 +19895,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               emlrtDynamicBoundsCheckR2012b(i36, 1, 33, &gfb_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 292, col_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 294, col_num_node
                            [(goal_node[0] + ((i36 - 1) << 5)) - 1] < map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 278U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 279U);
 
               /* 最小値を更新 */
               i36 = (int32_T)(goal_node[1] + 1U);
@@ -19901,7 +19924,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
 
               next_node_idx_1 = (uint8_T)i36;
             }
-          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 293, goal_flag ==
+          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 295, goal_flag ==
                                 g_d_direction.South_East)) {
             if ((goal_node[0] < 1) || (goal_node[0] > 33)) {
               emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 33, &lfb_emlrtBCI,
@@ -19913,10 +19936,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 294, row_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 296, row_num_node
                            [(goal_node[0] + 33 * (goal_node[1] - 1)) - 1] <
                            map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 279U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 280U);
 
               /* 最小値を更新 */
               map_min = row_num_node[(goal_node[0] + 33 * (goal_node[1] - 1)) -
@@ -19930,9 +19953,9 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
               next_node_idx_0 = goal_node[0];
               next_node_idx_1 = goal_node[1];
             }
-          } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 295, goal_flag ==
+          } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 297, goal_flag ==
                       g_d_direction.South)) {
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 296, goal_flag ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 298, goal_flag ==
                            g_d_direction.South_West)) {
               if ((goal_node[0] < 1) || (goal_node[0] > 33)) {
                 emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 33, &ufb_emlrtBCI,
@@ -19949,10 +19972,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 297, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 299, row_num_node
                              [(goal_node[0] + 33 * ((int32_T)qY - 1)) - 1] <
                              map_min)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 280U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 281U);
 
                 /* 最小値を更新 */
                 qY = goal_node[1] - 1U;
@@ -19981,7 +20004,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
 
                 next_node_idx_1 = (uint8_T)qY;
               }
-            } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 298, goal_flag
+            } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 300, goal_flag
                                   == g_d_direction.West)) {
               if ((goal_node[0] < 1) || (goal_node[0] > 32)) {
                 emlrtDynamicBoundsCheckR2012b(goal_node[0], 1, 32, &agb_emlrtBCI,
@@ -19998,10 +20021,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 299, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 301, col_num_node
                              [(goal_node[0] + (((int32_T)qY - 1) << 5)) - 1] <
                              map_min)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 281U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 282U);
 
                 /* 最小値を更新 */
                 qY = goal_node[1] - 1U;
@@ -20031,7 +20054,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                 next_node_idx_1 = (uint8_T)qY;
               }
             } else {
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 300, goal_flag ==
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 302, goal_flag ==
                              g_d_direction.North_West)) {
                 i36 = (int32_T)(goal_node[0] + 1U);
                 if ((uint32_T)i36 > 255U) {
@@ -20052,10 +20075,10 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
                     &jgb_emlrtBCI, sp);
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 301,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 303,
                                row_num_node[(i36 + 33 * ((int32_T)qY - 1)) - 1] <
                                map_min)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 282U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 283U);
 
                   /* 最小値を更新 */
                   i36 = (int32_T)(goal_node[0] + 1U);
@@ -20112,7 +20135,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 21, 0);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 283U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 284U);
       goal_node[0] = next_node_idx_0;
       goal_node[1] = next_node_idx_1;
       *goal_matrix_dir = next_matrix_dir;
@@ -20122,7 +20145,7 @@ static void decide_goal_node_dir(const emlrtStack *sp, const uint8_T maze_goal
     }
   } while (exitg1 == 0);
 
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 269U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 270U);
   emlrtDisplayR2012b(b_emlrt_marshallOut(goal_node), "goal_node", &emlrtRTEI, sp);
   emlrtDisplayR2012b(c_emlrt_marshallOut(*goal_matrix_dir), "goal_matrix_dir",
                      &b_emlrtRTEI, sp);
@@ -20143,7 +20166,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
   int32_T i39;
   uint32_T b_qY;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 17U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 284U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 285U);
 
   /*     %% decide_goal_section ゴールマスの確定 */
   /*  確定されたゴールのノードと、ゴール時の進入角度から、 */
@@ -20154,9 +20177,9 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
   goal_section[1] = 1U;
   goal_node2[1] = 1U;
   *goal_matrix_dir2 = matrix_dir.Row;
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 302, goal_dir ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 304, goal_dir ==
                  g_d_direction.North)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 303, goal_matrix_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 305, goal_matrix_dir ==
                    matrix_dir.Row)) {
       i37 = (int32_T)(goal_node[0] + 1U);
       i38 = i37;
@@ -20165,8 +20188,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)i38);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 304, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 285U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 306, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 286U);
         if ((uint32_T)i37 > 255U) {
           i37 = 255;
         }
@@ -20178,7 +20201,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         goal_node2[0] = (uint8_T)i37;
         goal_node2[1] = goal_node[1];
       } else {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 286U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 287U);
         goal_section[0] = goal_node[0];
         goal_section[1] = goal_node[1];
 
@@ -20189,9 +20212,9 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
     }
 
     /* 列方向は柱なのでなし */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 305, goal_dir ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 307, goal_dir ==
                         g_d_direction.North_East)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 306, goal_matrix_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 308, goal_matrix_dir ==
                    matrix_dir.Row)) {
       i37 = (int32_T)(goal_node[1] + 1U);
       if ((uint32_T)i37 > 255U) {
@@ -20204,8 +20227,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)i37, (uint8_T)i38);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 307, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 287U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 309, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 288U);
         i37 = (int32_T)(goal_node[0] + 1U);
         if ((uint32_T)i37 > 255U) {
           i37 = 255;
@@ -20239,8 +20262,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, (uint8_T)i37, goal_node[0]);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 308, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 288U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 310, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 289U);
           goal_section[0] = goal_node[0];
           i37 = (int32_T)(goal_node[1] + 1U);
           if ((uint32_T)i37 > 255U) {
@@ -20265,8 +20288,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)i37);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 309, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 289U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 311, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 290U);
             i37 = (int32_T)(goal_node[0] + 1U);
             if ((uint32_T)i37 > 255U) {
               i37 = 255;
@@ -20284,7 +20307,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             goal_node2[0] = (uint8_T)i37;
             goal_node2[1] = goal_node[1];
           } else {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 290U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 291U);
             goal_section[0] = goal_node[0];
             goal_section[1] = goal_node[1];
 
@@ -20307,8 +20330,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)i38, (uint8_T)i39);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 310, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 291U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 312, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 292U);
         i38 = (int32_T)(goal_node[0] + 1U);
         if ((uint32_T)i38 > 255U) {
           i38 = 255;
@@ -20332,8 +20355,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)i38);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 311, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 292U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 313, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 293U);
           i37 = (int32_T)(goal_node[0] + 1U);
           if ((uint32_T)i37 > 255U) {
             i37 = 255;
@@ -20357,8 +20380,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, (uint8_T)i38, goal_node[0]);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 312, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 293U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 314, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 294U);
             goal_section[0] = goal_node[0];
             i38 = i37;
             if ((uint32_T)i37 > 255U) {
@@ -20376,7 +20399,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             goal_node2[1] = (uint8_T)i37;
             *goal_matrix_dir2 = matrix_dir.Col;
           } else {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 294U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 295U);
             goal_section[0] = goal_node[0];
             goal_section[1] = goal_node[1];
 
@@ -20388,10 +20411,10 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
       }
     }
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 313, goal_dir ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 315, goal_dir ==
                         g_d_direction.East)) {
     /* 行方向は柱なのでなし */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 314, goal_matrix_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 316, goal_matrix_dir ==
                    matrix_dir.Col)) {
       i37 = (int32_T)(goal_node[1] + 1U);
       if ((uint32_T)i37 > 255U) {
@@ -20399,8 +20422,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)i37, goal_node[0]);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 315, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 295U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 317, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 296U);
         goal_section[0] = goal_node[0];
         i37 = (int32_T)(goal_node[1] + 1U);
         if ((uint32_T)i37 > 255U) {
@@ -20414,7 +20437,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         goal_node2[1] = (uint8_T)i37;
         *goal_matrix_dir2 = matrix_dir.Col;
       } else {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 296U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 297U);
         goal_section[0] = goal_node[0];
         goal_section[1] = goal_node[1];
 
@@ -20424,9 +20447,9 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         *goal_matrix_dir2 = matrix_dir.Col;
       }
     }
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 316, goal_dir ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 318, goal_dir ==
                         g_d_direction.South_East)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 317, goal_matrix_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 319, goal_matrix_dir ==
                    matrix_dir.Row)) {
       i37 = (int32_T)(goal_node[1] + 1U);
       if ((uint32_T)i37 > 255U) {
@@ -20439,8 +20462,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)i37, (uint8_T)qY);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 318, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 297U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 320, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 298U);
         qY = goal_node[0] - 2U;
         if (qY > goal_node[0]) {
           qY = 0U;
@@ -20479,8 +20502,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, (uint8_T)i37, (uint8_T)qY);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 319, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 298U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 321, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 299U);
           qY = goal_node[0] - 1U;
           if (qY > goal_node[0]) {
             qY = 0U;
@@ -20515,8 +20538,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)qY);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 320, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 299U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 322, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 300U);
             qY = goal_node[0] - 1U;
             if (qY > goal_node[0]) {
               qY = 0U;
@@ -20534,7 +20557,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             goal_node2[0] = (uint8_T)qY;
             goal_node2[1] = goal_node[1];
           } else {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 300U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 301U);
             qY = goal_node[0] - 1U;
             if (qY > goal_node[0]) {
               qY = 0U;
@@ -20561,8 +20584,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)i37, (uint8_T)qY);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 321, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 301U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 323, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 302U);
         qY = goal_node[0] - 1U;
         if (qY > goal_node[0]) {
           qY = 0U;
@@ -20587,8 +20610,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)qY);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 322, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 302U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 324, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 303U);
           qY = goal_node[0] - 1U;
           if (qY > goal_node[0]) {
             qY = 0U;
@@ -20607,8 +20630,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, (uint8_T)i37, goal_node[0]);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 323, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 303U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 325, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 304U);
             goal_section[0] = goal_node[0];
             i37 = (int32_T)(goal_node[1] + 1U);
             if ((uint32_T)i37 > 255U) {
@@ -20627,7 +20650,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             goal_node2[1] = (uint8_T)i37;
             *goal_matrix_dir2 = matrix_dir.Col;
           } else {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 304U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 305U);
             goal_section[0] = goal_node[0];
             goal_section[1] = goal_node[1];
 
@@ -20639,9 +20662,9 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
       }
     }
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 324, goal_dir ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 326, goal_dir ==
                         g_d_direction.South)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 325, goal_matrix_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 327, goal_matrix_dir ==
                    matrix_dir.Row)) {
       qY = goal_node[0] - 2U;
       if (qY > goal_node[0]) {
@@ -20649,8 +20672,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)qY);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 326, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 305U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 328, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 306U);
         qY = goal_node[0] - 2U;
         if (qY > goal_node[0]) {
           qY = 0U;
@@ -20668,7 +20691,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         goal_node2[0] = (uint8_T)qY;
         goal_node2[1] = goal_node[1];
       } else {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 306U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 307U);
         qY = goal_node[0] - 1U;
         if (qY > goal_node[0]) {
           qY = 0U;
@@ -20682,9 +20705,9 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         goal_node2[1] = goal_node[1];
       }
     }
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 327, goal_dir ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 329, goal_dir ==
                         g_d_direction.South_West)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 328, goal_matrix_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 330, goal_matrix_dir ==
                    matrix_dir.Row)) {
       qY = goal_node[1] - 1U;
       if (qY > goal_node[1]) {
@@ -20697,8 +20720,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)qY, (uint8_T)b_qY);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 329, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 307U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 331, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 308U);
         qY = goal_node[0] - 2U;
         if (qY > goal_node[0]) {
           qY = 0U;
@@ -20737,8 +20760,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, (uint8_T)qY, (uint8_T)b_qY);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 330, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 308U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 332, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 309U);
           qY = goal_node[0] - 1U;
           if (qY > goal_node[0]) {
             qY = 0U;
@@ -20768,8 +20791,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)qY);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 331, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 309U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 333, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 310U);
             qY = goal_node[0] - 2U;
             if (qY > goal_node[0]) {
               qY = 0U;
@@ -20787,7 +20810,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             goal_node2[0] = (uint8_T)qY;
             goal_node2[1] = goal_node[1];
           } else {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 310U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 311U);
             qY = goal_node[0] - 1U;
             if (qY > goal_node[0]) {
               qY = 0U;
@@ -20814,8 +20837,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)qY, (uint8_T)b_qY);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 332, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 311U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 334, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 312U);
         qY = goal_node[0] - 2U;
         if (qY > goal_node[0]) {
           qY = 0U;
@@ -20855,8 +20878,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, (uint8_T)qY, (uint8_T)b_qY);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 333, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 312U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 335, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 313U);
           qY = goal_node[0] - 1U;
           if (qY > goal_node[0]) {
             qY = 0U;
@@ -20885,8 +20908,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, (uint8_T)qY, goal_node[0]);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 334, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 313U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 336, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 314U);
             goal_section[0] = goal_node[0];
             qY = goal_node[1] - 2U;
             if (qY > goal_node[1]) {
@@ -20905,7 +20928,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             goal_node2[1] = (uint8_T)qY;
             *goal_matrix_dir2 = matrix_dir.Col;
           } else {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 314U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 315U);
             goal_section[0] = goal_node[0];
             qY = goal_node[1] - 1U;
             if (qY > goal_node[1]) {
@@ -20922,10 +20945,10 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
       }
     }
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 335, goal_dir ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 337, goal_dir ==
                         g_d_direction.West)) {
     /* 行方向は柱なのでなし */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 336, goal_matrix_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 338, goal_matrix_dir ==
                    matrix_dir.Col)) {
       qY = goal_node[1] - 2U;
       if (qY > goal_node[1]) {
@@ -20933,8 +20956,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
 
       d0 = goal_judge(maze_goal, (uint8_T)qY, goal_node[0]);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 337, d0 != 0.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 315U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 339, d0 != 0.0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 316U);
         goal_section[0] = goal_node[0];
         qY = goal_node[1] - 2U;
         if (qY > goal_node[1]) {
@@ -20953,7 +20976,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         goal_node2[1] = (uint8_T)qY;
         *goal_matrix_dir2 = matrix_dir.Col;
       } else {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 316U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 317U);
         goal_section[0] = goal_node[0];
         qY = goal_node[1] - 1U;
         if (qY > goal_node[1]) {
@@ -20969,9 +20992,9 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
       }
     }
   } else {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 338, goal_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 340, goal_dir ==
                    g_d_direction.North_West)) {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 339, goal_matrix_dir ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 341, goal_matrix_dir ==
                      matrix_dir.Row)) {
         qY = goal_node[1] - 1U;
         if (qY > goal_node[1]) {
@@ -20984,8 +21007,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, (uint8_T)qY, (uint8_T)i37);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 340, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 317U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 342, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 318U);
           i37 = (int32_T)(goal_node[0] + 1U);
           if ((uint32_T)i37 > 255U) {
             i37 = 255;
@@ -21009,8 +21032,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, (uint8_T)qY, goal_node[0]);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 341, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 318U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 343, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 319U);
             goal_section[0] = goal_node[0];
             qY = goal_node[1] - 1U;
             if (qY > goal_node[1]) {
@@ -21030,8 +21053,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             }
 
             d0 = goal_judge(maze_goal, goal_node[1], (uint8_T)i37);
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 342, d0 != 0.0)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 319U);
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 344, d0 != 0.0)) {
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 320U);
               i37 = (int32_T)(goal_node[0] + 1U);
               if ((uint32_T)i37 > 255U) {
                 i37 = 255;
@@ -21049,7 +21072,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
               goal_node2[0] = (uint8_T)i37;
               goal_node2[1] = goal_node[1];
             } else {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 320U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 321U);
               goal_section[0] = goal_node[0];
               goal_section[1] = goal_node[1];
 
@@ -21071,8 +21094,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
         }
 
         d0 = goal_judge(maze_goal, (uint8_T)qY, (uint8_T)i37);
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 343, d0 != 0.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 321U);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 345, d0 != 0.0)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 322U);
           i37 = (int32_T)(goal_node[0] + 1U);
           if ((uint32_T)i37 > 255U) {
             i37 = 255;
@@ -21112,8 +21135,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
           }
 
           d0 = goal_judge(maze_goal, (uint8_T)qY, (uint8_T)i37);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 344, d0 != 0.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 322U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 346, d0 != 0.0)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 323U);
             i37 = (int32_T)(goal_node[0] + 1U);
             if ((uint32_T)i37 > 255U) {
               i37 = 255;
@@ -21147,8 +21170,8 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
             }
 
             d0 = goal_judge(maze_goal, (uint8_T)qY, goal_node[0]);
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 345, d0 != 0.0)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 323U);
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 347, d0 != 0.0)) {
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 324U);
               goal_section[0] = goal_node[0];
               qY = goal_node[1] - 2U;
               if (qY > goal_node[1]) {
@@ -21167,7 +21190,7 @@ static void decide_goal_section(const uint8_T maze_goal[18], const uint8_T
               goal_node2[1] = (uint8_T)qY;
               *goal_matrix_dir2 = matrix_dir.Col;
             } else {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 324U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 325U);
               goal_section[0] = goal_node[0];
               qY = goal_node[1] - 1U;
               if (qY > goal_node[1]) {
@@ -21240,7 +21263,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
   b_st.prev = &st;
   b_st.tls = st.tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 12U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 143U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 144U);
 
   /*     %% fust_run 最短経路走行 */
   /* 入力　壁情報,壁探索情報,等高線MAP,ゴール座標,最大経路長 */
@@ -21274,7 +21297,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
   /* 探索開始時x */
   /* 探索開始時y */
   /* 実行時、既存の最短ルート表示を削除する(MATLABのみ) */
-  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 122, false);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 124, false);
   st.site = &cc_emlrtRSI;
   overflow = ((1 <= max_length) && (max_length > 65534));
   if (overflow) {
@@ -21289,9 +21312,9 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 11, 1);
 
       /* 非走行モードのとき、非探索マスを記録する */
-      covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 48, false);
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 31, true);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 123, true);
+      covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 49, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 32, true);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 125, true);
 
       /* 現在位置が未探索マスか判定 */
       if ((temp_y < 1) || (temp_y > 32)) {
@@ -21305,9 +21328,9 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
       i22 = temp_x - 1;
       i23 = i22 << 5;
       i24 = (temp_y + i23) - 1;
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 124, maze_wall_search[i24]
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 126, maze_wall_search[i24]
                      != 15)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 145U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 146U);
 
         /* 未探索マスであれば、記録する。インデックスを増加させる。 */
         i25 = (int32_T)(*unexp_square_idx + 1U);
@@ -21345,7 +21368,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 49, temp_x ==
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 50, temp_x ==
                          maze_goal[b_unexp_square_idx - 1])) {
           b_unexp_square_idx = 1 + tempi;
           if (b_unexp_square_idx > 9) {
@@ -21353,11 +21376,11 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
               sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 50, temp_y ==
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 51, temp_y ==
                            maze_goal[b_unexp_square_idx + 8])) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 32, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 125, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 146U);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 33, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 147U);
             goal_flag = 1U;
           } else {
             guard1 = true;
@@ -21367,8 +21390,8 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 32, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 125, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 33, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T, false);
         }
 
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -21377,20 +21400,20 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 12, 0);
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 126, goal_flag == 1)) {
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 128, goal_flag == 1)) {
         /* ゴールかつ走行時、停止処理を実施 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T,
-                       straight_count > 0)) {
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 129, straight_count > 0))
+        {
           /* 直進カウンタが立っている場合 */
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 128, false);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 149U);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 130, false);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 150U);
 
           /* 移動後、ストレートカウンタをクリア */
         }
 
         /* 参照マス、参照方向を更新 */
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 130, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 151U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 132, false);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 152U);
         exitg1 = 1;
       } else {
         /*         %%進行方向選定 */
@@ -21402,7 +21425,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           b = 0U;
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 132, (b_maze_wall[i24] &
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 134, (b_maze_wall[i24] &
               b) == wall->contents.nowall)) {
           /* 北側の等高線mapが閾値より低ければ、 */
           i24 = temp_y + 1;
@@ -21410,9 +21433,9 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
             emlrtDynamicBoundsCheckR2012b(33, 1, 32, &mf_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 133, contour_map[(i24 +
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 135, contour_map[(i24 +
                 i23) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 152U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 153U);
 
             /* 閾値を北側の等高map値に変更 */
             if (i24 > 32) {
@@ -21433,16 +21456,16 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           b = 0U;
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 134, (b_maze_wall[(temp_y
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 136, (b_maze_wall[(temp_y
                + ((temp_x - 1) << 5)) - 1] & b) == wall->contents.nowall)) {
           i24 = temp_x + 1;
           if (i24 > 32) {
             emlrtDynamicBoundsCheckR2012b(33, 1, 32, &of_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 135, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 137, contour_map
                          [(temp_y + ((i24 - 1) << 5)) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 153U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 154U);
             if (i24 > 32) {
               emlrtDynamicBoundsCheckR2012b(33, 1, 32, &pf_emlrtBCI, sp);
             }
@@ -21459,16 +21482,16 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           b = 0U;
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 136, (b_maze_wall[(temp_y
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 138, (b_maze_wall[(temp_y
                + ((temp_x - 1) << 5)) - 1] & b) == wall->contents.nowall)) {
           i24 = temp_y - 1;
           if (i24 < 1) {
             emlrtDynamicBoundsCheckR2012b(0, 1, 32, &qf_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 137, contour_map[(i24 +
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 139, contour_map[(i24 +
                 i23) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 154U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 155U);
             if (i24 < 1) {
               emlrtDynamicBoundsCheckR2012b(0, 1, 32, &rf_emlrtBCI, sp);
             }
@@ -21485,15 +21508,15 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           b = 0U;
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 138, (b_maze_wall[(temp_y
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 140, (b_maze_wall[(temp_y
                + ((temp_x - 1) << 5)) - 1] & b) == wall->contents.nowall)) {
           if (i22 < 1) {
             emlrtDynamicBoundsCheckR2012b(0, 1, 32, &sf_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 139, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 141, contour_map
                          [(temp_y + ((i22 - 1) << 5)) - 1] < little)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 155U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 156U);
             if (i22 < 1) {
               emlrtDynamicBoundsCheckR2012b(0, 1, 32, &tf_emlrtBCI, sp);
             }
@@ -21545,7 +21568,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
         switch (b_unexp_square_idx) {
          case 0:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 1);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 156U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 157U);
 
           /* 直進の場合、直進カウンタをインクリメント */
           i22 = (int32_T)(straight_count + 1U);
@@ -21576,17 +21599,17 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
 
          case 1:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 2);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 140, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 142, straight_count > 0))
           {
             /* 直進カウンタが立っている場合 */
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 141, false);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 159U);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 143, false);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 160U);
 
             /* 移動後、ストレートカウンタをクリア */
             straight_count = 0U;
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 160U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 161U);
           st.site = &gc_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, temp_y, temp_x,
             temp_dir);
@@ -21595,7 +21618,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           /* 参照マス、参照方向を更新 */
           st.site = &hc_emlrtRSI;
           covrtLogFcn(&emlrtCoverageInstance, 1U, 4U);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 75U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 76U);
 
           /*     %% turn_clk_90deg 時計周りに90度ターンする関数 */
           /* 入力 現在方向 */
@@ -21613,22 +21636,22 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           temp_dir = (uint8_T)(i22 % 4);
           st.site = &ic_emlrtRSI;
           move_step(&temp_x, &temp_y, temp_dir);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 143, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 145, false);
           break;
 
          case 2:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 3);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 145, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 147, straight_count > 0))
           {
             /* 直進カウンタが立っている場合 */
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 146, false);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 165U);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 148, false);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 166U);
 
             /* 移動後、ストレートカウンタをクリア */
             straight_count = 0U;
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 166U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 167U);
           st.site = &jc_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, temp_y, temp_x,
             temp_dir);
@@ -21637,7 +21660,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           /* 参照マス、参照方向を更新 */
           st.site = &kc_emlrtRSI;
           covrtLogFcn(&emlrtCoverageInstance, 1U, 3U);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 74U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 75U);
 
           /*     %% turn_180deg 180度ターンする関数 */
           /* 入力 現在方向 */
@@ -21650,22 +21673,22 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           temp_dir = (uint8_T)((i22 - 2) % 4);
           st.site = &lc_emlrtRSI;
           move_step(&temp_x, &temp_y, temp_dir);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 148, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 150, false);
           break;
 
          case 3:
           covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 2, 4);
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 150, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 152, straight_count > 0))
           {
             /* 直進カウンタが立っている場合 */
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 151, false);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 171U);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 153, false);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 172U);
 
             /* 移動後、ストレートカウンタをクリア */
             straight_count = 0U;
           }
 
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 172U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 173U);
           st.site = &mc_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, temp_y, temp_x,
             temp_dir);
@@ -21674,7 +21697,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           /* 参照マス、参照方向を更新 */
           st.site = &nc_emlrtRSI;
           covrtLogFcn(&emlrtCoverageInstance, 1U, 5U);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 76U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 77U);
 
           /*     %% turn_conclk_90deg 反時計周りに90度回る関数 */
           /* 入力　現在方向 */
@@ -21689,7 +21712,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           move_step(&temp_x, &temp_y, temp_dir);
 
           /* disp("left") */
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 153, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 155, false);
           break;
 
          default:
@@ -21697,10 +21720,10 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
           break;
         }
 
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 155, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 157, false);
 
         /* for code generation */
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 177U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 178U);
         tempk++;
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
           emlrtBreakCheckR2012b(sp);
@@ -21712,7 +21735,7 @@ static void fust_run(const emlrtStack *sp, const coder_internal_ref_1 *maze_wall
     }
   } while (exitg1 == 0);
 
-  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 157, false);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 159, false);
 }
 
 static uint8_T fust_run_wallset(const emlrtStack *sp, const coder_internal_ref_1
@@ -21723,7 +21746,7 @@ static uint8_T fust_run_wallset(const emlrtStack *sp, const coder_internal_ref_1
   int32_T i10;
   int32_T i11;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 13U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 179U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 180U);
 
   /*     %% 既知壁の壁情報取得関数 */
   wall_flg = 0U;
@@ -21744,8 +21767,8 @@ static uint8_T fust_run_wallset(const emlrtStack *sp, const coder_internal_ref_1
   }
 
   i10 = maze_wall->contents[(temp_y + ((temp_x - 1) << 5)) - 1];
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 159, (i10 & (u0 % 15)) != 0)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 180U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 161, (i10 & (u0 % 15)) != 0)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 181U);
     wall_flg = 1U;
   }
 
@@ -21761,8 +21784,8 @@ static uint8_T fust_run_wallset(const emlrtStack *sp, const coder_internal_ref_1
     u0 = 0U;
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 160, (i10 & (u0 % 15)) != 0)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 181U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 162, (i10 & (u0 % 15)) != 0)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 182U);
     wall_flg = (uint8_T)(wall_flg | 2);
   }
 
@@ -21778,8 +21801,8 @@ static uint8_T fust_run_wallset(const emlrtStack *sp, const coder_internal_ref_1
     u0 = 0U;
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 161, (i10 & (u0 % 15)) != 0)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 182U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 163, (i10 & (u0 % 15)) != 0)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 183U);
     wall_flg = (uint8_T)(wall_flg | 8);
   }
 
@@ -21804,7 +21827,7 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
   int32_T i46;
   uint16_T u7;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 21U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 373U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 390U);
 
   /*     %% get_next_dir_diagonal 斜め有での進行方向,行先取得 */
   /* 出力変数定義 */
@@ -21831,29 +21854,29 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
     p = true;
   }
 
-  if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 138, p) && covrtLogCond
-      (&emlrtCoverageInstance, 1U, 0U, 139, current_matrix_dir ==
+  if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 151, p) && covrtLogCond
+      (&emlrtCoverageInstance, 1U, 0U, 152, current_matrix_dir ==
        goal_matrix_dir2)) {
-    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 80, true);
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 413, true);
+    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 94, true);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 431, true);
 
     /* ゴールノードの場合 */
     /* ゴールノードが行方向の場合 */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 414, goal_matrix_dir2 ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 432, goal_matrix_dir2 ==
                    matrix_dir.Row)) {
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 140, goal_section[1] ==
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 153, goal_section[1] ==
                        goal_node2[0]) && covrtLogCond(&emlrtCoverageInstance, 1U,
-           0U, 141, goal_section[0] == goal_node2[1])) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 81, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 415, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 374U);
+           0U, 154, goal_section[0] == goal_node2[1])) {
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 95, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 433, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 391U);
         next_node[0] = goal_node2[0];
         next_node[1] = goal_node2[1];
         *next_node_property = matrix_dir.section;
       } else {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 81, false);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 415, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 375U);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 95, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 433, false);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 392U);
         *next_dir = g_d_direction.South;
         qY = goal_node2[0] - 1U;
         if (qY > goal_node2[0]) {
@@ -21866,20 +21889,20 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
       }
     } else {
       /* ゴールノードが列方向の場合 */
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 142, goal_section[1] ==
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 155, goal_section[1] ==
                        goal_node2[0]) && covrtLogCond(&emlrtCoverageInstance, 1U,
-           0U, 143, goal_section[0] == goal_node2[1])) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 82, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 416, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 376U);
+           0U, 156, goal_section[0] == goal_node2[1])) {
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 96, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 434, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 393U);
         *next_dir = g_d_direction.East;
         next_node[0] = goal_node2[0];
         next_node[1] = goal_node2[1];
         *next_node_property = matrix_dir.section;
       } else {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 82, false);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 416, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 377U);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 96, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 434, false);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 394U);
         *next_dir = g_d_direction.West;
         next_node[0] = goal_node2[0];
         qY = goal_node2[1] - 1U;
@@ -21892,9 +21915,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
       }
     }
   } else {
-    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 80, false);
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 413, false);
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 378U);
+    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 94, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 431, false);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 395U);
 
     /* ゴールノードでない場合 */
     /* 閾値を定義 */
@@ -21903,7 +21926,7 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
     /* 現在のノードの方向から優先的に進行方向を確定 */
     for (k = 0; k < 8; k++) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 23, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 379U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 396U);
       i45 = current_move_dir + k;
       if (i45 > 255) {
         i45 = 255;
@@ -21912,9 +21935,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
       temp = (uint8_T)(i45 % 8);
 
       /* 現在のノードが行方向の時 */
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 417, current_matrix_dir ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 435, current_matrix_dir ==
                      matrix_dir.Row)) {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 418, temp ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 436, temp ==
                        g_d_direction.North)) {
           i45 = (int32_T)(current_node[0] + 1U);
           i46 = i45;
@@ -21931,9 +21954,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
               sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 419, row_num_node[(i46
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 437, row_num_node[(i46
                 + 33 * (current_node[1] - 1)) - 1] < map_min)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 380U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 397U);
 
             /* 最小値を更新 */
             i46 = i45;
@@ -21959,7 +21982,7 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
             next_node[0] = (uint8_T)i45;
             next_node[1] = current_node[1];
           }
-        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 420, temp ==
+        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 438, temp ==
                               g_d_direction.North_East)) {
           if ((current_node[0] < 1) || (current_node[0] > 32)) {
             emlrtDynamicBoundsCheckR2012b(current_node[0], 1, 32, &eib_emlrtBCI,
@@ -21976,10 +21999,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
             emlrtDynamicBoundsCheckR2012b(i46, 1, 33, &fib_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 421, col_num_node
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 439, col_num_node
                          [(current_node[0] + ((i46 - 1) << 5)) - 1] < map_min))
           {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 381U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 398U);
 
             /* 最小値を更新 */
             i46 = i45;
@@ -22005,9 +22028,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
 
             next_node[1] = (uint8_T)i45;
           }
-        } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 422, temp ==
+        } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 440, temp ==
                                g_d_direction.East)) {
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 423, temp ==
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 441, temp ==
                          g_d_direction.South_East)) {
             qY = current_node[0] - 1U;
             if (qY > current_node[0]) {
@@ -22028,9 +22051,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
               emlrtDynamicBoundsCheckR2012b(i45, 1, 33, &lib_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 424, col_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 442, col_num_node
                            [((int32_T)qY + ((i45 - 1) << 5)) - 1] < map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 382U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 399U);
 
               /* 最小値を更新 */
               qY = current_node[0] - 1U;
@@ -22072,7 +22095,7 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
 
               next_node[1] = (uint8_T)i45;
             }
-          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 425, temp ==
+          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 443, temp ==
                                 g_d_direction.South)) {
             qY = current_node[0] - 1U;
             if (qY > current_node[0]) {
@@ -22089,10 +22112,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
                 &pib_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 426, row_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 444, row_num_node
                            [((int32_T)qY + 33 * (current_node[1] - 1)) - 1] <
                            map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 383U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 400U);
 
               /* 最小値を更新 */
               qY = current_node[0] - 1U;
@@ -22121,7 +22144,7 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
               next_node[0] = (uint8_T)qY;
               next_node[1] = current_node[1];
             }
-          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 427, temp ==
+          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 445, temp ==
                                 g_d_direction.South_West)) {
             qY = current_node[0] - 1U;
             if (qY > current_node[0]) {
@@ -22138,10 +22161,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
                 &tib_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 428, col_num_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 446, col_num_node
                            [((int32_T)qY + ((current_node[1] - 1) << 5)) - 1] <
                            map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 384U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 401U);
 
               /* 最小値を更新 */
               qY = current_node[0] - 1U;
@@ -22170,9 +22193,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
               next_node[0] = (uint8_T)qY;
               next_node[1] = current_node[1];
             }
-          } else if ((!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 429, temp ==
+          } else if ((!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 447, temp ==
                                   g_d_direction.West)) && covrtLogIf
-                     (&emlrtCoverageInstance, 1U, 0U, 430, temp ==
+                     (&emlrtCoverageInstance, 1U, 0U, 448, temp ==
                       g_d_direction.North_West)) {
             if ((current_node[0] < 1) || (current_node[0] > 32)) {
               emlrtDynamicBoundsCheckR2012b(current_node[0], 1, 32,
@@ -22186,8 +22209,8 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
 
             u7 = col_num_node[(current_node[0] + ((current_node[1] - 1) << 5)) -
               1];
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 431, u7 < map_min)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 385U);
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 449, u7 < map_min)) {
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 402U);
 
               /* 最小値を更新 */
               map_min = u7;
@@ -22208,9 +22231,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
         }
 
         /* 現在のノードが行方向の時 */
-      } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 432, temp ==
+      } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 450, temp ==
                              g_d_direction.North)) {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 433, temp ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 451, temp ==
                        g_d_direction.North_East)) {
           i45 = (int32_T)(current_node[0] + 1U);
           if ((uint32_T)i45 > 255U) {
@@ -22226,9 +22249,9 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
               sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 434, row_num_node[(i45
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 452, row_num_node[(i45
                 + 33 * (current_node[1] - 1)) - 1] < map_min)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 386U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 403U);
 
             /* 最小値を更新 */
             i45 = (int32_T)(current_node[0] + 1U);
@@ -22255,7 +22278,7 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
             next_node[0] = (uint8_T)i45;
             next_node[1] = current_node[1];
           }
-        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 435, temp ==
+        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 453, temp ==
                               g_d_direction.East)) {
           if ((current_node[0] < 1) || (current_node[0] > 32)) {
             emlrtDynamicBoundsCheckR2012b(current_node[0], 1, 32, &gib_emlrtBCI,
@@ -22271,10 +22294,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
             emlrtDynamicBoundsCheckR2012b(i45, 1, 33, &hib_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 436, col_num_node
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 454, col_num_node
                          [(current_node[0] + ((i45 - 1) << 5)) - 1] < map_min))
           {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 387U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 404U);
 
             /* 最小値を更新 */
             i45 = (int32_T)(current_node[1] + 1U);
@@ -22301,7 +22324,7 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
 
             next_node[1] = (uint8_T)i45;
           }
-        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 437, temp ==
+        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 455, temp ==
                               g_d_direction.South_East)) {
           if ((current_node[0] < 1) || (current_node[0] > 33)) {
             emlrtDynamicBoundsCheckR2012b(current_node[0], 1, 33, &iib_emlrtBCI,
@@ -22314,8 +22337,8 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
           }
 
           u7 = row_num_node[(current_node[0] + 33 * (current_node[1] - 1)) - 1];
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 438, u7 < map_min)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 388U);
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 456, u7 < map_min)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 405U);
 
             /* 最小値を更新 */
             map_min = u7;
@@ -22328,16 +22351,16 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
             next_node[0] = current_node[0];
             next_node[1] = current_node[1];
           }
-        } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 439, temp ==
+        } else if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 457, temp ==
                                g_d_direction.South)) {
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 440, temp ==
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 458, temp ==
                          g_d_direction.South_West)) {
             qY = current_node[1] - 1U;
             if (qY > current_node[1]) {
               qY = 0U;
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 441, (int32_T)qY > 0))
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 459, (int32_T)qY > 0))
             {
               if ((current_node[0] < 1) || (current_node[0] > 33)) {
                 emlrtDynamicBoundsCheckR2012b(current_node[0], 1, 33,
@@ -22354,10 +22377,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 442, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 460, row_num_node
                              [(current_node[0] + 33 * ((int32_T)qY - 1)) - 1] <
                              map_min)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 389U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 406U);
 
                 /* 最小値を更新 */
                 qY = current_node[1] - 1U;
@@ -22387,14 +22410,14 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
                 next_node[1] = (uint8_T)qY;
               }
             }
-          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 443, temp ==
+          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 461, temp ==
                                 g_d_direction.West)) {
             qY = current_node[1] - 1U;
             if (qY > current_node[1]) {
               qY = 0U;
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 444, (int32_T)qY > 0))
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 462, (int32_T)qY > 0))
             {
               if ((current_node[0] < 1) || (current_node[0] > 32)) {
                 emlrtDynamicBoundsCheckR2012b(current_node[0], 1, 32,
@@ -22411,10 +22434,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 445, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 463, col_num_node
                              [(current_node[0] + (((int32_T)qY - 1) << 5)) - 1] <
                              map_min)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 390U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 407U);
 
                 /* 最小値を更新 */
                 qY = current_node[1] - 1U;
@@ -22445,14 +22468,14 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
               }
             }
           } else {
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 446, temp ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 464, temp ==
                            g_d_direction.North_West)) {
               qY = current_node[1] - 1U;
               if (qY > current_node[1]) {
                 qY = 0U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 447, (int32_T)qY >
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 465, (int32_T)qY >
                              0)) {
                 i45 = (int32_T)(current_node[0] + 1U);
                 if ((uint32_T)i45 > 255U) {
@@ -22473,10 +22496,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
                     &fjb_emlrtBCI, sp);
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 448,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 466,
                                row_num_node[(i45 + 33 * ((int32_T)qY - 1)) - 1] <
                                map_min)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 391U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 408U);
 
                   /* 最小値を更新 */
                   i45 = (int32_T)(current_node[0] + 1U);
@@ -22537,10 +22560,10 @@ static void get_next_dir_diagonal(const emlrtStack *sp, const uint16_T
   }
 }
 
-static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
-  current_y, const uint8_T maze_wall[1024], const uint16_T contour_map[1024])
+static void get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
+  current_y, const uint8_T maze_wall[1024], const uint16_T contour_map[1024],
+  uint8_T *next_dir, uint8_T *error_flg)
 {
-  uint8_T next_dir;
   uint16_T little;
   uint8_T b;
   int32_T i6;
@@ -22548,13 +22571,16 @@ static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
   int32_T i8;
   int32_T i9;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 11U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 138U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 139U);
 
   /*     %% get_nextdir2 等高線mapから次に向かう方向を選択 */
   /*  入力 現在地x,y,壁情報,等高線map,最大経路長 */
-  /*  出力 次の進行方角 */
+  /*  出力 次の進行方角,エラーフラグ */
+  /* エラーフラグセット(方向が定まる場合リセット) */
+  *error_flg = 1U;
+
   /* 出力の初期化 */
-  next_dir = 0U;
+  *next_dir = 0U;
   little = MAX_uint16_T;
 
   /*     %%進行方向選定 */
@@ -22577,16 +22603,16 @@ static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
   i6 = current_x - 1;
   i7 = i6 << 5;
   i8 = maze_wall[(current_y + i7) - 1];
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 114, (i8 & b) == 0)) {
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 116, (i8 & b) == 0)) {
     /* 北側の等高線mapが閾値より低ければ、 */
     i9 = current_y + 1;
     if (i9 > 32) {
       emlrtDynamicBoundsCheckR2012b(33, 1, 32, &gb_emlrtBCI, sp);
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 115, contour_map[(i9 + i7) -
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 117, contour_map[(i9 + i7) -
                    1] < 65535)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 139U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 140U);
 
       /* 閾値を北側の等高map値に変更 */
       if (i9 > 32) {
@@ -22596,7 +22622,8 @@ static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
       little = contour_map[(i9 + i7) - 1];
 
       /* 北側を進行方向に変更y */
-      next_dir = g_direction.North;
+      *next_dir = g_direction.North;
+      *error_flg = 0U;
     }
   }
 
@@ -22607,21 +22634,22 @@ static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
     b = 0U;
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 116, (i8 & b) == 0)) {
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 118, (i8 & b) == 0)) {
     i9 = current_x + 1;
     if (i9 > 32) {
       emlrtDynamicBoundsCheckR2012b(33, 1, 32, &ib_emlrtBCI, sp);
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 117, contour_map[(current_y +
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 119, contour_map[(current_y +
           ((i9 - 1) << 5)) - 1] < little)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 140U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 141U);
       if (i9 > 32) {
         emlrtDynamicBoundsCheckR2012b(33, 1, 32, &jb_emlrtBCI, sp);
       }
 
       little = contour_map[(current_y + ((i9 - 1) << 5)) - 1];
-      next_dir = g_direction.East;
+      *next_dir = g_direction.East;
+      *error_flg = 0U;
     }
   }
 
@@ -22632,21 +22660,22 @@ static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
     b = 0U;
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 118, (i8 & b) == 0)) {
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 120, (i8 & b) == 0)) {
     i9 = current_y - 1;
     if (i9 < 1) {
       emlrtDynamicBoundsCheckR2012b(0, 1, 32, &kb_emlrtBCI, sp);
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 119, contour_map[(i9 + i7) -
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 121, contour_map[(i9 + i7) -
                    1] < little)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 141U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 142U);
       if (i9 < 1) {
         emlrtDynamicBoundsCheckR2012b(0, 1, 32, &lb_emlrtBCI, sp);
       }
 
       little = contour_map[(i9 + i7) - 1];
-      next_dir = g_direction.South;
+      *next_dir = g_direction.South;
+      *error_flg = 0U;
     }
   }
 
@@ -22657,21 +22686,20 @@ static uint8_T get_nextdir2(const emlrtStack *sp, uint8_T current_x, uint8_T
     b = 0U;
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 120, (i8 & b) == 0)) {
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 122, (i8 & b) == 0)) {
     if (i6 < 1) {
       emlrtDynamicBoundsCheckR2012b(0, 1, 32, &mb_emlrtBCI, sp);
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 121, contour_map[(current_y +
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 123, contour_map[(current_y +
           ((i6 - 1) << 5)) - 1] < little)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 142U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 143U);
 
       /*  little = contour_map(current_y,current_x-1); */
-      next_dir = g_direction.West;
+      *next_dir = g_direction.West;
+      *error_flg = 0U;
     }
   }
-
-  return next_dir;
 }
 
 static uint8_T get_turn_pattern_num(const real_T move_dir_buffer[3], uint8_T
@@ -22679,37 +22707,37 @@ static uint8_T get_turn_pattern_num(const real_T move_dir_buffer[3], uint8_T
 {
   uint8_T turn_pattern_num;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 20U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 358U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 375U);
 
   /* パターンを判定する関数 */
   /* 旋回パターン番号の初期化 */
   turn_pattern_num = turn_pattern.b_default;
 
   /* 直進時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 390, ref_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 408, ref_move_mode ==
                  move_dir_property.straight)) {
     /* 次が45度まがるとき(右折パターン) */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 391, move_dir_buffer[0] ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 409, move_dir_buffer[0] ==
                    1.0)) {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 392, move_dir_buffer[1] ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 410, move_dir_buffer[1] ==
                      1.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 359U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 376U);
         turn_pattern_num = turn_pattern.r_45;
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 393,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 411,
                             move_dir_buffer[1] == 2.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 360U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 377U);
         turn_pattern_num = turn_pattern.r_90;
       } else {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 394, move_dir_buffer[1] ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 412, move_dir_buffer[1] ==
                        3.0)) {
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 395, move_dir_buffer[2]
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 413, move_dir_buffer[2]
                          == 3.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 361U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 378U);
             turn_pattern_num = turn_pattern.r_135;
           } else {
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 396, move_dir_buffer
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 414, move_dir_buffer
                            [2] == 4.0)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 362U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 379U);
               turn_pattern_num = turn_pattern.r_180;
             }
           }
@@ -22718,27 +22746,27 @@ static uint8_T get_turn_pattern_num(const real_T move_dir_buffer[3], uint8_T
 
       /* 次が-45度まがるとき(左折パターン) */
     } else {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 397, move_dir_buffer[0] ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 415, move_dir_buffer[0] ==
                      7.0)) {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 398, move_dir_buffer[1] ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 416, move_dir_buffer[1] ==
                        7.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 363U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 380U);
           turn_pattern_num = turn_pattern.l_45;
-        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 399,
+        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 417,
                               move_dir_buffer[1] == 6.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 364U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 381U);
           turn_pattern_num = turn_pattern.l_90;
         } else {
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 400, move_dir_buffer[1]
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 418, move_dir_buffer[1]
                          == 5.0)) {
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 401, move_dir_buffer
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 419, move_dir_buffer
                            [2] == 5.0)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 365U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 382U);
               turn_pattern_num = turn_pattern.l_135;
             } else {
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 402,
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 420,
                              move_dir_buffer[2] == 4.0)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 366U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 383U);
                 turn_pattern_num = turn_pattern.l_180;
               }
             }
@@ -22748,50 +22776,50 @@ static uint8_T get_turn_pattern_num(const real_T move_dir_buffer[3], uint8_T
     }
 
     /* 斜めの時 */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 403, ref_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 421, ref_move_mode ==
                         move_dir_property.diagonal)) {
     /* 右折パターン */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 404, move_dir_buffer[0] ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 422, move_dir_buffer[0] ==
                    1.0)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 367U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 384U);
       turn_pattern_num = turn_pattern.r_45;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 405, move_dir_buffer[0]
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 423, move_dir_buffer[0]
                           == 2.0)) {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 406, move_dir_buffer[1] ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 424, move_dir_buffer[1] ==
                      2.0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 368U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 385U);
         turn_pattern_num = turn_pattern.r_90;
       } else {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 407, move_dir_buffer[1] ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 425, move_dir_buffer[1] ==
                        3.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 369U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 386U);
           turn_pattern_num = turn_pattern.r_135;
         }
       }
 
       /* 左折パターン */
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 408, move_dir_buffer[0]
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 426, move_dir_buffer[0]
                           == 7.0)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 370U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 387U);
       turn_pattern_num = turn_pattern.l_45;
     } else {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 409, move_dir_buffer[0] ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 427, move_dir_buffer[0] ==
                      6.0)) {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 410, move_dir_buffer[1] ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 428, move_dir_buffer[1] ==
                        6.0)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 371U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 388U);
           turn_pattern_num = turn_pattern.l_90;
         } else {
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 411, move_dir_buffer[1]
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 429, move_dir_buffer[1]
                          == 5.0)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 372U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 389U);
             turn_pattern_num = turn_pattern.l_135;
           }
         }
       }
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 412, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 430, false);
   }
 
   return turn_pattern_num;
@@ -22806,7 +22834,7 @@ static real_T goal_judge(const uint8_T maze_goal[18], uint8_T x, uint8_T y)
   int8_T varargin_1[9];
   int32_T k;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 18U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 325U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 326U);
 
   /* ゴール判定関数 */
   /* 入力座標の配列を作成 */
@@ -22866,7 +22894,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
   b_st.prev = &st;
   b_st.tls = st.tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 10U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 129U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 130U);
 
   /*     %%  make_map_find 壁情報から等高線MAPを生成 */
   /* 入力 迷路縦サイズ,迷路横サイズ,ゴール座標,迷路情報(16進数) */
@@ -22902,7 +22930,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
   i2 = l_goal_size;
   for (temp = 0; temp < i2; temp++) {
     covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 8, 1);
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 130U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 131U);
     i3 = 1 + temp;
     if (i3 > 9) {
       emlrtDynamicBoundsCheckR2012b(i3, 1, 9, &r_emlrtBCI, sp);
@@ -22951,7 +22979,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
     exitg1 = 0;
     if (tempi < 65535) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 9, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 131U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 132U);
 
       /* 歩数カウントは0~max_length */
       /* map更新確認用フラグ */
@@ -23005,7 +23033,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
         contor_renew_square_idx = contor_renew_square[temp + 1024];
         i3 = maze_wall[(contor_renew_square[temp] + ((contor_renew_square_idx -
           1) << 5)) - 1];
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 105, (i3 & b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 107, (i3 & b) ==
                        wall->contents.nowall)) {
           /* 北側のMAPが更新されているか判断、されていなければ書き込み */
           i4 = (int32_T)(contor_renew_square[temp] + 1U);
@@ -23023,9 +23051,9 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
               &v_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 106, contour_map[(i5 +
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 108, contour_map[(i5 +
                 ((contor_renew_square_idx - 1) << 5)) - 1] == 65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 132U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 133U);
             i5 = i4;
             if ((uint32_T)i4 > 255U) {
               i5 = 255;
@@ -23077,7 +23105,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
             &m_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 107, (i3 & b_b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 109, (i3 & b_b) ==
                        wall->contents.nowall)) {
           /* 東側のMAPが更新されているか判断、されていなければ書き込み */
           if ((contor_renew_square[temp] < 1) || (contor_renew_square[temp] > 32))
@@ -23096,10 +23124,10 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
             emlrtDynamicBoundsCheckR2012b(i5, 1, 32, &x_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 108, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 110, contour_map
                          [(contor_renew_square[temp] + ((i5 - 1) << 5)) - 1] ==
                          65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 133U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 134U);
             if ((contor_renew_square[temp] < 1) || (contor_renew_square[temp] >
                  32)) {
               emlrtDynamicBoundsCheckR2012b(contor_renew_square[temp], 1, 32,
@@ -23151,7 +23179,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
             &k_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 109, (i3 & c_b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 111, (i3 & c_b) ==
                        wall->contents.nowall)) {
           /* 南側のMAPが更新されているか判断、されていなければ書き込み */
           qY = contor_renew_square[temp] - 1U;
@@ -23168,10 +23196,10 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
               &ab_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 110, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 112, contour_map
                          [((int32_T)qY + ((contor_renew_square_idx - 1) << 5)) -
                          1] == 65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 134U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 135U);
             qY = contor_renew_square[temp] - 1U;
             if (qY > contor_renew_square[temp]) {
               qY = 0U;
@@ -23224,7 +23252,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
             &i_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 111, (i3 & d_b) ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 113, (i3 & d_b) ==
                        wall->contents.nowall)) {
           /* 西側のMAPが更新されているか判断、されていなければ書き込み */
           if ((contor_renew_square[temp] < 1) || (contor_renew_square[temp] > 32))
@@ -23242,10 +23270,10 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
             emlrtDynamicBoundsCheckR2012b((int32_T)qY, 1, 32, &cb_emlrtBCI, sp);
           }
 
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 112, contour_map
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 114, contour_map
                          [(contor_renew_square[temp] + (((int32_T)qY - 1) << 5))
                          - 1] == 65535)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 135U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 136U);
             if ((contor_renew_square[temp] < 1) || (contor_renew_square[temp] >
                  32)) {
               emlrtDynamicBoundsCheckR2012b(contor_renew_square[temp], 1, 32,
@@ -23292,7 +23320,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 10, 0);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 136U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 137U);
 
       /* ゴール更新マスの更新とインデックスのクリア */
       for (i2 = 0; i2 < 2048; i2++) {
@@ -23304,7 +23332,7 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
       contor_renew_square_idx_temp = 1U;
 
       /* 更新がない、もしくは現在位置が更新されていれば終了 */
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 46, change_flag == 0)) {
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 47, change_flag == 0)) {
         guard1 = true;
         exitg1 = 1;
       } else {
@@ -23316,13 +23344,13 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
           emlrtDynamicBoundsCheckR2012b(current_x, 1, 32, &u_emlrtBCI, sp);
         }
 
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 47, contour_map
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 48, contour_map
                          [(current_y + ((current_x - 1) << 5)) - 1] != 65535)) {
           guard1 = true;
           exitg1 = 1;
         } else {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 30, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 113, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 31, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 115, false);
           tempi++;
           if (*emlrtBreakCheckR2012bFlagVar != 0) {
             emlrtBreakCheckR2012b(sp);
@@ -23338,10 +23366,10 @@ static void make_map_find(const emlrtStack *sp, const coder_internal_ref_6 *wall
   } while (exitg1 == 0);
 
   if (guard1) {
-    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 30, true);
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 113, true);
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 137U);
-    st.site = &xe_emlrtRSI;
+    covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 31, true);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 115, true);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 138U);
+    st.site = &we_emlrtRSI;
     disp(&st, emlrt_marshallOut(tempi), &emlrtMCI);
   }
 }
@@ -23383,7 +23411,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
   b_st.prev = &st;
   b_st.tls = st.tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 14U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 183U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 184U);
 
   /*     %% make_map_fustrun 最短走行用等高線MAPを生成 */
   /* 未知壁の領域は仮想壁をおいて侵入しない。 */
@@ -23447,7 +23475,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
 
   for (tempn = 0; tempn < i19; tempn++) {
     covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 13, 1);
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 184U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 185U);
     i20 = 1 + tempn;
     if (i20 > 9) {
       emlrtDynamicBoundsCheckR2012b(i20, 1, 9, &md_emlrtBCI, sp);
@@ -23537,7 +23565,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
     exitg1 = 0;
     if (tempi < 65535) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 14, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 185U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 186U);
 
       /* 更新確認用の歩数カウントは0~max_length */
       change_flag = 0U;
@@ -23590,7 +23618,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
 
         q0 = (contor_renew_square[tempn] + ((i20 - 1) << 5)) - 1;
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 59, ((maze_wall[q0] &
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 60, ((maze_wall[q0] &
                b_b) != 0) == wall->contents.nowall)) {
           if (g_direction.North <= 7) {
             b = (uint8_T)(1 << g_direction.North);
@@ -23608,12 +23636,12 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
             emlrtDynamicBoundsCheckR2012b(i20, 1, 32, &hd_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 60,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 61,
                            ((maze_wall_search[q0] & b) != 0) ==
                            search->contents.known) || (!covrtLogCond
-               (&emlrtCoverageInstance, 1U, 0U, 61, unknown_wall_flg != 0))) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 41, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 162, true);
+               (&emlrtCoverageInstance, 1U, 0U, 62, unknown_wall_flg != 0))) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 42, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 164, true);
 
             /* かつ進行方向が北向きである時 */
             if (g_direction.North <= 7) {
@@ -23634,7 +23662,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
             }
 
             contor_renew_square_idx = contor_renew_square[tempn + 1024];
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 163, (move_dir_map
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 165, (move_dir_map
                   [(contor_renew_square[tempn] + ((contor_renew_square_idx - 1) <<
                     5)) - 1] & b) != 0)) {
               /* かつ北のマスが更新予定値よりも大きな値の場合 */
@@ -23671,10 +23699,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 164, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 166, contour_map
                              [(q0 + ((contor_renew_square_idx - 1) << 5)) - 1] >
                              (int32_T)u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 186U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 187U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_square[tempn] < 1) ||
@@ -23813,10 +23841,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 165, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 167, contour_map
                              [(i21 + ((contor_renew_square_idx - 1) << 5)) - 1] >
                              (int32_T)u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 187U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 188U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_square[tempn] < 1) ||
@@ -23925,8 +23953,8 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 41, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 162, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 42, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 164, false);
         }
 
         /* 東側 */
@@ -23942,7 +23970,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 62, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 63, ((maze_wall
                [(contor_renew_square[tempn] + ((contor_renew_square[tempn + 1024]
                   - 1) << 5)) - 1] & c_b) != 0) == wall->contents.nowall)) {
           if (g_direction.East <= 7) {
@@ -23962,13 +23990,13 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
             emlrtDynamicBoundsCheckR2012b(i20, 1, 32, &bd_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 63,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 64,
                            ((maze_wall_search[(contor_renew_square[tempn] +
                   ((i20 - 1) << 5)) - 1] & b) != 0) == search->contents.known) ||
-              (!covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 64,
+              (!covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 65,
                              unknown_wall_flg != 0))) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 42, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 166, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 43, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 168, true);
 
             /* かつ進行方向が東向きである時 */
             if (g_direction.East <= 7) {
@@ -23988,7 +24016,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
               emlrtDynamicBoundsCheckR2012b(i20, 1, 32, &yc_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 167, (move_dir_map
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 169, (move_dir_map
                   [(contor_renew_square[tempn] + ((contor_renew_square[tempn +
                      1024] - 1) << 5)) - 1] & b) != 0)) {
               /* かつ東のマスが更新予定値よりも大きな値の場合 */
@@ -24024,10 +24052,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 168, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 170, contour_map
                              [(contor_renew_square[tempn] + ((i20 - 1) << 5)) -
                              1] > (int32_T)u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 188U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 189U);
 
                 /*                                  %更新確認用のMAP更新 */
                 /*                                  contour_refine_map(row(tempn),col(tempn)+1) = contour_refine_map(row(tempn),col(tempn))+uint16(1); */
@@ -24165,10 +24193,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 169, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 171, contour_map
                              [(contor_renew_square[tempn] + ((q0 - 1) << 5)) - 1]
                              > (int32_T)u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 189U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 190U);
 
                 /*                                  %更新確認用のMAP更新 */
                 /*                                  contour_refine_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2)+1) = contour_refine_map(contor_renew_square(tempn,1),contor_renew_square(tempn,2))+uint16(1); */
@@ -24277,8 +24305,8 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 42, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 166, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 43, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 168, false);
         }
 
         /* 南側 */
@@ -24295,7 +24323,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 65, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 66, ((maze_wall
                [(contor_renew_square[tempn] + ((contor_renew_square[tempn + 1024]
                   - 1) << 5)) - 1] & d_b) != 0) == wall->contents.nowall)) {
           if (g_direction.South <= 7) {
@@ -24315,13 +24343,13 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
             emlrtDynamicBoundsCheckR2012b(i20, 1, 32, &uc_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 66,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 67,
                            ((maze_wall_search[(contor_renew_square[tempn] +
                   ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & b) != 0)
                            == search->contents.known) || (!covrtLogCond
-               (&emlrtCoverageInstance, 1U, 0U, 67, unknown_wall_flg != 0))) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 43, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 170, true);
+               (&emlrtCoverageInstance, 1U, 0U, 68, unknown_wall_flg != 0))) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 44, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 172, true);
 
             /* かつ進行方向が南向きである時 */
             if (g_direction.South <= 7) {
@@ -24341,7 +24369,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
               emlrtDynamicBoundsCheckR2012b(i20, 1, 32, &sc_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 171, (move_dir_map
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 173, (move_dir_map
                   [(contor_renew_square[tempn] + ((contor_renew_square[tempn +
                      1024] - 1) << 5)) - 1] & b) != 0)) {
               /* かつ南のマスが更新予定値よりも大きな値の場合 */
@@ -24377,10 +24405,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 172, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 174, contour_map
                              [((int32_T)qY + ((i20 - 1) << 5)) - 1] > (int32_T)
                              u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 190U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 191U);
 
                 /*                                  %更新確認用のMAP更新 */
                 /*                                  contour_refine_map(row(tempn)-1,col(tempn)) = contour_refine_map(row(tempn),col(tempn))+uint16(1); */
@@ -24515,10 +24543,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 173, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 175, contour_map
                              [((int32_T)qY + ((i20 - 1) << 5)) - 1] > (int32_T)
                              u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 191U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 192U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_square[tempn] < 1) ||
@@ -24624,8 +24652,8 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 43, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 170, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 44, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 172, false);
         }
 
         /* 西側 */
@@ -24642,7 +24670,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 68, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 69, ((maze_wall
                [(contor_renew_square[tempn] + ((contor_renew_square[tempn + 1024]
                   - 1) << 5)) - 1] & e_b) != 0) == wall->contents.nowall)) {
           if (g_direction.West <= 7) {
@@ -24662,13 +24690,13 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
             emlrtDynamicBoundsCheckR2012b(i20, 1, 32, &oc_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 69,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 70,
                            ((maze_wall_search[(contor_renew_square[tempn] +
                   ((contor_renew_square[tempn + 1024] - 1) << 5)) - 1] & b) != 0)
                            == search->contents.known) || (!covrtLogCond
-               (&emlrtCoverageInstance, 1U, 0U, 70, unknown_wall_flg != 0))) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 44, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 174, true);
+               (&emlrtCoverageInstance, 1U, 0U, 71, unknown_wall_flg != 0))) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 45, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 176, true);
 
             /* かつ進行方向が西向きである時 */
             if (g_direction.West <= 7) {
@@ -24688,7 +24716,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
               emlrtDynamicBoundsCheckR2012b(i20, 1, 32, &mc_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 175, (move_dir_map
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 177, (move_dir_map
                   [(contor_renew_square[tempn] + ((contor_renew_square[tempn +
                      1024] - 1) << 5)) - 1] & b) != 0)) {
               /* かつ北のマスが更新予定値よりも大きな値の場合 */
@@ -24726,10 +24754,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 176, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 178, contour_map
                              [(contor_renew_square[tempn] + (((int32_T)qY - 1) <<
                      5)) - 1] > (int32_T)u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 192U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 193U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_square[tempn] < 1) ||
@@ -24873,10 +24901,10 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
                 u2 = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 177, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 179, contour_map
                              [(contor_renew_square[tempn] + (((int32_T)qY - 1) <<
                      5)) - 1] > (int32_T)u2)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 193U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 194U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_square[tempn] < 1) ||
@@ -24991,8 +25019,8 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 44, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 174, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 45, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 176, false);
         }
 
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -25001,7 +25029,7 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 15, 0);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 194U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 195U);
 
       /* ゴール更新マスの更新とインデックスのクリア */
       for (i19 = 0; i19 < 2048; i19++) {
@@ -25013,16 +25041,16 @@ static void make_map_fustrun(const emlrtStack *sp, const coder_internal_ref
       contor_renew_square_idx_temp = 1U;
 
       /* 更新がなければ || スタート地点が更新されていれば終了 */
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 71, change_flag == 0) ||
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 72, contour_map[0] !=
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 72, change_flag == 0) ||
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 73, contour_map[0] !=
                        65535)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 45, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 178, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 195U);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 46, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 180, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 196U);
         exitg1 = 1;
       } else {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 45, false);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 178, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 46, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 180, false);
         tempi++;
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
           emlrtBreakCheckR2012b(sp);
@@ -25088,7 +25116,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
   b_st.prev = &st;
   b_st.tls = st.tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 15U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 196U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 197U);
 
   /*     %% make_map_fustrun_diagonal 最短走行用等高線MAPを生成 */
   /* 未知壁の領域は仮想壁をおいて侵入しない。 */
@@ -25138,8 +25166,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
 
   /* ゴールセクションが確定している場合 */
   *start_num = MAX_uint16_T;
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 179, goal_size == 1)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 197U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 181, goal_size == 1)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 198U);
 
     /* ゴールマスから、東西南北にマップを展開 */
     /* 北壁 */
@@ -25159,11 +25187,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
 
     i30 = maze_goal[0] - 1;
     i31 = (maze_goal[9] + (i30 << 5)) - 1;
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 180, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 46, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 73, (maze_wall[i31] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 182, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 47, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 74, (maze_wall[i31] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 198U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 199U);
 
       /* 歩数更新 */
       i32 = (int32_T)(maze_goal[9] + 1U);
@@ -25257,11 +25285,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
       emlrtDynamicBoundsCheckR2012b(maze_goal[0], 1, 32, &mj_emlrtBCI, sp);
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 181, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 47, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 74, (maze_wall[i31] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 183, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 48, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 75, (maze_wall[i31] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 199U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 200U);
 
       /* 歩数更新 */
       if ((maze_goal[9] < 1) || (maze_goal[9] > 32)) {
@@ -25354,11 +25382,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
       emlrtDynamicBoundsCheckR2012b(maze_goal[0], 1, 32, &ij_emlrtBCI, sp);
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 182, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 48, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 75, (maze_wall[i31] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 184, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 49, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 76, (maze_wall[i31] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 200U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 201U);
 
       /* 歩数更新 */
       if ((maze_goal[9] < 1) || (maze_goal[9] > 33)) {
@@ -25420,11 +25448,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
       emlrtDynamicBoundsCheckR2012b(maze_goal[0], 1, 32, &ej_emlrtBCI, sp);
     }
 
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 183, covrtLogMcdc
-                   (&emlrtCoverageInstance, 1U, 0U, 49, !covrtLogCond
-                    (&emlrtCoverageInstance, 1U, 0U, 76, (maze_wall[i31] & b) !=
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 185, covrtLogMcdc
+                   (&emlrtCoverageInstance, 1U, 0U, 50, !covrtLogCond
+                    (&emlrtCoverageInstance, 1U, 0U, 77, (maze_wall[i31] & b) !=
                      0)))) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 201U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 202U);
 
       /* 歩数更新 */
       if ((maze_goal[9] < 1) || (maze_goal[9] > 32)) {
@@ -25535,10 +25563,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
       }
 
       i31 = maze_wall[(maze_goal[n + 9] + ((maze_goal[n] - 1) << 5)) - 1];
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 184, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 50, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 77, (i31 & b) != 0)))) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 202U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 186, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 51, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 78, (i31 & b) != 0)))) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 203U);
 
         /* 歩数更新 */
         i32 = 1 + n;
@@ -25644,11 +25672,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         emlrtDynamicBoundsCheckR2012b(i32, 1, 32, &xi_emlrtBCI, sp);
       }
 
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 185, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 51, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 78, (i31 & b_b) != 0))))
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 187, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 52, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 79, (i31 & b_b) != 0))))
       {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 203U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 204U);
 
         /* 歩数更新 */
         i32 = 1 + n;
@@ -25753,11 +25781,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         emlrtDynamicBoundsCheckR2012b(i32, 1, 32, &vi_emlrtBCI, sp);
       }
 
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 186, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 52, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 79, (i31 & change_flag)
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 188, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 53, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 80, (i31 & change_flag)
                        != 0)))) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 204U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 205U);
 
         /* 歩数更新 */
         i32 = 1 + n;
@@ -25850,11 +25878,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         emlrtDynamicBoundsCheckR2012b(i32, 1, 32, &ti_emlrtBCI, sp);
       }
 
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 187, covrtLogMcdc
-                     (&emlrtCoverageInstance, 1U, 0U, 53, !covrtLogCond
-                      (&emlrtCoverageInstance, 1U, 0U, 80, (i31 & c_b) != 0))))
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 189, covrtLogMcdc
+                     (&emlrtCoverageInstance, 1U, 0U, 54, !covrtLogCond
+                      (&emlrtCoverageInstance, 1U, 0U, 81, (i31 & c_b) != 0))))
       {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 205U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 206U);
 
         /* 歩数更新 */
         i31 = 1 + n;
@@ -25949,7 +25977,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
     exitg1 = 0;
     if (i <= (uint16_T)qY) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 17, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 206U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 207U);
 
       /* 更新確認用の歩数カウントは0~max_length */
       change_flag = 0U;
@@ -26013,7 +26041,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 81, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 82, ((maze_wall
                [(contor_renew_node_row[n] + ((contor_renew_node_row[n + 1024] -
                   1) << 5)) - 1] & d_b) != 0) == wall->contents.nowall)) {
           if (g_direction.North <= 7) {
@@ -26033,11 +26061,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &pi_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 82,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 83,
                            ((maze_wall_search[(contor_renew_node_row[n] + ((i31
                     - 1) << 5)) - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 54, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 188, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 190, true);
 
             /* かつ進行方向が北向きである時 */
             if (g_d_direction.North <= 7) {
@@ -26057,7 +26085,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &ni_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 189, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 191, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ北のノードが更新予定値よりも大きな値の場合 */
@@ -26092,9 +26120,9 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 190, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 192, row_num_node
                              [(i31 + 33 * (i32 - 1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 207U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 208U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -26221,10 +26249,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 191,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 193,
                                row_num_node[(i31 + 33 * (i32 - 1)) - 1] ==
                                (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 208U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 209U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North <= 7) {
@@ -26301,9 +26329,9 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 192, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 194, row_num_node
                              [(i31 + 33 * (i32 - 1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 209U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 210U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -26432,10 +26460,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 193,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 195,
                                row_num_node[(i31 + 33 * (i32 - 1)) - 1] ==
                                (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 210U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 211U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North <= 7) {
@@ -26486,8 +26514,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 54, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 188, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 190, false);
         }
 
         /* 北東側 */
@@ -26504,7 +26532,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
 
         i31 = contor_renew_node_row[n + 1024];
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 83, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 84, ((maze_wall
                [(contor_renew_node_row[n] + ((i31 - 1) << 5)) - 1] & e_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.East <= 7) {
@@ -26523,12 +26551,12 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &ji_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 84,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 85,
                            ((maze_wall_search[(contor_renew_node_row[n] +
                   ((contor_renew_node_row[n + 1024] - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 194, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 196, true);
 
             /* かつ進行方向が北東向きである時 */
             if (g_d_direction.North_East <= 7) {
@@ -26548,7 +26576,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &hi_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 195, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 197, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ北東のノードが更新予定値よりも大きな値の場合 */
@@ -26579,15 +26607,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i32 - 1)) -
-                1] + 4U;
+                1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 196, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 198, col_num_node
                              [(contor_renew_node_row[n] + ((i31 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 211U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 212U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -26617,7 +26645,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i31 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -26715,15 +26743,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i32 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 197,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 199,
                                col_num_node[(contor_renew_node_row[n] + ((i31 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 212U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 213U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -26803,10 +26831,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 198, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 200, col_num_node
                              [(contor_renew_node_row[n] + ((i31 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 213U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 214U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -26940,10 +26968,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 199,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 201,
                                col_num_node[(contor_renew_node_row[n] + ((i32 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 214U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 215U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -26995,8 +27023,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 55, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 194, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 196, false);
         }
 
         /* 東側は柱 */
@@ -27017,7 +27045,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 85, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 86, ((maze_wall
                [((int32_T)c_qY + ((i31 - 1) << 5)) - 1] & f_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.East <= 7) {
@@ -27040,11 +27068,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &co_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 86,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 87,
                            ((maze_wall_search[((int32_T)c_qY + ((i31 - 1) << 5))
                              - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 200, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 202, true);
 
             /* かつ進行方向が南東向きである時 */
             if (g_d_direction.South_East <= 7) {
@@ -27064,7 +27092,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &fi_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 201, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 203, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ南東のノードが更新予定値よりも大きな値の場合 */
@@ -27099,15 +27127,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i32 - 1)) -
-                1] + 4U;
+                1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 202, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 204, col_num_node
                              [((int32_T)c_qY + ((i31 - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 215U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 216U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -27141,7 +27169,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i31 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -27255,15 +27283,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (i32 - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 203,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 205,
                                col_num_node[((int32_T)c_qY + ((i31 - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 216U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 217U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -27355,10 +27383,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 204, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 206, col_num_node
                              [((int32_T)c_qY + ((i31 - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 217U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 218U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -27511,10 +27539,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 205,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 207,
                                col_num_node[((int32_T)c_qY + ((i31 - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 218U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 219U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -27575,8 +27603,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 56, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 200, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 202, false);
         }
 
         /* 南側 */
@@ -27596,7 +27624,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 87, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 88, ((maze_wall
                [((int32_T)c_qY + ((b_b - 1) << 5)) - 1] & g_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.South <= 7) {
@@ -27618,11 +27646,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(b_b, 1, 32, &sq_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 88,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 89,
                            ((maze_wall_search[((int32_T)c_qY + ((b_b - 1) << 5))
                              - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 206, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 208, true);
 
             /* かつ進行方向が南向きである時 */
             if (g_d_direction.South <= 7) {
@@ -27641,7 +27669,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(b_b, 1, 32, &di_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 207, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 209, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ南のノードが更新予定値よりも大きな値の場合 */
@@ -27675,10 +27703,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 208, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 210, row_num_node
                              [((int32_T)c_qY + 33 * (b_b - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 219U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 220U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -27804,10 +27832,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 209,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 211,
                                row_num_node[((int32_T)c_qY + 33 * (b_b - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 220U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 221U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South <= 7) {
@@ -27882,10 +27910,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 210, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 212, row_num_node
                              [((int32_T)c_qY + 33 * (b_b - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 221U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 222U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -28011,10 +28039,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 211,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 213,
                                row_num_node[((int32_T)c_qY + 33 * (b_b - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 222U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 223U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South <= 7) {
@@ -28064,8 +28092,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 57, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 206, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 208, false);
         }
 
         /* 南西側 */
@@ -28084,7 +28112,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 89, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 90, ((maze_wall
                [((int32_T)c_qY + ((b_b - 1) << 5)) - 1] & i_b) != 0) ==
                          wall->contents.nowall)) {
           if (g_direction.West <= 7) {
@@ -28106,11 +28134,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(b_b, 1, 32, &lt_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 90,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 91,
                            ((maze_wall_search[((int32_T)c_qY + ((b_b - 1) << 5))
                              - 1] & b) != 0) == search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 212, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 214, true);
 
             /* かつ進行方向が南西向きである時 */
             if (g_d_direction.South_West <= 7) {
@@ -28129,7 +28157,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(b_b, 1, 32, &bi_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 213, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 215, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ南西のノードが更新予定値よりも大きな値の場合 */
@@ -28158,15 +28186,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (b_b - 1)) -
-                1] + 4U;
+                1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 214, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 216, col_num_node
                              [((int32_T)c_qY + ((b_b - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 223U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 224U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -28194,7 +28222,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (b_b - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -28287,15 +28315,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (b_b - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 215,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 217,
                                col_num_node[((int32_T)c_qY + ((b_b - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 224U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 225U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -28371,10 +28399,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 216, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 218, col_num_node
                              [((int32_T)c_qY + ((b_b - 1) << 5)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 225U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 226U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -28500,10 +28528,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 217,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 219,
                                col_num_node[((int32_T)c_qY + ((b_b - 1) << 5)) -
                                1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 226U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 227U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -28554,8 +28582,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 58, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 212, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 214, false);
         }
 
         /* 北西側 */
@@ -28572,7 +28600,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         i31 = (contor_renew_node_row[n] + ((contor_renew_node_row[n + 1024] - 1)
                 << 5)) - 1;
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 91, ((maze_wall[i31] &
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 92, ((maze_wall[i31] &
                k_b) != 0) == wall->contents.nowall)) {
           if (g_direction.West <= 7) {
             b = (uint8_T)(1 << g_direction.West);
@@ -28590,11 +28618,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(b_b, 1, 32, &wh_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 92,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 93,
                            ((maze_wall_search[i31] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 218, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 220, true);
 
             /* かつ進行方向が北西向きである時 */
             if (g_d_direction.North_West <= 7) {
@@ -28613,7 +28641,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(b_b, 1, 32, &uh_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 219, (row_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 221, (row_dir_node
                   [(contor_renew_node_row[n] + 33 * (contor_renew_node_row[n +
                     1024] - 1)) - 1] & b) != 0)) {
               /* かつ北西のノードが更新予定値よりも大きな値の場合 */
@@ -28638,15 +28666,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (b_b - 1)) -
-                1] + 4U;
+                1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 220, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 222, col_num_node
                              [(contor_renew_node_row[n] + ((b_b - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 227U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 228U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -28670,7 +28698,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (b_b - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -28747,15 +28775,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = row_num_node[(contor_renew_node_row[n] + 33 * (b_b - 1))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 221,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 223,
                                col_num_node[(contor_renew_node_row[n] + ((b_b -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 228U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 229U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -28818,10 +28846,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 222, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 224, col_num_node
                              [(contor_renew_node_row[n] + ((b_b - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 229U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 230U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_row[n] < 1) || (contor_renew_node_row[n] >
@@ -28927,10 +28955,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 223,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 225,
                                col_num_node[(contor_renew_node_row[n] + ((b_b -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 230U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 231U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -28972,8 +29000,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 59, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 218, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 220, false);
         }
 
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -29044,7 +29072,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         i31 = contor_renew_node_col[n + 1024];
         i32 = (contor_renew_node_col[n] + ((i31 - 1) << 5)) - 1;
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 93, ((maze_wall[i32] &
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 94, ((maze_wall[i32] &
                h_b) != 0) == wall->contents.nowall)) {
           if (g_direction.North <= 7) {
             b = (uint8_T)(1 << g_direction.North);
@@ -29062,11 +29090,11 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &mh_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 94,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 95,
                            ((maze_wall_search[i32] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 224, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 226, true);
 
             /* かつ進行方向が北東向きである時 */
             if (g_d_direction.North_East <= 7) {
@@ -29085,7 +29113,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 33, &kh_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 225, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 227, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ北東のノードが更新予定値よりも大きな値の場合 */
@@ -29116,14 +29144,14 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((row_num_node_tmp
-                - 1) << 5)) - 1] + 4U;
+                - 1) << 5)) - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 226, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 228, row_num_node
                              [(i32 + 33 * (i33 - 1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 231U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 232U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -29153,7 +29181,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i32 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -29248,15 +29276,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] +
-                                     ((row_num_node_tmp - 1) << 5)) - 1] + 4U;
+                                     ((row_num_node_tmp - 1) << 5)) - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 227,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 229,
                                row_num_node[(i32 + 33 * (i33 - 1)) - 1] ==
                                (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 232U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 233U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -29332,9 +29360,9 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 228, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 230, row_num_node
                              [(i32 + 33 * (i33 - 1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 233U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 234U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -29466,10 +29494,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 229,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 231,
                                row_num_node[(i32 + 33 * (i33 - 1)) - 1] ==
                                (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 234U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 235U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_East <= 7) {
@@ -29520,8 +29548,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 60, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 224, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 226, false);
         }
 
         /* 東側 */
@@ -29536,7 +29564,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 95, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 96, ((maze_wall
                [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024] -
                   1) << 5)) - 1] & j_b) != 0) == wall->contents.nowall)) {
           if (g_direction.East <= 7) {
@@ -29555,12 +29583,12 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &gh_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 96,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 97,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   ((contor_renew_node_col[n + 1024] - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 230, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 232, true);
 
             /* かつ進行方向が東向きである時 */
             if (g_d_direction.East <= 7) {
@@ -29580,7 +29608,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 33, &eh_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 231, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 233, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ東のノードが更新予定値よりも大きな値の場合 */
@@ -29616,10 +29644,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 232, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 234, col_num_node
                              [(contor_renew_node_col[n] + ((i31 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 235U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 236U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -29752,10 +29780,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 233,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 235,
                                col_num_node[(contor_renew_node_col[n] + ((i31 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 236U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 237U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.East <= 7) {
@@ -29835,10 +29863,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 234, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 236, col_num_node
                              [(contor_renew_node_col[n] + ((i31 - 1) << 5)) - 1]
                              > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 237U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 238U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -29970,10 +29998,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 235,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 237,
                                col_num_node[(contor_renew_node_col[n] + ((i32 -
                         1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 238U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 239U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.East <= 7) {
@@ -30025,8 +30053,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 61, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 230, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 232, false);
         }
 
         /* 南東側 */
@@ -30042,7 +30070,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 97, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 98, ((maze_wall
                [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024] -
                   1) << 5)) - 1] & l_b) != 0) == wall->contents.nowall)) {
           if (g_direction.South <= 7) {
@@ -30062,12 +30090,12 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b(i31, 1, 32, &ah_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 98,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 99,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   ((contor_renew_node_col[n + 1024] - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 236, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 238, true);
 
             /* かつ進行方向が南東向きである時 */
             if (g_d_direction.South_East <= 7) {
@@ -30087,7 +30115,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 33, &xg_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 237, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 239, (col_dir_node
                   [(contor_renew_node_col[n] + ((i31 - 1) << 5)) - 1] & b) != 0))
             {
               /* かつ南東のノードが更新予定値よりも大きな値の場合 */
@@ -30114,15 +30142,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((i32 - 1) << 5))
-                - 1] + 4U;
+                - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 238, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 240, row_num_node
                              [(contor_renew_node_col[n] + 33 * (i31 - 1)) - 1] >
                              (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 239U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 240U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -30148,7 +30176,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i31 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -30229,15 +30257,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i32 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 239,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 241,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       (i31 - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 240U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 241U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -30305,10 +30333,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 240, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 242, row_num_node
                              [(contor_renew_node_col[n] + 33 * (i31 - 1)) - 1] >
                              (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 241U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 242U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -30420,10 +30448,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 241,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 243,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       (i31 - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 242U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 243U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_East <= 7) {
@@ -30468,8 +30496,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 62, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 236, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 238, false);
         }
 
         /* 南側は柱 */
@@ -30491,7 +30519,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 99, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 100, ((maze_wall
                [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) << 5)) - 1] &
                m_b) != 0) == wall->contents.nowall)) {
           if (g_direction.South <= 7) {
@@ -30516,12 +30544,12 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b((int32_T)c_qY, 1, 32, &kt_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 100,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 101,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   (((int32_T)c_qY - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 242, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 244, true);
 
             /* かつ進行方向が南西向きである時 */
             if (g_d_direction.South_West <= 7) {
@@ -30541,7 +30569,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 33, &rg_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 243, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 245, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ南西のノードが更新予定値よりも大きな値の場合 */
@@ -30574,15 +30602,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((i31 - 1) << 5))
-                - 1] + 4U;
+                - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 244, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 246, row_num_node
                              [(contor_renew_node_col[n] + 33 * ((int32_T)c_qY -
                      1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 243U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 244U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -30614,7 +30642,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i31 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -30719,15 +30747,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i31 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 245,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 247,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       ((int32_T)c_qY - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 244U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 245U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -30813,10 +30841,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 246, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 248, row_num_node
                              [(contor_renew_node_col[n] + 33 * ((int32_T)c_qY -
                      1)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 245U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 246U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -30958,10 +30986,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 247,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 249,
                                row_num_node[(contor_renew_node_col[n] + 33 *
                       ((int32_T)c_qY - 1)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 246U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 247U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.South_West <= 7) {
@@ -31018,8 +31046,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 63, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 242, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 244, false);
         }
 
         /* 西側 */
@@ -31040,7 +31068,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 101, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 102, ((maze_wall
                [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) << 5)) - 1] &
                n_b) != 0) == wall->contents.nowall)) {
           if (g_direction.West <= 7) {
@@ -31065,12 +31093,12 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
             emlrtDynamicBoundsCheckR2012b((int32_T)c_qY, 1, 32, &gw_emlrtBCI, sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 102,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 103,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   (((int32_T)c_qY - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 248, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 250, true);
 
             /* かつ進行方向が西向きである時 */
             if (g_d_direction.West <= 7) {
@@ -31090,7 +31118,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 33, &pg_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 249, (col_dir_node
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 251, (col_dir_node
                   [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
                      - 1) << 5)) - 1] & b) != 0)) {
               /* かつ西のノードが更新予定値よりも大きな値の場合 */
@@ -31128,10 +31156,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 250, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 252, col_num_node
                              [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) <<
                      5)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 247U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 248U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -31273,10 +31301,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 251,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 253,
                                col_num_node[(contor_renew_node_col[n] +
                       (((int32_T)c_qY - 1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 248U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 249U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.West <= 7) {
@@ -31362,10 +31390,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 252, col_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 254, col_num_node
                              [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) <<
                      5)) - 1] > (int32_T)b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 249U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 250U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -31507,10 +31535,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 253,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_uint8_T,
                                col_num_node[(contor_renew_node_col[n] +
                       (((int32_T)c_qY - 1) << 5)) - 1] == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 250U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 251U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.West <= 7) {
@@ -31567,8 +31595,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 64, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 248, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 250, false);
         }
 
         /* 北西側 */
@@ -31589,7 +31617,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         guard1 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 103, ((maze_wall
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 104, ((maze_wall
                [(contor_renew_node_col[n] + (((int32_T)c_qY - 1) << 5)) - 1] &
                o_b) != 0) == wall->contents.nowall)) {
           if (g_direction.North <= 7) {
@@ -31615,12 +31643,12 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               sp);
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 104,
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 105,
                            ((maze_wall_search[(contor_renew_node_col[n] +
                   (((int32_T)c_qY - 1) << 5)) - 1] & b) != 0) ==
                            search->contents.known)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 254, true);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 66, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 256, true);
 
             /* かつ進行方向が北西向きである時 */
             if (g_d_direction.North_West <= 7) {
@@ -31640,10 +31668,9 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               emlrtDynamicBoundsCheckR2012b(i31, 1, 33, &ng_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, MAX_uint8_T,
-                           (col_dir_node[(contor_renew_node_col[n] +
-                   ((contor_renew_node_col[n + 1024] - 1) << 5)) - 1] & b) != 0))
-            {
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 257, (col_dir_node
+                  [(contor_renew_node_col[n] + ((contor_renew_node_col[n + 1024]
+                     - 1) << 5)) - 1] & b) != 0)) {
               /* かつ北西のノードが更新予定値よりも大きな値の場合 */
               i31 = (int32_T)(contor_renew_node_col[n] + 1U);
               if ((uint32_T)i31 > 255U) {
@@ -31677,15 +31704,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
               }
 
               b_qY = col_num_node[(contor_renew_node_col[n] + ((i32 - 1) << 5))
-                - 1] + 4U;
+                - 1] + 10U;
               if (b_qY > 65535U) {
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 256, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 258, row_num_node
                              [(i31 + 33 * ((int32_T)c_qY - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 251U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 252U);
 
                 /* 歩数MAP更新 */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -31720,7 +31747,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i31 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
@@ -31838,15 +31865,15 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 }
 
                 b_qY = col_num_node[(contor_renew_node_col[n] + ((i32 - 1) << 5))
-                  - 1] + 4U;
+                  - 1] + 10U;
                 if (b_qY > 65535U) {
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 257,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 259,
                                row_num_node[(i31 + 33 * ((int32_T)c_qY - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 252U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 253U);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -31940,10 +31967,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                 b_qY = 65535U;
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 258, row_num_node
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 260, row_num_node
                              [(i31 + 33 * ((int32_T)c_qY - 1)) - 1] > (int32_T)
                              b_qY)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 253U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 254U);
 
                 /* 歩数MAP更新(重みづけあり) */
                 if ((contor_renew_node_col[n] < 1) || (contor_renew_node_col[n] >
@@ -32101,10 +32128,10 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
                   b_qY = 65535U;
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 259,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 261,
                                row_num_node[(i31 + 33 * ((int32_T)c_qY - 1)) - 1]
                                == (int32_T)b_qY)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 254U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, MAX_uint8_T);
 
                   /* 移動方向を追加 */
                   if (g_d_direction.North_West <= 7) {
@@ -32166,8 +32193,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
         }
 
         if (guard1) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 65, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 254, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 66, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 256, false);
         }
 
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -32176,7 +32203,7 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
       }
 
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 19, 0);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, MAX_uint8_T);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 256U);
 
       /* ゴール更新ノードの更新とインデックスのクリア */
       contor_renew_node_col_idx = contor_renew_node_col_idx_temp;
@@ -32192,8 +32219,8 @@ static void make_map_fustrun_diagonal(const emlrtStack *sp, coder_internal_ref_3
       contor_renew_node_row_idx_temp = 1U;
 
       /* 更新がなければ終了(スタート地点の歩数マップを更新) */
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 260, change_flag == 0)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 256U);
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 262, change_flag == 0)) {
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 257U);
         b_qY = row_num_node[1] + 3U;
         if (b_qY > 65535U) {
           b_qY = 65535U;
@@ -32240,7 +32267,7 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
   uint32_T qY;
   uint32_T u1;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 7U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 103U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 104U);
 
   /*     %% make_new_goal_all 現在位置から新規のゴールを作る。(全面探索用) */
   /*  迷路パラメータ設定 */
@@ -32289,7 +32316,7 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
     exitg1 = 0;
     if (tempi < 65535) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 3, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 104U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 105U);
 
       /* 歩数カウントは0~max_length */
       /* map更新確認用フラグ */
@@ -32325,7 +32352,7 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
           guard2 = false;
           guard3 = false;
           guard4 = false;
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 77, (i16 & b) ==
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 79, (i16 & b) ==
                          wall->contents.nowall)) {
             /* 北側のMAPが更新されているか判断、されていなければ書き込み */
             i17 = (int32_T)(contor_renew_square[tempn] + 1U);
@@ -32342,9 +32369,9 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u0, 1, 32, &ac_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 78, contour_map[(i18
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 80, contour_map[(i18
                   + ((u0 - 1) << 5)) - 1] == 65535)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 105U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 106U);
               i18 = i17;
               if ((uint32_T)i17 > 255U) {
                 i18 = 255;
@@ -32399,10 +32426,10 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
                 emlrtDynamicBoundsCheckR2012b(u0, 1, 32, &dc_emlrtBCI, sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 79,
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 81,
                              maze_wall_search[(i18 + ((u0 - 1) << 5)) - 1] != 15))
               {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 106U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 107U);
                 new_goal[0] = u0;
                 if ((uint32_T)i17 > 255U) {
                   i17 = 255;
@@ -32438,7 +32465,7 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u0, 1, 32, &tb_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 80, (i16 & b) ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 82, (i16 & b) ==
                            wall->contents.nowall)) {
               /* 東側のMAPが更新されているか判断、されていなければ書き込み */
               if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn]
@@ -32457,10 +32484,10 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
                 emlrtDynamicBoundsCheckR2012b(i18, 1, 32, &cc_emlrtBCI, sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 81, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 83, contour_map
                              [(contor_renew_square[tempn] + ((i18 - 1) << 5)) -
                              1] == 65535)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 107U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 108U);
                 if ((contor_renew_square[tempn] < 1) ||
                     (contor_renew_square[tempn] > 32)) {
                   emlrtDynamicBoundsCheckR2012b(contor_renew_square[tempn], 1,
@@ -32520,10 +32547,10 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
                   emlrtDynamicBoundsCheckR2012b(i18, 1, 32, &gc_emlrtBCI, sp);
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 82,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 84,
                                maze_wall_search[(contor_renew_square[tempn] +
                       ((i18 - 1) << 5)) - 1] != 15)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 108U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 109U);
                   if ((uint32_T)i17 > 255U) {
                     i17 = 255;
                   }
@@ -32560,7 +32587,7 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u0, 1, 32, &rb_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 83, (i16 & b) ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 85, (i16 & b) ==
                            wall->contents.nowall)) {
               /* 南側のMAPが更新されているか判断、されていなければ書き込み */
               qY = contor_renew_square[tempn] - 1U;
@@ -32577,9 +32604,9 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
                 emlrtDynamicBoundsCheckR2012b(u0, 1, 32, &fc_emlrtBCI, sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 84, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 86, contour_map
                              [((int32_T)qY + ((u0 - 1) << 5)) - 1] == 65535)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 109U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 110U);
                 qY = contor_renew_square[tempn] - 1U;
                 if (qY > contor_renew_square[tempn]) {
                   qY = 0U;
@@ -32637,10 +32664,10 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
                   emlrtDynamicBoundsCheckR2012b(u0, 1, 32, &jc_emlrtBCI, sp);
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 85,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 87,
                                maze_wall_search[((int32_T)qY + ((u0 - 1) << 5))
                                - 1] != 15)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 110U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 111U);
                   new_goal[0] = u0;
                   qY = contor_renew_square[tempn] - 1U;
                   if (qY > contor_renew_square[tempn]) {
@@ -32678,7 +32705,7 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u0, 1, 32, &pb_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 86, (i16 & b) ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 88, (i16 & b) ==
                            wall->contents.nowall)) {
               /* 西側のMAPが更新されているか判断、されていなければ書き込み */
               if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn]
@@ -32697,10 +32724,10 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 87, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 89, contour_map
                              [(contor_renew_square[tempn] + (((int32_T)qY - 1) <<
                      5)) - 1] == 65535)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 111U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 112U);
                 if ((contor_renew_square[tempn] < 1) ||
                     (contor_renew_square[tempn] > 32)) {
                   emlrtDynamicBoundsCheckR2012b(contor_renew_square[tempn], 1,
@@ -32762,10 +32789,10 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
                     sp);
                 }
 
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 88,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 90,
                                maze_wall_search[(contor_renew_square[tempn] +
                       (((int32_T)qY - 1) << 5)) - 1] != 15)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 112U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 113U);
                   qY = u0 - 1U;
                   if (qY > u0) {
                     qY = 0U;
@@ -32797,7 +32824,7 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
         }
       } while (exitg2 == 0);
 
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 113U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 114U);
 
       /* ゴール更新マスの更新とインデックスのクリア */
       for (i16 = 0; i16 < 2048; i16++) {
@@ -32809,17 +32836,17 @@ static void make_new_goal_all(const emlrtStack *sp, const coder_internal_ref_6
       contor_renew_square_idx_temp = 1U;
 
       /* 更新がない、もしくはゴールが設定されていれば終了 */
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 40, change_flag == 0) ||
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 41, new_goal[0] != 0)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 27, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 89, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 114U);
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 41, change_flag == 0) ||
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 42, new_goal[0] != 0)) {
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 28, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 91, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 115U);
 
         /* disp(tempi) */
         exitg1 = 1;
       } else {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 27, false);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 89, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 28, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 91, false);
         tempi++;
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
           emlrtBreakCheckR2012b(sp);
@@ -32861,7 +32888,7 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
   st.prev = sp;
   st.tls = sp->tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 8U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 115U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 116U);
 
   /*     %% make_new_goal_sh 現在位置から新規のゴール生成する。(最短経路探索用) */
   /*  迷路パラメータ設定 */
@@ -32910,7 +32937,7 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
     exitg1 = 0;
     if (tempi < 65535) {
       covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 5, 1);
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 116U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 117U);
 
       /* 歩数カウントは0~max_length */
       /* map更新確認用フラグ */
@@ -32946,7 +32973,7 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
           guard2 = false;
           guard3 = false;
           guard4 = false;
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 90, (i26 & b) ==
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 92, (i26 & b) ==
                          wall->contents.nowall)) {
             /* 北側のMAPが更新されているか判断、されていなければ書き込み */
             i27 = (int32_T)(contor_renew_square[tempn] + 1U);
@@ -32963,9 +32990,9 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u3, 1, 32, &fg_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 91, contour_map[(i28
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 93, contour_map[(i28
                   + ((u3 - 1) << 5)) - 1] == 65535)) {
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 117U);
+              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 118U);
               i28 = i27;
               if ((uint32_T)i27 > 255U) {
                 i28 = 255;
@@ -33013,11 +33040,11 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
               }
 
               st.site = &qc_emlrtRSI;
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 92,
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 94,
                              sh_route_unexp_sq_jud(&st, unexp_square,
                     unexp_square_idx, (uint8_T)i28, contor_renew_square[tempn +
                     1024]) == 1)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 118U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 119U);
                 new_goal[0] = u3;
                 if ((uint32_T)i27 > 255U) {
                   i27 = 255;
@@ -33053,7 +33080,7 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u3, 1, 32, &yf_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 93, (i26 & b) ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 95, (i26 & b) ==
                            wall->contents.nowall)) {
               /* 東側のMAPが更新されているか判断、されていなければ書き込み */
               if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn]
@@ -33072,10 +33099,10 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
                 emlrtDynamicBoundsCheckR2012b(i28, 1, 32, &hg_emlrtBCI, sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 94, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 96, contour_map
                              [(contor_renew_square[tempn] + ((i28 - 1) << 5)) -
                              1] == 65535)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 119U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 120U);
                 if ((contor_renew_square[tempn] < 1) ||
                     (contor_renew_square[tempn] > 32)) {
                   emlrtDynamicBoundsCheckR2012b(contor_renew_square[tempn], 1,
@@ -33126,11 +33153,11 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
                 }
 
                 st.site = &rc_emlrtRSI;
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 95,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 97,
                                sh_route_unexp_sq_jud(&st, unexp_square,
                       unexp_square_idx, contor_renew_square[tempn], (uint8_T)i28)
                                == 1)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 120U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 121U);
                   if ((uint32_T)i27 > 255U) {
                     i27 = 255;
                   }
@@ -33167,7 +33194,7 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u3, 1, 32, &wf_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 96, (i26 & b) ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 98, (i26 & b) ==
                            wall->contents.nowall)) {
               /* 南側のMAPが更新されているか判断、されていなければ書き込み */
               qY = contor_renew_square[tempn] - 1U;
@@ -33184,9 +33211,9 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
                 emlrtDynamicBoundsCheckR2012b(u3, 1, 32, &jg_emlrtBCI, sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 97, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 99, contour_map
                              [((int32_T)qY + ((u3 - 1) << 5)) - 1] == 65535)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 121U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 122U);
                 qY = contor_renew_square[tempn] - 1U;
                 if (qY > contor_renew_square[tempn]) {
                   qY = 0U;
@@ -33236,11 +33263,11 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
                 }
 
                 st.site = &sc_emlrtRSI;
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 98,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 100,
                                sh_route_unexp_sq_jud(&st, unexp_square,
                       unexp_square_idx, (uint8_T)qY, contor_renew_square[tempn +
                       1024]) == 1)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 122U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 123U);
                   new_goal[0] = u3;
                   qY = contor_renew_square[tempn] - 1U;
                   if (qY > contor_renew_square[tempn]) {
@@ -33278,7 +33305,7 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
               emlrtDynamicBoundsCheckR2012b(u3, 1, 32, &uf_emlrtBCI, sp);
             }
 
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 99, (i26 & b) ==
+            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 101, (i26 & b) ==
                            wall->contents.nowall)) {
               /* 西側のMAPが更新されているか判断、されていなければ書き込み */
               if ((contor_renew_square[tempn] < 1) || (contor_renew_square[tempn]
@@ -33297,10 +33324,10 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
                   sp);
               }
 
-              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 100, contour_map
+              if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 102, contour_map
                              [(contor_renew_square[tempn] + (((int32_T)qY - 1) <<
                      5)) - 1] == 65535)) {
-                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 123U);
+                covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 124U);
                 if ((contor_renew_square[tempn] < 1) ||
                     (contor_renew_square[tempn] > 32)) {
                   emlrtDynamicBoundsCheckR2012b(contor_renew_square[tempn], 1,
@@ -33352,11 +33379,11 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
                 }
 
                 st.site = &tc_emlrtRSI;
-                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 101,
+                if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 103,
                                sh_route_unexp_sq_jud(&st, unexp_square,
                       unexp_square_idx, contor_renew_square[tempn], (uint8_T)qY)
                                == 1)) {
-                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 124U);
+                  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 125U);
                   qY = u3 - 1U;
                   if (qY > u3) {
                     qY = 0U;
@@ -33388,7 +33415,7 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
         }
       } while (exitg2 == 0);
 
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 125U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 126U);
 
       /* ゴール更新マスの更新とインデックスのクリア */
       for (i26 = 0; i26 < 2048; i26++) {
@@ -33400,17 +33427,17 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
       contor_renew_square_idx_temp = 1U;
 
       /* 更新がない、もしくはゴールが設定されていれば終了 */
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 42, change_flag == 0) ||
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 43, new_goal[0] != 0)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 28, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 102, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 126U);
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 43, change_flag == 0) ||
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 44, new_goal[0] != 0)) {
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 29, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 104, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 127U);
 
         /* disp(tempi) */
         exitg1 = 1;
       } else {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 28, false);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 102, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 29, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 104, false);
         tempi++;
         if (*emlrtBreakCheckR2012bFlagVar != 0) {
           emlrtBreakCheckR2012b(sp);
@@ -33423,9 +33450,10 @@ static void make_new_goal_sh(const emlrtStack *sp, const coder_internal_ref_6
   } while (exitg1 == 0);
 }
 
-static void make_route_diagonal(const emlrtStack *sp, const uint16_T
-  row_num_node[1056], const uint16_T col_num_node[1056], const uint8_T
-  goal_section[2], const uint8_T goal_node2[2], uint8_T goal_node_property)
+static void make_route_diagonal(const emlrtStack *sp, const coder_internal_ref
+  *start_flg, const coder_internal_ref *wall_flg, const uint16_T row_num_node
+  [1056], const uint16_T col_num_node[1056], const uint8_T goal_section[2],
+  const uint8_T goal_node2[2], uint8_T goal_node_property)
 {
   uint8_T current_node[2];
   uint8_T current_node_property;
@@ -33443,18 +33471,15 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
   int32_T i;
   real_T move_dir_buffer[3];
   uint8_T ref_node_property;
-  boolean_T p;
   int32_T exitg2;
-  uint8_T turn_pattern_num;
-  uint8_T b_next_node_property;
   uint8_T b_next_move_dir;
-  boolean_T b_p;
-  boolean_T exitg3;
+  uint8_T b_next_node_property;
+  uint8_T turn_pattern_num;
   emlrtStack st;
   st.prev = sp;
   st.tls = sp->tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 19U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 326U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 327U);
 
   /*     %% make_route_diagonal 斜め有での最短ルート生成、走行 */
   /* スタートノードの初期化 */
@@ -33502,9 +33527,9 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
     /*          disp(["next_move_dir=",num2str(next_move_dir)]) */
     /*          disp(["ref_move_dir=",num2str(ref_move_dir)]) */
     /* 基準ノードから見て、進行方向が同一のとき */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 346, ref_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 348, ref_move_dir ==
                    next_move_dir)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 327U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 328U);
 
       /*              disp("直進") */
       i = (int32_T)(straight_count + 1U);
@@ -33520,161 +33545,191 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
       ref_move_dir = next_move_dir;
 
       /* 基準ノードがゴールであるか判定 */
-      p = isequal(b_next_node, goal_node2);
-      if ((covrtLogCond(&emlrtCoverageInstance, 1U, 0U, MAX_int8_T, p) &&
-           covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 128, next_node_property ==
-                        goal_node_property)) || (covrtLogCond
-           (&emlrtCoverageInstance, 1U, 0U, 129, next_node_property ==
+      if ((covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 128, isequal(b_next_node,
+             goal_node2)) && covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 129,
+            next_node_property == goal_node_property)) || (covrtLogCond
+           (&emlrtCoverageInstance, 1U, 0U, 130, next_node_property ==
             matrix_dir.section) && covrtLogCond(&emlrtCoverageInstance, 1U, 0U,
-            130, goal_section[1] == b_next_node[0]) && covrtLogCond
-           (&emlrtCoverageInstance, 1U, 0U, 131, goal_section[0] == b_next_node
+            131, goal_section[1] == b_next_node[0]) && covrtLogCond
+           (&emlrtCoverageInstance, 1U, 0U, 132, goal_section[0] == b_next_node
             [1]))) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 76, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 347, true);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 77, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 349, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 329U);
 
         /* 現在位置がノードである時、ゴール進入時のパターンを決定する。 */
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 132, p) && covrtLogCond
-            (&emlrtCoverageInstance, 1U, 0U, 133, next_node_property ==
-             goal_node_property)) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 77, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 348, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 328U);
+        /*                  if (isequal(ref_node,goal_node2) && (ref_node_property == goal_node_property)) */
+        /* ゴールの場合、ゴール進入時のパターンを決定する。 */
+        st.site = &ee_emlrtRSI;
+        get_next_dir_diagonal(&st, row_num_node, col_num_node, next_move_dir,
+                              b_next_node, next_node_property, goal_node2,
+                              goal_node_property, goal_section, &b_next_move_dir,
+                              next_node, &b_next_node_property);
 
-          /* ゴールの場合、ゴール進入時のパターンを決定する。 */
-          st.site = &ee_emlrtRSI;
-          get_next_dir_diagonal(&st, row_num_node, col_num_node, next_move_dir,
-                                b_next_node, next_node_property, goal_node2,
-                                goal_node_property, goal_section,
-                                &b_next_move_dir, next_node,
-                                &b_next_node_property);
+        /* 直進の場合（直進侵入） */
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 350, next_move_dir ==
+                       b_next_move_dir)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 330U);
 
-          /* 直進の場合（直進侵入） */
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 349, next_move_dir ==
-                         b_next_move_dir)) {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 329U);
-
-            /* ゴール分カウンタを増加 */
-            i = (int32_T)((uint8_T)i + 1U);
-            if ((uint32_T)i > 255U) {
-              i = 255;
-            }
-
-            /* 現在ノードから直進カウンタ分移動する関数。 */
-            move_straight(current_node, &current_node_property,
-                          &current_move_dir, &current_move_mode, (uint8_T)i);
-            straight_count = 0U;
-
-            /*                          disp("ゴール直線侵入") */
-            /*                          disp(current_node) */
-            /* ターンの場合（斜め侵入） */
-            /* 45度ターンのみ想定(一つ先の移動方向でターンの種類が決定) */
-          } else {
-            /*                          disp("ゴール時直進前") */
-            /*                          disp(current_node) */
-            /* 直進カウンタがあれば移動 */
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 350, (uint8_T)i > 0))
-            {
-              /* 軌跡をプロット */
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 351, false);
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 331U);
-
-              /* 現在ノードから直進カウンタ分移動する関数。 */
-              move_straight(current_node, &current_node_property,
-                            &current_move_dir, &current_move_mode, (uint8_T)i);
-              straight_count = 0U;
-            }
-
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 332U);
-
-            /*                          disp("ゴール時直進後") */
-            /*                          disp(current_node) */
-            /* 進行方向のバッファをクリア */
-            move_dir_buffer[1] = 0.0;
-            move_dir_buffer[2] = 0.0;
-
-            /* 1つ先までの進行方向から、ターンのパターンを決定 */
-            /* 現在進行方向からの相対的な移動方向をバッファ */
-            if (b_next_move_dir > 127) {
-              b_next_move_dir = 127U;
-            }
-
-            b_next_node_property = current_move_dir;
-            if (current_move_dir > 127) {
-              b_next_node_property = 127U;
-            }
-
-            move_dir_buffer[0] = (b_next_move_dir - b_next_node_property) & 7;
-
-            /* ターンの種類を判定する */
-            turn_pattern_num = get_turn_pattern_num(move_dir_buffer,
-              ref_move_mode);
-
-            /* ターンの軌跡を描画する */
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 352, false);
-
-            /* パターンが決まらなかった場合、エラー */
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 353, turn_pattern_num
-                           == 0)) {
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 354, false);
-            }
-
-            /* パターンに応じた移動処理 */
-            if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 355, turn_pattern_num
-                           == turn_pattern.r_45)) {
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 356, false);
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 334U);
-              turn_r_45(current_node, &current_node_property, &current_move_dir,
-                        &current_move_mode);
-            } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 357,
-                                  turn_pattern_num == turn_pattern.l_45)) {
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 358, false);
-              covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 335U);
-              turn_l_45(current_node, &current_node_property, &current_move_dir,
-                        &current_move_mode);
-            } else {
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 359, false);
-            }
+          /* ゴール分カウンタを増加 */
+          i = (int32_T)((uint8_T)i + 1U);
+          if ((uint32_T)i > 255U) {
+            i = 255;
           }
 
-          /* 参照位置がセクションであるとき */
-        } else {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 77, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 348, false);
+          /* 軌跡をプロット */
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 351, false);
 
-          /* 直進カウンタがあれば、移動する。 */
-          /*                      disp("ゴール時直進（セクション）") */
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 360, (uint8_T)i > 0)) {
+          /* 直進走行 */
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 133, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 78, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 352, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 332U);
+          m_move_front_long((uint8_T)i, start_flg->contents, wall_flg->contents,
+                            current_move_mode);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 333U);
+
+          /* 現在ノードから直進カウンタ分移動する関数。 */
+          move_straight(current_node, &current_node_property, &current_move_dir,
+                        &current_move_mode, (uint8_T)i);
+          straight_count = 0U;
+
+          /*                          disp("ゴール直線侵入") */
+          /*                          disp(current_node) */
+          /* ターンの場合（斜め侵入） */
+          /* 45度ターンのみ想定(一つ先の移動方向でターンの種類が決定) */
+        } else {
+          /*                          disp("ゴール時直進前") */
+          /*                          disp(current_node) */
+          /* 直進カウンタがあれば移動 */
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 353, (uint8_T)i > 0)) {
             /* 軌跡をプロット */
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 361, false);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 337U);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 354, false);
+
+            /* 直進走行 */
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 134, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 79, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 355, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 335U);
+            m_move_front_long((uint8_T)i, start_flg->contents,
+                              wall_flg->contents, current_move_mode);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 336U);
 
             /* 現在ノードから直進カウンタ分移動する関数。 */
             move_straight(current_node, &current_node_property,
                           &current_move_dir, &current_move_mode, (uint8_T)i);
             straight_count = 0U;
+          }
+
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 337U);
+
+          /*                          disp("ゴール時直進後") */
+          /*                          disp(current_node) */
+          /* 進行方向のバッファをクリア */
+          move_dir_buffer[1] = 0.0;
+          move_dir_buffer[2] = 0.0;
+
+          /* 1つ先までの進行方向から、ターンのパターンを決定 */
+          /* 現在進行方向からの相対的な移動方向をバッファ */
+          if (b_next_move_dir > 127) {
+            b_next_move_dir = 127U;
+          }
+
+          b_next_node_property = current_move_dir;
+          if (current_move_dir > 127) {
+            b_next_node_property = 127U;
+          }
+
+          move_dir_buffer[0] = (b_next_move_dir - b_next_node_property) & 7;
+
+          /* ターンの種類を判定する */
+          turn_pattern_num = get_turn_pattern_num(move_dir_buffer, ref_move_mode);
+
+          /* ターンの軌跡を描画する */
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 356, false);
+
+          /* パターンが決まらなかった場合、エラー */
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 357, turn_pattern_num ==
+                         0)) {
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 358, false);
+          }
+
+          /* パターンに応じた移動処理 */
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 359, turn_pattern_num ==
+                         turn_pattern.r_45)) {
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 360, false);
+
+            /* 右45度ターン移動 */
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 135, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 80, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 361, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 339U);
+            m_turn_45_r(start_flg->contents, wall_flg->contents,
+                        current_move_mode);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 340U);
+            turn_r_45(current_node, &current_node_property, &current_move_dir,
+                      &current_move_mode);
+          } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 362,
+                                turn_pattern_num == turn_pattern.l_45)) {
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 363, false);
+
+            /* 左45度ターン移動 */
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 136, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 81, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 364, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 341U);
+            m_turn_45_l(start_flg->contents, wall_flg->contents,
+                        current_move_mode);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 342U);
+            turn_l_45(current_node, &current_node_property, &current_move_dir,
+                      &current_move_mode);
+          } else {
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 365, false);
           }
         }
 
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 338U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 343U);
 
+        /* 参照位置がセクションであるとき */
+        /*                  else %セクションでここに入ることはない。はず。 */
+        /*                      %直進カウンタがあれば、移動する。 */
+        /*                      %                     disp("ゴール時直進（セクション）") */
+        /*                      if straight_count > 0 */
+        /*                          %軌跡をプロット */
+        /*                          if coder.target('MATLAB') */
+        /*                              straight_plot(current_node,current_node_property,current_move_dir,current_move_mode,straight_count); */
+        /*                          end */
+        /*                          %現在ノードから直進カウンタ分移動する関数。 */
+        /*                          [current_node,current_node_property,current_move_dir,current_move_mode,straight_count]... */
+        /*                              = move_straight(current_node,current_node_property,current_move_dir,current_move_mode,straight_count); */
+        /*                      end */
+        /*                  end */
         /* ゴール処理がおわったらフラグを立てる */
         /*                  disp("ゴール後") */
         /*                  disp(straight_count) */
         /*                  disp(current_node) */
         goal_flag = 1;
       } else {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 76, false);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 347, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 77, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 349, false);
       }
 
       /* 基準ノードから見て、進行方向が異なる(曲がる)とき */
     } else {
       /*              disp("ターン") */
       /* 直進カウンタあるとき */
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 362, straight_count > 0)) {
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 366, straight_count > 0)) {
         /* 軌跡をプロット */
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 363, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 340U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 367, false);
+
+        /* 直進走行 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 137, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 82, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 368, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 345U);
+        m_move_front_long(straight_count, start_flg->contents,
+                          wall_flg->contents, current_move_mode);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 346U);
 
         /* 現在ノードから直進カウンタ分移動する関数。 */
         move_straight(current_node, &current_node_property, &current_move_dir,
@@ -33686,7 +33741,7 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
         /*                  disp(current_node) */
       }
 
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 341U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 347U);
 
       /* 進行方向のバッファをクリア */
       move_dir_buffer[0] = 0.0;
@@ -33699,7 +33754,7 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
         exitg2 = 0;
         if (i < 3) {
           covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 22, 1);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 342U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 348U);
 
           /* 現在進行方向からの相対的な移動方向をバッファ */
           /*                  disp(["current_move_dir",num2str(current_move_dir)]) */
@@ -33720,19 +33775,19 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
           turn_pattern_num = get_turn_pattern_num(move_dir_buffer, ref_move_mode);
 
           /* パターンが確定していれば終了 */
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 364, turn_pattern_num
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 369, turn_pattern_num
                          != 0)) {
             /* パターンの軌跡を描画 */
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 365, false);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 344U);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 370, false);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 350U);
             exitg2 = 1;
           } else {
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 345U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 351U);
 
             /* 次の進行方向を決定する */
             next_node[0] = b_next_node[0];
             next_node[1] = b_next_node[1];
-            st.site = &ne_emlrtRSI;
+            st.site = &me_emlrtRSI;
             get_next_dir_diagonal(&st, row_num_node, col_num_node, next_move_dir,
                                   next_node, next_node_property, goal_node2,
                                   goal_node_property, goal_section,
@@ -33740,15 +33795,15 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
                                   &next_node_property);
 
             /* 3回目でパターンが決まらなかった場合、エラー */
-            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 134,
+            if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 138,
                              turn_pattern_num == 0) && covrtLogCond
-                (&emlrtCoverageInstance, 1U, 0U, 135, 1 + i == 3)) {
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 78, true);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 366, true);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 367, false);
+                (&emlrtCoverageInstance, 1U, 0U, 139, 1 + i == 3)) {
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 83, true);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 371, true);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 372, false);
             } else {
-              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 78, false);
-              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 366, false);
+              covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 83, false);
+              covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 371, false);
             }
 
             i++;
@@ -33763,53 +33818,132 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
       } while (exitg2 == 0);
 
       /* パターンに応じて移動 */
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 368, turn_pattern_num ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 373, turn_pattern_num ==
                      turn_pattern.r_45)) {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 369, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 346U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 374, false);
+
+        /* 右45度ターン移動 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 140, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 84, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 375, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 352U);
+        m_turn_45_r(start_flg->contents, wall_flg->contents, current_move_mode);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 353U);
         turn_r_45(current_node, &current_node_property, &current_move_dir,
                   &current_move_mode);
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 370,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 376,
                             turn_pattern_num == turn_pattern.l_45)) {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 371, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 347U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 377, false);
+
+        /* 左45度ターン移動 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 141, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 85, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 378, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 354U);
+        m_turn_45_l(start_flg->contents, wall_flg->contents, current_move_mode);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 355U);
         turn_l_45(current_node, &current_node_property, &current_move_dir,
                   &current_move_mode);
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 372,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 379,
                             turn_pattern_num == turn_pattern.r_90)) {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 373, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 348U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 380, false);
+
+        /* 右90度ターン移動 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 142, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 86, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 383, true);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 384, current_move_mode ==
+                       move_dir_property.straight)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 356U);
+          m_turn_90_r(start_flg->contents, wall_flg->contents, current_move_mode);
+        } else {
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 385, current_move_mode ==
+                         move_dir_property.diagonal)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 357U);
+            m_turn_V90_r(start_flg->contents, wall_flg->contents,
+                         current_move_mode);
+          }
+        }
+
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 358U);
         turn_r_90(current_node, &current_node_property, &current_move_dir,
                   &current_move_mode);
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 376,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 386,
                             turn_pattern_num == turn_pattern.l_90)) {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 377, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 349U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 387, false);
+
+        /* 左90度ターン移動 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 143, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 87, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 390, true);
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 391, current_move_mode ==
+                       move_dir_property.straight)) {
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 359U);
+          m_turn_90_l(start_flg->contents, wall_flg->contents, current_move_mode);
+        } else {
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 392, current_move_mode ==
+                         move_dir_property.diagonal)) {
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 360U);
+            m_turn_V90_l(start_flg->contents, wall_flg->contents,
+                         current_move_mode);
+          }
+        }
+
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 361U);
         turn_l_90(current_node, &current_node_property, &current_move_dir,
                   &current_move_mode);
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 380,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 393,
                             turn_pattern_num == turn_pattern.r_135)) {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 381, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 350U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 394, false);
+
+        /* 右135度ターン移動 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 144, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 88, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 395, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 362U);
+        m_turn_135_r(start_flg->contents, wall_flg->contents, current_move_mode);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 363U);
         turn_r_135(current_node, &current_node_property, &current_move_dir,
                    &current_move_mode);
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 382,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 396,
                             turn_pattern_num == turn_pattern.l_135)) {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 383, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 351U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 397, false);
+
+        /* 左135度ターン移動 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 145, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 89, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 398, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 364U);
+        m_turn_135_l(start_flg->contents, wall_flg->contents, current_move_mode);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 365U);
         turn_l_135(current_node, &current_node_property, &current_move_dir,
                    &current_move_mode);
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 384,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 399,
                             turn_pattern_num == turn_pattern.r_180)) {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 385, false);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 352U);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 400, false);
+
+        /* 右180度ターン移動 */
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 146, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 90, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 401, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 366U);
+        m_turn_180_r(start_flg->contents, wall_flg->contents, current_move_mode);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 367U);
         turn_r_180(current_node, &current_node_property, &current_move_dir,
                    &current_move_mode);
       } else {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 386, turn_pattern_num ==
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 402, turn_pattern_num ==
                        turn_pattern.l_180)) {
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 387, false);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 353U);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 403, false);
+
+          /* 左180度ターン移動 */
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 147, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 91, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 404, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 368U);
+          m_turn_180_l(start_flg->contents, wall_flg->contents,
+                       current_move_mode);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 369U);
           turn_l_180(current_node, &current_node_property, &current_move_dir,
                      &current_move_mode);
         }
@@ -33819,36 +33953,19 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
       /*              disp(current_node) */
       /*              disp(goal_node2) */
       /* 移動後、ゴールを判定 */
-      p = false;
-      b_p = true;
-      i = 0;
-      exitg3 = false;
-      while ((!exitg3) && (i < 2)) {
-        if (current_node[i] != goal_node2[i]) {
-          b_p = false;
-          exitg3 = true;
-        } else {
-          i++;
-        }
-      }
-
-      if (b_p) {
-        p = true;
-      }
-
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 136, p) && covrtLogCond
-          (&emlrtCoverageInstance, 1U, 0U, 137, current_node_property ==
-           goal_node_property)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 79, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 388, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 354U);
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 148, isequal(current_node,
+            goal_node2)) && covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 149,
+           current_node_property == goal_node_property)) {
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 92, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 405, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 370U);
         goal_flag = 1;
       } else {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 79, false);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 388, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 92, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 405, false);
       }
 
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 355U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 371U);
 
       /* 基準ノードを移動 */
       ref_node_property = next_node_property;
@@ -33857,16 +33974,16 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
     }
 
     /* ゴールフラグが立っていれば終了 */
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 389, goal_flag == 1)) {
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 406, goal_flag == 1)) {
       exitg1 = 1;
     } else {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 357U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 374U);
 
       /* 次の移動方向を取得 */
       /* 斜め込みの進行方法選択 */
       next_node[0] = b_next_node[0];
       next_node[1] = b_next_node[1];
-      st.site = &we_emlrtRSI;
+      st.site = &ve_emlrtRSI;
       get_next_dir_diagonal(&st, row_num_node, col_num_node, ref_move_dir,
                             next_node, ref_node_property, goal_node2,
                             goal_node_property, goal_section, &next_move_dir,
@@ -33880,7 +33997,12 @@ static void make_route_diagonal(const emlrtStack *sp, const uint16_T
     }
   } while (exitg1 == 0);
 
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 356U);
+  covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 150, false);
+  covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 93, true);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 407, true);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 372U);
+  m_goal_movement(start_flg->contents, wall_flg->contents, current_move_mode);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 373U);
 }
 
 static void move_step(uint8_T *temp_x, uint8_T *temp_y, uint8_T temp_dir)
@@ -33893,9 +34015,9 @@ static void move_step(uint8_T *temp_x, uint8_T *temp_y, uint8_T temp_dir)
   /* 入力 現在位置x,y,現在方向 */
   /* 出力 現在位置x,y */
   /* 北に一マス */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 47, temp_dir ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 49, temp_dir ==
                  g_direction.North)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 70U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 71U);
     q0 = (int32_T)(*temp_y + 1U);
     if ((uint32_T)q0 > 255U) {
       q0 = 255;
@@ -33907,9 +34029,9 @@ static void move_step(uint8_T *temp_x, uint8_T *temp_y, uint8_T temp_dir)
   }
 
   /* 東に一マス */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 48, temp_dir ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 50, temp_dir ==
                  g_direction.East)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 71U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 72U);
     q0 = (int32_T)(*temp_x + 1U);
     if ((uint32_T)q0 > 255U) {
       q0 = 255;
@@ -33921,9 +34043,9 @@ static void move_step(uint8_T *temp_x, uint8_T *temp_y, uint8_T temp_dir)
   }
 
   /* 南に一マス */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 49, temp_dir ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 51, temp_dir ==
                  g_direction.South)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 72U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 73U);
     q0 = *temp_y;
     qY = q0 - 1U;
     if (qY > (uint32_T)q0) {
@@ -33936,9 +34058,9 @@ static void move_step(uint8_T *temp_x, uint8_T *temp_y, uint8_T temp_dir)
   }
 
   /* 西に一マス */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 50, temp_dir ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 52, temp_dir ==
                  g_direction.West)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 73U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 74U);
     q0 = *temp_x;
     qY = q0 - 1U;
     if (qY > (uint32_T)q0) {
@@ -33966,11 +34088,11 @@ static void move_straight(uint8_T current_node[2], uint8_T
   /*     %% 移動用関数 */
   /*  直進 */
   /* 直進時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 449, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 467, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 450, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 468, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 392U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 409U);
       u8 = current_node[1];
       q0 = (int32_T)((uint32_T)current_node[0] + straight_count);
       if ((uint32_T)q0 > 255U) {
@@ -33982,10 +34104,10 @@ static void move_straight(uint8_T current_node[2], uint8_T
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 451, false);
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 452, *current_move_dir
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 469, false);
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 470, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 393U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 410U);
       q0 = (int32_T)((uint32_T)current_node[1] + straight_count);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -33995,10 +34117,10 @@ static void move_straight(uint8_T current_node[2], uint8_T
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 453, false);
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 454, *current_move_dir
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 471, false);
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 472, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 394U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 411U);
       u8 = current_node[1];
       q0 = current_node[0];
       qY = (uint32_T)q0 - straight_count;
@@ -34011,10 +34133,10 @@ static void move_straight(uint8_T current_node[2], uint8_T
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 455, false);
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 456, *current_move_dir
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 473, false);
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 474, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 395U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 412U);
       u8 = current_node[1];
       qY = (uint32_T)u8 - straight_count;
       if (qY > u8) {
@@ -34025,26 +34147,26 @@ static void move_straight(uint8_T current_node[2], uint8_T
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 457, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 475, false);
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 458, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 476, false);
     }
 
     /* 斜め直進のとき */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 459, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 477, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 396U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 413U);
 
     /* 直進カウンタを2で割った商とあまり、その合計を計算 */
     /* (移動先ノード座標の一般化用) */
     x = (int32_T)muDoubleScalarFloor((real_T)straight_count / 2.0);
     temp_remainder = (uint8_T)(straight_count % 2);
     temp_qr = (uint8_T)(x + temp_remainder);
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 460, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 478, *current_move_dir ==
                    g_d_direction.North_East)) {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 461, *current_node_property
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 479, *current_node_property
                      == matrix_dir.Row)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 397U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 414U);
         u8 = current_node[1];
         q0 = (int32_T)((uint32_T)current_node[0] + x);
         if ((uint32_T)q0 > 255U) {
@@ -34066,9 +34188,9 @@ static void move_straight(uint8_T current_node[2], uint8_T
         *current_node_property = (uint8_T)q0;
         *current_move_dir = g_d_direction.North_East;
         *current_move_mode = move_dir_property.diagonal;
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 462,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 480,
                             *current_node_property == matrix_dir.Col)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 398U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 415U);
         u8 = current_node[1];
         q0 = (int32_T)((uint32_T)current_node[0] + temp_qr);
         if ((uint32_T)q0 > 255U) {
@@ -34092,15 +34214,15 @@ static void move_straight(uint8_T current_node[2], uint8_T
         *current_move_dir = g_d_direction.North_East;
         *current_move_mode = move_dir_property.diagonal;
       } else {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 463, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 481, false);
       }
 
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 464, false);
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 465, *current_move_dir
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 482, false);
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 483, *current_move_dir
                           == g_d_direction.South_East)) {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 466, *current_node_property
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 484, *current_node_property
                      == matrix_dir.Row)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 399U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 416U);
         u8 = current_node[1];
         q0 = current_node[0];
         qY = (uint32_T)q0 - temp_qr;
@@ -34123,9 +34245,9 @@ static void move_straight(uint8_T current_node[2], uint8_T
         *current_node_property = (uint8_T)q0;
         *current_move_dir = g_d_direction.South_East;
         *current_move_mode = move_dir_property.diagonal;
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 467,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 485,
                             *current_node_property == matrix_dir.Col)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 400U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 417U);
         u8 = current_node[1];
         q0 = current_node[0];
         qY = (uint32_T)q0 - x;
@@ -34150,15 +34272,15 @@ static void move_straight(uint8_T current_node[2], uint8_T
         *current_move_dir = g_d_direction.South_East;
         *current_move_mode = move_dir_property.diagonal;
       } else {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 468, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 486, false);
       }
 
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 469, false);
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 470, *current_move_dir
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 487, false);
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 488, *current_move_dir
                           == g_d_direction.South_West)) {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 471, *current_node_property
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 489, *current_node_property
                      == matrix_dir.Row)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 401U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 418U);
         u8 = current_node[1];
         q0 = current_node[0];
         qY = (uint32_T)q0 - temp_qr;
@@ -34181,9 +34303,9 @@ static void move_straight(uint8_T current_node[2], uint8_T
         *current_node_property = (uint8_T)q0;
         *current_move_dir = g_d_direction.South_West;
         *current_move_mode = move_dir_property.diagonal;
-      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 472,
+      } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 490,
                             *current_node_property == matrix_dir.Col)) {
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 402U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 419U);
         u8 = current_node[1];
         q0 = current_node[0];
         qY = (uint32_T)q0 - x;
@@ -34208,16 +34330,16 @@ static void move_straight(uint8_T current_node[2], uint8_T
         *current_move_dir = g_d_direction.South_West;
         *current_move_mode = move_dir_property.diagonal;
       } else {
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 473, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 491, false);
       }
 
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 474, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 492, false);
     } else {
-      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 475, *current_move_dir ==
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 493, *current_move_dir ==
                      g_d_direction.North_West)) {
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 476,
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 494,
                        *current_node_property == matrix_dir.Row)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 403U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 420U);
           u8 = current_node[1];
           q0 = (int32_T)((uint32_T)current_node[0] + x);
           if ((uint32_T)q0 > 255U) {
@@ -34239,9 +34361,9 @@ static void move_straight(uint8_T current_node[2], uint8_T
           *current_node_property = (uint8_T)q0;
           *current_move_dir = g_d_direction.North_West;
           *current_move_mode = move_dir_property.diagonal;
-        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 477,
+        } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 495,
                               *current_node_property == matrix_dir.Col)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 404U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 421U);
           u8 = current_node[1];
           q0 = (int32_T)((uint32_T)current_node[0] + temp_qr);
           if ((uint32_T)q0 > 255U) {
@@ -34265,17 +34387,17 @@ static void move_straight(uint8_T current_node[2], uint8_T
           *current_move_dir = g_d_direction.North_West;
           *current_move_mode = move_dir_property.diagonal;
         } else {
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 478, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 496, false);
         }
 
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 479, false);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 497, false);
       }
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 480, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 498, false);
   }
 
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 405U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 422U);
 
   /* 移動完了時、直進カウンタをクリア */
 }
@@ -34300,6 +34422,7 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
   int32_T i50;
   boolean_T guard1 = false;
   boolean_T b_overflow;
+  uint8_T error_flg;
   int32_T exitg2;
   uint32_T qY;
   int32_T i51;
@@ -34309,7 +34432,6 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
   st.tls = sp->tls;
   b_st.prev = &st;
   b_st.tls = st.tls;
-  *start_flg = 0U;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 1U);
   covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 32U);
 
@@ -34497,8 +34619,17 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
       /*  進行方向選定 */
       /* 優先順位　北⇒東⇒南⇒西 */
       st.site = &mb_emlrtRSI;
-      temp_maze_wall = get_nextdir2(&st, *current_x, *current_y, b_maze_wall,
-        contour_map);
+      get_nextdir2(&st, *current_x, *current_y, b_maze_wall, contour_map,
+                   &temp_maze_wall, &error_flg);
+
+      /* 進行方向が見つからなかったときのエラー処理 */
+      if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 29, error_flg == 1)) {
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 8, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 7, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 30, true);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 46U);
+        m_error_movement(1);
+      }
 
       /*  現在方向と進行方向に応じた処理 */
       i = (int32_T)(4U + temp_maze_wall);
@@ -34529,15 +34660,15 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 1, 1);
 
         /* 直進制御時、壁フラグを現在参照位置で更新 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 29, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 31, straight_count > 0))
         {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 46U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 47U);
           st.site = &nb_emlrtRSI;
           wall_flg->contents = fust_run_wallset(&st, maze_wall, *current_y,
             *current_x, *current_dir);
         }
 
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 47U);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 48U);
 
         /* 参照位置を次回の参照位置に変更 */
         st.site = &ob_emlrtRSI;
@@ -34552,9 +34683,9 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
           emlrtDynamicBoundsCheckR2012b(*current_x, 1, 32, &wjb_emlrtBCI, sp);
         }
 
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 30, maze_wall_search
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 32, maze_wall_search
                        [(*current_y + ((*current_x - 1) << 5)) - 1] == 15)) {
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 48U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 49U);
           i50 = (int32_T)(straight_count + 1U);
           if ((uint32_T)i50 > 255U) {
             i50 = 255;
@@ -34566,20 +34697,20 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         } else {
           /* 直線カウンタがある場合、移動 */
           /* 現在方向も直進なので、直進カウンタ+1だけ移動する。 */
-          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 31, straight_count > 0))
+          if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 33, straight_count > 0))
           {
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 8, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 7, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 32, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 49U);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 9, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 8, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 34, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 50U);
             i50 = (int32_T)(straight_count + 1U);
             if ((uint32_T)i50 > 255U) {
               i50 = 255;
             }
 
-            m_move_front_long((uint8_T)i50, 0, wall_flg->contents,
+            m_move_front_long((uint8_T)i50, *start_flg, wall_flg->contents,
                               move_dir_property.straight);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 50U);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 51U);
             straight_count = 0U;
 
             /* スタート直後フラグをクリア */
@@ -34589,12 +34720,13 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
             wall_flg->contents = 0U;
           } else {
             /* 直進カウンタがない場合 */
-            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 9, false);
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 8, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 33, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 51U);
-            m_move_front(0, wall_flg->contents, move_dir_property.straight);
+            covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 10, false);
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 9, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 35, true);
             covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 52U);
+            m_move_front(*start_flg, wall_flg->contents,
+                         move_dir_property.straight);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 53U);
 
             /* スタート直後フラグをクリア */
             *start_flg = 0U;
@@ -34609,20 +34741,22 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 1, 2);
 
         /* 直進カウンタがある場合、移動 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 34, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 36, straight_count > 0))
         {
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 10, false);
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 9, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 35, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 53U);
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 11, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 10, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 37, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 54U);
 
           /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
-          m_move_front_long(straight_count, 0, wall_flg->contents,
+          m_move_front_long(straight_count, *start_flg, wall_flg->contents,
                             move_dir_property.straight);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 54U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 55U);
           straight_count = 0U;
 
           /* スタート直後フラグをクリア */
+          *start_flg = 0U;
+
           /* 壁フラグをクリア */
           wall_flg->contents = 0U;
 
@@ -34633,12 +34767,12 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         }
 
         /* マウスを移動させる（C) */
-        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 11, false);
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 10, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 36, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 55U);
-        m_move_right(0, wall_flg->contents, move_dir_property.straight);
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 12, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 11, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 38, true);
         covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 56U);
+        m_move_right(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 57U);
 
         /* 参照位置、方向を更新 */
         st.site = &qb_emlrtRSI;
@@ -34658,20 +34792,22 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
 
         /* disp("back") */
         /* 直進カウンタがある場合、移動 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 37, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 39, straight_count > 0))
         {
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 12, false);
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 11, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 38, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 57U);
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 13, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 12, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 40, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 58U);
 
           /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
-          m_move_front_long(straight_count, 0, wall_flg->contents,
+          m_move_front_long(straight_count, *start_flg, wall_flg->contents,
                             move_dir_property.straight);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 58U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 59U);
           straight_count = 0U;
 
           /* スタート直後フラグをクリア */
+          *start_flg = 0U;
+
           /* 壁フラグをクリア */
           wall_flg->contents = 0U;
 
@@ -34682,12 +34818,12 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         }
 
         /* マウスを移動させる（C） */
-        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 13, false);
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 12, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 39, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 59U);
-        m_move_back(0, wall_flg->contents, move_dir_property.straight);
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 14, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 13, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 41, true);
         covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 60U);
+        m_move_back(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 61U);
 
         /* 参照位置、方向を更新 */
         st.site = &tb_emlrtRSI;
@@ -34706,20 +34842,22 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         covrtLogSwitch(&emlrtCoverageInstance, 1U, 0U, 1, 4);
 
         /* 直進カウンタがある場合、移動 */
-        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 40, straight_count > 0))
+        if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 42, straight_count > 0))
         {
-          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 14, false);
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 13, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 41, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 61U);
+          covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 15, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 14, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 43, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 62U);
 
           /* 前回位置での壁フラグを使用し、マウスを移動させる（C) */
-          m_move_front_long(straight_count, 0, wall_flg->contents,
+          m_move_front_long(straight_count, *start_flg, wall_flg->contents,
                             move_dir_property.straight);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 62U);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 63U);
           straight_count = 0U;
 
           /* スタート直後フラグをクリア */
+          *start_flg = 0U;
+
           /* 壁フラグをクリア */
           wall_flg->contents = 0U;
 
@@ -34730,12 +34868,12 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         }
 
         /* マウスを移動させる（C） */
-        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 15, false);
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 14, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 42, true);
-        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 63U);
-        m_move_left(0, wall_flg->contents, move_dir_property.straight);
+        covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 16, false);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 15, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 44, true);
         covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 64U);
+        m_move_left(*start_flg, wall_flg->contents, move_dir_property.straight);
+        covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 65U);
 
         /* 参照位置、方向を更新 */
         st.site = &wb_emlrtRSI;
@@ -34755,7 +34893,7 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
         break;
       }
 
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 43, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 45, false);
 
       /* for code generation */
       if (*emlrtBreakCheckR2012bFlagVar != 0) {
@@ -34770,7 +34908,7 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
     covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 5, true);
     covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 26, true);
     covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 41U);
-    m_move_front_long(straight_count, 0, wall_flg->contents,
+    m_move_front_long(straight_count, *start_flg, wall_flg->contents,
                       move_dir_property.straight);
     covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 42U);
 
@@ -34789,7 +34927,7 @@ static void search_adachi(const emlrtStack *sp, const coder_internal_ref_6 *wall
   covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 6, true);
   covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 28, true);
   covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 43U);
-  m_goal_movement(0, wall_flg->contents, move_dir_property.straight);
+  m_goal_movement(*start_flg, wall_flg->contents, move_dir_property.straight);
   covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 44U);
 
   /* ゴール時停止フラグが立っていなければ、動作させたまま終了 */
@@ -34809,12 +34947,12 @@ static uint8_T sh_route_unexp_sq_jud(const emlrtStack *sp, const uint8_T
   b_st.prev = &st;
   b_st.tls = st.tls;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 9U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 127U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 128U);
 
   /* 最短経路未探索マス合致判定関数(入れ子) */
   /* 出力:判定結果　0,合致なし　1,合致あり */
   result = 0U;
-  if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 103, temp_unexp_square_idx ==
+  if (!covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 105, temp_unexp_square_idx ==
                   0)) {
     st.site = &uc_emlrtRSI;
     if (temp_unexp_square_idx > 254) {
@@ -34829,17 +34967,17 @@ static uint8_T sh_route_unexp_sq_jud(const emlrtStack *sp, const uint8_T
         covrtLogFor(&emlrtCoverageInstance, 1U, 0U, 7, 1);
 
         /* 最短経路の未探索のマスと入力座標が一致すればフラグを立ててブレイク */
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 44, temp_unexp_square[i]
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 45, temp_unexp_square[i]
                          == temp_y) && covrtLogCond(&emlrtCoverageInstance, 1U,
-             0U, 45, temp_unexp_square[i + 512] == temp_x)) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 29, true);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 104, true);
-          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 128U);
+             0U, 46, temp_unexp_square[i + 512] == temp_x)) {
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 30, true);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 106, true);
+          covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 129U);
           result = 1U;
           exitg1 = 1;
         } else {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 29, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 104, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 30, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 106, false);
           i++;
           if (*emlrtBreakCheckR2012bFlagVar != 0) {
             emlrtBreakCheckR2012b(sp);
@@ -34859,7 +34997,7 @@ static void turn_180deg(uint8_T *current_dir)
 {
   int32_T i60;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 3U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 74U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 75U);
 
   /*     %% turn_180deg 180度ターンする関数 */
   /* 入力 現在方向 */
@@ -34876,7 +35014,7 @@ static void turn_clk_90deg(uint8_T *current_dir)
 {
   int32_T i59;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 4U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 75U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 76U);
 
   /*     %% turn_clk_90deg 時計周りに90度ターンする関数 */
   /* 入力 現在方向 */
@@ -34898,7 +35036,7 @@ static void turn_conclk_90deg(uint8_T *current_dir)
 {
   int32_T i61;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 5U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 76U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 77U);
 
   /*     %% turn_conclk_90deg 反時計周りに90度回る関数 */
   /* 入力　現在方向 */
@@ -34921,11 +35059,11 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  左135度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 546, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 564, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 547, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 565, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 446U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 463U);
       u14 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -34942,9 +35080,9 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 548, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 566, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 447U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 464U);
       u14 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -34961,9 +35099,9 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.North_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 549, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 567, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 448U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 465U);
       u14 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -34981,9 +35119,9 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 550, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 568, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 449U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 466U);
       u14 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35002,15 +35140,15 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.South_East;
       *current_move_mode = move_dir_property.diagonal;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 551, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 569, false);
     }
 
     /* 斜めパターンの時 */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 552, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 570, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 553, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 571, *current_move_dir ==
                    g_d_direction.North_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 450U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 467U);
       u14 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35022,9 +35160,9 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 554, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 572, *current_move_dir
                           == g_d_direction.South_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 451U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 468U);
       q0 = (int32_T)(current_node[1] + 1U);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -35034,9 +35172,9 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 555, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 573, *current_move_dir
                           == g_d_direction.South_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 452U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 469U);
       u14 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35049,9 +35187,9 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 556, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 574, *current_move_dir
                           == g_d_direction.North_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 453U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 470U);
       u14 = current_node[1];
       qY = u14 - 1U;
       if (qY > u14) {
@@ -35063,10 +35201,10 @@ static void turn_l_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 557, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 575, false);
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 558, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 576, false);
   }
 }
 
@@ -35080,11 +35218,11 @@ static void turn_l_180(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  左180度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 568, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 586, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 569, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 587, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 458U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 475U);
       u16 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35101,9 +35239,9 @@ static void turn_l_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 570, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 588, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 459U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 476U);
       u16 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35120,9 +35258,9 @@ static void turn_l_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 571, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 589, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 460U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 477U);
       u16 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35140,9 +35278,9 @@ static void turn_l_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 572, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 590, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 461U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 478U);
       u16 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35161,15 +35299,15 @@ static void turn_l_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 573, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 591, false);
     }
 
     /* 斜めパターンの時 */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 574, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 592, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 575, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 593, false);
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 576, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 594, false);
   }
 }
 
@@ -35183,11 +35321,11 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  左45度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 494, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 512, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 495, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 513, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 414U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 431U);
       u10 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35199,9 +35337,9 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.North_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 496, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 514, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 415U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 432U);
       u10 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35218,9 +35356,9 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 497, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 515, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 416U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 433U);
       u10 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 2U;
@@ -35238,9 +35376,9 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.South_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 498, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 516, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 417U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 434U);
       u10 = current_node[1];
       qY = u10 - 2U;
       if (qY > u10) {
@@ -35252,13 +35390,13 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.South_West;
       *current_move_mode = move_dir_property.diagonal;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 499, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 517, false);
     }
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 500, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 518, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 501, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 519, *current_move_dir ==
                    g_d_direction.North_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 418U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 435U);
       u10 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35270,9 +35408,9 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 502, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 520, *current_move_dir
                           == g_d_direction.South_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 419U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 436U);
       u10 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35290,9 +35428,9 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 503, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 521, *current_move_dir
                           == g_d_direction.South_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 420U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 437U);
       u10 = current_node[1];
       qY = u10 - 1U;
       if (qY > u10) {
@@ -35303,17 +35441,17 @@ static void turn_l_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 504, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 522, *current_move_dir
                           == g_d_direction.North_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 421U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 438U);
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 505, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 523, false);
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 506, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 524, false);
   }
 }
 
@@ -35327,11 +35465,11 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  左90度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 520, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 538, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 521, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 539, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 430U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 447U);
       u12 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35343,9 +35481,9 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 522, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 540, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 431U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 448U);
       u12 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35362,9 +35500,9 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 523, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 541, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 432U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 449U);
       u12 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 2U;
@@ -35382,9 +35520,9 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 524, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 542, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 433U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 450U);
       u12 = current_node[1];
       qY = u12 - 2U;
       if (qY > u12) {
@@ -35396,15 +35534,15 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 525, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 543, false);
     }
 
     /* 斜めパターンの時（V90） */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 526, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 544, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 527, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 545, *current_move_dir ==
                    g_d_direction.North_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 434U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 451U);
       u12 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35416,9 +35554,9 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.North_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 528, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 546, *current_move_dir
                           == g_d_direction.South_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 435U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 452U);
       q0 = (int32_T)(current_node[1] + 1U);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -35428,9 +35566,9 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 529, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 547, *current_move_dir
                           == g_d_direction.South_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 436U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 453U);
       u12 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35443,9 +35581,9 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.South_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 530, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 548, *current_move_dir
                           == g_d_direction.North_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 437U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 454U);
       u12 = current_node[1];
       qY = u12 - 1U;
       if (qY > u12) {
@@ -35457,10 +35595,10 @@ static void turn_l_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.South_West;
       *current_move_mode = move_dir_property.diagonal;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 531, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 549, false);
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 532, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 550, false);
   }
 }
 
@@ -35474,11 +35612,11 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  右135度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 533, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 551, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 534, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 552, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 438U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 455U);
       u13 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35495,9 +35633,9 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 535, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 553, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 439U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 456U);
       u13 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35515,9 +35653,9 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.South_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 536, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 554, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 440U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 457U);
       u13 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35535,9 +35673,9 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 537, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 555, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 441U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 458U);
       u13 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35555,15 +35693,15 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.North_East;
       *current_move_mode = move_dir_property.diagonal;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 538, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 556, false);
     }
 
     /* 斜めパターンの時 */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 539, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 557, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 540, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 558, *current_move_dir ==
                    g_d_direction.North_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 442U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 459U);
       q0 = (int32_T)(current_node[1] + 1U);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -35573,9 +35711,9 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 541, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 559, *current_move_dir
                           == g_d_direction.South_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 443U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 460U);
       u13 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35588,9 +35726,9 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 542, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 560, *current_move_dir
                           == g_d_direction.South_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 444U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 461U);
       u13 = current_node[1];
       qY = u13 - 1U;
       if (qY > u13) {
@@ -35601,9 +35739,9 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 543, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 561, *current_move_dir
                           == g_d_direction.North_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 445U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 462U);
       u13 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35616,10 +35754,10 @@ static void turn_r_135(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 544, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 562, false);
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 545, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 563, false);
   }
 }
 
@@ -35633,11 +35771,11 @@ static void turn_r_180(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  右180度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 559, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 577, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 560, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 578, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 454U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 471U);
       u15 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35654,9 +35792,9 @@ static void turn_r_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 561, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 579, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 455U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 472U);
       u15 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35674,9 +35812,9 @@ static void turn_r_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 562, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 580, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 456U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 473U);
       u15 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35694,9 +35832,9 @@ static void turn_r_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 563, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 581, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 457U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 474U);
       u15 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35714,15 +35852,15 @@ static void turn_r_180(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 564, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 582, false);
     }
 
     /* 斜めパターンの時 */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 565, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 583, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 566, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 584, false);
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 567, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 585, false);
   }
 }
 
@@ -35736,11 +35874,11 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  右45度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 481, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 499, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 482, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 500, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 406U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 423U);
       u9 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35757,9 +35895,9 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.North_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 483, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 501, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 407U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 424U);
       q0 = (int32_T)(current_node[1] + 1U);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -35769,9 +35907,9 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 484, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 502, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 408U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 425U);
       u9 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 2U;
@@ -35784,9 +35922,9 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.South_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 485, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 503, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 409U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 426U);
       u9 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35804,13 +35942,13 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.North_West;
       *current_move_mode = move_dir_property.diagonal;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 486, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 504, false);
     }
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 487, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 505, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 488, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 506, *current_move_dir ==
                    g_d_direction.North_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 410U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 427U);
       q0 = (int32_T)(current_node[1] + 1U);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -35820,15 +35958,15 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 489, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 507, *current_move_dir
                           == g_d_direction.South_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 411U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 428U);
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 490, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 508, *current_move_dir
                           == g_d_direction.South_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 412U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 429U);
       u9 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35841,9 +35979,9 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 491, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 509, *current_move_dir
                           == g_d_direction.North_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 413U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 430U);
       u9 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35861,10 +35999,10 @@ static void turn_r_45(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 492, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 510, false);
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 493, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 511, false);
   }
 }
 
@@ -35878,11 +36016,11 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
 
   /*  右90度 */
   /* 直進パターンの時 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 507, *current_move_mode ==
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 525, *current_move_mode ==
                  move_dir_property.straight)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 508, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 526, *current_move_dir ==
                    g_d_direction.North)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 422U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 439U);
       u11 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35899,9 +36037,9 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.East;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 509, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 527, *current_move_dir
                           == g_d_direction.East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 423U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 440U);
       q0 = (int32_T)(current_node[1] + 1U);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -35911,9 +36049,9 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 510, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 528, *current_move_dir
                           == g_d_direction.South)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 424U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 441U);
       u11 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 2U;
@@ -35926,9 +36064,9 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.West;
       *current_move_mode = move_dir_property.straight;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 511, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 529, *current_move_dir
                           == g_d_direction.West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 425U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 442U);
       u11 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -35946,15 +36084,15 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.North;
       *current_move_mode = move_dir_property.straight;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 512, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 530, false);
     }
 
     /* 斜めパターンの時（V90） */
-  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 513, *current_move_mode ==
+  } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 531, *current_move_mode ==
                         move_dir_property.diagonal)) {
-    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 514, *current_move_dir ==
+    if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 532, *current_move_dir ==
                    g_d_direction.North_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 426U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 443U);
       q0 = (int32_T)(current_node[1] + 1U);
       if ((uint32_T)q0 > 255U) {
         q0 = 255;
@@ -35964,9 +36102,9 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.South_East;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 515, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 533, *current_move_dir
                           == g_d_direction.South_East)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 427U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 444U);
       u11 = current_node[1];
       q0 = current_node[0];
       qY = q0 - 1U;
@@ -35979,9 +36117,9 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Col;
       *current_move_dir = g_d_direction.South_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 516, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 534, *current_move_dir
                           == g_d_direction.South_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 428U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 445U);
       u11 = current_node[1];
       qY = u11 - 1U;
       if (qY > u11) {
@@ -35992,9 +36130,9 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_node_property = matrix_dir.Row;
       *current_move_dir = g_d_direction.North_West;
       *current_move_mode = move_dir_property.diagonal;
-    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 517, *current_move_dir
+    } else if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 535, *current_move_dir
                           == g_d_direction.North_West)) {
-      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 429U);
+      covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 446U);
       u11 = current_node[1];
       q0 = (int32_T)(current_node[0] + 1U);
       if ((uint32_T)q0 > 255U) {
@@ -36007,10 +36145,10 @@ static void turn_r_90(uint8_T current_node[2], uint8_T *current_node_property,
       *current_move_dir = g_d_direction.North_East;
       *current_move_mode = move_dir_property.diagonal;
     } else {
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 518, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 536, false);
     }
   } else {
-    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 519, false);
+    covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 537, false);
   }
 }
 
@@ -36043,7 +36181,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
   boolean_T guard3 = false;
   uint32_T b_qY;
   covrtLogFcn(&emlrtCoverageInstance, 1U, 6U);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 77U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 78U);
 
   /*     %%  wall_set 壁情報取得 */
   /* matlab上では画像から取得した壁情報を参照する。 */
@@ -36071,17 +36209,17 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
   /* マウスの方向と絶対方向の差=マウスの方向となることを利用し、 */
   /* 絶対角度と整合をとる。 */
   /* 前方の壁判定 */
-  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 51, false);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 79U);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 53, false);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 80U);
 
   /* for Cgen */
   /* センサ値取得 */
   wall_sensor_front = m_get_front_sensor();
 
   /* センサ値をもとに、壁の有無を判定 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 53, wall_sensor_front >
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 55, wall_sensor_front >
                  wall_sensor_front_th)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 80U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 81U);
 
     /* 壁情報取得 */
     i52 = (int32_T)(b_rem(current_dir) + 1U);
@@ -36099,7 +36237,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     wall_flg->contents |= 1;
   }
 
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 81U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 82U);
 
   /* 探索情報取更新 */
   i52 = (int32_T)(b_rem(current_dir) + 1U);
@@ -36114,17 +36252,17 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
   serch_write[i52 - 1] = search->contents.known;
 
   /* 右壁判定 */
-  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 54, false);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 83U);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 56, false);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 84U);
 
   /* for Cgen */
   /* センサ値取得 */
   wall_sensor_front = m_get_right_sensor();
 
   /* センサ値をもとに、壁の有無を判定 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 56, wall_sensor_front >
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 58, wall_sensor_front >
                  wall_sensor_right_th)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 84U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 85U);
 
     /* 壁情報取得 */
     i52 = (int32_T)(current_dir + 1U);
@@ -36147,7 +36285,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     wall_flg->contents = (uint8_T)(wall_flg->contents | 2);
   }
 
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 85U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 86U);
 
   /* 探索情報取更新 */
   i52 = (int32_T)(current_dir + 1U);
@@ -36168,17 +36306,17 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
   /* 後方は情報を得ることができないので処理しない。 */
   /* 左壁判定 */
-  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 57, false);
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 87U);
+  covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 59, false);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 88U);
 
   /* for Cgen */
   /* センサ値取得 */
   wall_sensor_front = m_get_left_sensor();
 
   /* センサ値をもとに、壁の有無を判定 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 59, wall_sensor_front >
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 61, wall_sensor_front >
                  wall_sensor_left_th)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 88U);
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 89U);
 
     /* 壁情報取得 */
     i52 = (int32_T)(current_dir + 3U);
@@ -36201,7 +36339,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     wall_flg->contents = (uint8_T)(wall_flg->contents | 8);
   }
 
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 89U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 90U);
 
   /* 探索情報取更新 */
   i52 = (int32_T)(current_dir + 3U);
@@ -36412,8 +36550,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     qY = 0U;
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 60, current_y < (int32_T)qY)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 90U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 62, current_y < (int32_T)qY)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 91U);
     if (g_direction.South <= 7) {
       c = (uint8_T)(1 << g_direction.South);
     } else {
@@ -36482,8 +36620,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     qY = 0U;
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 61, current_x < (int32_T)qY)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 91U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 63, current_x < (int32_T)qY)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 92U);
     if (g_direction.West <= 7) {
       c = (uint8_T)(1 << g_direction.West);
     } else {
@@ -36548,8 +36686,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
   }
 
   /* 南側のマスの北側の壁情報 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 62, current_y > 1)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 92U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 64, current_y > 1)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 93U);
     if (g_direction.North <= 7) {
       c = (uint8_T)(1 << g_direction.North);
     } else {
@@ -36595,8 +36733,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
   }
 
   /* 西側のマスの東側の壁情報 */
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 63, current_x > 1)) {
-    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 93U);
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 65, current_x > 1)) {
+    covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 94U);
     if (g_direction.East <= 7) {
       c = (uint8_T)(1 << g_direction.East);
     } else {
@@ -36641,7 +36779,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     maze_wall_search[ex] |= (uint8_T)i52;
   }
 
-  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 94U);
+  covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 95U);
 
   /* 現在地がゴールでない場合 */
   for (i52 = 0; i52 < 9; i52++) {
@@ -36657,7 +36795,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     }
   }
 
-  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 64, ex == 0)) {
+  if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 66, ex == 0)) {
     /* 柱に対し、3方向探索済みかつ、すべて壁がない場合、もう一方向の壁を確定させる。 */
     /* 北,東に壁がない場合 */
     if (g_direction.North <= 7) {
@@ -36674,7 +36812,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
     guard1 = false;
     guard2 = false;
-    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 16, (maze_wall[i54] & b) !=
+    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 17, (maze_wall[i54] & b) !=
                      c)) {
       if (g_direction.East <= 7) {
         b = (uint8_T)(1 << g_direction.East);
@@ -36688,10 +36826,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         c = 0U;
       }
 
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 17, (maze_wall[(current_y
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 18, (maze_wall[(current_y
              + ((current_x - 1) << 5)) - 1] & b) != c)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 15, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 65, true);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 16, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 67, true);
 
         /* 北のマスの東が探索済み　かつ　壁がないとき */
         if (g_direction.East <= 7) {
@@ -36712,7 +36850,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
         a = maze_wall_search[(ex + i53) - 1];
         guard3 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 18, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 19, (a & b) != 0)) {
           if (g_direction.East <= 7) {
             b = (uint8_T)(1 << g_direction.East);
           } else {
@@ -36735,10 +36873,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 19, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 16, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 66, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 95U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 20, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 17, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 68, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 96U);
 
             /* 東のマスの北の壁が確定、探索済みとする。 */
             if (g_direction.North <= 7) {
@@ -36892,8 +37030,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         if (guard3) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 16, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 66, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 17, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 68, false);
         }
 
         /* 東のマスの北が探索済み　かつ　壁がないとき */
@@ -36914,7 +37052,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         a = maze_wall_search[(current_y + ((k - 1) << 5)) - 1];
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 20, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 21, (a & b) != 0)) {
           if (g_direction.North <= 7) {
             b = (uint8_T)(1 << g_direction.North);
           } else {
@@ -36937,10 +37075,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 21, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 17, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 67, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 96U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 22, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 18, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 69, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 97U);
 
             /* 北のマスの東の壁が確定、探索済みとする。 */
             if (g_direction.East <= 7) {
@@ -37097,13 +37235,13 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     }
 
     if (guard2) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 17, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 67, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 18, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 69, false);
     }
 
     if (guard1) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 15, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 65, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 16, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 67, false);
     }
 
     /* 北,西に壁がない場合 */
@@ -37121,7 +37259,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
     guard1 = false;
     guard2 = false;
-    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 22, (maze_wall[(current_y +
+    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 23, (maze_wall[(current_y +
            ((current_x - 1) << 5)) - 1] & b) != c)) {
       if (g_direction.West <= 7) {
         b = (uint8_T)(1 << g_direction.West);
@@ -37135,10 +37273,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         c = 0U;
       }
 
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 23, (maze_wall[(current_y
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 24, (maze_wall[(current_y
              + ((current_x - 1) << 5)) - 1] & b) != c)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 18, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 68, true);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 19, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 70, true);
 
         /* 北のマスの西が探索済み　かつ　壁がないとき */
         if (g_direction.West <= 7) {
@@ -37158,7 +37296,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
         a = maze_wall_search[(i52 + i53) - 1];
         guard3 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 24, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 25, (a & b) != 0)) {
           if (g_direction.West <= 7) {
             b = (uint8_T)(1 << g_direction.West);
           } else {
@@ -37181,10 +37319,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 25, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 19, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 69, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 97U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 26, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 20, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 71, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 98U);
 
             /* 西のマスの北の壁が確定、探索済みとする。 */
             if (g_direction.North <= 7) {
@@ -37348,8 +37486,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         if (guard3) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 19, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 69, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 20, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 71, false);
         }
 
         /* 西のマスの北が探索済み　かつ　壁がないとき */
@@ -37369,7 +37507,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         a = maze_wall_search[(current_y + (((int32_T)qY - 1) << 5)) - 1];
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 26, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 27, (a & b) != 0)) {
           if (g_direction.North <= 7) {
             b = (uint8_T)(1 << g_direction.North);
           } else {
@@ -37392,10 +37530,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 27, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 20, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 70, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 98U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 28, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 21, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 72, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 99U);
 
             /* 北のマスの西の壁が確定、探索済みとする。 */
             if (g_direction.West <= 7) {
@@ -37559,13 +37697,13 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     }
 
     if (guard2) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 20, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 70, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 21, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 72, false);
     }
 
     if (guard1) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 18, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 68, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 19, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 70, false);
     }
 
     /* 南,東に壁がない場合 */
@@ -37583,7 +37721,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
     guard1 = false;
     guard2 = false;
-    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 28, (maze_wall[(current_y +
+    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 29, (maze_wall[(current_y +
            ((current_x - 1) << 5)) - 1] & b) != c)) {
       if (g_direction.South <= 7) {
         b = (uint8_T)(1 << g_direction.South);
@@ -37597,10 +37735,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         c = 0U;
       }
 
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 29, (maze_wall[(current_y
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 30, (maze_wall[(current_y
              + ((current_x - 1) << 5)) - 1] & b) != c)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 21, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 71, true);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 22, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 73, true);
 
         /* 南のマスの東が探索済み　かつ　壁がないとき */
         if (g_direction.East <= 7) {
@@ -37620,7 +37758,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
         a = maze_wall_search[((int32_T)qY + i53) - 1];
         guard3 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 30, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 31, (a & b) != 0)) {
           if (g_direction.East <= 7) {
             b = (uint8_T)(1 << g_direction.East);
           } else {
@@ -37643,10 +37781,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 31, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 22, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 72, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 99U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 32, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 23, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 74, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 100U);
 
             /* 東のマスの南の壁が確定、探索済みとする。 */
             if (g_direction.South <= 7) {
@@ -37805,8 +37943,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         if (guard3) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 22, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 72, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 23, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 74, false);
         }
 
         /* 東のマスの南が探索済み　かつ　壁がないとき */
@@ -37826,7 +37964,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         a = maze_wall_search[(current_y + ((i52 - 1) << 5)) - 1];
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 32, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 33, (a & b) != 0)) {
           if (g_direction.South <= 7) {
             b = (uint8_T)(1 << g_direction.South);
           } else {
@@ -37849,10 +37987,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 33, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 23, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 73, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 100U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 34, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 24, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 75, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 101U);
 
             /* 南のマスの東の壁が確定、探索済みとする。 */
             if (g_direction.East <= 7) {
@@ -38020,13 +38158,13 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     }
 
     if (guard2) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 23, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 73, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 24, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 75, false);
     }
 
     if (guard1) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 21, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 71, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 22, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 73, false);
     }
 
     /* 南,西に壁がない場合 */
@@ -38044,7 +38182,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
     guard1 = false;
     guard2 = false;
-    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 34, (maze_wall[(current_y +
+    if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 35, (maze_wall[(current_y +
            ((current_x - 1) << 5)) - 1] & b) != c)) {
       if (g_direction.South <= 7) {
         b = (uint8_T)(1 << g_direction.South);
@@ -38058,10 +38196,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         c = 0U;
       }
 
-      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 35, (maze_wall[(current_y
+      if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 36, (maze_wall[(current_y
              + ((current_x - 1) << 5)) - 1] & b) != c)) {
-        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 24, true);
-        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 74, true);
+        covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 25, true);
+        covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 76, true);
 
         /* 南のマスの西が探索済み　かつ　壁がないとき */
         if (g_direction.West <= 7) {
@@ -38081,7 +38219,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
 
         a = maze_wall_search[((int32_T)qY + i53) - 1];
         guard3 = false;
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 36, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 37, (a & b) != 0)) {
           if (g_direction.West <= 7) {
             b = (uint8_T)(1 << g_direction.West);
           } else {
@@ -38104,10 +38242,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 37, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 25, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 75, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 101U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 38, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 26, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 77, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 102U);
 
             /* 西のマスの南の壁が確定、探索済みとする。 */
             if (g_direction.South <= 7) {
@@ -38276,8 +38414,8 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         if (guard3) {
-          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 25, false);
-          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 75, false);
+          covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 26, false);
+          covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 77, false);
         }
 
         /* 西のマスの南が探索済み　かつ　壁がないとき */
@@ -38297,7 +38435,7 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
         }
 
         a = maze_wall_search[(current_y + (((int32_T)qY - 1) << 5)) - 1];
-        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 38, (a & b) != 0)) {
+        if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 39, (a & b) != 0)) {
           if (g_direction.South <= 7) {
             b = (uint8_T)(1 << g_direction.South);
           } else {
@@ -38320,10 +38458,10 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
             c = 0U;
           }
 
-          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 39, (a & b) != c)) {
-            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 26, true);
-            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 76, true);
-            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 102U);
+          if (covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 40, (a & b) != c)) {
+            covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 27, true);
+            covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 78, true);
+            covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 103U);
 
             /* 南のマスの西の壁が確定、探索済みとする。 */
             if (g_direction.West <= 7) {
@@ -38496,13 +38634,13 @@ static void wall_set(const emlrtStack *sp, const coder_internal_ref_6 *wall,
     }
 
     if (guard2) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 26, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 76, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 27, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 78, false);
     }
 
     if (guard1) {
-      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 24, false);
-      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 74, false);
+      covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 25, false);
+      covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 76, false);
     }
   }
 }
@@ -38517,6 +38655,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
   int32_T i47;
   coder_internal_ref_2 b_maze_goal;
   coder_internal_ref_1 b_maze_wall;
+  coder_internal_ref start_flg;
   coder_internal_ref wall_flg;
   uint8_T new_goal[2];
   coder_internal_ref_6 wall;
@@ -38529,8 +38668,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
   uint8_T goal_dir;
   uint8_T goal_section[2];
   uint8_T goal_node2[2];
-  uint8_T start_flg;
-  uint8_T current_x;
+  uint8_T goal_matrix_dir2;
   uint8_T current_y;
   uint16_T unusedExpr[1024];
   boolean_T overflow;
@@ -38564,6 +38702,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
   st.site = &d_emlrtRSI;
   st.site = &d_emlrtRSI;
   st.site = &d_emlrtRSI;
+  st.site = &d_emlrtRSI;
   for (i47 = 0; i47 < 1024; i47++) {
     b_maze_wall.contents[i47] = maze_wall[i47];
   }
@@ -38580,6 +38719,8 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
 
   /* ローカル変数定義 */
   /*  ゴール時ストップフラグ(0:移動継続　1:ストップ) */
+  start_flg.contents = 0U;
+
   /*  スタートフラグ(0:動作中　1:停止からの移動開始) */
   /* ゴール直後フラグ(0:ゴール直後でない, 1:ゴール直後) */
   wall_flg.contents = 0U;
@@ -38718,10 +38859,10 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
     /* 停止処理を実施する */
     /* ゴール直後フラグはクリア */
     /* 一マス前進 */
-    current_x = 1U;
+    goal_matrix_dir2 = 1U;
     current_y = 1U;
     st.site = &e_emlrtRSI;
-    move_step(&current_x, &current_y, current_dir);
+    move_step(&goal_matrix_dir2, &current_y, current_dir);
 
     /* C言語でのスタート処理 */
     covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 0, false);
@@ -38740,16 +38881,17 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
     search_flag = 0U;
     st.site = &g_emlrtRSI;
     search_adachi(&st, &wall, &wall_flg, &search, &b_maze_goal, &b_maze_wall,
-                  &adachi_search_mode, &current_x, &current_y, &current_dir,
-                  maze_row_size, maze_col_size, maze_wall, maze_wall_search,
-                  maze_goal, goal_size, &search_flag, 0U, 0U, unusedExpr);
+                  &adachi_search_mode, &goal_matrix_dir2, &current_y,
+                  &current_dir, maze_row_size, maze_col_size, maze_wall,
+                  maze_wall_search, maze_goal, goal_size, &search_flag, 0U, 0U,
+                  unusedExpr);
     for (i47 = 0; i47 < 1024; i47++) {
       b_maze_wall.contents[i47] = maze_wall[i47];
     }
 
     /* ひとまづゴール(停止) */
     /* 各フラグを定義 */
-    start_flg = 1U;
+    start_flg.contents = 1U;
 
     /* 停止直後 */
     /* 停止処理を実施しない */
@@ -38829,10 +38971,10 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
         memcpy(&unexp_square[0], &b_maze_wall.contents[0], sizeof(uint8_T) << 10);
         st.site = &i_emlrtRSI;
         b_search_adachi(&st, &wall, &wall_flg, &search, &b_maze_goal,
-                        &b_maze_wall, &adachi_search_mode, &current_x,
+                        &b_maze_wall, &adachi_search_mode, &goal_matrix_dir2,
                         &current_y, &current_dir, maze_row_size, maze_col_size,
-                        unexp_square, maze_wall_search, new_goal, &start_flg, 0U,
-                        1U, 1U, b_unusedExpr);
+                        unexp_square, maze_wall_search, new_goal,
+                        &start_flg.contents, 0U, 1U, 1U, b_unusedExpr);
         memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(uint8_T) << 10);
 
         /* ゴール直後フラグをたてる */
@@ -38860,7 +39002,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
         covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 14U);
         st.site = &j_emlrtRSI;
         make_new_goal_all(&st, &wall, b_maze_wall.contents, maze_wall_search,
-                          current_x, current_y, contour_map, new_goal);
+                          goal_matrix_dir2, current_y, contour_map, new_goal);
         if (covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 7, new_goal[0] == 0)) {
           exitg1 = 1;
         } else {
@@ -38875,10 +39017,10 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
                  10);
           st.site = &l_emlrtRSI;
           b_search_adachi(&st, &wall, &wall_flg, &search, &b_maze_goal,
-                          &b_maze_wall, &adachi_search_mode, &current_x,
+                          &b_maze_wall, &adachi_search_mode, &goal_matrix_dir2,
                           &current_y, &current_dir, maze_row_size, maze_col_size,
-                          unexp_square, maze_wall_search, new_goal, &start_flg,
-                          0U, 1U, 1U, c_unusedExpr);
+                          unexp_square, maze_wall_search, new_goal,
+                          &start_flg.contents, 0U, 1U, 1U, c_unusedExpr);
           memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(uint8_T) <<
                  10);
 
@@ -38894,12 +39036,13 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
       covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 1, true);
       covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 8, true);
       covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 15U);
-      m_goal_movement(start_flg, wall_flg.contents, move_dir_property.straight);
+      m_goal_movement(start_flg.contents, wall_flg.contents,
+                      move_dir_property.straight);
       covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 16U);
       covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 18U);
 
       /* 探索終了時、停止させているため、フラグをたてる。 */
-      start_flg = 1U;
+      start_flg.contents = 1U;
 
       /* 停止直後 */
       /* 最短経路探索 */
@@ -38933,7 +39076,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
           /* 未探索マスがある場合、探索する。 */
           /* 現在地点からコンターを展開し、該当の未探索が更新されれば、そこを新規ゴールとして出力 */
           st.site = &o_emlrtRSI;
-          make_new_goal_sh(&st, &wall, b_maze_wall.contents, current_x,
+          make_new_goal_sh(&st, &wall, b_maze_wall.contents, goal_matrix_dir2,
                            current_y, unexp_square, goal_dir, contour_map,
                            new_goal);
 
@@ -38946,10 +39089,10 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
                  10);
           st.site = &q_emlrtRSI;
           b_search_adachi(&st, &wall, &wall_flg, &search, &b_maze_goal,
-                          &b_maze_wall, &adachi_search_mode, &current_x,
+                          &b_maze_wall, &adachi_search_mode, &goal_matrix_dir2,
                           &current_y, &current_dir, maze_row_size, maze_col_size,
-                          unexp_square, maze_wall_search, new_goal, &start_flg,
-                          0U, 1U, 1U, d_unusedExpr);
+                          unexp_square, maze_wall_search, new_goal,
+                          &start_flg.contents, 0U, 1U, 1U, d_unusedExpr);
           memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(uint8_T) <<
                  10);
 
@@ -38965,12 +39108,13 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
       covrtLogMcdc(&emlrtCoverageInstance, 1U, 0U, 2, true);
       covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 10, true);
       covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 20U);
-      m_goal_movement(start_flg, wall_flg.contents, move_dir_property.straight);
+      m_goal_movement(start_flg.contents, wall_flg.contents,
+                      move_dir_property.straight);
       covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 21U);
       covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 23U);
 
       /* 探索終了時、停止させているため、停止フラグを立てる。 */
-      start_flg = 1U;
+      start_flg.contents = 1U;
 
       /* 停止直後 */
       /* その他の場合無視 */
@@ -38981,7 +39125,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
       covrtLogBasicBlock(&emlrtCoverageInstance, 1U, 24U);
 
       /* 停止させない */
-      start_flg = 0U;
+      start_flg.contents = 0U;
 
       /* 停止直後でない */
       break;
@@ -39004,9 +39148,10 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
     goal_section[1] = 1U;
     st.site = &s_emlrtRSI;
     b_search_adachi(&st, &wall, &wall_flg, &search, &b_maze_goal, &b_maze_wall,
-                    &adachi_search_mode, &current_x, &current_y, &current_dir,
-                    maze_row_size, maze_col_size, unexp_square, maze_wall_search,
-                    goal_section, &start_flg, 1U, 1U, 0U, contour_map);
+                    &adachi_search_mode, &goal_matrix_dir2, &current_y,
+                    &current_dir, maze_row_size, maze_col_size, unexp_square,
+                    maze_wall_search, goal_section, &start_flg.contents, 1U, 1U,
+                    0U, contour_map);
     memcpy(&b_maze_wall.contents[0], &unexp_square[0], sizeof(uint8_T) << 10);
     covrtLogIf(&emlrtCoverageInstance, 1U, 0U, 11, false);
 
@@ -39046,10 +39191,10 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
         /* 停止処理を実施する */
         /* ゴール直後フラグはクリア */
         /* 一マス前進 */
-        current_x = 1U;
+        goal_matrix_dir2 = 1U;
         current_y = 1U;
         st.site = &w_emlrtRSI;
-        move_step(&current_x, &current_y, g_d_direction.North);
+        move_step(&goal_matrix_dir2, &current_y, g_d_direction.North);
 
         /* C言語でのスタート処理 */
         covrtLogCond(&emlrtCoverageInstance, 1U, 0U, 3, false);
@@ -39064,7 +39209,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
         st.site = &x_emlrtRSI;
         b_fust_run(&st, &b_maze_wall, &b_goal_size, &wall_flg, &wall, maze_wall,
                    maze_wall_search, contour_map, maze_goal, MAX_uint16_T, 1U,
-                   current_x, current_y);
+                   goal_matrix_dir2, current_y, 0U);
 
         /*  斜めでの最短走行 */
       } else {
@@ -39087,7 +39232,7 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
           /* 確定されたゴールノード、方向からゴールマス、ノードを再定義 */
           st.site = &bb_emlrtRSI;
           decide_goal_section(maze_goal, new_goal, search_flag, goal_dir,
-                              goal_section, goal_node2, &start_flg);
+                              goal_section, goal_node2, &goal_matrix_dir2);
 
           /* 確定されたゴールマスから、再度マップを生成 */
           new_goal[0] = goal_section[1];
@@ -39101,8 +39246,9 @@ void maze_solve(const emlrtStack *sp, uint8_T maze_wall[1024], uint8_T
 
           /* 生成されたMAPをもとに最短走行 */
           st.site = &db_emlrtRSI;
-          make_route_diagonal(&st, row_num_node, col_num_node, new_goal,
-                              goal_node2, start_flg);
+          make_route_diagonal(&st, &start_flg, &wall_flg, row_num_node,
+                              col_num_node, new_goal, goal_node2,
+                              goal_matrix_dir2);
         }
       }
     }
