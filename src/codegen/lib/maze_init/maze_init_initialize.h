@@ -5,7 +5,7 @@
  * File: maze_init_initialize.h
  *
  * MATLAB Coder version            : 4.2
- * C/C++ source code generated on  : 08-Jan-2021 11:16:43
+ * C/C++ source code generated on  : 29-Jan-2021 00:40:38
  */
 
 #ifndef MAZE_INIT_INITIALIZE_H

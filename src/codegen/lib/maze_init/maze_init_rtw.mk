@@ -2,7 +2,7 @@
 ## Makefile generated for MATLAB file/project 'maze_init'. 
 ## 
 ## Makefile     : maze_init_rtw.mk
-## Generated on : Fri Jan 08 11:17:28 2021
+## Generated on : Thu Jan 28 23:18:28 2021
 ## MATLAB Coder version: 4.2 (R2019a)
 ## 
 ## Build Info:
@@ -225,7 +225,7 @@ DEFINES = $(DEFINES_) $(DEFINES_CUSTOM) $(DEFINES_SKIPFORSIL) $(DEFINES_STANDARD
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = C:/work/matlab/maze_sim_git/src/C_src/matlab_movement.c C:/work/matlab/maze_sim_git/src/C_src/matlab_IR_sensor.c $(START_DIR)/maze_init_data.c $(START_DIR)/maze_init_initialize.c $(START_DIR)/maze_init_terminate.c $(START_DIR)/maze_init.c $(START_DIR)/maze_solve.c $(START_DIR)/rem.c
+SRCS = C:/work/matlab/maze_sim_git/src/C_src/matlab_movement.c C:/work/matlab/maze_sim_git/src/C_src/matlab_IR_sensor.c C:/work/matlab/maze_sim_git/src/C_src/matlab_rom.c $(START_DIR)/maze_init_data.c $(START_DIR)/maze_init_initialize.c $(START_DIR)/maze_init_terminate.c $(START_DIR)/maze_init.c $(START_DIR)/maze_solve.c $(START_DIR)/rem.c
 
 ALL_SRCS = $(SRCS)
 
@@ -233,7 +233,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = matlab_movement.o matlab_IR_sensor.o maze_init_data.o maze_init_initialize.o maze_init_terminate.o maze_init.o maze_solve.o rem.o
+OBJS = matlab_movement.o matlab_IR_sensor.o matlab_rom.o maze_init_data.o maze_init_initialize.o maze_init_terminate.o maze_init.o maze_solve.o rem.o
 
 ALL_OBJS = $(OBJS)
 
@@ -538,6 +538,10 @@ matlab_movement.o : C:/work/matlab/maze_sim_git/src/C_src/matlab_movement.c
 
 
 matlab_IR_sensor.o : C:/work/matlab/maze_sim_git/src/C_src/matlab_IR_sensor.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+matlab_rom.o : C:/work/matlab/maze_sim_git/src/C_src/matlab_rom.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

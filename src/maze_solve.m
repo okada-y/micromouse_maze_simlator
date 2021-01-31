@@ -11,6 +11,8 @@ else
     coder.cinclude('C:\work\matlab\maze_sim_git\src\C_src\matlab_movement.h');
     coder.updateBuildInfo('addSourceFiles','C:\work\matlab\maze_sim_git\src\C_src\matlab_IR_sensor.c');
     coder.cinclude('C:\work\matlab\maze_sim_git\src\C_src\matlab_IR_sensor.h');
+    coder.updateBuildInfo('addSourceFiles','C:\work\matlab\maze_sim_git\src\C_src\matlab_rom.c');
+    coder.cinclude('C:\work\matlab\maze_sim_git\src\C_src\matlab_rom.h');
 end
 
 %ローカル変数定義
@@ -132,11 +134,15 @@ if run_mode_1 == r_mode_1.search
         = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,maze_goal,goal_size,...
         start_flg,stop_flg,goal_after_flg,adachi_search_mode.goal);
     
-    %ひとまづゴール(停止)
+    %ひとまづゴール(停止させる)
     %各フラグを定義
     start_flg = uint8(1);%停止直後
     stop_flg = uint8(0);%停止処理を実施しない
     goal_after_flg = uint8(1);%ゴール直後フラグをたてる
+    
+    %進入時のゴールを記憶する
+    goal_entrance_x = current_x;
+    goal_entrance_y = current_y;
     
     %ゴールをすべて探索
     while 1
@@ -155,12 +161,32 @@ if run_mode_1 == r_mode_1.search
                 start_flg,stop_flg,goal_after_flg,adachi_search_mode.search);
             goal_after_flg = uint8(1);%ゴール直後フラグをたてる
         else
+            %未探索のゴールマスがなく、現在地がゴール進入マスでない（ゴールが一マスでない）
+            %ゴール進入マスで停止させる。
+            if ~(current_x == goal_entrance_x && current_y == goal_entrance_y)
+                new_goal(1,:) = uint8([goal_entrance_x,goal_entrance_y]);
+                stop_flg = uint8(1);%停止処理を実施する
+                [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
+                = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,new_goal,coder.ignoreConst(new_goal_size),...
+                start_flg,stop_flg,goal_after_flg,adachi_search_mode.goal);
+                goal_after_flg = uint8(1);%ゴール直後フラグをたてる
+            end
             break
         end
-        
     end
     
+    
+    
+    
+    %未探索ゴールがなくなったとき、マウスは停止しているはず。
+    %停止直後フラグを立てる。
+    start_flg = uint8(1);
+    
     %帰路探索
+    %帰路探索前に今までの迷路情報を書き込む
+    if ~coder.target('MATLAB')
+        coder.ceval('m_rom_write');
+    end
     
     %全面探索
     %未探索マスがなくなるまで。
@@ -223,8 +249,6 @@ if run_mode_1 == r_mode_1.search
             start_flg = uint8(1);%停止直後
         %その他の場合無視
         otherwise
-            %停止させない
-            start_flg = uint8(0);%停止直後でない
     end
     
     %スタートを目的地として足立法で再探索
@@ -240,6 +264,11 @@ if run_mode_1 == r_mode_1.search
     [current_x,current_y,current_dir,maze_wall,maze_wall_search,contour_map,start_flg]...
         = search_adachi(current_x,current_y,current_dir,maze_row_size,maze_col_size,maze_wall,maze_wall_search,coder.ignoreConst(new_goal),coder.ignoreConst(new_goal_size),...
         start_flg,stop_flg,goal_after_flg,adachi_search_mode.goal);
+    
+    %走行完了時、迷路情報を記録する。
+    if ~coder.target('MATLAB')
+        coder.ceval('m_rom_write');
+    end
     
     if coder.target('MATLAB')
         %for MATLAB
@@ -341,6 +370,8 @@ end
                 %壁情報が更新されれば、コンター更新のフラグを立てる。
                 if temp_maze_wall ~= maze_wall(current_y,current_x)
                     contour_flg = uint8(1);
+                else
+                    contour_flg = uint8(0);
                 end
             end
         else
@@ -677,6 +708,9 @@ end
             wall_write(uint8(1),rem(current_dir,4)+uint8(1)) = wall.wall;
             %壁フラグセット
             wall_flg = bitor(wall_flg,1,'uint8');
+        elseif bitand(maze_wall(current_y,current_x),bitshift(uint8(1),current_dir)) %すでに壁情報がある場合も壁フラグを立てる。%見落としたとき用
+            %壁フラグセット
+            wall_flg = bitor(wall_flg,1,'uint8'); 
         end
         
     end
@@ -700,6 +734,9 @@ end
             wall_write(uint8(1),rem(current_dir+1,4)+uint8(1)) = wall.wall;
             %壁フラグセット
             wall_flg = bitor(wall_flg,2,'uint8');
+        elseif bitand(maze_wall(current_y,current_x),bitshift(uint8(1),rem(current_dir+1,4))) %すでに壁情報がある場合も壁フラグを立てる。%見落としたとき用
+            %壁フラグセット
+            wall_flg = bitor(wall_flg,2,'uint8'); 
         end
     end
     %探索情報取更新
@@ -724,7 +761,10 @@ end
             wall_write(uint8(1),rem(current_dir+3,4)+uint8(1)) = wall.wall;
             %壁フラグセット
             wall_flg = bitor(wall_flg,8,'uint8');
-        end
+        elseif bitand(maze_wall(current_y,current_x),bitshift(uint8(1),rem(current_dir+3,4))) %すでに壁情報がある場合も壁フラグを立てる。%見落としたとき用
+            %壁フラグセット
+            wall_flg = bitor(wall_flg,8,'uint8'); 
+       end
     end
     %探索情報取更新
     serch_write(uint8(1),rem(current_dir+3,4)+uint8(1)) = search.known;

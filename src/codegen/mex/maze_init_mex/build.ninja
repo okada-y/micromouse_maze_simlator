@@ -36,6 +36,7 @@ rule linkxx
 # Build
 build $builddir\matlab_movement.o : cc $startdir\C_src\matlab_movement.c
 build $builddir\matlab_IR_sensor.o : cc $startdir\C_src\matlab_IR_sensor.c
+build $builddir\matlab_rom.o : cc $startdir\C_src\matlab_rom.c
 build $builddir\maze_init_mex_mexutil.o : cc $root\maze_init_mex_mexutil.c
 build $builddir\maze_init_mex_data.o : cc $root\maze_init_mex_data.c
 build $builddir\maze_init_mex_initialize.o : cc $root\maze_init_mex_initialize.c
@@ -52,4 +53,4 @@ build $builddir\_coder_maze_init_mex_mex.o : cc $root\interface\_coder_maze_init
 build $builddir\c_mexapi_version.o : cc $matlabdir\extern\version\c_mexapi_version.c
 
 # Link
-build $root\maze_init_mex.mexw64 : link $builddir\matlab_movement.o $builddir\matlab_IR_sensor.o $builddir\maze_init_mex_mexutil.o $builddir\maze_init_mex_data.o $builddir\maze_init_mex_initialize.o $builddir\maze_init_mex_terminate.o $builddir\maze_init.o $builddir\maze_solve.o $builddir\eml_int_forloop_overflow_check.o $builddir\goal_plot.o $builddir\rem.o $builddir\isequal.o $builddir\_coder_maze_init_mex_info.o $builddir\_coder_maze_init_mex_api.o $builddir\_coder_maze_init_mex_mex.o $builddir\c_mexapi_version.o 
+build $root\maze_init_mex.mexw64 : link $builddir\matlab_movement.o $builddir\matlab_IR_sensor.o $builddir\matlab_rom.o $builddir\maze_init_mex_mexutil.o $builddir\maze_init_mex_data.o $builddir\maze_init_mex_initialize.o $builddir\maze_init_mex_terminate.o $builddir\maze_init.o $builddir\maze_solve.o $builddir\eml_int_forloop_overflow_check.o $builddir\goal_plot.o $builddir\rem.o $builddir\isequal.o $builddir\_coder_maze_init_mex_info.o $builddir\_coder_maze_init_mex_api.o $builddir\_coder_maze_init_mex_mex.o $builddir\c_mexapi_version.o 

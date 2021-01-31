@@ -1,5 +1,6 @@
 matlab_IR_sensor.o
 matlab_movement.o
+matlab_rom.o
 maze_init.o
 maze_init_data.o
 maze_init_initialize.o

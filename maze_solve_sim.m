@@ -11,7 +11,7 @@ maze_data_get_debug = 0;
 global video_flg;
 global vidObj; %動画作成用のビデオオブジェクト
 %ビデオフラグ
-video_flg = 1;
+video_flg = 0;
 
 %% ビデオ記録用変数の宣言
 if video_flg
@@ -51,8 +51,8 @@ maze_goal = uint8(zeros(9,2));
 %2017全日本 20 21 9
 %2020全日本学生 4 4 4
 
-goal_x =4;%ゴール左下のx座標
-goal_y = 4;%ゴール左下のy座標
+goal_x =10;%ゴール左下のx座標
+goal_y = 10;%ゴール左下のy座標
 goal_size = uint8(4);%ゴールサイズを入力する
 
 goal_size_d = double(goal_size);
@@ -114,7 +114,7 @@ if sim_mode_flg == sim_mode.unknown
     
     %% モード定義
     run_mode1_flg = run_mode1.search;
-    run_mode2_flg = run_mode2.all;
+    run_mode2_flg = run_mode2.adachi;
     [maze_wall,maze_wall_search,contour_map] = maze_solve(maze_wall,maze_wall_search,maze_row_size,maze_col_size,goal_size,maze_goal,run_mode1_flg,run_mode2_flg);
     
     %% 探索情報をもとに最短走行
